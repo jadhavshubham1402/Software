@@ -6,6 +6,7 @@ import {
   FaVial,
   FaRocket,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const process = [
   {
@@ -27,7 +28,7 @@ const process = [
     icon: <FaPencilRuler />,
     title: "UI/UX Design",
     description:
-      "Designing modern, user-friendly interfaces focused on great user experiences.",
+      "Designing modern, user-friendly interfaces focused on exceptional user experience.",
   },
   {
     id: "04",
@@ -48,57 +49,117 @@ const process = [
     icon: <FaRocket />,
     title: "Deployment",
     description:
-      "Launching your product smoothly with continuous monitoring and post-launch support.",
+      "Launching your product smoothly with continuous monitoring and long-term support.",
   },
 ];
 
 const DevelopmentProcess = () => {
   return (
-    <section className="py-24 bg-slate-950 text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      className="relative py-24 overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url('/images/development-process.png')",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-slate-950/90"></div>
+
+      {/* Blue Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/80 to-blue-950/80"></div>
+
+      {/* Decorative Blurs */}
+      <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-600/30 rounded-full blur-[120px]"></div>
+
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-[150px]"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+
         {/* Heading */}
 
-        <div className="text-center mb-20">
-          <span className="uppercase tracking-widest text-blue-400 font-semibold">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-20"
+        >
+          <span className="uppercase tracking-[4px] text-blue-400 font-semibold">
             Development Process
           </span>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+          <h2 className="text-5xl font-bold text-white mt-5">
             How We Transform Ideas Into Products
           </h2>
 
-          <p className="text-gray-400 max-w-3xl mx-auto mt-6 leading-8">
-            Our agile software development process ensures transparency, faster
-            delivery, and exceptional product quality from start to finish.
+          <p className="text-gray-300 max-w-3xl mx-auto mt-6 leading-8">
+            Our agile development methodology ensures faster delivery,
+            complete transparency, and high-quality software from idea
+            validation to deployment.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Timeline */}
+        {/* Cards */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {process.map((step) => (
-            <div
-              key={step.id}
-              className="relative bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-blue-500 hover:-translate-y-2 transition duration-300"
+
+          {process.map((item, index) => (
+
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.08,
+              }}
+              whileHover={{
+                y: -10,
+                scale: 1.02,
+              }}
+              className="
+                relative
+                bg-white/10
+                backdrop-blur-xl
+                border
+                border-white/10
+                rounded-3xl
+                p-8
+                transition-all
+                duration-300
+                hover:border-blue-400
+                hover:bg-white/15
+              "
             >
+
               {/* Number */}
 
-              <span className="absolute top-6 right-6 text-6xl font-bold text-slate-800">
-                {step.id}
+              <span className="absolute top-6 right-6 text-6xl font-bold text-white/10">
+                {item.id}
               </span>
 
               {/* Icon */}
 
-              <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl mb-8">
-                {step.icon}
+              <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl text-white mb-8 shadow-lg">
+                {item.icon}
               </div>
 
-              <h3 className="text-2xl font-semibold mb-4">{step.title}</h3>
+              <h3 className="text-2xl font-bold text-white mb-5">
+                {item.title}
+              </h3>
 
-              <p className="text-gray-400 leading-8">{step.description}</p>
-            </div>
+              <p className="text-gray-300 leading-8">
+                {item.description}
+              </p>
+
+            </motion.div>
+
           ))}
+
         </div>
+
       </div>
     </section>
   );

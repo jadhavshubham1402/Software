@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    image: "/images/projects/project1.jpg",
+    image: "/images/project1.jpg",
     category: "Healthcare",
     title: "Hospital Management System",
     description:
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "/images/projects/project2.jpg",
+    image: "/images/project2.jpg",
     category: "FinTech",
     title: "Digital Banking Platform",
     description:
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "/images/projects/project3.jpg",
+    image: "/images/project3.jpg",
     category: "E-Commerce",
     title: "Multi-Vendor Marketplace",
     description:
@@ -65,7 +65,7 @@ const FeaturedProjects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+                  className="w-full h-64 object-contain group-hover:scale-110 transition duration-500"
                 />
               </div>
 
