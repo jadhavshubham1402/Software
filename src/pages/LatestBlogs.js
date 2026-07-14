@@ -4,7 +4,7 @@ import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 const blogs = [
   {
     id: 1,
-    image: "/images/blogs/blog1.jpg",
+    image: "/images/blog1.jpg",
     category: "Artificial Intelligence",
     date: "10 July 2026",
     title: "How AI is Transforming Modern Businesses",
@@ -13,7 +13,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: "/images/blogs/blog2.jpg",
+    image: "/images/blog2.jpg",
     category: "Web Development",
     date: "05 July 2026",
     title: "Top Web Development Trends in 2026",
@@ -22,7 +22,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: "/images/blogs/blog3.jpg",
+    image: "/images/blog3.jpg",
     category: "Cloud Computing",
     date: "28 June 2026",
     title: "Why Businesses Are Moving to the Cloud",
