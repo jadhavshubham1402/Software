@@ -2,6 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Layout from "./component/Layout";
+import AboutPage from "./pages/About";
+import WebDevelopment from "./pages/WebDevelopment";
+import MobileAppDevelopment from "./pages/MobileDevelopment";
 
 function App() {
   return (
@@ -11,11 +14,12 @@ function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
 
-          {/* <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services/web-development" element={<WebDevelopment />} />
+          <Route path="/services/mobile-development" element={<MobileAppDevelopment />} />
+          {/*
 
-          <Route path="/services" element={<Services />} />
 
-          <Route path="/technologies" element={<Technologies />} />
 
           <Route path="/industries" element={<Industries />} />
 

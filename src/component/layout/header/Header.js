@@ -32,29 +32,45 @@ const Header = () => {
           </Link>
 
           {/* Desktop Menu */}
-
           <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((item) => (
-              <NavLink
-                key={item.id}
-                to={item.path}
-                className={({ isActive }) =>
-                  `flex items-center gap-2 font-medium transition ${
-                    isActive
-                      ? "text-blue-500"
-                      : isSticky
-                        ? "text-gray-800 hover:text-blue-600"
-                        : "text-white hover:text-blue-400"
-                  }`
-                }
-              >
-                {item.title}
+              <div key={item.id} className="relative group">
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `flex items-center gap-2 font-medium transition duration-300 ${
+                      isActive
+                        ? "text-blue-500"
+                        : isSticky
+                          ? "text-gray-800 hover:text-blue-600"
+                          : "text-white hover:text-blue-400"
+                    }`
+                  }
+                >
+                  {item.title}
 
-                {item.hasDropdown && <FaChevronDown className="text-xs" />}
-              </NavLink>
+                  {item.hasDropdown && (
+                    <FaChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180" />
+                  )}
+                </NavLink>
+
+                {/* Dropdown */}
+                {item.hasDropdown && (
+                  <div className="absolute left-0 top-full mt-4 w-64 rounded-xl bg-white shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50">
+                    {item.dropdownItems.map((subItem, index) => (
+                      <NavLink
+                        key={index}
+                        to={subItem.path}
+                        className="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition first:rounded-t-xl last:rounded-b-xl"
+                      >
+                        {subItem.title}
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
-
           {/* Button */}
 
           <div className="hidden lg:block">
