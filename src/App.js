@@ -5,6 +5,14 @@ import Layout from "./component/Layout";
 import AboutPage from "./pages/About";
 import WebDevelopment from "./pages/WebDevelopment";
 import MobileAppDevelopment from "./pages/MobileDevelopment";
+import CloudSolutions from "./pages/CloudSection";
+import AIML from "./pages/AIML";
+import UIUXDesign from "./pages/UIUXDesign";
+import Frontend from "./pages/Frontend";
+import Backend from "./pages/Backend";
+import Mobile from "./pages/Mobile";
+import Cloud from "./pages/Cloud";
+import Database from "./pages/Database";
 
 function App() {
   return (
@@ -15,8 +23,26 @@ function App() {
           <Route index element={<Home />} />
 
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/mobile-development" element={<MobileAppDevelopment />} />
+          <Route
+            path="/services/web-development"
+            element={<WebDevelopment />}
+          />
+          <Route
+            path="/services/mobile-development"
+            element={<MobileAppDevelopment />}
+          />
+          <Route
+            path="/services/cloud-solutions"
+            element={<CloudSolutions />}
+          />
+          <Route path="/services/ai-ml" element={<AIML />} />
+          <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+          <Route path="/technologies/frontend" element={<Frontend />} />
+          <Route path="/technologies/backend" element={<Backend />} />
+          <Route path="/technologies/mobile" element={<Mobile />} />
+          <Route path="/technologies/cloud" element={<Cloud />} />
+          <Route path="/technologies/database" element={<Database />} />
+
           {/*
 
 
