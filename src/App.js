@@ -1,5 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./component/Layout";
 import AboutPage from "./pages/About";
@@ -13,10 +12,30 @@ import Backend from "./pages/Backend";
 import Mobile from "./pages/Mobile";
 import Cloud from "./pages/Cloud";
 import Database from "./pages/Database";
+import Healthcare from "./pages/HealthCare";
+import Fintech from "./pages/Finetech";
+import Education from "./pages/Education";
+import Ecommerce from "./pages/Ecommerce";
+import Logistics from "./pages/Logistics";
+import Portfolio from "./pages/portfolio";
+import Blogs from "./pages/Blogs";
+import { useEffect } from "react";
+import Contact from "./pages/Contact";
 
 function App() {
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         {/* Common Layout */}
         <Route element={<Layout />}>
@@ -40,8 +59,17 @@ function App() {
           <Route path="/technologies/frontend" element={<Frontend />} />
           <Route path="/technologies/backend" element={<Backend />} />
           <Route path="/technologies/mobile" element={<Mobile />} />
-          <Route path="/technologies/cloud" element={<Cloud />} />
           <Route path="/technologies/database" element={<Database />} />
+          <Route path="/technologies/cloud" element={<Cloud />} />
+          <Route path="/industries/healthcare" element={<Healthcare />} />
+          <Route path="/industries/finetech" element={<Fintech />} />
+          <Route path="/industries/education" element={<Education />} />
+          <Route path="/industries/education" element={<Ecommerce />} />
+
+          <Route path="/industries/logistics" element={<Logistics />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/*
 
@@ -53,7 +81,6 @@ function App() {
 
           <Route path="/blogs" element={<Blogs />} />
 
-          <Route path="/contact" element={<Contact />} />
           
           {/* 404 */}
           {/* <Route path="*" element={<NotFound />} />  */}
