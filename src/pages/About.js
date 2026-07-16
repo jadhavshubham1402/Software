@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   FaRocket,
   FaUsers,
@@ -60,9 +61,16 @@ const teamMembers = [
 ];
 
 const AboutPage = () => {
+  const navigate = useNavigate();
+
+  const handleStartConversation = () => {
+    navigate("/contact");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
-      {/* HERO SECTION - Enhanced Background Image */}
+      {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div
@@ -322,7 +330,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* FINAL CTA - WORKING BUTTON */}
       <section className="py-24 text-center bg-gradient-to-b from-transparent via-blue-950/30 to-transparent">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6">
@@ -332,12 +340,15 @@ const AboutPage = () => {
             Let's discuss how we can help bring your vision to life with custom
             software solutions.
           </p>
+
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-12 py-5 rounded-2xl font-semibold text-lg hover:brightness-110 transition-all"
+            onClick={handleStartConversation}
+            className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-12 py-5 rounded-2xl font-semibold text-lg hover:brightness-110 transition-all flex items-center gap-3 mx-auto"
           >
             Start a Conversation
+            <span className="text-xl">→</span>
           </motion.button>
         </div>
       </section>
