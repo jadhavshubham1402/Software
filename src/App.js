@@ -62,9 +62,9 @@ function App() {
           <Route path="/technologies/database" element={<Database />} />
           <Route path="/technologies/cloud" element={<Cloud />} />
           <Route path="/industries/healthcare" element={<Healthcare />} />
-          <Route path="/industries/finetech" element={<Fintech />} />
+          <Route path="/industries/fintech" element={<Fintech />} />
           <Route path="/industries/education" element={<Education />} />
-          <Route path="/industries/education" element={<Ecommerce />} />
+          <Route path="/industries/ecommerce" element={<Ecommerce />} />
 
           <Route path="/industries/logistics" element={<Logistics />} />
           <Route path="/portfolio" element={<Portfolio />} />
