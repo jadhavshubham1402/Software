@@ -39,7 +39,6 @@ export const navLinks = [
   {
     id: 4,
     title: "Technologies",
-    path: "/technologies",
     hasDropdown: true,
     dropdownItems: [
       {
@@ -67,7 +66,6 @@ export const navLinks = [
   {
     id: 5,
     title: "Industries",
-    path: "/industries",
     hasDropdown: true,
     dropdownItems: [
       {

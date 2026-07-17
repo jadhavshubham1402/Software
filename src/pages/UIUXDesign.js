@@ -26,8 +26,8 @@ const UIUXDesign = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/UIUX1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const UIUXDesign = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1015/600/500"
+                src="/images/UIUX2.jpg"
                 alt="UI/UX Design"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />

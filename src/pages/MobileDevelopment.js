@@ -26,8 +26,8 @@ const MobileAppDevelopment = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1060/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/mobileDevelopment1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const MobileAppDevelopment = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1060/600/500"
+                src="/images/mobileDevelopment2.jpg"
                 alt="Mobile App Development"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
