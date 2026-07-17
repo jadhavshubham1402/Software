@@ -26,8 +26,8 @@ const Education = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/education1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const Education = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1015/600/500"
+                src="/images/education2.jpg"
                 alt="Education Technology"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />

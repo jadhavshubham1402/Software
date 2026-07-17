@@ -26,8 +26,8 @@ const Healthcare = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/107/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/healthcare2.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const Healthcare = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/107/600/500"
+                src="/images/healthcare1.jpg"
                 alt="Healthcare Technology"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
