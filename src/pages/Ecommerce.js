@@ -54,7 +54,7 @@ const Ecommerce = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1060/600/500"
+                src="/images/ecommerce2.jpg"
                 alt="E-Commerce Solutions"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
@@ -135,17 +135,17 @@ const Ecommerce = () => {
               {
                 title: "Secure Payment Gateways",
                 desc: "Razorpay, Stripe, PayPal and 50+ payment options",
-                image: "https://picsum.photos/id/201/600/400",
+                image: "/images/ecommerce3.jpg",
               },
               {
                 title: "Advanced Order Management",
                 desc: "Real-time inventory, order tracking & fulfillment tools",
-                image: "https://picsum.photos/id/251/600/400",
+                image: "/images/ecommerce4.jpg",
               },
               {
                 title: "Smart Analytics Dashboard",
                 desc: "Deep customer insights and sales performance tracking",
-                image: "https://picsum.photos/id/1074/600/400",
+                image: "/images/ecommerce5.jpg",
               },
             ].map((feature, i) => (
               <motion.div
