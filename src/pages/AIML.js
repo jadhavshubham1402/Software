@@ -26,8 +26,8 @@ const AIML = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/AIML1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const AIML = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1074/600/500"
+                src="/images/AIML2.jpg"
                 alt="AI & Machine Learning"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
@@ -164,22 +164,22 @@ const AIML = () => {
             {[
               {
                 name: "Healthcare",
-                image: "https://picsum.photos/id/107/600/400",
+                image: "/images/AIML3.jpg",
                 desc: "Diagnostics & Patient Care",
               },
               {
                 name: "Retail & E-commerce",
-                image: "https://picsum.photos/id/201/600/400",
+                image: "/images/AIML4.jpg",
                 desc: "Personalization & Demand Forecasting",
               },
               {
                 name: "Finance",
-                image: "https://picsum.photos/id/251/600/400",
+                image: "/images/AIML5.jpg",
                 desc: "Fraud Detection & Risk Analysis",
               },
               {
                 name: "Manufacturing",
-                image: "https://picsum.photos/id/1077/600/400",
+                image: "/images/AIML6.jpg",
                 desc: "Predictive Maintenance & Quality Control",
               },
             ].map((industry, i) => (

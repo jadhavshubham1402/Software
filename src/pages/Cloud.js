@@ -26,8 +26,8 @@ const Cloud = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1077/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/cloud1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const Cloud = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1077/600/500"
+                src="/images/cloud1.jpg"
                 alt="Cloud Technologies"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />

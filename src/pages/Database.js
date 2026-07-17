@@ -26,8 +26,8 @@ const Database = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1077/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/database1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const Database = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1077/600/500"
+                src="/images/database2.jpg"
                 alt="Database Technologies"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
@@ -75,32 +75,32 @@ const Database = () => {
               {
                 name: "PostgreSQL",
                 desc: "Advanced relational database with powerful features and extensibility",
-                image: "https://picsum.photos/id/1015/400/300",
+                image: "/images/database3.jpg",
               },
               {
                 name: "MongoDB",
                 desc: "Flexible NoSQL document database perfect for modern applications",
-                image: "https://picsum.photos/id/106/400/300",
+                image: "/images/database4.jpg",
               },
               {
                 name: "Redis",
                 desc: "Ultra-fast in-memory data store and caching solution",
-                image: "https://picsum.photos/id/1074/400/300",
+                image: "/images/database5.jpg",
               },
               {
                 name: "MySQL",
                 desc: "Reliable and widely used open-source relational database",
-                image: "https://picsum.photos/id/201/400/300",
+                image: "/images/database6.jpg",
               },
               {
                 name: "Elasticsearch",
                 desc: "Powerful search engine and real-time analytics platform",
-                image: "https://picsum.photos/id/251/400/300",
+                image: "/images/database7.jpg",
               },
               {
                 name: "DynamoDB",
                 desc: "AWS managed NoSQL database with seamless scaling",
-                image: "https://picsum.photos/id/1077/400/300",
+                image: "/images/database8.jpg",
               },
             ].map((db, i) => (
               <motion.div
@@ -110,12 +110,12 @@ const Database = () => {
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8 }}
-                className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 transition-all"
+                className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-5 transition-all"
               >
                 <img
                   src={db.image}
                   alt={db.name}
-                  className="w-full h-40 object-cover rounded-2xl mb-6"
+                  className="w-full h-52 object-cover rounded-2xl mb-6"
                 />
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition">
                   {db.name}

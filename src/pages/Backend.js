@@ -26,8 +26,8 @@ const Backend = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1077/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/backend1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -54,7 +54,7 @@ const Backend = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="https://picsum.photos/id/1077/600/500"
+                src="/images/backend2.jpg"
                 alt="Backend Development"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
               />
@@ -166,22 +166,22 @@ const Backend = () => {
             {[
               {
                 name: "Fintech",
-                image: "https://picsum.photos/id/201/600/400",
+                image: "/images/backend3.jpg",
                 desc: "Secure Payment Gateways & Banking Systems",
               },
               {
                 name: "E-commerce",
-                image: "https://picsum.photos/id/251/600/400",
+                image: "/images/backend4.jpg",
                 desc: "High-traffic Scalable Platforms",
               },
               {
                 name: "Healthcare",
-                image: "https://picsum.photos/id/107/600/400",
+                image: "/images/backend5.jpg",
                 desc: "HIPAA Compliant Systems",
               },
               {
                 name: "SaaS Products",
-                image: "https://picsum.photos/id/1077/600/400",
+                image: "/images/backend6.jpg",
                 desc: "Multi-tenant Architecture",
               },
             ].map((item, i) => (

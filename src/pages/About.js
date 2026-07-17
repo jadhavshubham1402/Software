@@ -25,17 +25,17 @@ const expertise = [
   {
     title: "Custom Software Development",
     desc: "Tailored solutions built for your unique business needs",
-    image: "https://picsum.photos/id/1015/800/600",
+    image: "/images/about1.jpg",
   },
   {
     title: "AI & Machine Learning",
     desc: "Intelligent automation and predictive solutions",
-    image: "https://picsum.photos/id/106/800/600",
+    image: "/images/about2.jpg",
   },
   {
     title: "Mobile & Web Applications",
     desc: "Seamless digital experiences across platforms",
-    image: "https://picsum.photos/id/1074/800/600",
+    image: "/images/about3.jpg",
   },
 ];
 
@@ -76,8 +76,8 @@ const AboutPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
-            opacity: 0.35,
+            backgroundImage: "url('/images/about-bg.jpg')",
+            opacity: 0.65,
           }}
         />
 

@@ -26,8 +26,8 @@ const Ecommerce = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1060/1920/1080')",
-            opacity: 0.25,
+            backgroundImage: "url('/images/ecommerce1.jpg')",
+            opacity: 0.75,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
@@ -125,12 +125,12 @@ const Ecommerce = () => {
 
       {/* KEY FEATURES */}
       <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
             Powerful Features Built-In
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: "Secure Payment Gateways",

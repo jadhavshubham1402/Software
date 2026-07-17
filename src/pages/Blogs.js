@@ -65,9 +65,9 @@ const Blogs = () => {
       {/* Hero */}
       <section className="relative pt-32 pb-24 text-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-70"
           style={{
-            backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
+            backgroundImage: "url('/images/blogs1.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
