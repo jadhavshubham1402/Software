@@ -70,20 +70,6 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
-
-          {/*
-
-
-
-          <Route path="/industries" element={<Industries />} />
-
-          <Route path="/portfolio" element={<Portfolio />} />
-
-          <Route path="/blogs" element={<Blogs />} />
-
-          
-          {/* 404 */}
-          {/* <Route path="*" element={<NotFound />} />  */}
         </Route>
       </Routes>
     </BrowserRouter>

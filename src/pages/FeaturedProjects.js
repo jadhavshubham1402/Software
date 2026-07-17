@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     description:
       "A cloud-based hospital management platform with patient records, appointments, billing, and telemedicine.",
     technologies: ["React", "Node.js", "MongoDB"],
+    path: "/portfolio/hospital-management-system", // Individual project page
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const projects = [
     description:
       "A secure banking application with payment gateway, KYC, loan management, and analytics dashboard.",
     technologies: ["Next.js", "NestJS", "PostgreSQL"],
+    path: "/portfolio/digital-banking-platform",
   },
   {
     id: 3,
@@ -27,15 +30,21 @@ const projects = [
     description:
       "A scalable marketplace with vendor management, inventory, payments, and order tracking.",
     technologies: ["React", "Express", "MongoDB"],
+    path: "/portfolio/multi-vendor-marketplace",
   },
 ];
 
 const FeaturedProjects = () => {
+  const navigate = useNavigate();
+
+  const handleViewCaseStudy = (path) => {
+    navigate(path);
+  };
+
   return (
-    <section className="py-24 bg-slate-50">
+    <section id="featured-projects" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-
         <div className="text-center mb-16">
           <span className="text-blue-600 uppercase tracking-widest font-semibold">
             Case Studies
@@ -52,7 +61,6 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Cards */}
-
         <div className="grid lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
@@ -60,17 +68,15 @@ const FeaturedProjects = () => {
               className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group"
             >
               {/* Image */}
-
               <div className="overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-contain group-hover:scale-110 transition duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
 
               {/* Content */}
-
               <div className="p-8">
                 <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-2 rounded-full">
                   {project.category}
@@ -83,7 +89,6 @@ const FeaturedProjects = () => {
                 </p>
 
                 {/* Tech Stack */}
-
                 <div className="flex flex-wrap gap-2 mt-6">
                   {project.technologies.map((tech) => (
                     <span
@@ -95,15 +100,28 @@ const FeaturedProjects = () => {
                   ))}
                 </div>
 
-                {/* Button */}
-
-                <button className="mt-8 flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all">
+                {/* Functional Button */}
+                <button
+                  onClick={() => handleViewCaseStudy(project.path)}
+                  className="mt-8 flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all duration-300 group-hover:text-blue-700"
+                >
                   View Case Study
-                  <FaArrowRight />
+                  <FaArrowRight className="transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View All Projects Button */}
+        <div className="text-center mt-12">
+          <button
+            onClick={() => navigate("/portfolio")}
+            className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300"
+          >
+            View All Projects
+            <FaArrowRight />
+          </button>
         </div>
       </div>
     </section>

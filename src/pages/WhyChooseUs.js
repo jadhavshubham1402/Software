@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { FaLaptopCode, FaUsers, FaRocket, FaShieldAlt } from "react-icons/fa";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -35,8 +36,13 @@ const features = [
 ];
 
 const WhyChooseUs = () => {
+  const navigate = useNavigate();
   const statsRef = useRef(null);
   const isInView = useInView(statsRef, { once: true });
+
+  const handleStartProject = () => {
+    navigate("/contact");
+  };
 
   return (
     <section className="relative py-28 bg-[#0A0A0F] text-white overflow-hidden">
@@ -160,11 +166,12 @@ const WhyChooseUs = () => {
               ))}
             </div>
 
-            {/* CTA */}
+            {/* CTA Button - Now Functional */}
             <motion.button
+              onClick={handleStartProject}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="mt-16 group bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 px-10 py-5 rounded-2xl font-semibold text-lg flex items-center gap-3 shadow-2xl shadow-blue-500/30 transition-all"
+              className="mt-16 group bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 px-10 py-5 rounded-2xl font-semibold text-lg flex items-center gap-3 shadow-2xl shadow-blue-500/30 transition-all active:scale-95"
             >
               Start Your Project
               <span className="group-hover:translate-x-1 transition">→</span>
@@ -193,7 +200,7 @@ const WhyChooseUs = () => {
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 
-                           p-9 rounded-3xl transition-all duration-500 flex flex-col h-full backdrop-blur-sm"
+                           p-9 rounded-3xl transition-all duration-500 flex flex-col h-full backdrop-blur-sm cursor-default"
               >
                 <div className="mb-8">
                   <div className="inline-flex w-20 h-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 group-hover:scale-110 transition-transform">

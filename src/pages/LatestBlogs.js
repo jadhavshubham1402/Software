@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 
 const blogs = [
@@ -10,6 +10,7 @@ const blogs = [
     title: "How AI is Transforming Modern Businesses",
     description:
       "Discover how artificial intelligence is helping companies automate processes, improve customer experiences, and drive innovation.",
+    slug: "how-ai-is-transforming-modern-businesses",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const blogs = [
     title: "Top Web Development Trends in 2026",
     description:
       "Explore the latest technologies, frameworks, and best practices shaping the future of web development.",
+    slug: "top-web-development-trends-2026",
   },
   {
     id: 3,
@@ -28,44 +30,51 @@ const blogs = [
     title: "Why Businesses Are Moving to the Cloud",
     description:
       "Learn how cloud infrastructure improves scalability, security, performance, and operational efficiency.",
+    slug: "why-businesses-are-moving-to-the-cloud",
   },
 ];
 
 const LatestBlogs = () => {
+  const navigate = useNavigate();
+
+  const handleReadMore = (slug) => {
+    navigate(`/blogs/${slug}`);
+  };
+
+  const handleViewAll = () => {
+    navigate("/blogs");
+  };
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-
         <div className="flex flex-col lg:flex-row justify-between items-center mb-16">
           <div>
             <span className="uppercase tracking-widest text-blue-600 font-semibold">
               Latest Insights
             </span>
-
             <h2 className="text-4xl lg:text-5xl font-bold mt-4">
               Latest Articles & Blogs
             </h2>
           </div>
 
-          <Link
-            to="/blogs"
-            className="mt-6 lg:mt-0 border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition"
+          <button
+            onClick={handleViewAll}
+            className="mt-6 lg:mt-0 border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition font-medium"
           >
             View All Blogs
-          </Link>
+          </button>
         </div>
 
         {/* Blog Cards */}
-
         <div className="grid lg:grid-cols-3 gap-8">
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="group bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300"
+              className="group bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               {/* Image */}
-
               <div className="overflow-hidden">
                 <img
                   src={blog.image}
@@ -75,7 +84,6 @@ const LatestBlogs = () => {
               </div>
 
               {/* Content */}
-
               <div className="p-8">
                 <div className="flex justify-between items-center text-sm mb-4">
                   <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">
@@ -84,7 +92,6 @@ const LatestBlogs = () => {
 
                   <span className="flex items-center gap-2 text-gray-500">
                     <FaCalendarAlt />
-
                     {blog.date}
                   </span>
                 </div>
@@ -97,13 +104,14 @@ const LatestBlogs = () => {
                   {blog.description}
                 </p>
 
-                <Link
-                  to={`/blogs/${blog.id}`}
-                  className="flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all"
+                {/* Functional Read More Button */}
+                <button
+                  onClick={() => handleReadMore(blog.slug)}
+                  className="flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all group-hover:text-blue-700"
                 >
                   Read More
-                  <FaArrowRight />
-                </Link>
+                  <FaArrowRight className="transition-transform group-hover:translate-x-1" />
+                </button>
               </div>
             </div>
           ))}

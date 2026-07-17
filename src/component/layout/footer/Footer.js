@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -11,15 +11,29 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  // Social Media Links
+  const socialLinks = {
+    facebook: "https://facebook.com/yourcompany",
+    linkedin: "https://linkedin.com/company/yourcompany",
+    instagram: "https://instagram.com/yourcompany",
+    youtube: "https://youtube.com/@yourcompany",
+  };
+
+  const handleServiceClick = (servicePath) => {
+    navigate(servicePath);
+  };
+
   return (
     <footer className="bg-[#0A0A0F] text-white/80 border-t border-white/10">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-          {/* Company */}
+          {/* Company Info */}
           <div className="lg:col-span-2">
             <img
-              src="/images/logo-white.png"
+              src="/images/logo.png"
               alt="Company Logo"
               className="h-12 mb-6 brightness-110"
             />
@@ -32,28 +46,36 @@ const Footer = () => {
 
             <div className="flex gap-4 mt-10">
               <a
-                href="#"
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-black hover:border-cyan-400 transition-all duration-300"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="#"
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-black hover:border-cyan-400 transition-all duration-300"
               >
                 <FaLinkedinIn />
               </a>
 
               <a
-                href="#"
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-black hover:border-cyan-400 transition-all duration-300"
               >
                 <FaInstagram />
               </a>
 
               <a
-                href="#"
+                href={socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500 hover:text-black hover:border-cyan-400 transition-all duration-300"
               >
                 <FaYoutube />
@@ -77,7 +99,6 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/about"
@@ -87,17 +108,6 @@ const Footer = () => {
                   About
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  to="/services"
-                  className="hover:text-cyan-400 flex items-center gap-2 transition-colors group"
-                >
-                  <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
-                  Services
-                </Link>
-              </li>
-
               <li>
                 <Link
                   to="/portfolio"
@@ -107,7 +117,6 @@ const Footer = () => {
                   Portfolio
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/blogs"
@@ -117,7 +126,6 @@ const Footer = () => {
                   Blogs
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/contact"
@@ -130,35 +138,49 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services - Now Clickable */}
           <div>
             <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
               Services
             </h3>
 
             <ul className="space-y-4 text-white/70">
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
+              <li
+                onClick={() => handleServiceClick("/services/web-development")}
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
+              >
                 Web Development
               </li>
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
+              <li
+                onClick={() =>
+                  handleServiceClick("/services/mobile-development")
+                }
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
+              >
                 Mobile App Development
               </li>
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
+              <li
+                onClick={() => handleServiceClick("/services/ui-ux-design")}
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
+              >
                 UI / UX Design
               </li>
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
+              <li
+                onClick={() => handleServiceClick("/services/cloud-solutions")}
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
+              >
                 Cloud Solutions
               </li>
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
+              <li
+                onClick={() => handleServiceClick("/services/ai-ml")}
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
+              >
                 AI & Machine Learning
-              </li>
-              <li className="hover:text-cyan-400 transition-colors cursor-pointer">
-                Digital Transformation
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Info */}
           <div>
             <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
               Contact
@@ -222,14 +244,12 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
-
             <Link
               to="/terms-conditions"
               className="hover:text-cyan-400 transition-colors"
             >
               Terms & Conditions
             </Link>
-
             <Link
               to="/cookie-policy"
               className="hover:text-cyan-400 transition-colors"

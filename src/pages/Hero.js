@@ -1,12 +1,35 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaArrowRight, FaPlayCircle, FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const [isGetStartedLoading, setIsGetStartedLoading] = useState(false);
+
+  const handleGetStarted = () => {
+    setIsGetStartedLoading(true);
+    setTimeout(() => {
+      navigate("/contact");
+      setIsGetStartedLoading(false);
+    }, 300);
+  };
+
+  const handleViewPortfolio = () => {
+    const featuredSection = document.getElementById("featured-projects");
+    if (featuredSection) {
+      featuredSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else {
+      navigate("/portfolio");
+    }
+  };
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white pb-24">
       {/* Animated Grid */}
-
       <div
         className="absolute inset-0 opacity-[0.08]"
         style={{
@@ -17,13 +40,10 @@ const Hero = () => {
       />
 
       {/* Blur Background */}
-
       <div className="absolute -top-32 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
-
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-cyan-500/20 blur-[150px] rounded-full"></div>
 
       {/* Floating Particles */}
-
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(18)].map((_, index) => (
           <motion.div
@@ -48,20 +68,17 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center min-h-screen pt-28">
           {/* LEFT CONTENT */}
-
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
             {/* Badge */}
-
             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-500/20 border border-blue-500/30 text-sm mb-8">
               🚀 Trusted Software Development Company
             </div>
 
             {/* Heading */}
-
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
               Build
               <span className="text-blue-400"> Future Ready </span>
@@ -71,7 +88,6 @@ const Hero = () => {
             </h1>
 
             {/* Description */}
-
             <p className="mt-8 text-lg text-gray-300 leading-8 max-w-xl">
               We build modern web applications, mobile apps, AI solutions and
               enterprise software that help startups and businesses innovate
@@ -79,27 +95,28 @@ const Hero = () => {
             </p>
 
             {/* Buttons */}
-
             <div className="flex flex-wrap gap-5 mt-10">
-              <Link
-                to="/contact"
-                className="group bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full flex items-center gap-3 font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
+              <button
+                onClick={handleGetStarted}
+                disabled={isGetStartedLoading}
+                className="group bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full flex items-center gap-3 font-semibold transition-all duration-300 hover:scale-105 shadow-xl disabled:opacity-75 disabled:cursor-not-allowed"
+                aria-label="Get started with our services"
               >
-                Get Started
+                {isGetStartedLoading ? "Redirecting..." : "Get Started"}
                 <FaArrowRight className="group-hover:translate-x-1 transition" />
-              </Link>
+              </button>
 
-              <Link
-                to="/portfolio"
+              <button
+                onClick={handleViewPortfolio}
                 className="group border border-white/20 hover:bg-white/10 px-8 py-4 rounded-full flex items-center gap-3 transition-all duration-300 hover:scale-105"
+                aria-label="View our portfolio"
               >
                 <FaPlayCircle />
                 View Portfolio
-              </Link>
+              </button>
             </div>
 
             {/* Features */}
-
             <div className="grid grid-cols-2 gap-5 mt-12">
               {[
                 "Enterprise Solutions",
@@ -112,14 +129,12 @@ const Hero = () => {
                   className="flex items-center gap-3 text-gray-300"
                 >
                   <FaCheckCircle className="text-green-400 text-lg" />
-
                   {item}
                 </div>
               ))}
             </div>
 
             {/* Stats */}
-
             <div className="flex flex-wrap gap-12 mt-16">
               {[
                 {
@@ -135,23 +150,17 @@ const Hero = () => {
                   title: "Years",
                 },
               ].map((item) => (
-                <motion.div
-                  whileHover={{
-                    scale: 1.08,
-                  }}
-                  key={item.title}
-                >
+                <motion.div whileHover={{ scale: 1.08 }} key={item.title}>
                   <h2 className="text-4xl font-bold text-blue-400">
                     {item.number}
                   </h2>
-
                   <p className="text-gray-400 mt-2">{item.title}</p>
                 </motion.div>
               ))}
             </div>
           </motion.div>
-          {/* RIGHT CONTENT */}
 
+          {/* RIGHT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             animate={{ opacity: 1, x: 0 }}
@@ -159,11 +168,9 @@ const Hero = () => {
             className="relative flex items-center justify-center min-h-[650px]"
           >
             {/* Background Glow */}
-
             <div className="absolute w-[480px] h-[480px] rounded-full bg-blue-600/20 blur-[120px]"></div>
 
-            {/* Decorative Ring */}
-
+            {/* Decorative Rings */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{
@@ -185,7 +192,6 @@ const Hero = () => {
             />
 
             {/* Hero Illustration */}
-
             <motion.img
               src="/images/hero-illustration.png"
               alt="Software Development"
@@ -201,7 +207,6 @@ const Hero = () => {
             />
 
             {/* Dashboard Card */}
-
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{
@@ -217,46 +222,37 @@ const Hero = () => {
               />
             </motion.div>
 
-            {/* AI Card */}
-
+            {/* AI Card - Clickable */}
             <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-              }}
-              className="absolute top-12 left-0 z-30 rounded-3xl border border-white/20 bg-white/90 backdrop-blur-xl px-6 py-5 shadow-2xl"
+              whileHover={{ scale: 1.05 }}
+              onClick={() => navigate("/services/ai-ml")}
+              className="absolute top-12 left-0 z-30 rounded-3xl border border-white/20 bg-white/90 backdrop-blur-xl px-6 py-5 shadow-2xl cursor-pointer hover:border-blue-400 transition-all"
             >
               <p className="text-xs uppercase tracking-widest text-gray-500">
                 AI Powered
               </p>
-
               <h3 className="mt-1 text-xl font-bold text-gray-800">
                 Smart Automation
               </h3>
-
               <p className="mt-1 text-sm text-gray-500">
                 Faster • Smarter • Secure
               </p>
             </motion.div>
 
             {/* Happy Clients */}
-
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{
                 duration: 5,
                 repeat: Infinity,
               }}
-              className="absolute bottom-40 -left-5 z-30 rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-5 text-white shadow-2xl"
+              className="absolute bottom-40 -left-5 z-30 rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-5 text-white shadow-2xl cursor-pointer hover:brightness-110"
             >
               <h2 className="text-3xl font-bold">150+</h2>
-
               <p className="mt-1 text-sm">Happy Clients</p>
             </motion.div>
 
             {/* Active Projects */}
-
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{
@@ -267,21 +263,17 @@ const Hero = () => {
             >
               <div className="mb-2 flex items-center gap-2">
                 <span className="h-3 w-3 rounded-full bg-green-500 animate-pulse"></span>
-
                 <span className="text-xs uppercase tracking-wide text-gray-400">
                   Live Status
                 </span>
               </div>
-
               <h3 className="text-2xl font-bold text-white">25+</h3>
-
               <p className="text-sm text-gray-400">
                 Active Development Projects
               </p>
             </motion.div>
 
             {/* Experience */}
-
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{
@@ -291,7 +283,6 @@ const Hero = () => {
               className="absolute bottom-4 left-20 z-30 rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl px-6 py-4 shadow-2xl"
             >
               <h2 className="text-3xl font-bold text-blue-400">15+</h2>
-
               <p className="text-sm text-gray-300">Years Experience</p>
             </motion.div>
           </motion.div>
