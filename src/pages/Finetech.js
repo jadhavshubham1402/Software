@@ -8,6 +8,9 @@ import {
   FaMobileAlt,
   FaLink,
   FaUsers,
+  FaTachometerAlt,
+  FaLightbulb,
+  FaArrowRight,
 } from "react-icons/fa";
 
 const Fintech = () => {
@@ -21,34 +24,33 @@ const Fintech = () => {
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative pt-32 pb-28 overflow-hidden">
-        {/* Background Image */}
+      <section className="relative pt-32 pb-32 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('/images/fintech1.jpg')",
-            opacity: 0.75,
+            opacity: 0.65,
           }}
         />
-        <div className="absolute inset-0 bg-[#0A1428]/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-cyan-400/30 text-cyan-400 text-sm mb-6">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
                 <FaMoneyBillWave /> Fintech Solutions
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-tight mb-8">
-                Fintech Solutions
-                <br />
-                <span className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent">
-                  That Redefine Finance
+              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+                Fintech Solutions That{" "}
+                <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
+                  Redefine Finance
                 </span>
               </h1>
-              <p className="text-2xl text-white/80 max-w-xl">
+
+              <p className="text-2xl text-white/80 max-w-xl mb-10">
                 Secure, compliant, and innovative financial technology solutions
-                for the modern digital economy.
+                built for the digital economy.
               </p>
             </div>
 
@@ -56,50 +58,76 @@ const Fintech = () => {
               <img
                 src="/images/fintech2.jpg"
                 alt="Fintech Solutions"
-                className="rounded-3xl shadow-2xl max-w-lg border border-white/10"
+                className="rounded-3xl shadow-2xl max-w-lg border border-white/10 w-full"
               />
             </div>
           </div>
         </div>
       </section>
 
+      {/* STATS BAR */}
+      <div className="border-b border-white/10 bg-black/40">
+        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { number: "70+", label: "Fintech Projects" },
+            { number: "99.99%", label: "Transaction Uptime" },
+            { number: "4.9/5", label: "Average Rating" },
+            { number: "PCI DSS", label: "Certified" },
+          ].map((stat, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="border-r border-white/10 last:border-0"
+            >
+              <p className="text-4xl font-bold text-cyan-400">{stat.number}</p>
+              <p className="text-white/70 mt-1">{stat.label}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
       {/* OUR FINTECH SOLUTIONS */}
-      <section className="py-24 border-b border-white/10">
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Our Fintech Solutions
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Our Fintech Solutions</h2>
+            <p className="text-xl text-white/70">
+              Innovative technology for the future of finance
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Digital Banking Platforms",
-                desc: "Modern neobanking experiences with real-time transactions and account management",
+                desc: "Modern neobanking experiences with real-time transactions and advanced account management.",
                 icon: <FaMoneyBillWave className="text-5xl" />,
               },
               {
                 title: "Payment Gateways",
-                desc: "Secure, fast, multi-currency payment processing with excellent conversion rates",
+                desc: "Secure, lightning-fast, multi-currency payment processing with high conversion rates.",
                 icon: <FaMobileAlt className="text-5xl" />,
               },
               {
                 title: "Lending & Credit Systems",
-                desc: "AI-powered loan origination, risk assessment, and automated underwriting",
+                desc: "AI-powered loan origination, risk assessment, and automated underwriting.",
                 icon: <FaChartLine className="text-5xl" />,
               },
               {
                 title: "Investment & Trading Apps",
-                desc: "Robo-advisors, portfolio management, and real-time trading platforms",
+                desc: "Robo-advisors, portfolio management, and real-time trading platforms.",
                 icon: <FaUsers className="text-5xl" />,
               },
               {
                 title: "Blockchain & Crypto Solutions",
-                desc: "Secure wallets, decentralized finance (DeFi), and tokenization platforms",
+                desc: "Secure wallets, DeFi platforms, and digital asset tokenization.",
                 icon: <FaLink className="text-5xl" />,
               },
               {
                 title: "RegTech & Compliance",
-                desc: "Automated KYC, AML, regulatory reporting, and compliance management",
+                desc: "Automated KYC, AML, regulatory reporting, and compliance tools.",
                 icon: <FaShieldAlt className="text-5xl" />,
               },
             ].map((solution, i) => (
@@ -107,79 +135,84 @@ const Fintech = () => {
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-300"
+                whileHover={{ y: -10 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6">{solution.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition">
+                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                  {solution.icon}
+                </div>
+                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70">{solution.desc}</p>
+                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* KEY BENEFITS */}
+      {/* WHY CHOOSE US */}
       <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-16">
-            Why Fintech Companies Choose Us
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Why Fintech Companies Trust Us
           </h2>
+
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                title: "PCI DSS & Regulatory Compliance",
-                desc: "Bank-grade security standards and full regulatory compliance",
+                icon: <FaShieldAlt className="text-5xl" />,
+                title: "Bank-Grade Security",
+                desc: "PCI DSS compliant infrastructure with advanced fraud prevention and data protection.",
               },
               {
-                title: "Real-time Processing",
-                desc: "High-speed transaction handling with excellent uptime",
+                icon: <FaTachometerAlt className="text-5xl" />,
+                title: "High Performance",
+                desc: "Real-time transaction processing with exceptional speed and reliability.",
               },
               {
-                title: "Advanced Fraud Prevention",
-                desc: "AI-powered fraud detection and risk management systems",
+                icon: <FaLightbulb className="text-5xl" />,
+                title: "Regulatory Expertise",
+                desc: "Deep knowledge of financial regulations and compliance requirements worldwide.",
               },
-            ].map((benefit, i) => (
+            ].map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10 text-center hover:border-cyan-400/50 transition"
+                className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-cyan-400/10 flex items-center justify-center text-4xl">
-                  {i === 0 ? "🔒" : i === 1 ? "⚡" : "🛡️"}
+                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
+                  {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{benefit.title}</h3>
-                <p className="text-white/70">{benefit.desc}</p>
+                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA - WORKING BUTTON */}
-      <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
-            Ready to Innovate in Finance?
-          </h2>
-          <p className="text-xl text-white/90 mb-10">
-            Let’s build the next generation of financial technology together.
+      {/* FINAL CTA */}
+      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-5xl font-bold mb-6">Ready to Disrupt Finance?</h2>
+          <p className="text-2xl text-white/90 mb-12">
+            Let’s build secure, innovative, and user-centric fintech solutions
+            that stand out in the market.
           </p>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-xl hover:bg-white/90 transition flex items-center gap-3 mx-auto"
+            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Fintech Project
-            <span className="text-2xl">→</span>
+            <FaArrowRight />
           </motion.button>
         </div>
       </section>

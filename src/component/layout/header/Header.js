@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
@@ -25,6 +25,12 @@ const Header = () => {
       location.pathname === item.path ||
       (item.hasDropdown && location.pathname.startsWith(item.path + "/"))
     );
+  };
+
+  // Close dropdown when clicking a sub-item
+  const handleSubItemClick = () => {
+    setMobileMenu(false);
+    setOpenDropdown(null);
   };
 
   return (
@@ -64,7 +70,6 @@ const Header = () => {
                     <FaChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180" />
                   )}
 
-                  {/* Active underline */}
                   {isParentActive(item) && (
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded" />
                   )}
@@ -137,7 +142,10 @@ const Header = () => {
                 <div className="flex justify-between items-center py-4">
                   <NavLink
                     to={item.path}
-                    onClick={() => setMobileMenu(false)}
+                    onClick={() => {
+                      setMobileMenu(false);
+                      setOpenDropdown(null);
+                    }}
                     className={`text-xl font-medium transition ${isParentActive(item) ? "text-blue-600" : "text-gray-800"}`}
                   >
                     {item.title}
@@ -150,7 +158,7 @@ const Header = () => {
                           openDropdown === item.id ? null : item.id,
                         )
                       }
-                      className="text-gray-500"
+                      className="text-gray-500 p-1"
                     >
                       <FaChevronDown
                         className={`transition-transform ${openDropdown === item.id ? "rotate-180" : ""}`}
@@ -159,15 +167,16 @@ const Header = () => {
                   )}
                 </div>
 
+                {/* Dropdown Items */}
                 {item.hasDropdown && openDropdown === item.id && (
                   <div className="pl-6 pb-4 space-y-3">
                     {item.dropdownItems.map((sub, index) => (
                       <NavLink
                         key={index}
                         to={sub.path}
-                        onClick={() => setMobileMenu(false)}
+                        onClick={handleSubItemClick}
                         className={({ isActive }) =>
-                          `block py-2 text-[17px] ${isActive ? "text-blue-600 font-medium" : "text-gray-600"}`
+                          `block py-2 text-[17px] transition ${isActive ? "text-blue-600 font-medium" : "text-gray-600"}`
                         }
                       >
                         {sub.title}
