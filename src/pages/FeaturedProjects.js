@@ -1,5 +1,6 @@
-import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const projects = [
   {
@@ -8,9 +9,9 @@ const projects = [
     category: "Healthcare",
     title: "Hospital Management System",
     description:
-      "A cloud-based hospital management platform with patient records, appointments, billing, and telemedicine.",
+      "Comprehensive cloud-based platform with patient records, appointments, billing, and telemedicine.",
     technologies: ["React", "Node.js", "MongoDB"],
-    path: "/portfolio/hospital-management-system", // Individual project page
+    path: "/portfolio/hospital-management-system",
   },
   {
     id: 2,
@@ -18,7 +19,7 @@ const projects = [
     category: "FinTech",
     title: "Digital Banking Platform",
     description:
-      "A secure banking application with payment gateway, KYC, loan management, and analytics dashboard.",
+      "Secure neobanking solution with payments, KYC, loan management, and real-time analytics.",
     technologies: ["Next.js", "NestJS", "PostgreSQL"],
     path: "/portfolio/digital-banking-platform",
   },
@@ -28,7 +29,7 @@ const projects = [
     category: "E-Commerce",
     title: "Multi-Vendor Marketplace",
     description:
-      "A scalable marketplace with vendor management, inventory, payments, and order tracking.",
+      "Scalable marketplace with vendor dashboard, inventory, payments, and order tracking.",
     technologies: ["React", "Express", "MongoDB"],
     path: "/portfolio/multi-vendor-marketplace",
   },
@@ -42,82 +43,87 @@ const FeaturedProjects = () => {
   };
 
   return (
-    <section id="featured-projects" className="py-24 bg-slate-50">
+    <section id="featured-projects" className="py-28 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <span className="text-blue-600 uppercase tracking-widest font-semibold">
-            Case Studies
+        {/* Header */}
+        <div className="text-center mb-20">
+          <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
+            RECENT WORK
           </span>
-
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+          <h2 className="text-5xl font-bold text-gray-900 mt-4">
             Featured Projects
           </h2>
-
-          <p className="max-w-3xl mx-auto mt-6 text-gray-600 leading-8">
-            Explore some of the innovative software solutions we've delivered
-            for businesses across multiple industries.
+          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+            Real results from real clients. Explore some of the impactful
+            digital solutions we've delivered.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <motion.div
               key={project.id}
-              className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -12 }}
+              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200"
             >
-              {/* Image */}
+              {/* Project Image */}
               <div className="overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Content */}
               <div className="p-8">
-                <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-medium rounded-full">
                   {project.category}
                 </span>
 
-                <h3 className="text-2xl font-bold mt-6">{project.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mt-5 mb-3">
+                  {project.title}
+                </h3>
 
-                <p className="text-gray-600 mt-4 leading-7">
+                <p className="text-gray-600 leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
 
-                {/* Tech Stack */}
+                {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mt-6">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full"
+                      className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Functional Button */}
+                {/* CTA Button */}
                 <button
                   onClick={() => handleViewCaseStudy(project.path)}
-                  className="mt-8 flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all duration-300 group-hover:text-blue-700"
+                  className="mt-8 flex items-center gap-3 text-blue-600 font-semibold hover:gap-4 transition-all duration-300 group-hover:text-blue-700"
                 >
                   View Case Study
                   <FaArrowRight className="transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* View All Projects Button */}
-        <div className="text-center mt-12">
+        {/* View All Button */}
+        <div className="text-center mt-16">
           <button
             onClick={() => navigate("/portfolio")}
-            className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white px-10 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105"
           >
             View All Projects
             <FaArrowRight />

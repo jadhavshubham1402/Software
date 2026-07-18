@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   FaHeartbeat,
   FaUniversity,
@@ -15,100 +16,104 @@ const industries = [
     icon: <FaHeartbeat />,
     title: "Healthcare",
     description:
-      "HIPAA-ready healthcare software, telemedicine, EMR, and patient management systems.",
+      "HIPAA-compliant solutions, telemedicine, EMR/EHR, and patient management systems.",
   },
   {
     id: 2,
     icon: <FaUniversity />,
     title: "Banking & Finance",
     description:
-      "Secure fintech solutions, payment gateways, digital banking, and investment platforms.",
+      "Fintech platforms, digital banking, payment gateways, and investment solutions.",
   },
   {
     id: 3,
     icon: <FaShoppingCart />,
     title: "E-Commerce",
     description:
-      "Scalable eCommerce platforms, B2B/B2C marketplaces, and omnichannel commerce.",
+      "High-converting online stores, multi-vendor marketplaces, and B2B portals.",
   },
   {
     id: 4,
     icon: <FaGraduationCap />,
     title: "Education",
     description:
-      "LMS platforms, eLearning applications, virtual classrooms, and student portals.",
+      "LMS platforms, eLearning apps, virtual classrooms, and student management systems.",
   },
   {
     id: 5,
     icon: <FaPlaneDeparture />,
     title: "Travel & Hospitality",
     description:
-      "Booking systems, travel portals, hotel management, and tourism applications.",
+      "Booking engines, hotel management systems, and tourism platforms.",
   },
   {
     id: 6,
     icon: <FaBuilding />,
     title: "Real Estate",
     description:
-      "Property listing platforms, CRM solutions, and real estate management software.",
+      "Property portals, CRM systems, and real estate management software.",
   },
   {
     id: 7,
     icon: <FaTruck />,
-    title: "Logistics",
+    title: "Logistics & Supply Chain",
     description:
-      "Fleet management, warehouse automation, shipment tracking, and supply chain solutions.",
+      "Fleet management, warehouse automation, and real-time tracking solutions.",
   },
   {
     id: 8,
     icon: <FaIndustry />,
     title: "Manufacturing",
     description:
-      "ERP systems, inventory management, production monitoring, and automation software.",
+      "ERP systems, inventory management, production monitoring, and Industry 4.0 solutions.",
   },
 ];
 
 const Industries = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <span className="text-blue-600 uppercase tracking-widest font-semibold">
-            Industries
+        {/* Header */}
+        <div className="text-center mb-20">
+          <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
+            SERVING EXCELLENCE ACROSS
           </span>
-
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4 text-gray-900">
-            Industries We Empower
+          <h2 className="text-5xl font-bold text-gray-900 mt-4">
+            Industries We Transform
           </h2>
-
-          <p className="max-w-3xl mx-auto mt-6 text-gray-600 leading-8">
-            We build tailored digital solutions for businesses across diverse
-            industries, helping them innovate, automate, and scale with
-            confidence.
+          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+            From healthcare to logistics, we deliver industry-specific digital
+            solutions that drive efficiency, innovation, and growth.
           </p>
         </div>
 
-        {/* Cards */}
-
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {industries.map((industry) => (
-            <div
+        {/* Industries Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {industries.map((industry, index) => (
+            <motion.div
               key={industry.id}
-              className="group bg-slate-50 border border-gray-200 rounded-2xl p-8 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+              whileHover={{ y: -10 }}
+              className="group bg-white border border-gray-100 hover:border-blue-200 rounded-3xl p-10 transition-all duration-500 hover:shadow-xl flex flex-col h-full"
             >
-              <div className="w-16 h-16 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl group-hover:bg-white group-hover:text-blue-600 transition">
+              {/* Icon */}
+              <div className="w-20 h-20 rounded-2xl bg-blue-50 flex items-center justify-center text-5xl text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 {industry.icon}
               </div>
 
-              <h3 className="text-2xl font-semibold mt-6 group-hover:text-white">
+              {/* Title */}
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
                 {industry.title}
               </h3>
 
-              <p className="text-gray-600 mt-4 leading-7 group-hover:text-blue-100">
+              {/* Description */}
+              <p className="text-gray-600 leading-relaxed flex-1">
                 {industry.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

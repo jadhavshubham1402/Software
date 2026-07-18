@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   FaSearch,
   FaLightbulb,
@@ -6,160 +7,108 @@ import {
   FaVial,
   FaRocket,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const process = [
   {
     id: "01",
     icon: <FaSearch />,
-    title: "Discovery",
+    title: "Discovery & Research",
     description:
-      "Understanding your business goals, challenges, and project requirements.",
+      "Deep dive into your business goals, user needs, and technical requirements.",
   },
   {
     id: "02",
     icon: <FaLightbulb />,
-    title: "Planning",
+    title: "Strategy & Planning",
     description:
-      "Creating a detailed roadmap, timeline, technology stack, and execution strategy.",
+      "Creating a comprehensive roadmap, architecture, and project execution plan.",
   },
   {
     id: "03",
     icon: <FaPencilRuler />,
     title: "UI/UX Design",
-    description:
-      "Designing modern, user-friendly interfaces focused on exceptional user experience.",
+    description: "Crafting intuitive, beautiful, and user-centered interfaces.",
   },
   {
     id: "04",
     icon: <FaCode />,
     title: "Development",
     description:
-      "Building secure, scalable, and high-performance software using modern technologies.",
+      "Building robust, scalable, and high-performance applications.",
   },
   {
     id: "05",
     icon: <FaVial />,
-    title: "Testing",
+    title: "Testing & QA",
     description:
-      "Performing quality assurance, security testing, and performance optimization.",
+      "Rigorous testing, security audits, and performance optimization.",
   },
   {
     id: "06",
     icon: <FaRocket />,
-    title: "Deployment",
+    title: "Deployment & Support",
     description:
-      "Launching your product smoothly with continuous monitoring and long-term support.",
+      "Smooth launch with continuous monitoring and long-term maintenance.",
   },
 ];
 
 const DevelopmentProcess = () => {
   return (
-    <section
-      className="relative py-24 overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('/images/development-process.png')",
-      }}
-    >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-slate-950/90"></div>
+    <section className="relative py-28 overflow-hidden bg-cover bg-center bg-no-repeat">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/development-process.png')" }}
+      />
 
-      {/* Blue Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/80 to-blue-950/80"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/95 to-slate-950" />
 
-      {/* Decorative Blurs */}
-      <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-600/30 rounded-full blur-[120px]"></div>
-
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-[150px]"></div>
-
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-
-        {/* Heading */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-center mb-20"
-        >
-          <span className="uppercase tracking-[4px] text-blue-400 font-semibold">
-            Development Process
+        {/* Header */}
+        <div className="text-center mb-20">
+          <span className="uppercase tracking-[4px] text-blue-400 font-semibold text-sm">
+            OUR PROCESS
           </span>
-
-          <h2 className="text-5xl font-bold text-white mt-5">
-            How We Transform Ideas Into Products
+          <h2 className="text-5xl font-bold text-white mt-5 leading-tight">
+            From Idea to Launch —<br />
+            <span className="text-blue-400">6 Proven Steps</span>
           </h2>
-
-          <p className="text-gray-300 max-w-3xl mx-auto mt-6 leading-8">
-            Our agile development methodology ensures faster delivery,
-            complete transparency, and high-quality software from idea
-            validation to deployment.
+          <p className="text-gray-300 max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
+            Our structured yet flexible development process ensures
+            transparency, quality, and faster time-to-market for every project.
           </p>
-        </motion.div>
+        </div>
 
-        {/* Cards */}
-
+        {/* Process Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {process.map((item, index) => (
-
+          {process.map((step, index) => (
             <motion.div
-              key={item.id}
+              key={step.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.08,
-              }}
-              whileHover={{
-                y: -10,
-                scale: 1.02,
-              }}
-              className="
-                relative
-                bg-white/10
-                backdrop-blur-xl
-                border
-                border-white/10
-                rounded-3xl
-                p-8
-                transition-all
-                duration-300
-                hover:border-blue-400
-                hover:bg-white/15
-              "
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -12 }}
+              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-3xl p-10 transition-all duration-500 hover:bg-white/15 flex flex-col h-full"
             >
-
-              {/* Number */}
-
-              <span className="absolute top-6 right-6 text-6xl font-bold text-white/10">
-                {item.id}
-              </span>
-
               {/* Icon */}
-
-              <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl text-white mb-8 shadow-lg">
-                {item.icon}
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-4xl mb-8 group-hover:scale-110 transition-transform">
+                {step.icon}
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-5">
-                {item.title}
+              {/* Title */}
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {step.title}
               </h3>
 
-              <p className="text-gray-300 leading-8">
-                {item.description}
+              {/* Description */}
+              <p className="text-gray-300 leading-relaxed flex-1">
+                {step.description}
               </p>
-
             </motion.div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );

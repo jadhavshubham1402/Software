@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 
@@ -46,72 +47,77 @@ const LatestBlogs = () => {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-28 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-16">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16">
           <div>
-            <span className="uppercase tracking-widest text-blue-600 font-semibold">
-              Latest Insights
+            <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
+              FROM OUR BLOG
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
-              Latest Articles & Blogs
+            <h2 className="text-5xl font-bold text-gray-900 mt-4">
+              Latest Insights
             </h2>
           </div>
 
           <button
             onClick={handleViewAll}
-            className="mt-6 lg:mt-0 border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 hover:text-white transition font-medium"
+            className="mt-6 lg:mt-0 flex items-center gap-3 text-blue-600 font-medium hover:gap-4 transition-all group"
           >
-            View All Blogs
+            View All Articles
+            <FaArrowRight className="group-hover:translate-x-1 transition" />
           </button>
         </div>
 
         {/* Blog Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {blogs.map((blog) => (
-            <div
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogs.map((blog, index) => (
+            <motion.div
               key={blog.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -12 }}
               onClick={() => handleReadMore(blog.slug)}
-              className="group bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-gray-200 hover:shadow-2xl transition-all duration-500 cursor-pointer"
             >
               {/* Image */}
               <div className="overflow-hidden">
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Content */}
               <div className="p-8">
-                <div className="flex justify-between items-center text-sm mb-4">
-                  <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full">
+                <div className="flex justify-between items-center mb-5">
+                  <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-medium rounded-full">
                     {blog.category}
                   </span>
-
-                  <span className="flex items-center gap-2 text-gray-500">
+                  <div className="flex items-center gap-2 text-gray-500 text-sm">
                     <FaCalendarAlt />
                     {blog.date}
-                  </span>
+                  </div>
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-semibold leading-tight text-gray-900 mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">
                   {blog.title}
                 </h3>
 
-                <p className="text-gray-600 leading-7 mb-8">
+                <p className="text-gray-600 leading-relaxed line-clamp-3">
                   {blog.description}
                 </p>
 
                 {/* Read More */}
-                <div className="flex items-center gap-3 text-blue-600 font-semibold group-hover:gap-5 transition-all">
-                  Read More
+                <div className="mt-8 flex items-center gap-3 text-blue-600 font-medium group-hover:gap-4 transition-all">
+                  Read Full Article
                   <FaArrowRight className="transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
