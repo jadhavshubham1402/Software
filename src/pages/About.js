@@ -12,6 +12,7 @@ import {
   FaGlobe,
   FaAward,
   FaIndustry,
+  FaHeart,
 } from "react-icons/fa";
 
 const stats = [
@@ -24,18 +25,36 @@ const stats = [
 const expertise = [
   {
     title: "Custom Software Development",
-    desc: "Tailored solutions built for your unique business needs",
+    desc: "Bespoke enterprise solutions tailored to your unique business challenges and growth goals.",
     image: "/images/about1.jpg",
   },
   {
     title: "AI & Machine Learning",
-    desc: "Intelligent automation and predictive solutions",
+    desc: "Intelligent systems that automate processes, predict outcomes, and create competitive advantage.",
     image: "/images/about2.jpg",
   },
   {
     title: "Mobile & Web Applications",
-    desc: "Seamless digital experiences across platforms",
+    desc: "High-performance, user-centric applications that deliver exceptional digital experiences.",
     image: "/images/about3.jpg",
+  },
+];
+
+const values = [
+  {
+    icon: <FaLightbulb className="text-4xl" />,
+    title: "Innovation First",
+    desc: "We embrace cutting-edge technologies and creative problem-solving to deliver future-ready solutions.",
+  },
+  {
+    icon: <FaHandshake className="text-4xl" />,
+    title: "Transparency & Trust",
+    desc: "Clear communication, honest timelines, and complete visibility throughout every project.",
+  },
+  {
+    icon: <FaHeart className="text-4xl" />,
+    title: "Client Success",
+    desc: "Your success is our success. We build long-term partnerships, not just projects.",
   },
 ];
 
@@ -44,19 +63,19 @@ const teamMembers = [
     name: "Alex Rivera",
     role: "CEO & Founder",
     image: "https://picsum.photos/id/64/400/400",
-    bio: "18+ years driving digital transformation",
+    bio: "Visionary leader with 18+ years in digital transformation and enterprise software.",
   },
   {
     name: "Priya Sharma",
     role: "Head of Design",
     image: "https://picsum.photos/id/65/400/400",
-    bio: "Award-winning UX/UI expert",
+    bio: "Award-winning UX/UI designer passionate about creating intuitive digital experiences.",
   },
   {
     name: "Marcus Chen",
     role: "CTO",
     image: "https://picsum.photos/id/66/400/400",
-    bio: "Ex-Google, AI & Cloud specialist",
+    bio: "Former Google engineer specializing in AI, cloud architecture, and scalable systems.",
   },
 ];
 
@@ -72,7 +91,6 @@ const AboutPage = () => {
     <div className="bg-[#0A1428] text-white overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -80,11 +98,7 @@ const AboutPage = () => {
             opacity: 0.65,
           }}
         />
-
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#0A1428]/75" />
-
-        {/* Subtle Grid */}
         <div className="absolute inset-0 bg-[radial-gradient(#1E40AF_1px,transparent_1px)] bg-[length:60px_60px] opacity-40" />
 
         <div className="relative max-w-5xl mx-auto text-center px-6 z-10">
@@ -96,7 +110,7 @@ const AboutPage = () => {
             <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-blue-500/30 bg-white/5 mb-8 backdrop-blur-sm">
               <FaGlobe className="text-cyan-400" />
               <span className="text-sm uppercase tracking-widest text-white/70">
-                Mumbai • San Francisco • Global
+                Mumbai • San Francisco • Global Delivery
               </span>
             </div>
 
@@ -108,8 +122,8 @@ const AboutPage = () => {
               Since 2010
             </h1>
             <p className="text-2xl text-white/80 max-w-2xl mx-auto">
-              We transform ambitious ideas into powerful, scalable software
-              solutions that drive real business growth.
+              We are more than just developers — we are strategic technology
+              partners helping ambitious businesses thrive in the digital age.
             </p>
           </motion.div>
         </div>
@@ -121,15 +135,16 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* INTRODUCTION */}
+      {/* WHO WE ARE */}
       <section className="py-24 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-semibold mb-8">Who We Are</h2>
           <p className="text-xl text-white/80 leading-relaxed">
-            We are a full-stack digital engineering company based in Mumbai with
-            a global footprint. Since 2010, we have been helping startups and
-            enterprises build custom software, mobile apps, AI solutions, and
-            digital platforms that deliver measurable results.
+            Founded in Mumbai in 2010, we have grown into a full-stack digital
+            engineering powerhouse with a global footprint. We specialize in
+            building custom software, mobile applications, AI solutions, and
+            enterprise platforms that don't just work — they drive real business
+            growth and competitive advantage.
           </p>
         </div>
       </section>
@@ -141,17 +156,17 @@ const AboutPage = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-blue-900/40 to-transparent border border-blue-500/40 rounded-3xl p-10 hover:border-blue-400/60 transition-all group"
+            className="bg-gradient-to-br from-blue-900/40 to-transparent border border-blue-500/40 rounded-3xl p-10 hover:border-blue-400/60 transition-all"
           >
             <div className="text-5xl mb-6 text-blue-400">🎯</div>
             <h3 className="text-3xl font-bold mb-6 text-blue-400">
               Our Mission
             </h3>
             <p className="text-lg text-white/80">
-              To deliver exceptional digital solutions that drive business
-              growth, automate operations, and create meaningful user
-              experiences while maintaining the highest standards of quality and
-              integrity.
+              To deliver exceptional digital solutions that drive sustainable
+              business growth, automate complex operations, and create
+              meaningful user experiences — all while upholding the highest
+              standards of quality, ethics, and transparency.
             </p>
           </motion.div>
 
@@ -159,29 +174,57 @@ const AboutPage = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-cyan-900/40 to-transparent border border-cyan-500/40 rounded-3xl p-10 hover:border-cyan-400/60 transition-all group"
+            className="bg-gradient-to-br from-cyan-900/40 to-transparent border border-cyan-500/40 rounded-3xl p-10 hover:border-cyan-400/60 transition-all"
           >
             <div className="text-5xl mb-6 text-cyan-400">🌍</div>
             <h3 className="text-3xl font-bold mb-6 text-cyan-400">
               Our Vision
             </h3>
             <p className="text-lg text-white/80">
-              To become the most trusted technology partner globally, known for
-              innovation, transparency, and delivering long-term value that
-              helps businesses thrive in the digital age.
+              To become the most trusted technology partner for ambitious
+              companies worldwide — known for our innovation, reliability, and
+              ability to turn complex challenges into powerful digital
+              opportunities.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* OUR EXPERTISE */}
+      {/* OUR VALUES */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Our Expertise</h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto">
-              From idea to deployment — we build solutions that scale
+            <h2 className="text-5xl font-bold mb-4">Our Core Values</h2>
+            <p className="text-white/70 text-xl">
+              The principles that guide everything we do
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all hover:-translate-y-2"
+              >
+                <div className="text-cyan-400 mb-6">{value.icon}</div>
+                <h3 className="text-2xl font-semibold mb-4">{value.title}</h3>
+                <p className="text-white/70">{value.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERTISE */}
+      <section className="py-24 bg-black/40">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4">Our Expertise</h2>
+            <p className="text-white/70 text-xl">What we do best</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -203,68 +246,8 @@ const AboutPage = () => {
 
                 <div className="relative mt-auto p-8">
                   <h3 className="text-3xl font-semibold mb-3">{item.title}</h3>
-                  <p className="text-white/80">{item.desc}</p>
+                  <p className="text-white/80 text-lg">{item.desc}</p>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Why Companies Choose Us</h2>
-            <p className="text-white/70 text-xl">
-              Proven expertise. Transparent delivery. Lasting partnerships.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <FaRocket />,
-                title: "Lightning Fast Delivery",
-                desc: "Agile methodology with bi-weekly releases",
-              },
-              {
-                icon: <FaUsers />,
-                title: "True Partnership",
-                desc: "We become an extension of your team",
-              },
-              {
-                icon: <FaShieldAlt />,
-                title: "Enterprise Security",
-                desc: "SOC2, ISO27001 compliant processes",
-              },
-              {
-                icon: <FaLaptopCode />,
-                title: "Modern Tech Stack",
-                desc: "Latest frameworks & cloud-native solutions",
-              },
-              {
-                icon: <FaChartLine />,
-                title: "Measurable Results",
-                desc: "Clear KPIs and transparent reporting",
-              },
-              {
-                icon: <FaHandshake />,
-                title: "Long-term Support",
-                desc: "Post-launch maintenance & evolution",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 transition-all hover:-translate-y-2 hover:bg-white/10"
-              >
-                <div className="text-5xl mb-6 text-cyan-400">{item.icon}</div>
-                <h3 className="text-2xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -295,9 +278,11 @@ const AboutPage = () => {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Meet Our Leadership</h2>
+            <h2 className="text-5xl font-bold mb-4">
+              Meet Our Leadership Team
+            </h2>
             <p className="text-white/70 text-xl">
-              Passionate experts dedicated to your success
+              The passionate minds behind every success story
             </p>
           </div>
 
@@ -322,7 +307,7 @@ const AboutPage = () => {
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-1">{member.name}</h3>
                   <p className="text-cyan-400 mb-4">{member.role}</p>
-                  <p className="text-white/70 text-sm">{member.bio}</p>
+                  <p className="text-white/70">{member.bio}</p>
                 </div>
               </motion.div>
             ))}
@@ -330,15 +315,15 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* FINAL CTA - WORKING BUTTON */}
+      {/* FINAL CTA */}
       <section className="py-24 text-center bg-gradient-to-b from-transparent via-blue-950/30 to-transparent">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6">
-            Ready to Transform Your Business?
+            Ready to Build Something Extraordinary?
           </h2>
           <p className="text-xl text-white/70 mb-10">
-            Let's discuss how we can help bring your vision to life with custom
-            software solutions.
+            Let's have a conversation about your vision. Our team is ready to
+            help turn your ideas into powerful digital reality.
           </p>
 
           <motion.button

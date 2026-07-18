@@ -17,7 +17,6 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -37,45 +36,50 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-
-          <Link to="/">
-            <img src="/images/logo.png" className="h-12" alt="logo" />
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src="/images/logo.png"
+              className="h-12 transition-transform group-hover:scale-105"
+              alt="logo"
+            />
           </Link>
 
-          {/* Desktop Menu */}
-
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((item) => (
               <div key={item.id} className="relative group">
                 <NavLink
                   to={item.path}
-                  className={`flex items-center gap-2 font-medium transition ${
-                    isParentActive(item)
-                      ? "text-blue-600"
-                      : isSticky
-                        ? "text-gray-800 hover:text-blue-600"
-                        : "text-white hover:text-blue-400"
-                  }`}
+                  className={`flex items-center gap-2 font-medium text-lg transition-all duration-300 pb-1 relative
+                    ${
+                      isParentActive(item)
+                        ? "text-blue-600"
+                        : isSticky
+                          ? "text-gray-800 hover:text-blue-600"
+                          : "text-white hover:text-blue-300"
+                    }`}
                 >
                   {item.title}
-
                   {item.hasDropdown && (
-                    <FaChevronDown className="text-xs transition duration-300 group-hover:rotate-180" />
+                    <FaChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180" />
+                  )}
+
+                  {/* Active underline */}
+                  {isParentActive(item) && (
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded" />
                   )}
                 </NavLink>
 
+                {/* Dropdown Menu */}
                 {item.hasDropdown && (
-                  <div className="absolute left-0 top-full mt-5 w-64 rounded-xl bg-white shadow-xl border opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+                  <div className="absolute left-0 top-full mt-4 w-72 rounded-2xl bg-white shadow-2xl border border-gray-100 py-3 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
                     {item.dropdownItems.map((sub, i) => (
                       <NavLink
                         key={i}
                         to={sub.path}
                         className={({ isActive }) =>
-                          `block px-5 py-3 transition ${
-                            isActive
-                              ? "bg-blue-600 text-white"
-                              : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                          }`
+                          `block px-6 py-3.5 text-[15px] transition-all hover:bg-blue-50
+                          ${isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"}`
                         }
                       >
                         {sub.title}
@@ -87,57 +91,54 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Button */}
-
+          {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
               to="/contact"
-              className={`px-7 py-3 rounded-full font-semibold transition ${
+              className={`px-8 py-3.5 rounded-2xl font-semibold transition-all duration-300 text-base shadow-lg shadow-blue-500/30 hover:shadow-xl hover:-translate-y-0.5 ${
                 isSticky
-                  ? "bg-blue-600 text-white"
-                  : "bg-white text-black hover:bg-blue-600 hover:text-white"
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-white text-gray-900 hover:bg-blue-600 hover:text-white"
               }`}
             >
               Let's Talk
             </Link>
           </div>
 
-          {/* Mobile Icon */}
-
-          <button onClick={() => setMobileMenu(true)} className="lg:hidden">
+          {/* Mobile Menu Button */}
+          <button onClick={() => setMobileMenu(true)} className="lg:hidden p-2">
             <HiBars3
-              className={`text-3xl ${isSticky ? "text-black" : "text-white"}`}
+              className={`text-4xl transition-all ${isSticky ? "text-gray-900" : "text-white"}`}
             />
           </button>
         </div>
       </div>
 
       {/* Mobile Sidebar */}
-
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-[100] transition-all duration-300 ${
+        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-[100] transition-all duration-500 ease-out ${
           mobileMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="p-6">
-          <div className="flex justify-between items-center mb-8">
-            <img src="/images/logo.png" className="h-10" alt="" />
-
-            <button onClick={() => setMobileMenu(false)}>
-              <HiXMark className="text-3xl" />
+          <div className="flex justify-between items-center mb-10">
+            <img src="/images/logo.png" className="h-11" alt="logo" />
+            <button onClick={() => setMobileMenu(false)} className="p-2">
+              <HiXMark className="text-4xl text-gray-700" />
             </button>
           </div>
 
-          <div className="space-y-2">
+          <div className="space-y-1">
             {navLinks.map((item) => (
-              <div key={item.id}>
-                <div className="flex justify-between items-center">
+              <div
+                key={item.id}
+                className="border-b border-gray-100 last:border-none"
+              >
+                <div className="flex justify-between items-center py-4">
                   <NavLink
                     to={item.path}
                     onClick={() => setMobileMenu(false)}
-                    className={`py-3 font-medium ${
-                      isParentActive(item) ? "text-blue-600" : "text-gray-700"
-                    }`}
+                    className={`text-xl font-medium transition ${isParentActive(item) ? "text-blue-600" : "text-gray-800"}`}
                   >
                     {item.title}
                   </NavLink>
@@ -149,29 +150,24 @@ const Header = () => {
                           openDropdown === item.id ? null : item.id,
                         )
                       }
+                      className="text-gray-500"
                     >
                       <FaChevronDown
-                        className={`transition ${
-                          openDropdown === item.id ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform ${openDropdown === item.id ? "rotate-180" : ""}`}
                       />
                     </button>
                   )}
                 </div>
 
                 {item.hasDropdown && openDropdown === item.id && (
-                  <div className="ml-4 mt-2 border-l">
+                  <div className="pl-6 pb-4 space-y-3">
                     {item.dropdownItems.map((sub, index) => (
                       <NavLink
                         key={index}
                         to={sub.path}
                         onClick={() => setMobileMenu(false)}
                         className={({ isActive }) =>
-                          `block py-3 pl-4 ${
-                            isActive
-                              ? "text-blue-600 font-semibold"
-                              : "text-gray-600"
-                          }`
+                          `block py-2 text-[17px] ${isActive ? "text-blue-600 font-medium" : "text-gray-600"}`
                         }
                       >
                         {sub.title}
@@ -181,24 +177,24 @@ const Header = () => {
                 )}
               </div>
             ))}
-
-            <Link
-              to="/contact"
-              onClick={() => setMobileMenu(false)}
-              className="block text-center mt-6 bg-blue-600 text-white rounded-full py-3"
-            >
-              Let's Talk
-            </Link>
           </div>
+
+          {/* Mobile CTA */}
+          <Link
+            to="/contact"
+            onClick={() => setMobileMenu(false)}
+            className="block text-center mt-10 bg-blue-600 text-white rounded-2xl py-4 font-semibold text-lg shadow-lg"
+          >
+            Let's Talk
+          </Link>
         </div>
       </div>
 
-      {/* Overlay */}
-
+      {/* Mobile Overlay */}
       {mobileMenu && (
         <div
           onClick={() => setMobileMenu(false)}
-          className="fixed inset-0 bg-black/40 lg:hidden z-50"
+          className="fixed inset-0 bg-black/60 lg:hidden z-50"
         />
       )}
     </header>
