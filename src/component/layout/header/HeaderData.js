@@ -34,6 +34,10 @@ export const navLinks = [
         title: "UI/UX Design",
         path: "/services/ui-ux-design",
       },
+      {
+        title: "Support & Maintenance",
+        path: "/services/support-maintenance",
+      },
     ],
   },
   {

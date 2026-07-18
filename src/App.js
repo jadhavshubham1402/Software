@@ -23,6 +23,7 @@ import { useEffect } from "react";
 import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetails";
 import BlogDetail from "./pages/BlogDetails";
+import SupportMaintenance from "./pages/SupportMaintaince";
 
 function App() {
   function ScrollToTop() {
@@ -58,6 +59,7 @@ function App() {
           />
           <Route path="/services/ai-ml" element={<AIML />} />
           <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+          <Route path="/services/support-maintenance" element={<SupportMaintenance />} />
           <Route path="/technologies/frontend" element={<Frontend />} />
           <Route path="/technologies/backend" element={<Backend />} />
           <Route path="/technologies/mobile" element={<Mobile />} />
