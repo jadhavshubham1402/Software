@@ -21,6 +21,8 @@ import Portfolio from "./pages/portfolio";
 import Blogs from "./pages/Blogs";
 import { useEffect } from "react";
 import Contact from "./pages/Contact";
+import ProjectDetail from "./pages/ProjectDetails";
+import BlogDetail from "./pages/BlogDetails";
 
 function App() {
   function ScrollToTop() {
@@ -68,7 +70,9 @@ function App() {
 
           <Route path="/industries/logistics" element={<Logistics />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:slug" element={<ProjectDetail />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

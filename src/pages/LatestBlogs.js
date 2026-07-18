@@ -72,6 +72,7 @@ const LatestBlogs = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
+              onClick={() => handleReadMore(blog.slug)}
               className="group bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               {/* Image */}
@@ -96,7 +97,7 @@ const LatestBlogs = () => {
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-600 transition">
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">
                   {blog.title}
                 </h3>
 
@@ -104,14 +105,11 @@ const LatestBlogs = () => {
                   {blog.description}
                 </p>
 
-                {/* Functional Read More Button */}
-                <button
-                  onClick={() => handleReadMore(blog.slug)}
-                  className="flex items-center gap-3 text-blue-600 font-semibold hover:gap-5 transition-all group-hover:text-blue-700"
-                >
+                {/* Read More */}
+                <div className="flex items-center gap-3 text-blue-600 font-semibold group-hover:gap-5 transition-all">
                   Read More
                   <FaArrowRight className="transition-transform group-hover:translate-x-1" />
-                </button>
+                </div>
               </div>
             </div>
           ))}

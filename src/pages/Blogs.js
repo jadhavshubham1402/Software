@@ -1,59 +1,63 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaCalendarAlt, FaTag } from "react-icons/fa";
 
 const Blogs = () => {
+  const navigate = useNavigate();
   const [subscribed, setSubscribed] = useState(false);
 
   const blogPosts = [
     {
       id: 1,
+      slug: "how-ai-is-transforming-modern-businesses",
+      title: "How AI is Transforming Modern Businesses",
+      date: "10 July 2026",
+      category: "Artificial Intelligence",
+      excerpt:
+        "Discover how artificial intelligence is helping companies automate processes, improve customer experiences, and drive innovation.",
+      image: "/images/blog1.jpg",
+    },
+    {
+      id: 2,
+      slug: "top-web-development-trends-2026",
+      title: "Top Web Development Trends in 2026",
+      date: "05 July 2026",
+      category: "Web Development",
+      excerpt:
+        "Explore the latest technologies, frameworks, and best practices shaping the future of web development.",
+      image: "/images/blog2.jpg",
+    },
+    {
+      id: 3,
+      slug: "why-businesses-are-moving-to-the-cloud",
+      title: "Why Businesses Are Moving to the Cloud",
+      date: "28 June 2026",
+      category: "Cloud Computing",
+      excerpt:
+        "Learn how cloud infrastructure improves scalability, security, performance, and operational efficiency.",
+      image: "/images/blog3.jpg",
+    },
+    {
+      id: 4,
       slug: "national-nutrition-week-2025",
       title:
         "National Nutrition Week (September 1–7): Nourishing India, One Plate at a Time",
       date: "September 1, 2025",
       category: "Health & Wellness",
       excerpt:
-        "Every year, September 1-7 is celebrated as National Nutrition Week in India. Discover how small changes in our daily diet can create a healthier nation.",
+        "Every year, September 1-7 is celebrated as National Nutrition Week in India.",
       image: "https://picsum.photos/id/1080/800/500",
     },
-    {
-      id: 2,
-      slug: "international-left-handers-day",
-      title: "August 13: International Left-Handers Day",
-      date: "August 13, 2025",
-      category: "Awareness",
-      excerpt:
-        "Celebrating the unique 10% — The Left-Handed Community. Let's recognize their strengths and challenges in a right-handed world.",
-      image: "https://picsum.photos/id/1015/800/500",
-    },
-    {
-      id: 3,
-      slug: "world-lung-cancer-day",
-      title: "World Lung Cancer Day – Let’s Breathe Better, Together",
-      date: "August 1, 2025",
-      category: "Health Awareness",
-      excerpt:
-        "Lung cancer remains one of the leading causes of cancer deaths globally. Raising awareness and promoting early detection can save lives.",
-      image: "https://picsum.photos/id/106/800/500",
-    },
-    {
-      id: 4,
-      slug: "world-humanitarian-day",
-      title: "World Humanitarian Day – August 19th",
-      date: "August 19, 2025",
-      category: "Human Values",
-      excerpt:
-        "A global tribute to those who risk their lives to help others. Honoring the spirit of compassion and service.",
-      image: "https://picsum.photos/id/133/800/500",
-    },
   ];
+
+  const handleReadBlog = (slug) => {
+    navigate(`/blogs/${slug}`);
+  };
 
   const handleSubscribe = (e) => {
     e.preventDefault();
     setSubscribed(true);
-
     setTimeout(() => {
       alert("Thank you! You've successfully subscribed to our newsletter.");
       setSubscribed(false);
@@ -66,9 +70,7 @@ const Blogs = () => {
       <section className="relative pt-32 pb-24 text-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-70"
-          style={{
-            backgroundImage: "url('/images/blogs1.jpg')",
-          }}
+          style={{ backgroundImage: "url('/images/blogs1.jpg')" }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/80" />
 
@@ -88,61 +90,57 @@ const Blogs = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <Link
+              <motion.div
                 key={post.id}
-                to={`/blog/${post.slug}`}
-                className="block group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -12 }}
+                onClick={() => handleReadBlog(post.slug)}
+                className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer transition-all h-full flex flex-col group"
               >
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -12 }}
-                  className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer transition-all h-full flex flex-col"
-                >
-                  <div className="aspect-video bg-zinc-900 relative overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
+                <div className="aspect-video bg-zinc-900 relative overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
 
-                  <div className="p-8 flex-1 flex flex-col">
-                    <div className="flex items-center gap-4 text-sm mb-5">
-                      <div className="flex items-center gap-2 text-cyan-400">
-                        <FaTag />
-                        <span>{post.category}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-white/50">
-                        <FaCalendarAlt />
-                        <span>{post.date}</span>
-                      </div>
+                <div className="p-8 flex-1 flex flex-col">
+                  <div className="flex items-center gap-4 text-sm mb-5">
+                    <div className="flex items-center gap-2 text-cyan-400">
+                      <FaTag />
+                      <span>{post.category}</span>
                     </div>
-
-                    <h3 className="text-2xl font-semibold mb-4 line-clamp-2 group-hover:text-cyan-400 transition-colors leading-tight">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-white/70 line-clamp-3 mb-8 flex-1">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="text-cyan-400 font-medium flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
-                      Read Full Article
-                      <span className="text-lg transition-transform group-hover:translate-x-1">
-                        →
-                      </span>
+                    <div className="flex items-center gap-2 text-white/50">
+                      <FaCalendarAlt />
+                      <span>{post.date}</span>
                     </div>
                   </div>
-                </motion.div>
-              </Link>
+
+                  <h3 className="text-2xl font-semibold mb-4 line-clamp-2 group-hover:text-cyan-400 transition-colors leading-tight">
+                    {post.title}
+                  </h3>
+
+                  <p className="text-white/70 line-clamp-3 mb-8 flex-1">
+                    {post.excerpt}
+                  </p>
+
+                  <div className="text-cyan-400 font-medium flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
+                    Read Full Article
+                    <span className="text-lg transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Newsletter CTA */}
+      {/* Newsletter */}
       <section className="py-20 bg-black/60 border-t border-white/10">
         <div className="max-w-xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-4">Stay Informed</h2>
