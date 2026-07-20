@@ -149,27 +149,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Healthcare CRM",
-          icon: "/images/icons/healthcare.png",
+          icon: "https://picsum.photos/id/107/120/120", // Hospital / Healthcare
         },
         {
           name: "Real Estate CRM",
-          icon: "/images/icons/real-estate.png",
+          icon: "https://picsum.photos/id/1015/120/120", // Real Estate
         },
         {
           name: "Education CRM",
-          icon: "/images/icons/education.png",
+          icon: "https://picsum.photos/id/201/120/120", // Education
         },
         {
           name: "Finance CRM",
-          icon: "/images/icons/finance.png",
+          icon: "https://picsum.photos/id/251/120/120", // Finance / Banking
         },
         {
           name: "Retail CRM",
-          icon: "/images/icons/retail.png",
+          icon: "https://picsum.photos/id/180/120/120", // Retail / Shopping
         },
         {
           name: "Manufacturing CRM",
-          icon: "/images/icons/manufacturing.png",
+          icon: "https://picsum.photos/id/106/120/120", // Manufacturing / Factory
         },
       ],
     },

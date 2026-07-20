@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -18,7 +18,9 @@ const Portfolio = () => {
       category: "Healthcare",
       image: "/images/project1.jpg",
       description:
-        "A cloud-based hospital management platform with patient records, appointments, billing, and telemedicine.",
+        "Cloud-based hospital management platform with patient records, appointments, billing, and telemedicine.",
+      year: "2025",
+      technologies: ["React", "Node.js", "MongoDB", "AWS"],
     },
     {
       id: 2,
@@ -27,7 +29,9 @@ const Portfolio = () => {
       category: "FinTech",
       image: "/images/project2.jpg",
       description:
-        "A secure banking application with payment gateway, KYC, loan management, and analytics dashboard.",
+        "Secure neobanking solution with payments, KYC, loan management, and real-time analytics.",
+      year: "2025",
+      technologies: ["Next.js", "NestJS", "PostgreSQL", "Docker"],
     },
     {
       id: 3,
@@ -36,7 +40,9 @@ const Portfolio = () => {
       category: "E-Commerce",
       image: "/images/project3.jpg",
       description:
-        "A scalable marketplace with vendor management, inventory, payments, and order tracking.",
+        "Scalable marketplace with vendor dashboard, inventory, payments, and order tracking.",
+      year: "2024",
+      technologies: ["React", "Express", "MongoDB", "Stripe"],
     },
     {
       id: 4,
@@ -45,16 +51,20 @@ const Portfolio = () => {
       category: "Healthcare",
       image: "https://picsum.photos/id/107/800/500",
       description:
-        "Comprehensive digital health platform with telemedicine and patient management",
+        "Comprehensive digital health platform with telemedicine and patient management.",
+      year: "2025",
+      technologies: ["React Native", "Firebase", "AI"],
     },
     {
       id: 5,
       slug: "payswift-fintech-app",
       title: "PaySwift - Fintech App",
-      category: "Fintech",
+      category: "FinTech",
       image: "https://picsum.photos/id/201/800/500",
       description:
-        "Digital wallet and payment solution with real-time transactions",
+        "Digital wallet and payment solution with real-time transactions and fraud detection.",
+      year: "2024",
+      technologies: ["Flutter", "Node.js", "PostgreSQL"],
     },
     {
       id: 6,
@@ -63,7 +73,9 @@ const Portfolio = () => {
       category: "Education",
       image: "https://picsum.photos/id/1015/800/500",
       description:
-        "Interactive LMS with AI-powered personalized learning paths",
+        "Interactive LMS with AI-powered personalized learning paths and progress tracking.",
+      year: "2025",
+      technologies: ["Next.js", "Tailwind", "Supabase"],
     },
   ];
 
@@ -74,18 +86,18 @@ const Portfolio = () => {
   return (
     <div className="bg-[#0A1428] text-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 text-center overflow-hidden">
+      <section className="relative pt-28 pb-20 text-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage: "url('https://picsum.photos/id/1015/1920/1080')",
           }}
         />
-        <div className="absolute inset-0 bg-[#0A1428]/80" />
+        <div className="absolute inset-0 bg-[#0A1428]/85" />
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h1 className="text-6xl font-bold mb-6">Our Portfolio</h1>
-          <p className="text-2xl text-white/70 max-w-2xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Portfolio</h1>
+          <p className="text-xl text-white/70 max-w-2xl mx-auto">
             Real results from real projects. Every solution tells a story of
             innovation and impact.
           </p>
@@ -101,34 +113,53 @@ const Portfolio = () => {
                 key={project.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -12 }}
+                transition={{ delay: index * 0.08 }}
+                whileHover={{ y: -8 }}
                 onClick={() => handleProjectClick(project.slug)}
-                className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer"
+                className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer flex flex-col h-full"
               >
-                <div className="aspect-video bg-zinc-900 relative overflow-hidden">
+                {/* Image */}
+                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute top-4 right-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
+                    {project.year}
+                  </div>
                 </div>
 
-                <div className="p-8">
+                {/* Content */}
+                <div className="p-7 flex-1 flex flex-col">
                   <div className="uppercase text-xs tracking-widest text-cyan-400 mb-3">
                     {project.category}
                   </div>
-                  <h3 className="text-2xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors">
+
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-cyan-400 transition-colors line-clamp-2">
                     {project.title}
                   </h3>
-                  <p className="text-white/70 line-clamp-3">
+
+                  <p className="text-white/70 text-[15px] leading-relaxed flex-1 line-clamp-3">
                     {project.description}
                   </p>
 
-                  <div className="mt-6 flex items-center gap-2 text-cyan-400 text-sm font-medium">
+                  {/* Technologies */}
+                  <div className="flex flex-wrap gap-2 mt-5">
+                    {project.technologies.slice(0, 3).map((tech, i) => (
+                      <span
+                        key={i}
+                        className="text-xs bg-white/10 px-3 py-1 rounded-full text-white/70"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* View Button */}
+                  <div className="mt-6 flex items-center gap-2 text-cyan-400 text-sm font-medium group-hover:gap-3 transition-all">
                     View Project Details
-                    <FaExternalLinkAlt className="group-hover:translate-x-1 transition" />
+                    <FaExternalLinkAlt className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </motion.div>
@@ -138,10 +169,10 @@ const Portfolio = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">Have a Project in Mind?</h2>
-          <p className="text-xl text-white/90 mb-10">
+          <h2 className="text-4xl font-bold mb-5">Have a Project in Mind?</h2>
+          <p className="text-lg text-white/90 mb-8">
             Let’s create something exceptional together.
           </p>
 
@@ -149,7 +180,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleStartProject}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-xl hover:bg-white/90 transition flex items-center gap-3 mx-auto"
+            className="bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg hover:bg-white/90 transition-all flex items-center gap-3 mx-auto"
           >
             Start Your Project <span className="text-2xl">→</span>
           </motion.button>

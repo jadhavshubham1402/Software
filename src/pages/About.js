@@ -3,9 +3,7 @@ import {
   FaGlobe,
   FaHandshake,
   FaHeart,
-  FaLightbulb,
-  FaUsers,
-  FaAward,
+  FaLightbulb
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 

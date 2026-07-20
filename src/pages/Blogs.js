@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { FaClock, FaTag, FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { FaCalendarAlt, FaTag } from "react-icons/fa";
 
 const Blogs = () => {
   const navigate = useNavigate();
@@ -13,19 +13,24 @@ const Blogs = () => {
       slug: "how-ai-is-transforming-modern-businesses",
       title: "How AI is Transforming Modern Businesses",
       date: "10 July 2026",
+      readTime: "8 min read",
       category: "Artificial Intelligence",
+      author: "Dr. Priya Sharma",
       excerpt:
-        "Discover how artificial intelligence is helping companies automate processes, improve customer experiences, and drive innovation.",
+        "Discover how artificial intelligence is helping companies automate processes, improve customer experiences, and drive sustainable innovation.",
       image: "/images/blog1.jpg",
+      featured: true,
     },
     {
       id: 2,
       slug: "top-web-development-trends-2026",
       title: "Top Web Development Trends in 2026",
       date: "05 July 2026",
+      readTime: "12 min read",
       category: "Web Development",
+      author: "Rahul Verma",
       excerpt:
-        "Explore the latest technologies, frameworks, and best practices shaping the future of web development.",
+        "Explore the latest technologies, frameworks, and best practices that will shape the future of web development in 2026 and beyond.",
       image: "/images/blog2.jpg",
     },
     {
@@ -33,20 +38,24 @@ const Blogs = () => {
       slug: "why-businesses-are-moving-to-the-cloud",
       title: "Why Businesses Are Moving to the Cloud",
       date: "28 June 2026",
+      readTime: "6 min read",
       category: "Cloud Computing",
+      author: "Ananya Patel",
       excerpt:
-        "Learn how cloud infrastructure improves scalability, security, performance, and operational efficiency.",
+        "Learn how cloud infrastructure improves scalability, security, performance, and operational efficiency for modern enterprises.",
       image: "/images/blog3.jpg",
     },
     {
       id: 4,
       slug: "national-nutrition-week-2025",
       title:
-        "National Nutrition Week (September 1–7): Nourishing India, One Plate at a Time",
-      date: "September 1, 2025",
+        "National Nutrition Week 2025: Nourishing India, One Plate at a Time",
+      date: "01 September 2025",
+      readTime: "10 min read",
       category: "Health & Wellness",
+      author: "Dr. Meera Nair",
       excerpt:
-        "Every year, September 1-7 is celebrated as National Nutrition Week in India.",
+        "Every year, September 1-7 is celebrated as National Nutrition Week in India. Here's how you can make the most of it for better health.",
       image: "https://picsum.photos/id/1080/800/500",
     },
   ];
@@ -61,26 +70,26 @@ const Blogs = () => {
     setTimeout(() => {
       alert("Thank you! You've successfully subscribed to our newsletter.");
       setSubscribed(false);
-    }, 800);
+    }, 1000);
   };
 
   return (
     <div className="bg-[#0A1428] text-white min-h-screen">
       {/* Hero */}
-      <section className="relative pt-32 pb-24 text-center overflow-hidden">
+      <section className="relative pt-28 pb-20 text-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-70"
+          className="absolute inset-0 bg-cover bg-center opacity-60"
           style={{ backgroundImage: "url('/images/blogs1.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#0A1428]/80" />
+        <div className="absolute inset-0 bg-[#0A1428]/85" />
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h1 className="text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             LifeOnPlus <span className="text-cyan-400">Blog</span>
           </h1>
-          <p className="text-2xl text-white/70 max-w-2xl mx-auto">
-            Insights, stories, and knowledge from the world of health, wellness,
-            technology, and human values
+          <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            Insights, stories, and expert knowledge from the world of health,
+            wellness, technology, and human values.
           </p>
         </div>
       </section>
@@ -89,49 +98,58 @@ const Blogs = () => {
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {blogPosts.map((post, index) => (
               <motion.div
                 key={post.id}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -12 }}
+                transition={{ delay: index * 0.08 }}
+                whileHover={{ y: -8 }}
                 onClick={() => handleReadBlog(post.slug)}
-                className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer transition-all h-full flex flex-col group"
+                className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl overflow-hidden cursor-pointer transition-all flex flex-col h-full"
               >
-                <div className="aspect-video bg-zinc-900 relative overflow-hidden">
+                <div className="aspect-video relative overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
+                  {post.featured && (
+                    <div className="absolute top-4 left-4 bg-cyan-500 text-black text-xs font-bold px-4 py-1 rounded-full">
+                      Featured
+                    </div>
+                  )}
                 </div>
 
-                <div className="p-8 flex-1 flex flex-col">
-                  <div className="flex items-center gap-4 text-sm mb-5">
+                <div className="p-7 flex-1 flex flex-col">
+                  <div className="flex items-center justify-between text-xs mb-4">
                     <div className="flex items-center gap-2 text-cyan-400">
                       <FaTag />
                       <span>{post.category}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-white/50">
-                      <FaCalendarAlt />
-                      <span>{post.date}</span>
+                    <div className="flex items-center gap-2 text-white/60">
+                      <FaClock />
+                      <span>{post.readTime}</span>
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-semibold mb-4 line-clamp-2 group-hover:text-cyan-400 transition-colors leading-tight">
+                  <h3 className="text-xl font-semibold mb-4 line-clamp-2 group-hover:text-cyan-400 transition-colors leading-tight">
                     {post.title}
                   </h3>
 
-                  <p className="text-white/70 line-clamp-3 mb-8 flex-1">
+                  <p className="text-white/70 text-[15px] leading-relaxed flex-1 line-clamp-4">
                     {post.excerpt}
                   </p>
 
-                  <div className="text-cyan-400 font-medium flex items-center gap-2 group-hover:gap-3 transition-all mt-auto">
-                    Read Full Article
-                    <span className="text-lg transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
+                  <div className="mt-6 flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2 text-white/60">
+                      <FaUser />
+                      <span>{post.author}</span>
+                    </div>
+                    <div className="text-cyan-400 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Read Article →
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -145,8 +163,8 @@ const Blogs = () => {
         <div className="max-w-xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-4">Stay Informed</h2>
           <p className="text-white/70 mb-10">
-            Subscribe to our newsletter and never miss important health
-            insights, wellness tips, and latest updates.
+            Subscribe to our newsletter and get the latest insights on health,
+            wellness, and technology delivered to your inbox.
           </p>
 
           <form
@@ -165,7 +183,7 @@ const Blogs = () => {
               whileTap={{ scale: 0.98 }}
               className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:brightness-110 px-10 py-4 rounded-2xl font-semibold transition whitespace-nowrap"
             >
-              {subscribed ? "Subscribed!" : "Subscribe"}
+              {subscribed ? "Subscribed ✓" : "Subscribe Now"}
             </motion.button>
           </form>
         </div>
