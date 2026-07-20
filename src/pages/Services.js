@@ -64,17 +64,17 @@ const Services = () => {
   };
 
   return (
-    <section className="py-28 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold tracking-widest uppercase text-sm">
+        <div className="text-center mb-14">
+          <span className="text-blue-600 font-semibold tracking-widest uppercase text-xs">
             OUR EXPERTISE
           </span>
-          <h2 className="text-5xl font-bold text-gray-900 mt-4">
+          <h2 className="text-4xl font-bold text-gray-900 mt-3">
             Comprehensive Digital Solutions
           </h2>
-          <p className="mt-5 text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto">
             We deliver end-to-end technology solutions that help businesses
             innovate and scale.
           </p>
@@ -85,36 +85,43 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -12 }}
-              className="group bg-white border border-gray-200 hover:border-gray-800 rounded-3xl p-10 transition-all duration-500 flex flex-col h-full hover:shadow-xl"
+              transition={{ delay: index * 0.08 }}
+              whileHover={{ y: -6, scale: 1.02 }}
+              className="group bg-white border border-gray-100 hover:border-blue-200 rounded-3xl p-7 h-full flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10"
             >
-              {/* Icon */}
-              <div className="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-2xl text-4xl mb-8 group-hover:rotate-6 transition-transform">
-                {service.icon}
+              {/* Icon + ID */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-2xl text-3xl shadow-md group-hover:rotate-6 transition-transform">
+                  {service.icon}
+                </div>
+                <span className="text-3xl font-bold text-gray-200 group-hover:text-gray-100 transition-colors">
+                  {service.id}
+                </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 tracking-tight">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed flex-1">
+              <p className="text-gray-600 leading-relaxed flex-1 text-[15.2px]">
                 {service.description}
               </p>
 
               {/* Learn More */}
-              <button
-                onClick={() => handleLearnMore(service.path)}
-                className="mt-10 flex items-center gap-3 text-blue-600 font-medium group-hover:gap-4 transition-all duration-300 self-start"
-              >
-                Learn More
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              <div className="mt-8 pt-6 border-t border-gray-100">
+                <button
+                  onClick={() => handleLearnMore(service.path)}
+                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group-hover:gap-3 transition-all duration-300"
+                >
+                  Learn More
+                  <FaArrowRight className="transition-transform group-hover:translate-x-1" />
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>

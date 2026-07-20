@@ -43,17 +43,17 @@ const FeaturedProjects = () => {
   };
 
   return (
-    <section id="featured-projects" className="py-28 bg-slate-50">
+    <section id="featured-projects" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
             RECENT WORK
           </span>
-          <h2 className="text-5xl font-bold text-gray-900 mt-4">
+          <h2 className="text-4xl font-bold text-gray-900 mt-4">
             Featured Projects
           </h2>
-          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-5 text-lg text-gray-600 max-w-3xl mx-auto">
             Real results from real clients. Explore some of the impactful
             digital solutions we've delivered.
           </p>
@@ -68,29 +68,29 @@ const FeaturedProjects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -12 }}
-              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200"
+              whileHover={{ y: -8 }}
+              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200 flex flex-col h-full"
             >
               {/* Project Image */}
               <div className="overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-56 object-contain group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-8">
-                <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-medium rounded-full">
+              <div className="p-7 flex flex-col flex-1">
+                <span className="inline-block px-4 py-1 bg-blue-50 text-blue-600 text-sm font-medium rounded-full self-start">
                   {project.category}
                 </span>
 
-                <h3 className="text-2xl font-semibold text-gray-900 mt-5 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 mt-5 mb-3 line-clamp-2">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed line-clamp-3">
+                <p className="text-gray-600 leading-relaxed text-[15px] flex-1 line-clamp-3">
                   {project.description}
                 </p>
 
@@ -109,7 +109,7 @@ const FeaturedProjects = () => {
                 {/* CTA Button */}
                 <button
                   onClick={() => handleViewCaseStudy(project.path)}
-                  className="mt-8 flex items-center gap-3 text-blue-600 font-semibold hover:gap-4 transition-all duration-300 group-hover:text-blue-700"
+                  className="mt-8 flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all duration-300 group-hover:text-blue-700 self-start"
                 >
                   View Case Study
                   <FaArrowRight className="transition-transform group-hover:translate-x-1" />
@@ -120,10 +120,10 @@ const FeaturedProjects = () => {
         </div>
 
         {/* View All Button */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-14">
           <button
             onClick={() => navigate("/portfolio")}
-            className="inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white px-10 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white px-9 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105"
           >
             View All Projects
             <FaArrowRight />

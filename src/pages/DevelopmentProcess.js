@@ -54,7 +54,7 @@ const process = [
 
 const DevelopmentProcess = () => {
   return (
-    <section className="relative py-28 overflow-hidden bg-cover bg-center bg-no-repeat">
+    <section className="relative py-20 overflow-hidden bg-cover bg-center bg-no-repeat">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -66,22 +66,22 @@ const DevelopmentProcess = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <span className="uppercase tracking-[4px] text-blue-400 font-semibold text-sm">
             OUR PROCESS
           </span>
-          <h2 className="text-5xl font-bold text-white mt-5 leading-tight">
+          <h2 className="text-4xl font-bold text-white mt-5 leading-tight">
             From Idea to Launch —<br />
             <span className="text-blue-400">6 Proven Steps</span>
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
+          <p className="text-gray-300 max-w-3xl mx-auto mt-5 text-lg leading-relaxed">
             Our structured yet flexible development process ensures
             transparency, quality, and faster time-to-market for every project.
           </p>
         </div>
 
         {/* Process Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {process.map((step, index) => (
             <motion.div
               key={step.id}
@@ -89,21 +89,26 @@ const DevelopmentProcess = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -12 }}
-              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-3xl p-10 transition-all duration-500 hover:bg-white/15 flex flex-col h-full"
+              whileHover={{ y: -8 }}
+              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-3xl p-8 transition-all duration-500 hover:bg-white/15 flex flex-col h-full"
             >
               {/* Icon */}
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-4xl mb-8 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-4xl mb-6 group-hover:scale-110 transition-transform">
                 {step.icon}
               </div>
 
-              {/* Title */}
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                {step.title}
-              </h3>
+              {/* Title + ID */}
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-blue-400 font-mono font-bold text-xl">
+                  {step.id}
+                </span>
+                <h3 className="text-xl font-semibold text-white">
+                  {step.title}
+                </h3>
+              </div>
 
               {/* Description */}
-              <p className="text-gray-300 leading-relaxed flex-1">
+              <p className="text-gray-300 leading-relaxed flex-1 text-[15.2px]">
                 {step.description}
               </p>
             </motion.div>

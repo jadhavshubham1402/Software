@@ -71,24 +71,24 @@ const industries = [
 
 const Industries = () => {
   return (
-    <section className="py-28 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
             SERVING EXCELLENCE ACROSS
           </span>
-          <h2 className="text-5xl font-bold text-gray-900 mt-4">
+          <h2 className="text-4xl font-bold text-gray-900 mt-4">
             Industries We Transform
           </h2>
-          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-5 text-lg text-gray-600 max-w-3xl mx-auto">
             From healthcare to logistics, we deliver industry-specific digital
             solutions that drive efficiency, innovation, and growth.
           </p>
         </div>
 
         {/* Industries Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {industries.map((industry, index) => (
             <motion.div
               key={industry.id}
@@ -96,21 +96,21 @@ const Industries = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              whileHover={{ y: -10 }}
-              className="group bg-white border border-gray-100 hover:border-blue-200 rounded-3xl p-10 transition-all duration-500 hover:shadow-xl flex flex-col h-full"
+              whileHover={{ y: -6 }}
+              className="group bg-white border border-gray-100 hover:border-blue-200 rounded-3xl p-8 transition-all duration-500 hover:shadow-xl flex flex-col h-full"
             >
               {/* Icon */}
-              <div className="w-20 h-20 rounded-2xl bg-blue-50 flex items-center justify-center text-5xl text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all">
+              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-4xl text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                 {industry.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
                 {industry.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed flex-1">
+              <p className="text-gray-600 leading-relaxed flex-1 text-[15px]">
                 {industry.description}
               </p>
             </motion.div>

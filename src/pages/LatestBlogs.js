@@ -47,15 +47,15 @@ const LatestBlogs = () => {
   };
 
   return (
-    <section className="py-28 bg-slate-50">
+    <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14">
           <div>
             <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
               FROM OUR BLOG
             </span>
-            <h2 className="text-5xl font-bold text-gray-900 mt-4">
+            <h2 className="text-4xl font-bold text-gray-900 mt-4">
               Latest Insights
             </h2>
           </div>
@@ -78,23 +78,23 @@ const LatestBlogs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -12 }}
+              whileHover={{ y: -8 }}
               onClick={() => handleReadMore(blog.slug)}
-              className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-gray-200 hover:shadow-2xl transition-all duration-500 cursor-pointer"
+              className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-gray-200 hover:shadow-2xl transition-all duration-500 cursor-pointer flex flex-col h-full"
             >
               {/* Image */}
               <div className="overflow-hidden">
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-52 object-contain group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-8">
+              <div className="p-7 flex flex-col flex-1">
                 <div className="flex justify-between items-center mb-5">
-                  <span className="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-medium rounded-full">
+                  <span className="inline-block px-4 py-1 bg-blue-50 text-blue-600 text-sm font-medium rounded-full">
                     {blog.category}
                   </span>
                   <div className="flex items-center gap-2 text-gray-500 text-sm">
@@ -103,11 +103,11 @@ const LatestBlogs = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold leading-tight text-gray-900 mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">
+                <h3 className="text-xl font-semibold leading-tight text-gray-900 mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">
                   {blog.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed line-clamp-3">
+                <p className="text-gray-600 leading-relaxed text-[15px] flex-1 line-clamp-3">
                   {blog.description}
                 </p>
 

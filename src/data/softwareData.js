@@ -1677,7 +1677,7 @@ export const solutionDetails = [
       title: "Business Analytics Solutions",
       description:
         "Turn your business data into actionable insights with custom Business Analytics solutions. Monitor KPIs, generate reports, and make data-driven decisions through interactive dashboards.",
-      image: "/images/solutions/business-analytics-banner.png",
+      image: "/images/solutions/business-analytics-banner.jpg",
       primaryButton: "Get Free Consultation",
       secondaryButton: "Request Demo",
     },
