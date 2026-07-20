@@ -1,18 +1,16 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaReact,
-  FaMobileAlt,
+  FaArrowRight,
   FaBolt,
-  FaPalette,
   FaChartBar,
   FaCode,
-  FaUsers,
   FaLightbulb,
-  FaTachometerAlt,
-  FaArrowRight,
+  FaMobileAlt,
+  FaPalette,
+  FaReact,
+  FaTachometerAlt
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Frontend = () => {
   const navigate = useNavigate();

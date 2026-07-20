@@ -1,18 +1,15 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaApple,
-  FaAndroid,
+  FaBuilding,
+  FaChartLine,
+  FaGlobe,
   FaMobileAlt,
   FaRocket,
-  FaSync,
-  FaChartLine,
-  FaUsers,
   FaShieldAlt,
-  FaGlobe,
-  FaBuilding,
+  FaSync,
+  FaUsers
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const MobileAppDevelopment = () => {
   const navigate = useNavigate();

@@ -1,19 +1,11 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaRocket,
-  FaUsers,
-  FaShieldAlt,
-  FaLightbulb,
-  FaHandshake,
-  FaChartLine,
-  FaLaptopCode,
   FaGlobe,
-  FaAward,
-  FaIndustry,
+  FaHandshake,
   FaHeart,
+  FaLightbulb
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const stats = [
   { number: "500", label: "Projects Delivered", suffix: "+" },

@@ -1,6 +1,5 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
 import { FaArrowLeft, FaCalendarAlt, FaTag } from "react-icons/fa";
+import { useNavigate, useParams } from "react-router-dom";
 
 const BlogDetail = () => {
   const { slug } = useParams();

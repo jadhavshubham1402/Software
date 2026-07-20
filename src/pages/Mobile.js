@@ -1,15 +1,13 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
   FaApple,
-  FaAndroid,
-  FaMobileAlt,
-  FaReact,
-  FaChartBar,
   FaArrowRight,
+  FaChartBar,
+  FaMobileAlt,
+  FaReact
 } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const Mobile = () => {
   const navigate = useNavigate();

@@ -1,18 +1,16 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
+  FaArrowRight,
+  FaChartBar,
   FaCloud,
+  FaCubes,
+  FaLightbulb,
+  FaRocket,
   FaServer,
   FaShieldAlt,
-  FaRocket,
-  FaChartBar,
-  FaCubes,
-  FaUsers,
-  FaLightbulb,
-  FaTachometerAlt,
-  FaArrowRight,
+  FaTachometerAlt
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cloud = () => {
   const navigate = useNavigate();

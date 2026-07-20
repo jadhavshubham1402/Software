@@ -1,18 +1,16 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaDatabase,
-  FaBolt,
-  FaShieldAlt,
-  FaExchangeAlt,
-  FaStream,
-  FaLock,
-  FaTachometerAlt,
-  FaLightbulb,
-  FaUsers,
   FaArrowRight,
+  FaBolt,
+  FaDatabase,
+  FaExchangeAlt,
+  FaLightbulb,
+  FaLock,
+  FaShieldAlt,
+  FaStream,
+  FaTachometerAlt
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Database = () => {
   const navigate = useNavigate();

@@ -1,18 +1,16 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaServer,
-  FaDatabase,
-  FaLock,
+  FaArrowRight,
   FaBolt,
   FaCloud,
   FaCogs,
-  FaUsers,
+  FaDatabase,
   FaLightbulb,
-  FaTachometerAlt,
-  FaArrowRight,
+  FaLock,
+  FaServer,
+  FaTachometerAlt
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Backend = () => {
   const navigate = useNavigate();
