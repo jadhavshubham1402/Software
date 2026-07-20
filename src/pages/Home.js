@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import Industries from "./Industries";
 import LatestBlogs from "./LatestBlogs";
 import Services from "./Services";
+import SoftwareSolutions from "./SoftwareSolution";
 import TechnologyStack from "./TechnologyStack";
 import WhyChooseUs from "./WhyChooseUs";
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Industries />
       <DevelopmentProcess />
       <FeaturedProjects />
+      <SoftwareSolutions />
       <FAQ />
       <LatestBlogs />
       <CTA />

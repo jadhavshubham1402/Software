@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12) !important;
+}
+
+.solution-card:hover .text-primary {
+  color: #dc3545 !important;
+}

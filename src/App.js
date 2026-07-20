@@ -24,6 +24,7 @@ import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetails";
 import BlogDetail from "./pages/BlogDetails";
 import SupportMaintenance from "./pages/SupportMaintaince";
+import SolutionDetails from "./pages/SolutionDetails";
 
 function App() {
   function ScrollToTop() {
@@ -43,6 +44,7 @@ function App() {
         {/* Common Layout */}
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/solutions/:slug" element={<SolutionDetails />} />
 
           <Route path="/about" element={<AboutPage />} />
           <Route
@@ -59,7 +61,10 @@ function App() {
           />
           <Route path="/services/ai-ml" element={<AIML />} />
           <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
-          <Route path="/services/support-maintenance" element={<SupportMaintenance />} />
+          <Route
+            path="/services/support-maintenance"
+            element={<SupportMaintenance />}
+          />
           <Route path="/technologies/frontend" element={<Frontend />} />
           <Route path="/technologies/backend" element={<Backend />} />
           <Route path="/technologies/mobile" element={<Mobile />} />
