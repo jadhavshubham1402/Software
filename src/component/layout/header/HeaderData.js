@@ -73,24 +73,28 @@ export const navLinks = [
     hasDropdown: true,
     dropdownItems: [
       {
-        title: "Healthcare",
-        path: "/industries/healthcare",
+        title: "Health Tech",
+        path: "/industries/health-tech",
       },
       {
-        title: "Fintech",
-        path: "/industries/fintech",
+        title: "Automotive",
+        path: "/industries/automotive",
       },
       {
-        title: "Education",
-        path: "/industries/education",
+        title: "Retail / e-Commerce",
+        path: "/industries/retail-ecommerce",
       },
       {
-        title: "E-Commerce",
-        path: "/industries/ecommerce",
+        title: "Manufacturing",
+        path: "/industries/manufacturing",
       },
       {
-        title: "Logistics",
-        path: "/industries/logistics",
+        title: "Media & Entertainment",
+        path: "/industries/media-entertainment",
+      },
+      {
+       title: "Travel & Hospitality",
+       path: "/industries/travel-hospitality",
       },
     ],
   },
