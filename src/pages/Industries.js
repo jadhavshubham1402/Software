@@ -6,66 +6,50 @@ import {
   FaGraduationCap,
   FaPlaneDeparture,
   FaBuilding,
-  FaTruck,
-  FaIndustry,
 } from "react-icons/fa";
 
 const industries = [
   {
     id: 1,
     icon: <FaHeartbeat />,
-    title: "Healthcare",
+    title: "Health Tech",
     description:
-      "HIPAA-compliant solutions, telemedicine, EMR/EHR, and patient management systems.",
+      "World's Most Advanced Medical & Digital Health Techologies...",
   },
   {
     id: 2,
     icon: <FaUniversity />,
-    title: "Banking & Finance",
+    title: "Automotive",
     description:
-      "Fintech platforms, digital banking, payment gateways, and investment solutions.",
+      "Digital solutions for automotive businesses, connected vehicles, mobility platforms, and smart transportation systems.",
   },
   {
     id: 3,
     icon: <FaShoppingCart />,
-    title: "E-Commerce",
+    title: "Retail / e-Commerce",
     description:
-      "High-converting online stores, multi-vendor marketplaces, and B2B portals.",
+      "Digital commerce solutions, online stores, e-commerce platforms, and customer-focused retail experiences.",
   },
   {
     id: 4,
     icon: <FaGraduationCap />,
-    title: "Education",
+    title: "Manufacturing",
     description:
-      "LMS platforms, eLearning apps, virtual classrooms, and student management systems.",
+      "Smart manufacturing solutions, automation, digital transformation, and Industry 4.0 technologies.",
   },
   {
     id: 5,
     icon: <FaPlaneDeparture />,
-    title: "Travel & Hospitality",
+    title: "Media & Entertainment",
     description:
-      "Booking engines, hotel management systems, and tourism platforms.",
+      "OTT services, CMS development, and software solutions for Digital Asset Management.",
   },
   {
     id: 6,
     icon: <FaBuilding />,
-    title: "Real Estate",
+    title: "Traveling Hospitality",
     description:
-      "Property portals, CRM systems, and real estate management software.",
-  },
-  {
-    id: 7,
-    icon: <FaTruck />,
-    title: "Logistics & Supply Chain",
-    description:
-      "Fleet management, warehouse automation, and real-time tracking solutions.",
-  },
-  {
-    id: 8,
-    icon: <FaIndustry />,
-    title: "Manufacturing",
-    description:
-      "ERP systems, inventory management, production monitoring, and Industry 4.0 solutions.",
+      "GDS integration services,Smart Solutions for flight booking,",
   },
 ];
 

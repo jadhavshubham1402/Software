@@ -12,11 +12,12 @@ import Backend from "./pages/Backend";
 import Mobile from "./pages/Mobile";
 import Cloud from "./pages/Cloud";
 import Database from "./pages/Database";
-import Healthcare from "./pages/HealthCare";
-import Fintech from "./pages/Finetech";
-import Education from "./pages/Education";
-import Ecommerce from "./pages/Ecommerce";
-import Logistics from "./pages/Logistics";
+import HealthTech from "./pages/industries/HealthTech";
+import Automotive from "./pages/industries/Automotive";
+import RetailEcommerce from "./pages/industries/RetailEcommerce";
+import Manufacturing from "./pages/industries/Manufacturing";
+import MediaEntertainment from "./pages/industries/MediaEntertainment";
+import TravelHospitality from "./pages/industries/TravelHospitality";
 import Portfolio from "./pages/portfolio";
 import Blogs from "./pages/Blogs";
 import { useEffect } from "react";
@@ -70,12 +71,12 @@ function App() {
           <Route path="/technologies/mobile" element={<Mobile />} />
           <Route path="/technologies/database" element={<Database />} />
           <Route path="/technologies/cloud" element={<Cloud />} />
-          <Route path="/industries/healthcare" element={<Healthcare />} />
-          <Route path="/industries/fintech" element={<Fintech />} />
-          <Route path="/industries/education" element={<Education />} />
-          <Route path="/industries/ecommerce" element={<Ecommerce />} />
-
-          <Route path="/industries/logistics" element={<Logistics />} />
+          <Route path="/industries/health-tech" element={<HealthTech />} />
+          <Route path="/industries/automotive" element={<Automotive />} />
+          <Route path="/industries/retail-ecommerce" element={<RetailEcommerce />} />
+          <Route path="/industries/manufacturing" element={<Manufacturing />} />
+          <Route path="/industries/media-entertainment" element={<MediaEntertainment />} />
+          <Route path="/industries/travel-hospitality" element={<TravelHospitality />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<ProjectDetail />} />
           <Route path="/blogs" element={<Blogs />} />
