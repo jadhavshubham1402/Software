@@ -1,17 +1,14 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaGraduationCap,
-  FaChalkboardTeacher,
-  FaUsers,
-  FaMobileAlt,
-  FaBrain,
-  FaSchool,
-  FaShieldAlt,
-  FaLightbulb,
   FaArrowRight,
+  FaBrain,
+  FaChalkboardTeacher,
+  FaGraduationCap,
+  FaMobileAlt,
+  FaSchool,
+  FaUsers
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Manufacturing = () => {
   const navigate = useNavigate();
