@@ -1,18 +1,91 @@
 // solutionData.js
 import {
-  FaUsers,
-  FaHospital,
-  FaShoppingCart,
-  FaFileInvoiceDollar,
   FaBoxes,
-  FaSchool,
-  FaClinicMedical,
-  FaUserMd,
-  FaTruck,
-  FaMobileAlt,
   FaBuilding,
+  FaCar,
+  FaChargingStation,
   FaChartLine,
+  FaClinicMedical,
+  FaDesktop,
+  FaFileInvoiceDollar,
+  FaHospital,
+  FaMapMarkedAlt,
+  FaMicrochip,
+  FaMobileAlt,
+  FaMotorcycle,
+  FaRobot,
+  FaSchool,
+  FaShieldAlt,
+  FaShoppingCart,
+  FaTruck,
+  FaUserMd,
+  FaUsers,
 } from "react-icons/fa";
+import { GiRadarSweep } from "react-icons/gi";
+import { MdSensors } from "react-icons/md";
+
+export const automotiveList = [
+  {
+    slug: "connected-internet-cars",
+    title: "Connected Internet Cars",
+    icon: <FaCar className="text-5xl" />,
+    desc: "Enable real-time connectivity, remote diagnostics, over-the-air updates, and seamless communication between vehicles and cloud platforms.",
+  },
+  {
+    slug: "ev-charging-software",
+    title: "EV Charging Software",
+    icon: <FaChargingStation className="text-5xl" />,
+    desc: "Develop intelligent charging station management, payment integration, energy monitoring, and fleet charging solutions.",
+  },
+  {
+    slug: "smart-bikes",
+    title: "Smart Bikes",
+    icon: <FaMotorcycle className="text-5xl" />,
+    desc: "Build connected bike platforms with GPS tracking, ride analytics, anti-theft systems, and mobile app integration.",
+  },
+  {
+    slug: "telematics",
+    title: "Telematics",
+    icon: <MdSensors className="text-5xl" />,
+    desc: "Monitor vehicle performance, driver behaviour, fuel usage, and maintenance using advanced telematics solutions.",
+  },
+  {
+    slug: "autonomous-adas",
+    title: "Autonomous & ADAS",
+    icon: <GiRadarSweep className="text-5xl" />,
+    desc: "Create intelligent driver assistance systems using computer vision, radar, LiDAR, and AI-powered decision making.",
+  },
+  {
+    slug: "ai-machine-learning",
+    title: "AI & Machine Learning",
+    icon: <FaRobot className="text-5xl" />,
+    desc: "Leverage AI for predictive maintenance, route optimisation, driver monitoring, and smart mobility applications.",
+  },
+  {
+    slug: "navigation-mapping",
+    title: "Navigation & Mapping",
+    icon: <FaMapMarkedAlt className="text-5xl" />,
+    desc: "Deliver accurate navigation, real-time traffic updates, route planning, and location-based automotive services.",
+  },
+  {
+    slug: "iot-embedded-solutions",
+    title: "IoT & Embedded Solutions",
+    icon: <FaMicrochip className="text-5xl" />,
+    desc: "Develop embedded automotive systems and IoT-enabled devices for connected mobility ecosystems.",
+  },
+  {
+    slug: "hmi",
+    title: "HMI",
+    icon: <FaDesktop className="text-5xl" />,
+    desc: "Design intuitive Human Machine Interfaces with modern dashboards, infotainment systems, and digital cockpit experiences.",
+  },
+  {
+    slug: "security",
+    title: "Security",
+    icon: <FaShieldAlt className="text-5xl" />,
+    desc: "Protect connected vehicles with cybersecurity, secure communication protocols, and threat detection systems.",
+  },
+];
 
 export const softwareSolutions = [
   {
@@ -149,27 +222,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Healthcare CRM",
-          icon: "https://picsum.photos/id/107/120/120", // Hospital / Healthcare
+          icon: "FaHospital", // Hospital / Healthcare
         },
         {
           name: "Real Estate CRM",
-          icon: "https://picsum.photos/id/1015/120/120", // Real Estate
+          icon: "FaHome", // Real Estate
         },
         {
           name: "Education CRM",
-          icon: "https://picsum.photos/id/201/120/120", // Education
+          icon: "FaGraduationCap", // Education
         },
         {
           name: "Finance CRM",
-          icon: "https://picsum.photos/id/251/120/120", // Finance / Banking
+          icon: "FaChartLine", // Finance / Banking
         },
         {
           name: "Retail CRM",
-          icon: "https://picsum.photos/id/180/120/120", // Retail / Shopping
+          icon: "FaShoppingCart", // Retail / Shopping
         },
         {
           name: "Manufacturing CRM",
-          icon: "https://picsum.photos/id/106/120/120", // Manufacturing / Factory
+          icon: "FaIndustry", // Manufacturing / Factory
         },
       ],
     },
