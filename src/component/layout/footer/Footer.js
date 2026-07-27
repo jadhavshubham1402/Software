@@ -29,7 +29,7 @@ const Footer = () => {
     <footer className="bg-[#0A0A0F] text-white/80 border-t border-white/10">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
@@ -49,7 +49,6 @@ const Footer = () => {
             <div className="flex gap-4 mt-10">
               {[
                 { icon: <FaFacebookF />, link: socialLinks.facebook },
-                { icon: <FaLinkedinIn />, link: socialLinks.linkedin },
                 { icon: <FaInstagram />, link: socialLinks.instagram },
                 { icon: <FaTwitter />, link: socialLinks.twitter },
               ].map((social, i) => (

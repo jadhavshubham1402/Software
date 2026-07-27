@@ -26,16 +26,6 @@ const SolutionDetails1 = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Back Button */}
-      <div className="max-w-7xl mx-auto px-6 pt-8">
-        <button
-          onClick={() => navigate("/solutions")}
-          className="flex items-center gap-3 text-blue-600 hover:text-blue-700 font-medium transition"
-        >
-          <FaArrowLeft />
-          Back to All Solutions
-        </button>
-      </div>
 
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-20">
