@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 import {
-  FaGlobe,
   FaHandshake,
   FaHeart,
   FaLightbulb,
-  FaUsers,
   FaRocket,
   FaShieldAlt,
+  FaUsers
 } from "react-icons/fa";
 
 const AboutPage = () => {
