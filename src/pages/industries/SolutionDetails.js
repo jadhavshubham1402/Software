@@ -1,10 +1,3 @@
-import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaPhoneAlt,
-} from "react-icons/fa";
 import { useParams } from "react-router-dom";
 
 const SolutionDetails = () => {

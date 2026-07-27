@@ -15,11 +15,11 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const socialLinks = {
- facebook: "https://www.facebook.com/paxykop-116236794396439",
- instagram: "https://www.instagram.com/paxykopone/",
- twitter: "https://twitter.com/paxykopone/",
- linkedin: "#",
-};
+    facebook: "https://www.facebook.com/paxykop-116236794396439",
+    instagram: "https://www.instagram.com/paxykopone/",
+    twitter: "https://twitter.com/paxykopone/",
+    linkedin: "#",
+  };
 
   const handleServiceClick = (servicePath) => {
     navigate(servicePath);
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/images/logo.png"
+                src={paxykopLogo}
                 alt="Company Logo"
                 className="h-12 brightness-110"
               />
@@ -119,40 +119,35 @@ const Footer = () => {
             </ul>
           </div>
 
-        {/* Contact Info */}
-<div>
-  <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
-    Get In Touch
-  </h3>
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
+              Get In Touch
+            </h3>
 
-  <div className="space-y-6 text-white/70">
+            <div className="space-y-6 text-white/70">
+              <div className="flex gap-4">
+                <FaPhoneAlt className="mt-1 text-cyan-400" />
+                <a href="tel:+6589182836">+65 89182836</a>
+              </div>
 
-    <div className="flex gap-4">
-      <FaPhoneAlt className="mt-1 text-cyan-400" />
-      <a href="tel:+6589182836">
-        +65 89182836
-      </a>
-    </div>
+              <div className="flex gap-4">
+                <FaEnvelope className="mt-1 text-cyan-400" />
+                <a href="mailto:info@softtech.com">info@softtech.com</a>
+              </div>
 
-    <div className="flex gap-4">
-      <FaEnvelope className="mt-1 text-cyan-400" />
-      <a href="mailto:info@softtech.com">
-        info@softtech.com
-      </a>
-    </div>
-
-    <div className="flex gap-4">
-      <FaMapMarkerAlt className="mt-1 text-cyan-400" />
-      <div>
-        L-39, MBFC, 10 Marina Blvd,
-        <br />
-        Singapore - 018 983
+              <div className="flex gap-4">
+                <FaMapMarkerAlt className="mt-1 text-cyan-400" />
+                <div>
+                  L-39, MBFC, 10 Marina Blvd,
+                  <br />
+                  Singapore - 018 983
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
     </footer>
   );
 };
