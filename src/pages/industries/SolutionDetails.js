@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import hmsVideo from "../../assets/hmsVideo.mp4";
+import hmsImage2 from "../../assets/hmsImage2.png";
 
 const SolutionDetails = () => {
   const { solution } = useParams();
@@ -93,7 +95,9 @@ const data = content[solution];
 <p className="text-xl text-white/80 mb-10">
   {data?.description}
 </p>
-<div className="w-full h-[350px] my-10"></div>
+<video controls className="w-full rounded-xl my-10">
+  <source src={hmsVideo} type="video/mp4" />
+</video>
 
 <div className="space-y-8">
   {data?.sections.map((item, index) => (
@@ -109,9 +113,13 @@ const data = content[solution];
       <p className="text-white/80">
         {item.text}
       </p>
-      {item.heading === "More to go !" && (
-        <div className="w-full h-[350px] my-10"></div>
-      )}
+     {item.heading === "More to go !" && (
+  <img
+    src={hmsImage2}
+    alt="More to go"
+    className="w-full rounded-xl my-10"
+  />
+)}
     </div>
   ))}
 </div>
