@@ -1,17 +1,14 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
+  FaArrowRight,
+  FaChartLine,
+  FaLink,
+  FaMobileAlt,
   FaMoneyBillWave,
   FaShieldAlt,
-  FaChartLine,
-  FaMobileAlt,
-  FaLink,
-  FaUsers,
-  FaTachometerAlt,
-  FaLightbulb,
-  FaArrowRight,
+  FaUsers
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Automotive = () => {
   const navigate = useNavigate();
