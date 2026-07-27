@@ -8,9 +8,6 @@ import {
   FaBrain,
   FaChartBar,
   FaIdCard,
-  FaShieldAlt,
-  FaUsers,
-  FaLightbulb,
   FaArrowRight,
 } from "react-icons/fa";
 
@@ -21,6 +18,10 @@ const HealthTech = () => {
     navigate("/contact");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const handleReadMore = (page) => {
+  navigate(page);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
@@ -66,29 +67,6 @@ const HealthTech = () => {
         </div>
       </section>
 
-      {/* STATS BAR */}
-      <div className="border-b border-white/10 bg-black/40">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "100+", label: "Projects" },
-            { number: "50+", label: "Clients" },
-            { number: "10+", label: "Years Experience" },
-            { number: "24/7", label: "Support" },
-          ].map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="border-r border-white/10 last:border-0"
-            >
-              <p className="text-4xl font-bold text-cyan-400">{stat.number}</p>
-              <p className="text-white/70 mt-1">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
       {/* OUR HEALTHCARE SOLUTIONS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -105,34 +83,46 @@ const HealthTech = () => {
             {[
               {
                 title: "HMS",
-                desc: "Secure, intuitive, and interoperable digital patient record systems.",
+                paragraph: "We help providers keep close track of patient surveys and generate meaningful statistics which can help the management understand trends and make decisions that facilitates higher productivity and enhanced operation management.",
                 icon: <FaHeartbeat className="text-5xl" />,
+                route: "/healthtech/hms",
               },
               {
                 title: "Mobile Health care",
-                desc: "High-quality virtual consultations, remote monitoring, and digital health services.",
+                paragraph: "Data driven insights helps you understand patients better and our information rich dashboards achieve that for you. Its intuitive, rich with quality metrics and offers clear insight on your response to patients.",
                 icon: <FaUserMd className="text-5xl" />,
+                route: "/healthtech/mobile-healthcare",
               },
               {
                 title: "Smart hospitals",
-                desc: "Smart appointment scheduling, billing, and end-to-end workflow automation.",
+                paragraph: "Let your workforce deliver your expectations by sharing critical information that our dashboards generate for you. When everyone is clear of what to deliver, better the ROI.",
                 icon: <FaCalendarAlt className="text-5xl" />,
+                route: "/healthtech/smart-hospitals",
               },
               {
                 title: "Patients Engagement",
-                desc: "Intelligent clinical decision support and early disease detection tools.",
+                paragraph: "Business intelligence solutions helps providers make the best use of massive amount of data. Our dashboards empower the management to get both small and big metrics such as the bed occupancy levels and help view the big picture for improvised decision making.",
                 icon: <FaBrain className="text-5xl" />,
+                route: "/healthtech/patients-engagement",
               },
               {
                 title: "Wearables",
-                desc: "Real-time insights for hospitals, clinics, and population health management.",
+                paragraph: "Our dashboards help optimize the art of resource allocation and deliver better standards of quality care. It comes inclusive of KPIs and ways to enhance profitability and patient engagement.",
                 icon: <FaChartBar className="text-5xl" />,
+                route: "/healthtech/wearables",
               },
               {
-                title: "Digital Health Cards",
-                desc: "Portable, secure digital health IDs with emergency access and medical history.",
+                title: "Dashboard",
+                paragraph: "Our patient health dashboard offers clear metrics on patients health individually and enables the hospital to plan and provide more custom treatments which again has direct impact on patients over all treatment experience at the hospital.",
                 icon: <FaIdCard className="text-5xl" />,
+                route: "/healthtech/dashboard",
               },
+              {
+                title: "Internet of Things",
+                paragraph: "It’s the employees or workers performance that drives the quality service to patients in any hospital or medical establishment. With productivity tracker dashboard one can have a systematic view of data from various other sources which becomes vital to measure workforce performance against the set targets. This helps identify areas of improvements and also eliminate redundant activities.",
+                icon: <FaChartBar className="text-5xl" />,
+                route: "/healthtech/internet-of-things",
+              }
             ].map((solution, i) => (
               <motion.div
                 key={i}
@@ -149,50 +139,13 @@ const HealthTech = () => {
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Healthcare Organizations Trust Us
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                icon: <FaShieldAlt className="text-5xl" />,
-                title: "Healthcare",
-                desc: "Full adherence to healthcare regulations with enterprise-grade security.",
-              },
-              {
-                icon: <FaUsers className="text-5xl" />,
-                title: "Patient-First Design",
-                desc: "Solutions built with empathy, usability, and real clinical workflows in mind.",
-              },
-              {
-                icon: <FaLightbulb className="text-5xl" />,
-                title: "Seamless Integration",
-                desc: "Works flawlessly with existing hospital systems and legacy infrastructure.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
-              >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
+                <p className="text-white/70 leading-relaxed">{solution.paragraph}</p>
+                <button
+                    onClick={() => handleReadMore(solution.route)}
+                    className="mt-6 text-cyan-400 font-semibold hover:text-cyan-300 flex items-center gap-2"
+                >
+                    Read More <FaArrowRight />
+                </button>
               </motion.div>
             ))}
           </div>

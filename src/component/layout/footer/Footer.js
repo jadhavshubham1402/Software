@@ -3,22 +3,22 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaInstagram,
-  FaYoutube,
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
   FaArrowRight,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   const socialLinks = {
-    facebook: "https://facebook.com/yourcompany",
-    linkedin: "https://linkedin.com/company/yourcompany",
-    instagram: "https://instagram.com/yourcompany",
-    youtube: "https://youtube.com/@yourcompany",
-  };
+ facebook: "https://www.facebook.com/paxykop-116236794396439",
+ instagram: "https://www.instagram.com/paxykopone/",
+ twitter: "https://twitter.com/paxykopone/",
+ linkedin: "#",
+};
 
   const handleServiceClick = (servicePath) => {
     navigate(servicePath);
@@ -50,7 +50,7 @@ const Footer = () => {
                 { icon: <FaFacebookF />, link: socialLinks.facebook },
                 { icon: <FaLinkedinIn />, link: socialLinks.linkedin },
                 { icon: <FaInstagram />, link: socialLinks.instagram },
-                { icon: <FaYoutube />, link: socialLinks.youtube },
+                { icon: <FaTwitter />, link: socialLinks.twitter },
               ].map((social, i) => (
                 <a
                   key={i}
@@ -118,56 +118,38 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
-              Get In Touch
-            </h3>
+        {/* Contact Info */}
+<div>
+  <h3 className="text-white text-xl font-semibold mb-8 tracking-tight">
+    Get In Touch
+  </h3>
 
-            <div className="space-y-6 text-white/70">
-              <div className="flex gap-4">
-                <div className="mt-1 text-cyan-400">
-                  <FaPhoneAlt />
-                </div>
-                <div>
-                  <a
-                    href="tel:+919876543210"
-                    className="hover:text-cyan-400 transition-colors"
-                  >
-                    +91 98765 43210
-                  </a>
-                </div>
-              </div>
+  <div className="space-y-6 text-white/70">
 
-              <div className="flex gap-4">
-                <div className="mt-1 text-cyan-400">
-                  <FaEnvelope />
-                </div>
-                <div>
-                  <a
-                    href="mailto:info@softtech.com"
-                    className="hover:text-cyan-400 transition-colors"
-                  >
-                    info@softtech.com
-                  </a>
-                </div>
-              </div>
+    <div className="flex gap-4">
+      <FaPhoneAlt className="mt-1 text-cyan-400" />
+      <a href="tel:+6589182836">
+        +65 89182836
+      </a>
+    </div>
 
-              <div className="flex gap-4">
-                <div className="mt-1 text-cyan-400">
-                  <FaMapMarkerAlt />
-                </div>
-                <div>
-                  Mumbai, Maharashtra,
-                  <br />
-                  India
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="flex gap-4">
+      <FaEnvelope className="mt-1 text-cyan-400" />
+      <a href="mailto:info@softtech.com">
+        info@softtech.com
+      </a>
+    </div>
+
+    <div className="flex gap-4">
+      <FaMapMarkerAlt className="mt-1 text-cyan-400" />
+      <div>
+        L-39, MBFC, 10 Marina Blvd,
+        <br />
+        Singapore - 018 983
       </div>
-
+    </div>
+  </div>
+</div>
       {/* Bottom Bar */}
       <div className="border-t border-white/10 bg-black/60">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
@@ -199,6 +181,8 @@ const Footer = () => {
           <p className="text-white/50 text-xs">Made with ❤️ in India</p>
         </div>
       </div>
+    </div>
+  </div>
     </footer>
   );
 };

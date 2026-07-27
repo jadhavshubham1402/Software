@@ -8,9 +8,6 @@ import {
   FaBrain,
   FaChartBar,
   FaIdCard,
-  FaShieldAlt,
-  FaUsers,
-  FaLightbulb,
   FaArrowRight,
 } from "react-icons/fa";
 
@@ -65,29 +62,6 @@ const TravelHospitality = () => {
           </div>
         </div>
       </section>
-
-      {/* STATS BAR */}
-      <div className="border-b border-white/10 bg-black/40">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "60+", label: "Healthcare Projects" },
-            { number: "95%", label: "Patient Satisfaction" },
-            { number: "40+", label: "Hospitals & Clinics" },
-            { number: "HIPAA", label: "Fully Compliant" },
-          ].map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="border-r border-white/10 last:border-0"
-            >
-              <p className="text-4xl font-bold text-cyan-400">{stat.number}</p>
-              <p className="text-white/70 mt-1">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
 
       {/* OUR HEALTHCARE SOLUTIONS */}
       <section className="py-24">
@@ -150,49 +124,6 @@ const TravelHospitality = () => {
                   {solution.title}
                 </h3>
                 <p className="text-white/70 leading-relaxed">{solution.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Healthcare Organizations Trust Us
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                icon: <FaShieldAlt className="text-5xl" />,
-                title: "HIPAA & Compliance",
-                desc: "Full adherence to healthcare regulations with enterprise-grade security.",
-              },
-              {
-                icon: <FaUsers className="text-5xl" />,
-                title: "Patient-First Design",
-                desc: "Solutions built with empathy, usability, and real clinical workflows in mind.",
-              },
-              {
-                icon: <FaLightbulb className="text-5xl" />,
-                title: "Seamless Integration",
-                desc: "Works flawlessly with existing hospital systems and legacy infrastructure.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
-              >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>
