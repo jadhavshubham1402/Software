@@ -63,29 +63,7 @@ const Manufacturing = () => {
           </div>
         </div>
       </section>
-
-      {/* STATS BAR */}
-      <div className="border-b border-white/10 bg-black/40">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "100+", label: "Projects" },
-            { number: "50+", label: "Clients" },
-            { number: "10+", label: "Years Experience" },
-            { number: "24/7", label: "Support" },
-          ].map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="border-r border-white/10 last:border-0"
-            >
-              <p className="text-4xl font-bold text-cyan-400">{stat.number}</p>
-              <p className="text-white/70 mt-1">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+      
 
       {/* OUR Manufacturing SOLUTIONS */}
       <section className="py-24">
@@ -146,49 +124,6 @@ const Manufacturing = () => {
                   {solution.title}
                 </h3>
                 <p className="text-white/70 leading-relaxed">{solution.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Manufacturing Companies Choose Us
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                icon: <FaShieldAlt className="text-5xl" />,
-                title: "Smart Manufacturing",
-                desc: "Improve production efficiency with modern digital technologies.",
-              },
-              {
-                icon: <FaLightbulb className="text-5xl" />,
-                title: "Scalable Solutions",
-                desc: "Flexible platforms designed to support manufacturing growth.",
-              },
-              {
-                icon: <FaSchool className="text-5xl" />,
-                title: "Operational Excellence",
-                desc: "Optimize processes, reduce downtime, and improve productivity.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
-              >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>

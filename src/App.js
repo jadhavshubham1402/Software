@@ -25,7 +25,7 @@ import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetails";
 import BlogDetail from "./pages/BlogDetails";
 import SupportMaintenance from "./pages/SupportMaintaince";
-import SolutionDetails from "./pages/SolutionDetails";
+import SolutionDetails from "./pages/industries/SolutionDetails";
 
 function App() {
   function ScrollToTop() {
@@ -43,9 +43,11 @@ function App() {
 
       <Routes>
         {/* Common Layout */}
-        <Route element={<Layout />}>
+          <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/solutions/:slug" element={<SolutionDetails />} />
+          <Route path="/healthtech/:solution" element={<SolutionDetails />}
+          />
 
           <Route path="/about" element={<AboutPage />} />
           <Route
