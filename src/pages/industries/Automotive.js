@@ -6,7 +6,7 @@ import {
   FaMobileAlt,
   FaMoneyBillWave,
   FaShieldAlt,
-  FaUsers
+  FaUsers,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const Automotive = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/fintech1.jpg')",
+            backgroundImage: "url('/images/automotive12.jpg')",
             opacity: 0.65,
           }}
         />
@@ -38,21 +38,22 @@ const Automotive = () => {
                 <FaMoneyBillWave /> Automotive Solutions
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
-                 Smart Automotive Solutions for the{" "}
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
+                Smart Automotive Solutions for the{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Future of Mobility
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
-                Connect & Internet Cars,EV Charging Software,Smart Bikes,Telematics,AI & Machine Learning...
+              <p className="text-xl text-white/80 max-w-xl mb-10">
+                Connect & Internet Cars,EV Charging Software,Smart
+                Bikes,Telematics,AI & Machine Learning...
               </p>
             </div>
 
             <div className="relative flex justify-center">
               <img
-                src="/images/fintech2.jpg"
+                src="/images/automotive2.jpg"
                 alt="Fintech Solutions"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10 w-full"
               />
@@ -65,7 +66,9 @@ const Automotive = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Automotive Solutions</h2>
+            <h2 className="text-4xl font-bold mb-4">
+              Our Automotive Solutions
+            </h2>
             <p className="text-xl text-white/70">
               Innovative technology for the future of finance
             </p>
@@ -126,20 +129,22 @@ const Automotive = () => {
         </div>
       </section>
 
-
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">Ready to Transform Your Automotive Business?</h2>
-          <p className="text-2xl text-white/90 mb-12">
-             Build innovative automotive solutions with our expert team to accelerate your digital transformation.
+      <section className="py-20 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">
+            Ready to Transform Your Automotive Business?
+          </h2>
+          <p className="text-xl text-white/90 mb-12">
+            Build innovative automotive solutions with our expert team to
+            accelerate your digital transformation.
           </p>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-base hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Automotive Project
             <FaArrowRight />

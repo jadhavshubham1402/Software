@@ -25,7 +25,7 @@ const Manufacturing = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/education1.jpg')",
+            backgroundImage: "url('/images/manufacturing1.jpg')",
             opacity: 0.65,
           }}
         />
@@ -38,7 +38,7 @@ const Manufacturing = () => {
                 <FaGraduationCap /> EdTech Solutions
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
                 Smart Manufacturing Solutions for the {" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Future of Industry
@@ -52,7 +52,7 @@ const Manufacturing = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="/images/education2.jpg"
+                src="/images/manufacturing2.jpg"
                 alt="Education Technology"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10 w-full"
               />
@@ -128,12 +128,12 @@ const Manufacturing = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">
             Empower Your Manufacturing Business
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-xl text-white/90 mb-12">
            Build intelligent manufacturing solutions that improve efficiency, productivity, and business growth.
           </p>
 
@@ -141,7 +141,7 @@ const Manufacturing = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-base hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Manufacturing Project
             <FaArrowRight />
