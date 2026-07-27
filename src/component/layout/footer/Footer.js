@@ -1,15 +1,14 @@
-import paxykopLogo from "../../../assets/paxykop-logo.png";
-import { useNavigate, Link } from "react-router-dom";
 import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
   FaArrowRight,
-  FaTwitter,
+  FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaTwitter
 } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import paxykopLogo from "../../../assets/paxykop-logo.png";
 
 const Footer = () => {
   const navigate = useNavigate();

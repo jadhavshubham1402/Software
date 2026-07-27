@@ -1,4 +1,3 @@
-import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 import { solutionDetails } from "../data/softwareData"; // Adjust path as needed
 
