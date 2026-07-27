@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { FaChevronDown } from "react-icons/fa";
 import { navLinks } from "./HeaderData";
+import paxykopLogo from "../../../assets/paxykop-logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -43,10 +44,10 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img
-              src="/images/logo.png"
-              className="h-12 transition-transform group-hover:scale-105"
-              alt="logo"
+           <img
+             src={paxykopLogo}
+             className="h-12 transition-transform group-hover:scale-105"
+             alt="Paxykop Logo"
             />
           </Link>
 
@@ -127,7 +128,7 @@ const Header = () => {
       >
         <div className="p-6">
           <div className="flex justify-between items-center mb-10">
-            <img src="/images/logo.png" className="h-11" alt="logo" />
+            <img src={paxykopLogo} className="h-11" alt="Paxykop Logo" />
             <button onClick={() => setMobileMenu(false)} className="p-2">
               <HiXMark className="text-4xl text-gray-700" />
             </button>

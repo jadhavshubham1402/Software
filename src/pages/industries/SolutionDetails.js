@@ -122,50 +122,15 @@ const data = content[solution];
     </div>
   ))}
 </div>
-<div className="mt-16 border-t border-white/10 pt-10">
-  <h2 className="text-3xl font-bold mb-4">Paxykop</h2>
 
-  <p className="text-white/80">
-    L-39, MBFC, 10 Marina Blvd,<br />
-    Singapore - 018 983
-  </p>
+  
 
-  <h3 className="text-2xl font-semibold mt-8 mb-4">
-    Join With Us
-  </h3>
-
-  <div className="flex gap-4">
-    <a href="https://www.facebook.com/paxykop-116236794396439"
-      target="_blank"
-      rel="noreferrer">
-      <FaFacebookF />
-    </a>
-
-    <a href="https://www.instagram.com/paxykopone/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <FaInstagram />
-    </a>
-
-    <a href="https://twitter.com/paxykopone/"
-      target="_blank"
-      rel="noreferrer">
-      <FaTwitter />
-    </a>
-  </div>
-
-  <h3 className="text-2xl font-semibold mt-8">
-    Call Us
-  </h3>
-  <div className="flex items-center gap-2">
-  <FaPhoneAlt />
-  <p>+65 89182836</p>
-  </div>
+  
+  
 </div>
 
       </div>
-    </div>
+  
   );
 };
 

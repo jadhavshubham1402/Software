@@ -1,3 +1,4 @@
+import paxykopLogo from "../../../assets/paxykop-logo.png";
 import { useNavigate, Link } from "react-router-dom";
 import {
   FaFacebookF,
@@ -150,37 +151,6 @@ const Footer = () => {
     </div>
   </div>
 </div>
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10 bg-black/60">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
-          <p className="text-white/60">
-            © {new Date().getFullYear()} SoftTech. All Rights Reserved.
-          </p>
-
-          <div className="flex gap-8 text-white/60">
-            <Link
-              to="/privacy-policy"
-              className="hover:text-cyan-400 transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-conditions"
-              className="hover:text-cyan-400 transition-colors"
-            >
-              Terms & Conditions
-            </Link>
-            <Link
-              to="/cookie-policy"
-              className="hover:text-cyan-400 transition-colors"
-            >
-              Cookie Policy
-            </Link>
-          </div>
-
-          <p className="text-white/50 text-xs">Made with ❤️ in India</p>
-        </div>
-      </div>
     </div>
   </div>
     </footer>
