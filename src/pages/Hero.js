@@ -48,12 +48,12 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
               <span className="text-emerald-400">●</span>
               Trusted by 150+ Growing Businesses
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-3xl lg:text-4xl font-bold leading-[1.1] tracking-tight">
               We Build Digital Products
               <br />
               That{" "}
@@ -62,7 +62,7 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-[520px] leading-relaxed">
+            <p className="text-sm text-gray-300 max-w-[520px] leading-relaxed">
               From idea to launch — we craft high-performance web apps, mobile
               experiences, and enterprise solutions that drive real business
               growth.
@@ -74,7 +74,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.98 }}
                 onClick={handleGetStarted}
                 disabled={isLoading}
-                className="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-2xl font-semibold flex items-center gap-3 text-lg transition-all disabled:opacity-75"
+                className="bg-blue-600 hover:bg-blue-700 px-6 py-4 rounded-2xl font-semibold flex items-center gap-3 text-base transition-all disabled:opacity-75"
               >
                 {isLoading ? "Connecting..." : "Start Your Project"}
                 <FaArrowRight />
@@ -84,7 +84,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleViewWork}
-                className="border border-white/30 hover:bg-white/10 px-8 py-4 rounded-2xl font-medium flex items-center gap-3 text-lg transition-all"
+                className="border border-white/30 hover:bg-white/10 px-6 py-4 rounded-2xl font-medium flex items-center gap-3 text-base transition-all"
               >
                 View Our Work
               </motion.button>

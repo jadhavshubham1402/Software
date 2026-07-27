@@ -10,45 +10,40 @@ import {
 
 const process = [
   {
-    id: "01",
     icon: <FaSearch />,
     title: "Discovery & Research",
     description:
-      "Deep dive into your business goals, user needs, and technical requirements.",
+      "Understand business goals, user needs, and technical requirements before development begins.",
   },
   {
-    id: "02",
     icon: <FaLightbulb />,
     title: "Strategy & Planning",
     description:
-      "Creating a comprehensive roadmap, architecture, and project execution plan.",
+      "Define the project roadmap, architecture, milestones, and execution strategy for success.",
   },
   {
-    id: "03",
     icon: <FaPencilRuler />,
     title: "UI/UX Design",
-    description: "Crafting intuitive, beautiful, and user-centered interfaces.",
+    description:
+      "Create intuitive, responsive, and visually engaging user interfaces for every platform.",
   },
   {
-    id: "04",
     icon: <FaCode />,
     title: "Development",
     description:
-      "Building robust, scalable, and high-performance applications.",
+      "Develop secure, scalable, and high-performance applications using modern technologies.",
   },
   {
-    id: "05",
     icon: <FaVial />,
     title: "Testing & QA",
     description:
-      "Rigorous testing, security audits, and performance optimization.",
+      "Perform functional, security, and performance testing to ensure a reliable product.",
   },
   {
-    id: "06",
     icon: <FaRocket />,
     title: "Deployment & Support",
     description:
-      "Smooth launch with continuous monitoring and long-term maintenance.",
+      "Launch the application smoothly and provide ongoing maintenance, updates, and support.",
   },
 ];
 
@@ -81,34 +76,29 @@ const DevelopmentProcess = () => {
         </div>
 
         {/* Process Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5">
           {process.map((step, index) => (
             <motion.div
-              key={step.id}
+              key={step.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-3xl p-8 transition-all duration-500 hover:bg-white/15 flex flex-col h-full"
+              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-2xl p-6 transition-all duration-500 hover:bg-white/15 flex flex-col items-center text-center h-full"
             >
               {/* Icon */}
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-4xl mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-3xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 {step.icon}
               </div>
 
-              {/* Title + ID */}
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-blue-400 font-mono font-bold text-xl">
-                  {step.id}
-                </span>
-                <h3 className="text-xl font-semibold text-white">
-                  {step.title}
-                </h3>
-              </div>
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-white min-h-[56px] flex items-center justify-center mb-4">
+                {step.title}
+              </h3>
 
               {/* Description */}
-              <p className="text-gray-300 leading-relaxed flex-1 text-[15.2px]">
+              <p className="text-gray-300 text-sm leading-6 flex-1">
                 {step.description}
               </p>
             </motion.div>

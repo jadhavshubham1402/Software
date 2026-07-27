@@ -2,7 +2,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 import { solutionDetails } from "../data/softwareData"; // Adjust path as needed
 
-const SolutionDetails = () => {
+const SolutionDetails1 = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
@@ -177,4 +177,4 @@ const SolutionDetails = () => {
   );
 };
 
-export default SolutionDetails;
+export default SolutionDetails1;

@@ -94,26 +94,21 @@ const Services = () => {
             >
               {/* Icon + ID */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-2xl text-3xl shadow-md group-hover:rotate-6 transition-transform">
+                <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-2xl text-xl shadow-md group-hover:rotate-6 transition-transform">
                   {service.icon}
                 </div>
-                <span className="text-3xl font-bold text-gray-200 group-hover:text-gray-100 transition-colors">
-                  {service.id}
+                <span className="text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                  {service.title}
                 </span>
               </div>
 
-              {/* Title */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 tracking-tight">
-                {service.title}
-              </h3>
-
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed flex-1 text-[15.2px]">
+              <p className="text-gray-600 leading-relaxed flex-1 text-[14px]">
                 {service.description}
               </p>
 
               {/* Learn More */}
-              <div className="mt-8 pt-6 border-t border-gray-100">
+              <div className="mt-4 pt-4 border-t border-gray-100">
                 <button
                   onClick={() => handleLearnMore(service.path)}
                   className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group-hover:gap-3 transition-all duration-300"
