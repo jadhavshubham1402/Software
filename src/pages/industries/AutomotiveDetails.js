@@ -48,7 +48,6 @@ import { automotiveList } from "../../data/softwareData";
 
 export default function AutomotiveDetails() {
   const { slug } = useParams();
-  console.log(slug);
   const service = automotiveList.find((item) => String(item.slug) === slug);
 
   if (!service) {
