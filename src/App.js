@@ -29,6 +29,9 @@ import SolutionDetails from "./pages/industries/SolutionDetails";
 import SolutionDetails1 from "./pages/SolutionDetails1";
 import AutomotiveDetails from "./pages/industries/AutomotiveDetails";
 import RetailDetails from "./pages/industries/RetailDetails";
+import ManufacturingDetails from "./pages/industries/ManufacturingDetails";
+import MediaDetails from "./pages/industries/MediaDetails";
+import TravelDetails from "./pages/industries/TravelList";
 
 function App() {
   function ScrollToTop() {
@@ -81,18 +84,12 @@ function App() {
           />
           <Route path="/industries/automotive" element={<Automotive />} />
           <Route
-           
             path="/industries/automotive/:slug"
-           
             element={<AutomotiveDetails />}
-         
           />
           <Route
-           
             path="/industries/retail-ecommerce"
-           
             element={<RetailEcommerce />}
-         
           />
           <Route
             path="/industries/retail-ecommerce/:slug"
@@ -100,12 +97,25 @@ function App() {
           />
           <Route path="/industries/manufacturing" element={<Manufacturing />} />
           <Route
+            path="/industries/manufacturing/:slug"
+            element={<ManufacturingDetails />}
+          />
+
+          <Route
             path="/industries/media-entertainment"
             element={<MediaEntertainment />}
           />
           <Route
+            path="/industries/media-entertainment/:slug"
+            element={<MediaDetails />}
+          />
+          <Route
             path="/industries/travel-hospitality"
             element={<TravelHospitality />}
+          />
+          <Route
+            path="/industries/travel-hospitality/:slug"
+            element={<TravelDetails />}
           />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<ProjectDetail />} />
