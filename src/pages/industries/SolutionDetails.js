@@ -1,9 +1,13 @@
 import { useParams } from "react-router-dom";
 import hmsVideo from "../../assets/hmsVideo.mp4";
 import hmsImage2 from "../../assets/hmsImage2.png";
+import mobileImage1 from "../../assets/mobileImage1.jpg";
+import mobileImage2 from "../../assets/mobileImage2.jpg";
+import mobileTechImage from "../../assets/mobileTechImage.jpg";
 
 const SolutionDetails = () => {
   const { solution } = useParams();
+  console.log(solution);
   const content = {
   hms: {
     title: "Hospital Management System (HMS)",
@@ -78,46 +82,140 @@ const SolutionDetails = () => {
 
     ],
   },
+
+  "mobile-healthcare": {
+    title: "Mobile Health Care",
+
+    introHeading: "Enabling Healthcare Mobility",
+
+    description:
+      "Lately, Health Care Mobility Solution Is Playing A Vital Role In Empowering Hospitals / Healthcare Units And Patients To Successfully Indulge In So Called One Point Collaboration. Along With Facilitating Collaboration, Fast And Secure Exchange Of Medical Data Is Also In Place Which Is Within The Compliance Parameters Of Regulatory Bodies Like HIPAA. Quality Of Patient Care Through Mobile Based Applications Has Been A Major Breakthrough In The Medical World Offering Seamless Opportunities To Ensure Connectivity Between Doctors And Patients Which Certainly Promotes “Anywhere Care” Like Never Before And Paxykop Mobile Apps Does Just That.",
+
+    sections: [
+{
+  heading: "Mobile based health care",
+  text: "Dissemination Of Information Real Time Offering Treatment Options And Diagnoses And Engage The Patient With App Based Appointment Booking Is Something Our Apps Excel On And We Continue To Upgrade Our Systems At Regular Intervals.",
+},
+{
+  heading: "Clinical Productivity",
+  text: "Equipping The Medical Team With Right Apps, Devices At The Right Time To Execute The Task In Whatever Situation And Ensure The Communication Is Streamlined As To Who Will Do What, Thereby Enhancing The Clinicians Performance In Patient Care.",
+},
+{
+  heading: "Apps to schedule appointments",
+  text: "Irrespective Of Time And Place Our Apps Makes It Possible For Patients To Book, Schedule And Cancel Appointments And This Helps You Retain Your Patients By Providing World Class Experience.",
+},
+{
+  heading: "Virtual consultation (VC)",
+  text: "Our VC App Facilitates Connecting With Patients And Medical Practitioners Across The Globe Seamlessly And Offer Treatments Irrespective Of Time And Location. This Proves Treatment Of Patients Remotely Is No More A Barrier.",
+},
+{
+  heading: "Auto Reminder Feature",
+  text: "Regular Reminders And Alerts To Adhere To Medication Helps Patients To Upkeep Their Medical Status And Also Periodic Prescription Refill Reminders Ensure They Never Run Out Of Medicine.",
+},
+{
+  heading: "App to track fitness",
+  text: "There’s No Fun If No Goals Are Set In Your Fitness Routine. Our Fitness Tracker And Wearable Systems Empower Patients And Health Enthusiasts To Keep A Tab On Their Fitness Metrics And Follow Healthy Diet And Fitness Routines.",
+},
+{
+  heading: "Clinical Assist",
+  text: "Our Apps Facilitate Real-Time Viewing Of MRI And X-Ray Scans, Plus Viewing Medical Results Which Has Proven To Be An Efficient Way To Kick-Start Any Treatment Or Enhance Ongoing Treatments.",
+},
+{
+  heading: "App to Manage Medical Inventory",
+  text: "Our App Has Proven To Be An Excellent Mobile Tool To Ensure Medical Supplies Are Always Stocked Up And Regular Reminders On Soon-To-Be-Over Supplies Help Inventory Managers Plan In Advance.",
+},
+{
+  heading: "Apps facilitate collaboration",
+  text: "Secured Texting And Message Dissemination Within Hospital Staff Network Is One Of The Key Features Of Clinical Data Mobilization. Linking The Same With Management Of Company Owned And Leased Assets Has Always Taken Operations To The Next Level.",
+},
+{
+  heading: "Data Management",
+  text: "Our App Is Well Built To Deliver Key Information About Patients' Health And Vitals Securely Across The Network At The Click Of A Button. It Is Flexible Enough To Be Customized As Per Hospital Needs.",
+},
+{
+  heading: "Efficient work flow",
+  text: "Our Advanced Mobile Based Applications Promote Enhanced Productivity Among Staff And Management. Our Database Architecture Eliminates Data Redundancy And Ensures Only The Required Information Is Shared.",
+},
+{
+  heading: "Healthcare Technology at its best",
+  text: "Our Team Scores High In Understanding The Ins And Outs Of Health Care Technologies Along With Industry Best Practices. Compliance With Regulatory Bodies Like HITECH And HIPAA Is Assured. We Imbibe Innovation At Every Level Of Development And Ensure Our Solutions Meet The Expectations Of Both Internal And External Stakeholders.",
+},
+    ],
+  },
 };
+
 const data = content[solution];
+if (!data) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#0A1428] text-white">
+      <h1 className="text-4xl font-bold">Solution Not Found</h1>
+    </div>
+  );
+}
 
   return (
-    <div className="bg-[#0A1428] min-h-screen text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-    <h1 className="text-5xl font-bold mb-8">
-  {data?.title}
+    <div className="bg-white min-h-screen py-10">
+      <div className="container mx-auto px-4">
+    <h1 className="text-4xl md:text-5xl font-bold text-center text-cyan-600 mb-6">
+  {data.title}
 </h1>
 
-<h2 className="text-3xl font-bold text-white mb-6">
+<h2 className="text-2xl md:text-3xl font-bold text-center text-cyan-600 max-w-4xl mx-auto leading-snug mb-6">
   {data?.introHeading}
 </h2>
 
-<p className="text-xl text-white/80 mb-10">
+<p className="text-lg text-gray-700 leading-8 text-justify max-w-5xl mx-auto mb-12">
   {data?.description}
 </p>
-<video controls className="w-full rounded-xl my-10">
-  <source src={hmsVideo} type="video/mp4" />
-</video>
+{solution === "mobile-healthcare" && (
+  <div className="grid md:grid-cols-2 gap-6 my-10">
+    <img
+      src={mobileImage1}
+      alt="Mobile Healthcare"
+      className="w-full rounded-xl"
+    />
+    <img
+      src={mobileImage2}
+      alt="Healthcare Mobility"
+      className="w-full rounded-xl"
+    />
+  </div>
+)}
+
+{solution === "hms" && (
+  <video controls className="w-full rounded-xl my-10">
+    <source src={hmsVideo} type="video/mp4" />
+  </video>
+)}
 
 <div className="space-y-8">
   {data?.sections.map((item, index) => (
     
     <div
       key={index}
-      className="bg-white/5 border border-white/10 rounded-2xl p-6"
+      className="bg-white rounded-xl shadow border p-8 mb-8"
     >
-      <h2 className="text-2xl font-semibold text-cyan-400 mb-3">
+      <h2 className="text-2xl font-semibold text-cyan-600 text-center mb-4">
         {item.heading}
       </h2>
 
-      <p className="text-white/80">
-        {item.text}
-      </p>
-     {item.heading === "More to go !" && (
+    <p className="text-gray-700 leading-8 text-justify">
+  {item.text}
+</p>
+
+{item.heading === "More to go !" && (
   <img
     src={hmsImage2}
     alt="More to go"
     className="w-full rounded-xl my-10"
+  />
+)}
+
+{item.heading === "Healthcare Technology at its best" && (
+  <img
+    src={mobileTechImage}
+    alt="Healthcare Technology"
+    className="w-full rounded-xl my-8"
   />
 )}
     </div>
