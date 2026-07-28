@@ -1,15 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { FaArrowRight, FaHeartbeat } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import {
-  FaHeartbeat,
-  FaUserMd,
-  FaCalendarAlt,
-  FaBrain,
-  FaChartBar,
-  FaIdCard,
-  FaArrowRight,
-} from "react-icons/fa";
+import { healthCareList } from "../../data/softwareData";
 
 const HealthTech = () => {
   const navigate = useNavigate();
@@ -18,10 +10,6 @@ const HealthTech = () => {
     navigate("/contact");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const handleReadMore = (page) => {
-  navigate(page);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
 
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
@@ -44,14 +32,14 @@ const HealthTech = () => {
               </div>
 
               <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
-                World's Most Advanced Medical and {" "}
+                World's Most Advanced Medical and{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
-                   Digital Health Techologies...
+                  Digital Health Techologies...
                 </span>
               </h1>
 
               <p className="text-xl text-white/80 max-w-xl mb-10">
-                World's Most Advanced Medical & Digital Health Techologies..  
+                World's Most Advanced Medical & Digital Health Techologies..
                 streamline operations, and empower medical professionals.
               </p>
             </div>
@@ -80,71 +68,36 @@ const HealthTech = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "HMS",
-                paragraph: "We help providers keep close track of patient surveys and generate meaningful statistics which can help the management understand trends and make decisions that facilitates higher productivity and enhanced operation management.",
-                icon: <FaHeartbeat className="text-5xl" />,
-                route: "/healthtech/hms",
-              },
-              {
-                title: "Mobile Health care",
-                paragraph: "Data driven insights helps you understand patients better and our information rich dashboards achieve that for you. Its intuitive, rich with quality metrics and offers clear insight on your response to patients.",
-                icon: <FaUserMd className="text-5xl" />,
-                route: "/healthtech/mobile-healthcare",
-              },
-              {
-                title: "Smart hospitals",
-                paragraph: "Let your workforce deliver your expectations by sharing critical information that our dashboards generate for you. When everyone is clear of what to deliver, better the ROI.",
-                icon: <FaCalendarAlt className="text-5xl" />,
-                route: "/healthtech/smart-hospitals",
-              },
-              {
-                title: "Patients Engagement",
-                paragraph: "Business intelligence solutions helps providers make the best use of massive amount of data. Our dashboards empower the management to get both small and big metrics such as the bed occupancy levels and help view the big picture for improvised decision making.",
-                icon: <FaBrain className="text-5xl" />,
-                route: "/healthtech/patients-engagement",
-              },
-              {
-                title: "Wearables",
-                paragraph: "Our dashboards help optimize the art of resource allocation and deliver better standards of quality care. It comes inclusive of KPIs and ways to enhance profitability and patient engagement.",
-                icon: <FaChartBar className="text-5xl" />,
-                route: "/healthtech/wearables",
-              },
-              {
-                title: "Dashboard",
-                paragraph: "Our patient health dashboard offers clear metrics on patients health individually and enables the hospital to plan and provide more custom treatments which again has direct impact on patients over all treatment experience at the hospital.",
-                icon: <FaIdCard className="text-5xl" />,
-                route: "/healthtech/dashboard",
-              },
-              {
-                title: "Internet of Things",
-                paragraph: "It’s the employees or workers performance that drives the quality service to patients in any hospital or medical establishment. With productivity tracker dashboard one can have a systematic view of data from various other sources which becomes vital to measure workforce performance against the set targets. This helps identify areas of improvements and also eliminate redundant activities.",
-                icon: <FaChartBar className="text-5xl" />,
-                route: "/healthtech/internet-of-things",
-              }
-            ].map((solution, i) => (
+            {healthCareList.map((solution, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
+                whileHover={{ y: -8 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 flex flex-col h-full transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
                   {solution.icon}
                 </div>
+
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed text-sm line-clamp-4">{solution.paragraph}</p>
+
+                <p className="text-white/70 leading-relaxed flex-grow line-clamp-4">
+                  {solution.desc}
+                </p>
+
                 <button
-                    onClick={() => handleReadMore(solution.route)}
-                    className="mt-6 text-cyan-400 font-semibold hover:text-cyan-300 flex items-center gap-2"
+                  onClick={() =>
+                    navigate(`/industries/health-tech/${solution.slug}`)
+                  }
+                  className="mt-6 inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
                 >
-                    Read More <FaArrowRight />
+                  Read More
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
                 </button>
               </motion.div>
             ))}

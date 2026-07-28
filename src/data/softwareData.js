@@ -35,9 +35,57 @@ import {
   FaFileLines,
   FaGlobe,
   FaPlaneDeparture,
+  FaMobileScreen,
+  FaBuildingCircleCheck,
+  FaWatchmanMonitoring,
 } from "react-icons/fa6";
 import { GiRadarSweep } from "react-icons/gi";
 import { MdSensors } from "react-icons/md";
+
+export const healthCareList = [
+  {
+    title: "HMS",
+    slug: "hospital-management-system",
+    desc: "We help providers keep close track of patient surveys and generate meaningful statistics which can help the management understand trends and make decisions that facilitates higher productivity and enhanced operation management.",
+    icon: <FaHospital className="text-5xl" />,
+  },
+  {
+    title: "Mobile Health care",
+    slug: "mobile-healthcare",
+    desc: "Data driven insights helps you understand patients better and our information rich dashboards achieve that for you. Its intuitive, rich with quality metrics and offers clear insight on your response to patients.",
+    icon: <FaMobileScreen className="text-5xl" />,
+  },
+  {
+    title: "Smart hospitals",
+    slug: "smart-hospitals",
+    desc: "Let your workforce deliver your expectations by sharing critical information that our dashboards generate for you. When everyone is clear of what to deliver, better the ROI.",
+    icon: <FaBuildingCircleCheck className="text-5xl" />,
+  },
+  {
+    title: "Patients Engagement",
+    slug: "patient-engagement",
+    desc: "Business intelligence solutions helps providers make the best use of massive amount of data. Our dashboards empower the management to get both small and big metrics such as the bed occupancy levels and help view the big picture for improvised decision making.",
+    icon: <FaUsers className="text-5xl" />,
+  },
+  {
+    title: "Wearables",
+    slug: "wearables",
+    desc: "Our dashboards help optimize the art of resource allocation and deliver better standards of quality care. It comes inclusive of KPIs and ways to enhance profitability and patient engagement.",
+    icon: <FaWatchmanMonitoring className="text-5xl" />,
+  },
+  {
+    title: "Dashboard",
+    slug: "healthcare-dashboard",
+    desc: "Our patient health dashboard offers clear metrics on patients health individually and enables the hospital to plan and provide more custom treatments which again has direct impact on patients over all treatment experience at the hospital.",
+    icon: <FaChartLine className="text-5xl" />,
+  },
+  {
+    title: "Internet of Things",
+    slug: "internet-of-things",
+    desc: "It’s the employees or workers performance that drives the quality service to patients in any hospital or medical establishment. With productivity tracker dashboard one can have a systematic view of data from various other sources which becomes vital to measure workforce performance against the set targets. This helps identify areas of improvements and also eliminate redundant activities.",
+    icon: <FaMicrochip className="text-5xl" />,
+  },
+];
 
 export const automotiveList = [
   {
