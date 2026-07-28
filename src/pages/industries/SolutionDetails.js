@@ -589,6 +589,617 @@ const SolutionDetails = () => {
   </div>
 </>
 )}
+{service.slug === "patient-engagement" && (
+<>
+  <div className="container mx-auto py-10">
+
+    {/* INTRO */}
+    <div className="mb-12 max-w-4xl">
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Patient Engagement
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Providing The Best Medical Care Experience To Patients Is Something
+        That Every Hospital Looks For, Despite The Ongoing Challenges.
+        Insufficient And Manual Process Often Hinders Hospitals To Provide Best
+        Of The Medical Care Experiences To Patients. Lack Of Effective And
+        Seamless Communication Tools Which Can Connect Patients And Doctors
+        Will Always Be A Lackluster Affair.
+      </p>
+    </div>
+
+
+    {/* IMAGE SPACE */}
+    <div className="w-full h-72 mb-12"></div>
+
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Patient engagement apps and solutions
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Our HMS ensure enhanced patient experience from the time of admission
+          to successful discharge post treatment.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Patient portal
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Providing Customized Portal Access To Each Patient With Their Own
+          Access Credentials Promotes Efficient Integrated Communication.
+          Patients can access reports, diagnosis, treatment options, book
+          appointments and seek online consultation.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Solutions for Digital engagement
+        </h3>
+        <p className="text-gray-600 text-sm">
+          A Robust And Seamless Online Presence Is A Must For Any Medical
+          Establishment Looking To Stay Ahead In The Competition.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Wearable technology and Solutions
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Our Wearable Tech Systems Can Be Customized Based On The Need And
+          Help In Efficient Data Collection For Better Patient Treatment.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Cohort Management
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Our Apps Group Patients Based On Health Risk And Other Conditional
+          Factors To Ensure Quality Outcomes In Patient Care.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Mobilebased engagement solutions
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Our Mobile Based Applications Engage Patients And Doctors Providing
+          Value Based Timely Care.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Support tools
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Our Mobile Solutions Help Doctors Gain Access To Patient Health Data
+          And Monitor Patients Irrespective Of Location.
+        </p>
+      </div>
+
+
+    </div>
+
+
+    {/* BOTTOM CONTENT */}
+    <div className="mt-16 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Enhanced Patient Care And Satisfaction
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Our Apps And Solutions Help You Stay Networked With Your Patients
+        Thereby You Can Offer Personalized Care And Enhance The Overall
+        Patients Treatment Experience.
+      </p>
+
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Seamless Communication
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Our apps efficiently handle Dissemination of secured messages,
+        automating scheduling of appointments and conducting surveys.
+      </p>
+
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Growth
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Connecting with target group of patients by strengthening your brand
+        online yields great results and we facilitate and moderate your online
+        existence.
+      </p>
+
+    </div>
+
+  </div>
+</>
+)}
+{service.slug === "wearables" && (
+<>
+  <div className="container mx-auto py-10">
+
+    {/* INTRO */}
+    <div className="mb-12 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Wearable health tech and Redefined care
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Innovation In The Medical World Is At Its Peak And Wearable Health
+        Devices Have Created A Major Difference In Empowering Medical
+        Establishments To Offer Highly Effective Care To Their Patients.
+        This Further Enhances Patient Doctor Connect Facilitating Better
+        Communication And Care.
+      </p>
+
+    </div>
+
+
+    {/* IMAGE SPACE */}
+    <div className="w-full h-72 mb-12"></div>
+
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Wearables And Improved Health Outcomes
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Vital Information Provided By Wearable Devices Can Help Providers
+          With Great Hold On Treatment And Its Outcomes.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Monitoring fitness
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Find your way towards holistic fitness by using our wearable devices
+          which helps you monitor your fitness metrics and enhance your health goals.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Track your health
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Track your key health indicators by wearing our wearables.
+          This is especially useful for serious patients who require constant monitoring.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Better Connectivity
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Health care providers can get easy access to patients health data
+          through wearables worn by the patients.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Community
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Our wearables are integrated with social networks and help patients
+          create groups towards healthier living.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Patients
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Wearables act as a personal nurse by constantly monitoring patient
+          health metrics.
+        </p>
+      </div>
+
+
+    </div>
+
+
+    {/* BOTTOM CONTENT */}
+    <div className="mt-16 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Clinicians
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Our Wearables Help Clinicians Track Patient Health Without Constant
+        ICU Monitoring. Access To Health Information Helps Providers Make
+        Quick And Accurate Decisions.
+      </p>
+
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Insurance
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Wearables Help Reduce Healthcare Costs And Provide Insurance Companies
+        With Better Patient Data And Insights.
+      </p>
+
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Benefits to Hospitals
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Wearables Help Nurses And Medical Staff Focus More On Patient Care
+        By Reducing Manual Monitoring Work.
+      </p>
+
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Why paxykop ?
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Our Experts Carry More Than 25 Years Of Experience In Health Care Tech.
+        Enhancing Patient Care Is Our Prime Importance Through Collaboration
+        And Innovative Solutions.
+      </p>
+
+    </div>
+
+  </div>
+</>
+)}
+{service.slug === "healthcare-dashboard" && (
+<>
+  <div className="container mx-auto py-10">
+
+    {/* INTRO */}
+    <div className="mb-12 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Healthcare Dashboards
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Our Efficient Dashboards Helps Providers To Stay On Top Of The Game
+        By Deriving Great Insights From The Accumulated Healthcare Data And
+        Provide Improved Health Care Services To Patients, Bettering Service
+        Quality Along With Reduced Cost Of Operations. Our Dashboards Offer
+        Real-Time Information With Which Valuable Metrics And Insights Can Be
+        Obtained And Shared.
+      </p>
+
+    </div>
+
+
+    {/* IMAGE SPACE */}
+    <div className="w-full h-72 mb-12"></div>
+
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Statistics
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          We help providers keep close track of patient surveys and generate
+          meaningful statistics which help management understand trends and
+          make decisions.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Quality patient care
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Data driven insights helps you understand patients better and our
+          dashboards offer clear insight on your response to patients.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          ROI
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Critical information generated by dashboards helps workforce deliver
+          better results and improve ROI.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Analytics
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Business intelligence solutions help providers make best use of
+          healthcare data and improve decision making.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Dash board for private practice
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Dashboards help optimize resource allocation and deliver better
+          quality care with KPIs and profitability insights.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Health Dashboard
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Patient health dashboards provide clear metrics and help hospitals
+          plan customized treatments.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Productivity Tracker
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Track workforce performance, identify improvement areas and remove
+          redundant activities.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Dashboards for Pharma sales
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Sales dashboards help assess team performance, sales calls and
+          financial performance.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Physician Allocation
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Dashboard helps schedule appointments, allocate physicians and avoid
+          delayed treatments.
+        </p>
+      </div>
+
+
+    </div>
+
+
+    {/* LAST CONTENT */}
+    <div className="mt-16 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Reports and charts made simple
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        paxykop’s Intuitive And Visually Great Healthcare Dashboards Ensure
+        Every Aspect Of Your Hospital Data Is Updated With All Key Insight In
+        Place. Dashboard Is Equipped With All Functionalities Required To Gain
+        Insights And Generate Reports Which Can Be Understood By Everyone
+        Responsible To Deliver Quality Work.
+      </p>
+
+    </div>
+
+
+  </div>
+</>
+)}
+{service.slug === "internet-of-things" && (
+<>
+  <div className="container mx-auto py-10">
+
+    {/* INTRO */}
+    <div className="mb-12 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Internet of Things
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Internet Plays A Vital Role In Enhancing Operations And Quality Patient
+        Service In Health Care Industry. Software Connects Healthcare And
+        Medical Equipments Delivering Service To Patients Like Never Before
+        And This Continues To Improve Every Day With New Ideas. At paxykop We
+        Make The Best Use Of Internet To Provide Best Of Services To Our Patients.
+      </p>
+
+    </div>
+
+
+    {/* IMAGE SPACE */}
+    <div className="w-full h-72 mb-12"></div>
+
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Patient Care
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Realtime monitoring of patients and their condition using internet
+          solutions. Our solutions help you track body temperature, BP, heart
+          rate etc which contributes to high quality medical care.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Monitoring health remotely
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Our internet solutions are well equipped to track and monitor
+          patients health regardless of area and time. Error free data
+          collection and updates about patient health metrics helps doctor
+          provide better care and consultation.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Healthcare infrastructure
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Our internet applications are built to collect and store entire
+          hospital data on highly secured cloud servers, with easy access to
+          extract right information as and when situation demands.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Data collection and metrics
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Data collection has been automated to generate valuable insights and
+          metrics to increase efficiency in diagnosis, patient monitoring and more.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Staff monitoring
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Our internet solutions boost security at the hospital and monitor
+          staff movement by integrating process into software applications
+          thereby enhancing overall operations.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Emergency response
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          All emergencies demand quick response and our HMS does just that.
+          With connected infrastructure Hospital management can pro-actively
+          respond to emergency situations and cases.
+        </p>
+      </div>
+
+
+    </div>
+
+
+    {/* HIGHLIGHTS */}
+
+    <div className="mt-16 max-w-4xl">
+
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Main highlights of Our Internet Solutions
+      </h2>
+
+      <ul className="list-disc pl-6 text-gray-700 space-y-2">
+        <li>LIVE location tracking</li>
+        <li>Patient Information</li>
+        <li>Seamless Communication</li>
+        <li>Asset Tracking and Monitoring the Movements</li>
+        <li>Record Management</li>
+      </ul>
+
+    </div>
+
+
+    {/* LAST IMAGE */}
+
+    <img
+      src={"/images/internet-of-things-end.jpg"}
+      className="w-full object-contain mt-12"
+      alt="internet of things"
+    />
+
+
+  </div>
+</>
+)}
+
 
     </>
   );
