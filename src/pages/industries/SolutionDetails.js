@@ -462,6 +462,134 @@ const SolutionDetails = () => {
           </div>
         </>
       )}
+{service.slug === "smart-hospitals" && (
+<>
+
+  <div className="container mx-auto py-10">
+
+    <div className="mb-12 max-w-4xl">
+      <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+        Smart Hospitals Safe Hospitals
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Effective Optimization Of Personnel, Materiel And Assets Within The
+        Hospital Or Medical Establishments To Enhance The Operational
+        Efficiency Has Always Been The Driving Force For paxykop’s HMS.
+        Patients Management, Asset Tracking, Employee Tracking And Other Apps
+        Like Supplier Management Have Proven To Be Beneficial For Patients And
+        Employees At The Highest Level.
+      </p>
+    </div>
+
+
+    {/* IMAGE AFTER INTRO */}
+    <img
+      src={"/images/smart-hospitals.jpg"}
+      className="w-full object-contain mb-12"
+      alt="smart hospitals"
+    />
+
+
+    {/* CARDS START */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <FaHeartbeat className="text-4xl text-cyan-600 mx-auto mb-4"/>
+
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Employee Monitor or Tracking
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          It becomes imperative to ensure every staff member is within reach
+          and also monitor patient’s movement when on campus. Our app helps
+          management track personnel activity.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <FaBoxes className="text-4xl text-cyan-600 mx-auto mb-4"/>
+
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Staff Safety
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Our app enables management to track locations of people who might be
+          in danger situations and offer required support.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <FaDatabase className="text-4xl text-cyan-600 mx-auto mb-4"/>
+
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Safety of High Valued Assets
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Remote Asset Tracking helps hospitals protect expensive medical
+          equipment and valuable assets.
+        </p>
+      </div>
+
+    </div>
+    {/* SMARTNESS WITH SECURITY & SAFETY */}
+
+<div className="mb-12 max-w-4xl mt-16">
+
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+    Smartness with Security & Safety
+  </h2>
+
+  <p className="text-gray-700 leading-relaxed">
+    Irrespective Of Time And Place Our Apps Makes It Possible For Patients To
+    Book, Schedule And Cancel Appointments And This Helps You Retain Your
+    Patients By Providing World Class Experience.
+  </p>
+
+</div>
+{/* A SOLUTION FOR EVERY ROOM */}
+
+<div className="mb-12 max-w-4xl">
+
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+    A solution for every room
+  </h2>
+
+  <p className="text-gray-700 leading-relaxed">
+    Every Room In The Hospital Or Medical Establishment Carries Its Own
+    Attributes Or Facilities. Our HMS Customises Solutions For Each Room And
+    Ensures The Medical Staff Carry Out Their Day To Date Work Efficiently.
+  </p>
+
+</div>
+{/* WHY PAXYKOP */}
+
+<div className="mb-10 max-w-4xl">
+
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+    Why paxykop ?
+  </h2>
+
+  <p className="text-gray-700 leading-relaxed">
+    Keeping Things Under Control Is The Most Vital In Any Hospital And Our HMS
+    Does Just That. Our Apps And Solutions Facilitate Excellent Control On
+    Overall Management Of The Hospital. Our HMS Enhances The Patients Hospital
+    Experience By Removing All The Hassles And Barriers Effectively. Our
+    Solutions Help The Hospital Streamline The Operations To Their Highest
+    Levels Which In Turn Help The Patients Sail Through Their Treatment
+    Journey Peacefully.
+  </p>
+
+</div>
+  </div>
+</>
+)}
+
     </>
   );
 };
