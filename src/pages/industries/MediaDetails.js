@@ -23,9 +23,9 @@ export default function MediaDetails() {
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
                 <img
-                  src={"/images/ott-tv.png"} // update path
+                  src={"/images/ott1.jpg"} // update path
                   alt="OTT software solutions"
-                  className="rounded-xl shadow-md w-full object-cover"
+                  className="rounded-xl shadow-md w-[80%] object-cover"
                 />
               </div>
               <div>
@@ -94,9 +94,9 @@ export default function MediaDetails() {
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
                 <img
-                  src={"/images/ott-streaming.png"} // update path
+                  src={"/images/ott2.jpg"} // update path
                   alt="High-performance OTT Streaming Solutions"
-                  className="rounded-xl shadow-md w-full object-cover"
+                  className="rounded-xl shadow-md w-[80%] object-cover"
                 />
               </div>
               <div>
@@ -218,43 +218,61 @@ export default function MediaDetails() {
             </div>
 
             {/* NEW PROJECTS CONSULTATION */}
-            <div className="mb-12 max-w-3xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-                New Projects Consultation
-              </h2>
-              <ul className="space-y-2 text-gray-700 list-disc pl-5">
-                <li>
-                  Requirement gathering, Business case followed by strategy
-                  development
-                </li>
-                <li>
-                  Operational and business strategy plan bid and PMO
-                  documentation
-                </li>
-                <li>
-                  Meticulous planning of hardware and technology stack
-                  implementation
-                </li>
-                <li>SW selection and customizing the overall approach.</li>
-              </ul>
+            <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
+              <div>
+                <img
+                  src={"/images/ott3.jpg"} // update path
+                  alt="OTT software solutions"
+                  className="rounded-xl shadow-md w-[80%] object-cover"
+                />
+              </div>
+              <div className="mb-12 max-w-3xl">
+                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                  New Projects Consultation
+                </h2>
+                <ul className="space-y-2 text-gray-700 list-disc pl-5">
+                  <li>
+                    Requirement gathering, Business case followed by strategy
+                    development
+                  </li>
+                  <li>
+                    Operational and business strategy plan bid and PMO
+                    documentation
+                  </li>
+                  <li>
+                    Meticulous planning of hardware and technology stack
+                    implementation
+                  </li>
+                  <li>SW selection and customizing the overall approach.</li>
+                </ul>
+              </div>
             </div>
 
             {/* EXISTING PROJECTS */}
-            <div className="mb-20 max-w-3xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-                Existing projects management and consultation
-              </h2>
-              <ul className="space-y-2 text-gray-700 list-disc pl-5">
-                <li>
-                  Getting updated after auditing of legacy OTT platform followed
-                  by E2E studies of source code and over all application
-                  architecture.
-                </li>
-                <li>
-                  Optimizing of existing business and ensuring strict adherence
-                  to enterprise standards.
-                </li>
-              </ul>
+            <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
+              <div className="mb-20 max-w-3xl">
+                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                  Existing projects management and consultation
+                </h2>
+                <ul className="space-y-2 text-gray-700 list-disc pl-5">
+                  <li>
+                    Getting updated after auditing of legacy OTT platform
+                    followed by E2E studies of source code and over all
+                    application architecture.
+                  </li>
+                  <li>
+                    Optimizing of existing business and ensuring strict
+                    adherence to enterprise standards.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img
+                  src={"/images/ott4.jpg"} // update path
+                  alt="OTT software solutions"
+                  className="rounded-xl shadow-md w-[80%] object-cover"
+                />
+              </div>
             </div>
 
             {/* HOW OUR SERVICE WORKS */}
@@ -329,34 +347,62 @@ export default function MediaDetails() {
               </div>
             </div>
 
-            {/* WHY WORK WITH PAXYCOP */}
-            <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
-              <div>
-                <img
-                  src={"/images/ott-why-paxycop.png"} // update path
-                  alt="Why Work with Paxycop"
-                  className="rounded-xl shadow-md w-full object-cover"
-                />
+            {/* OUR TECHNOLOGY STACK */}
+            <div className="mb-20">
+              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+                Our Technology Stack
+              </h2>
+
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/ott5.jpg"} // update path
+                    alt="Tech 1"
+                    className="max-h-24 object-contain"
+                  />
+                </div>
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/ott6.jpg"} // update path
+                    alt="Tech 2"
+                    className="max-h-24 object-contain"
+                  />
+                </div>
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/ott7.jpg"} // update path
+                    alt="Tech 3"
+                    className="max-h-24 object-contain"
+                  />
+                </div>
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/ott8.jpg"} // update path
+                    alt="Tech 4"
+                    className="max-h-24 object-contain"
+                  />
+                </div>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-                  Why Work with Paxycop ?
-                </h2>
-                <ul className="space-y-2 text-gray-700 list-disc pl-5">
-                  <li>
-                    robust and scalable IT infrastructure handling erratic
-                    broadband network
-                  </li>
-                  <li>sustainable Content Delivery Network (CDN)</li>
-                  <li>
-                    Tracking content consumption patterns over multiple devices
-                  </li>
-                  <li>
-                    Boost revenues and formulate new monetization patterns with
-                    no addon cost.
-                  </li>
-                </ul>
-              </div>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                Why Work with Paxycop ?
+              </h2>
+              <ul className="space-y-2 text-gray-700 list-disc pl-5">
+                <li>
+                  robust and scalable IT infrastructure handling erratic
+                  broadband network
+                </li>
+                <li>sustainable Content Delivery Network (CDN)</li>
+                <li>
+                  Tracking content consumption patterns over multiple devices
+                </li>
+                <li>
+                  Boost revenues and formulate new monetization patterns with no
+                  addon cost.
+                </li>
+              </ul>
             </div>
           </div>
         </>
@@ -411,9 +457,9 @@ export default function MediaDetails() {
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
                 <img
-                  src={"/images/dam-why.png"} // update path
+                  src={"/images/digital-asset1.png"} // update path
                   alt="Why Digital Asset Management"
-                  className="rounded-xl shadow-md w-full object-cover"
+                  className="rounded-xl shadow-md w-[80%] object-cover"
                 />
               </div>
               <div>
@@ -431,6 +477,7 @@ export default function MediaDetails() {
             </div>
 
             {/* PLATFORMS WE WORK ON */}
+            {/* PLATFORMS WE WORK ON */}
             <div className="mb-20">
               <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
                 We work on following Digital Asset management platforms
@@ -438,6 +485,13 @@ export default function MediaDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={"/images/digital-asset2.jpg"} // update path
+                      alt="Pimcore"
+                      className="h-12 object-contain"
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg text-cyan-600 mb-2">
                     Pimcore
                   </h3>
@@ -449,6 +503,13 @@ export default function MediaDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={"/images/digital-asset3.jpg"} // update path
+                      alt="Phrasenet"
+                      className="h-12 object-contain"
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg text-cyan-600 mb-2">
                     Phrasenet
                   </h3>
@@ -459,6 +520,13 @@ export default function MediaDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={"/images/digital-asset4.jpg"} // update path
+                      alt="Razuna"
+                      className="h-12 object-contain"
+                    />
+                  </div>
                   <h3 className="font-semibold text-lg text-cyan-600 mb-2">
                     Razuna
                   </h3>
@@ -659,8 +727,8 @@ export default function MediaDetails() {
             </div>
 
             {/* OUR EXPERTISE */}
-            <div className="mb-20 max-w-3xl mx-auto">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-6 text-center">
+            <div className="mb-20 max-w-3xl">
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-6">
                 Our Expertise
               </h2>
               <ul className="space-y-2 text-gray-700 list-disc pl-5">
@@ -735,26 +803,52 @@ export default function MediaDetails() {
               </h2>
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-                {/* Replace with actual logo images if available */}
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">
-                    Apache Spark
-                  </span>
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms1.jpg"} // update path
+                    alt="Apache Spark"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">Kafka</span>
+
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms2.jpg"} // update path
+                    alt="Kafka"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">Cassandra</span>
+
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms3.jpg"} // update path
+                    alt="Cassandra"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">HBase</span>
+
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms4.jpg"} // update path
+                    alt="HBase"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">Hive</span>
+
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms5.jpg"} // update path
+                    alt="Hive"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
-                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-24">
-                  <span className="font-semibold text-gray-700">Avro</span>
+
+                <div className="bg-white rounded-xl shadow border p-6 flex items-center justify-center h-28">
+                  <img
+                    src={"/images/cms6.jpg"} // update path
+                    alt="Avro"
+                    className="max-h-24 object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -787,7 +881,7 @@ export default function MediaDetails() {
             </div>
 
             {/* WHY US */}
-            <div className="mb-10 max-w-3xl mx-auto">
+            <div className="mb-10 max-w-3xl">
               <h2 className="text-2xl font-semibold text-cyan-600 mb-6">
                 Why us ?
               </h2>

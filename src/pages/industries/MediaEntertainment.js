@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import {
   FaArrowRight,
-  FaRoute,
-  FaShieldAlt,
-  FaTachometerAlt,
   FaTruck
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -103,49 +100,6 @@ const MediaEntertainment = () => {
                   Read More
                   <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
                 </button>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-black/40">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            MediaEntertainment
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                icon: <FaTachometerAlt className="text-5xl" />,
-                title: "Digital Asset Management",
-                desc: "Securely manage, organize, and access digital assets from a centralized platform.",
-              },
-              {
-                icon: <FaShieldAlt className="text-5xl" />,
-                title: "Seamless Content Delivery",
-                desc: "Deliver digital content efficiently across web, mobile, and OTT platforms.",
-              },
-              {
-                icon: <FaRoute className="text-5xl" />,
-                title: "Scalable Media Solutions",
-                desc: "Build flexible media platforms that grow with your business and audience.",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
-              >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>
