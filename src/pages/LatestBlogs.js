@@ -47,7 +47,7 @@ const LatestBlogs = () => {
   };
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="pb-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14">

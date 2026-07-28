@@ -1,18 +1,208 @@
 // solutionData.js
 import {
-  FaUsers,
-  FaHospital,
-  FaShoppingCart,
-  FaFileInvoiceDollar,
   FaBoxes,
-  FaSchool,
-  FaClinicMedical,
-  FaUserMd,
-  FaTruck,
-  FaMobileAlt,
   FaBuilding,
+  FaCar,
+  FaChargingStation,
   FaChartLine,
+  FaClinicMedical,
+  FaDesktop,
+  FaFileInvoiceDollar,
+  FaHospital,
+  FaMapMarkedAlt,
+  FaMicrochip,
+  FaMobileAlt,
+  FaMotorcycle,
+  FaRobot,
+  FaSchool,
+  FaShieldAlt,
+  FaShoppingCart,
+  FaTruck,
+  FaUserMd,
+  FaUsers,
+  FaStore,
+  FaStoreAlt,
+  FaCarSide,
+  FaUserTie,
 } from "react-icons/fa";
+import {
+  FaUsersGear,
+  FaWarehouse,
+  FaTruckFast,
+  FaRoute,
+  FaTv,
+  FaFolderTree,
+  FaFileLines,
+  FaGlobe,
+  FaPlaneDeparture,
+} from "react-icons/fa6";
+import { GiRadarSweep } from "react-icons/gi";
+import { MdSensors } from "react-icons/md";
+
+export const automotiveList = [
+  {
+    slug: "connected-internet-cars",
+    title: "Connected Internet Cars",
+    icon: <FaCar className="text-5xl" />,
+    desc: "Enable real-time connectivity, remote diagnostics, over-the-air updates, and seamless communication between vehicles and cloud platforms.",
+  },
+  {
+    slug: "ev-charging-software",
+    title: "EV Charging Software",
+    icon: <FaChargingStation className="text-5xl" />,
+    desc: "Develop intelligent charging station management, payment integration, energy monitoring, and fleet charging solutions.",
+  },
+  {
+    slug: "smart-bikes",
+    title: "Smart Bikes",
+    icon: <FaMotorcycle className="text-5xl" />,
+    desc: "Build connected bike platforms with GPS tracking, ride analytics, anti-theft systems, and mobile app integration.",
+  },
+  {
+    slug: "telematics",
+    title: "Telematics",
+    icon: <MdSensors className="text-5xl" />,
+    desc: "Monitor vehicle performance, driver behaviour, fuel usage, and maintenance using advanced telematics solutions.",
+  },
+  {
+    slug: "autonomous-adas",
+    title: "Autonomous & ADAS",
+    icon: <GiRadarSweep className="text-5xl" />,
+    desc: "Create intelligent driver assistance systems using computer vision, radar, LiDAR, and AI-powered decision making.",
+  },
+  {
+    slug: "ai-machine-learning",
+    title: "AI & Machine Learning",
+    icon: <FaRobot className="text-5xl" />,
+    desc: "Leverage AI for predictive maintenance, route optimisation, driver monitoring, and smart mobility applications.",
+  },
+  {
+    slug: "navigation-mapping",
+    title: "Navigation & Mapping",
+    icon: <FaMapMarkedAlt className="text-5xl" />,
+    desc: "Deliver accurate navigation, real-time traffic updates, route planning, and location-based automotive services.",
+  },
+  {
+    slug: "iot-embedded-solutions",
+    title: "IoT & Embedded Solutions",
+    icon: <FaMicrochip className="text-5xl" />,
+    desc: "Develop embedded automotive systems and IoT-enabled devices for connected mobility ecosystems.",
+  },
+  {
+    slug: "hmi",
+    title: "HMI",
+    icon: <FaDesktop className="text-5xl" />,
+    desc: "Design intuitive Human Machine Interfaces with modern dashboards, infotainment systems, and digital cockpit experiences.",
+  },
+  {
+    slug: "security",
+    title: "Security",
+    icon: <FaShieldAlt className="text-5xl" />,
+    desc: "Protect connected vehicles with cybersecurity, secure communication protocols, and threat detection systems.",
+  },
+];
+
+export const retailList = [
+  {
+    title: "Sales Force Automation for Retail Sector",
+    slug: "sales-force-automation",
+    desc: "Move your retail business to the next level with intelligent sales force automation.",
+    icon: <FaUsersGear className="text-5xl" />,
+  },
+  {
+    title: "Retail Lead Management System",
+    slug: "retail-lead-management",
+    desc: "Manage, track, and convert retail leads efficiently with an advanced lead management system.",
+    icon: <FaUserTie className="text-5xl" />,
+  },
+  {
+    title: "E-Commerce for B2B",
+    slug: "ecommerce-b2b",
+    desc: "Deliver seamless digital commerce experiences for your B2B customers.",
+    icon: <FaShoppingCart className="text-5xl" />,
+  },
+  {
+    title: "Digital B2B Commerce",
+    slug: "digital-b2b-commerce",
+    desc: "Digital sales and partner networks help B2B companies stay ahead of the competition.",
+    icon: <FaStore className="text-5xl" />,
+  },
+  {
+    title: "Unified B2C Retail Solution",
+    slug: "unified-b2c-retail",
+    desc: "Empower your retail business with a unified omnichannel solution for exceptional customer experiences.",
+    icon: <FaStoreAlt className="text-5xl" />,
+  },
+  {
+    title: "Dealer Management System",
+    slug: "dealer-management-system",
+    desc: "Simplify dealer operations, inventory, sales, and customer management through a centralized platform.",
+    icon: <FaCarSide className="text-5xl" />,
+  },
+  {
+    title: "PIM Software Solutions",
+    slug: "pim-software-solutions",
+    desc: "Centralize and manage product information efficiently across all digital sales channels.",
+    icon: <FaBoxes className="text-5xl" />,
+  },
+];
+
+export const manufacturingList = [
+  {
+    title: "Warehouse Management",
+    slug: "warehouse-management",
+    desc: "Optimize warehouse operations with real-time inventory tracking, automated storage, order fulfillment, and stock management.",
+    icon: <FaWarehouse className="text-5xl" />,
+  },
+  {
+    title: "Supply Chain Management Software",
+    slug: "supply-chain-management",
+    desc: "Streamline procurement, inventory, logistics, and supplier collaboration with an end-to-end supply chain management solution.",
+    icon: <FaTruckFast className="text-5xl" />,
+  },
+  {
+    title: "Solution For Transportation Management",
+    slug: "transportation-management",
+    desc: "Plan, monitor, and optimize transportation operations with route optimization, shipment tracking, and fleet management.",
+    icon: <FaRoute className="text-5xl" />,
+  },
+];
+
+export const mediaList = [
+  {
+    title: "OTT Software",
+    slug: "ott-software",
+    desc: "Build scalable OTT platforms with live streaming, video-on-demand, subscription management, and multi-device support.",
+    icon: <FaTv className="text-5xl" />,
+  },
+  {
+    title: "Software For Digital Asset Management",
+    slug: "digital-asset-management",
+    desc: "Organize, store, manage, and distribute digital assets securely through a centralized digital asset management platform.",
+    icon: <FaFolderTree className="text-5xl" />,
+  },
+  {
+    title: "CMS Development",
+    slug: "cms-development",
+    desc: "Develop powerful and customizable Content Management Systems to create, manage, and publish digital content effortlessly.",
+    icon: <FaFileLines className="text-5xl" />,
+  },
+];
+
+export const travelList = [
+  {
+    title: "GDS Integration Services",
+    slug: "gds-integration-services",
+    desc: "Integrate leading Global Distribution Systems (GDS) such as Amadeus, Sabre, and Travelport to enable real-time flight, hotel, and travel booking capabilities.",
+    icon: <FaGlobe className="text-5xl" />,
+  },
+  {
+    title: "Smart Solutions for Flight Booking",
+    slug: "smart-flight-booking",
+    desc: "Develop intelligent flight booking platforms with fare comparison, real-time availability, secure payments, and seamless reservation management.",
+    icon: <FaPlaneDeparture className="text-5xl" />,
+  },
+];
 
 export const softwareSolutions = [
   {
@@ -149,27 +339,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Healthcare CRM",
-          icon: "https://picsum.photos/id/107/120/120", // Hospital / Healthcare
+          icon: "FaHospital", // Hospital / Healthcare
         },
         {
           name: "Real Estate CRM",
-          icon: "https://picsum.photos/id/1015/120/120", // Real Estate
+          icon: "FaHome", // Real Estate
         },
         {
           name: "Education CRM",
-          icon: "https://picsum.photos/id/201/120/120", // Education
+          icon: "FaGraduationCap", // Education
         },
         {
           name: "Finance CRM",
-          icon: "https://picsum.photos/id/251/120/120", // Finance / Banking
+          icon: "FaChartLine", // Finance / Banking
         },
         {
           name: "Retail CRM",
-          icon: "https://picsum.photos/id/180/120/120", // Retail / Shopping
+          icon: "FaShoppingCart", // Retail / Shopping
         },
         {
           name: "Manufacturing CRM",
-          icon: "https://picsum.photos/id/106/120/120", // Manufacturing / Factory
+          icon: "FaIndustry", // Manufacturing / Factory
         },
       ],
     },

@@ -17,7 +17,7 @@ const AboutPage = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/images/about-bg.jpg')",
-            opacity: 0.5,
+            opacity: 0.9,
           }}
         />
         <div className="absolute inset-0 bg-[#0A1428]/85" />

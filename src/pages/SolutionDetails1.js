@@ -1,6 +1,6 @@
-import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 import { solutionDetails } from "../data/softwareData"; // Adjust path as needed
+import * as FaIcons from "react-icons/fa";
 
 const SolutionDetails1 = () => {
   const { slug } = useParams();
@@ -26,17 +26,6 @@ const SolutionDetails1 = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Back Button */}
-      <div className="max-w-7xl mx-auto px-6 pt-8">
-        <button
-          onClick={() => navigate("/solutions")}
-          className="flex items-center gap-3 text-blue-600 hover:text-blue-700 font-medium transition"
-        >
-          <FaArrowLeft />
-          Back to All Solutions
-        </button>
-      </div>
-
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
@@ -114,19 +103,24 @@ const SolutionDetails1 = () => {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {solution.industries.items.map((industry, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:border-blue-200 transition"
-              >
-                <img
-                  src={industry.icon}
-                  alt={industry.name}
-                  className="w-16 h-16 mx-auto mb-4 object-contain"
-                />
-                <p className="font-medium text-gray-800">{industry.name}</p>
-              </div>
-            ))}
+            {solution.industries.items.map((industry, index) => {
+              const Icon = FaIcons[industry.icon];
+
+              return (
+                <div
+                  key={index}
+                  className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:border-blue-200 transition"
+                >
+                  {Icon && (
+                    <Icon
+                      className="w-16 h-16 mx-auto mb-4 text-blue-600"
+                      size={32}
+                    />
+                  )}
+                  <p className="font-medium text-base text-gray-800">{industry.name}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,15 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { FaArrowRight, FaHeartbeat } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import {
-  FaHeartbeat,
-  FaUserMd,
-  FaCalendarAlt,
-  FaBrain,
-  FaChartBar,
-  FaIdCard,
-  FaArrowRight,
-} from "react-icons/fa";
+import { travelList } from "../../data/softwareData";
 
 const TravelHospitality = () => {
   const navigate = useNavigate();
@@ -26,7 +18,7 @@ const TravelHospitality = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/healthcare2.jpg')",
+            backgroundImage: "url('/images/travel1.jpg')",
             opacity: 0.65,
           }}
         />
@@ -39,7 +31,7 @@ const TravelHospitality = () => {
                 <FaHeartbeat /> Healthcare Technology
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
                 Technology That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Improves Lives
@@ -54,7 +46,7 @@ const TravelHospitality = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="/images/healthcare1.jpg"
+                src="/images/travel2.jpg"
                 alt="Healthcare Technology"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10 w-full"
               />
@@ -76,54 +68,37 @@ const TravelHospitality = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Electronic Health Records (EHR)",
-                desc: "Secure, intuitive, and interoperable digital patient record systems.",
-                icon: <FaHeartbeat className="text-5xl" />,
-              },
-              {
-                title: "Telemedicine Platforms",
-                desc: "High-quality virtual consultations, remote monitoring, and digital health services.",
-                icon: <FaUserMd className="text-5xl" />,
-              },
-              {
-                title: "Patient Management Systems",
-                desc: "Smart appointment scheduling, billing, and end-to-end workflow automation.",
-                icon: <FaCalendarAlt className="text-5xl" />,
-              },
-              {
-                title: "AI-Powered Diagnostics",
-                desc: "Intelligent clinical decision support and early disease detection tools.",
-                icon: <FaBrain className="text-5xl" />,
-              },
-              {
-                title: "Health Analytics Dashboards",
-                desc: "Real-time insights for hospitals, clinics, and population health management.",
-                icon: <FaChartBar className="text-5xl" />,
-              },
-              {
-                title: "Digital Health Cards",
-                desc: "Portable, secure digital health IDs with emergency access and medical history.",
-                icon: <FaIdCard className="text-5xl" />,
-              },
-            ].map((solution, i) => (
+            {travelList.map((solution, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
+                whileHover={{ y: -8 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 flex flex-col h-full transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
                   {solution.icon}
                 </div>
+
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
+
+                <p className="text-white/70 leading-relaxed flex-grow">
+                  {solution.desc}
+                </p>
+
+                <button
+                  onClick={() =>
+                    navigate(`/industries/travel-hospitality/${solution.slug}`)
+                  }
+                  className="mt-6 inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
+                >
+                  Read More
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                </button>
               </motion.div>
             ))}
           </div>
@@ -131,12 +106,12 @@ const TravelHospitality = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+      <section className="py-20 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Transform Healthcare Delivery?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-xl text-white/90 mb-12">
             Let’s build compassionate, efficient, and life-saving digital
             healthcare solutions together.
           </p>
@@ -145,7 +120,7 @@ const TravelHospitality = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-base hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Healthcare Project
             <FaArrowRight />

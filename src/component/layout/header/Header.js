@@ -46,7 +46,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3 group">
            <img
              src={paxykopLogo}
-             className="h-8 transition-transform group-hover:scale-105"
+             className="h-10 transition-transform group-hover:scale-105"
              alt="Paxykop Logo"
             />
           </Link>
