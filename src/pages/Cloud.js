@@ -61,7 +61,7 @@ const Cloud = () => {
 
             <div className="relative flex justify-center">
               <img
-                src="/images/cloud1.jpg"
+                src="/images/cloud2.jpg"
                 alt="Cloud Technologies"
                 className="rounded-3xl shadow-2xl max-w-lg border border-white/10 w-full"
               />

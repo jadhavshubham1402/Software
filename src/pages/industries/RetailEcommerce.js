@@ -1,15 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaHeartbeat,
-  FaUserMd,
-  FaCalendarAlt,
-  FaBrain,
-  FaChartBar,
-  FaIdCard,
   FaArrowRight,
+  FaHeartbeat
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { retailList } from "../../data/softwareData";
 
 const Healthcare = () => {
   const navigate = useNavigate();
@@ -78,54 +73,37 @@ const Healthcare = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Sales Force Automation for Retail Sector",
-                desc: "Move retail business to the next level .",
-                icon: <FaHeartbeat className="text-5xl" />,
-              },
-              {
-                title: "Retail Lead Management System",
-                desc: "Proficient Lead Management System to Manage, track and most importantly convert retail business.",
-                icon: <FaUserMd className="text-5xl" />,
-              },
-              {
-                title: "E-Commerce for B2B",
-                desc: "Seamless experiences For your B2B customers",
-                icon: <FaCalendarAlt className="text-5xl" />,
-              },
-              {
-                title: "E-Commerce for B2B",
-                desc: "Digital sales and partner networks enables B2B companies to stay ahead of competition",
-                icon: <FaBrain className="text-5xl" />,
-              },
-              {
-                title: "Unified B2C retail solution",
-                desc: "Competition is at every corner in the current B2C marketplace and only the suitable technology can give you the benefit required to stay ahead of the competition. ",
-                icon: <FaChartBar className="text-5xl" />,
-              },
-              {
-                title: "Dealer management system",
-                desc: "Dealer or the dealership acts as one of the major components of the retail sales system",
-                icon: <FaIdCard className="text-5xl" />,
-              },
-            ].map((solution, i) => (
+            {retailList.map((solution, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
+                whileHover={{ y: -8 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 flex flex-col h-full transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
                   {solution.icon}
                 </div>
+
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
+
+                <p className="text-white/70 leading-relaxed flex-grow">
+                  {solution.desc}
+                </p>
+
+                <button
+                  onClick={() =>
+                    navigate(`/industries/retail-ecommerce/${solution.slug}`)
+                  }
+                  className="mt-6 inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
+                >
+                  Read More
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                </button>
               </motion.div>
             ))}
           </div>

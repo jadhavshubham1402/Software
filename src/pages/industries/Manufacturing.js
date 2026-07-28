@@ -1,14 +1,10 @@
 import { motion } from "framer-motion";
 import {
   FaArrowRight,
-  FaBrain,
-  FaChalkboardTeacher,
-  FaGraduationCap,
-  FaMobileAlt,
-  FaSchool,
-  FaUsers
+  FaGraduationCap
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { manufacturingList } from "../../data/softwareData";
 
 const Manufacturing = () => {
   const navigate = useNavigate();
@@ -39,14 +35,15 @@ const Manufacturing = () => {
               </div>
 
               <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
-                Smart Manufacturing Solutions for the {" "}
+                Smart Manufacturing Solutions for the{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Future of Industry
                 </span>
               </h1>
 
               <p className="text-2xl text-white/80 max-w-xl mb-10">
-               Empowering manufacturers with digital technologies to improve productivity, efficiency, and operational excellence.
+                Empowering manufacturers with digital technologies to improve
+                productivity, efficiency, and operational excellence.
               </p>
             </div>
 
@@ -60,67 +57,51 @@ const Manufacturing = () => {
           </div>
         </div>
       </section>
-      
 
       {/* OUR Manufacturing SOLUTIONS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Manufacturing Solutions</h2>
+            <h2 className="text-4xl font-bold mb-4">
+              Our Manufacturing Solutions
+            </h2>
             <p className="text-xl text-white/70">
               Transforming learning experiences through technology
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Highly Effective Fleet Management System",
-                desc: "Manage vehicles, optimize routes, and improve fleet operations through an efficient digital management platform.",
-                icon: <FaGraduationCap className="text-5xl" />,
-              },
-              {
-                title: "Efficient Warehouse Management System",
-                desc: "Streamline warehouse operations with inventory tracking, automation, and real-time monitoring.",
-                icon: <FaUsers className="text-5xl" />,
-              },
-              {
-                title: "Hub Management",
-                desc: "Manage transportation hubs efficiently with centralized operations, shipment tracking, and resource planning.",
-                icon: <FaMobileAlt className="text-5xl" />,
-              },
-              {
-                title: "Data Analytics",
-                desc: "Turn operational data into valuable insights to support better business decisions and improve performance.",
-                icon: <FaChalkboardTeacher className="text-5xl" />,
-              },
-              {
-                title: "Billing and Ratings",
-                desc: "Automate billing processes, manage pricing, and generate accurate reports for transportation services.",
-                icon: <FaBrain className="text-5xl" />,
-              },
-              {
-                title: "Parcel Shipping",
-                desc: "Enable secure and timely parcel delivery with end-to-end shipment tracking and delivery management.",
-                icon: <FaSchool className="text-5xl" />,
-              },
-            ].map((solution, i) => (
+            {manufacturingList.map((solution, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
+                whileHover={{ y: -8 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 flex flex-col h-full transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
                   {solution.icon}
                 </div>
+
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
+
+                <p className="text-white/70 leading-relaxed flex-grow">
+                  {solution.desc}
+                </p>
+
+                <button
+                  onClick={() =>
+                    navigate(`/industries/manufacturing/${solution.slug}`)
+                  }
+                  className="mt-6 inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
+                >
+                  Read More
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                </button>
               </motion.div>
             ))}
           </div>
@@ -134,7 +115,8 @@ const Manufacturing = () => {
             Empower Your Manufacturing Business
           </h2>
           <p className="text-xl text-white/90 mb-12">
-           Build intelligent manufacturing solutions that improve efficiency, productivity, and business growth.
+            Build intelligent manufacturing solutions that improve efficiency,
+            productivity, and business growth.
           </p>
 
           <motion.button

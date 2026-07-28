@@ -1,17 +1,13 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  FaTruck,
-  FaWarehouse,
-  FaMapMarkerAlt,
-  FaHome,
-  FaShip,
-  FaRoute,
-  FaTachometerAlt,
-  FaShieldAlt,
   FaArrowRight,
+  FaRoute,
+  FaShieldAlt,
+  FaTachometerAlt,
+  FaTruck
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { mediaList } from "../../data/softwareData";
 
 const MediaEntertainment = () => {
   const navigate = useNavigate();
@@ -49,7 +45,8 @@ const MediaEntertainment = () => {
               </h1>
 
               <p className="text-2xl text-white/80 max-w-xl mb-10">
-                Intelligent logistics solutions for OTT Services, Software for Digital Asset Management, CMS Development
+                Intelligent logistics solutions for OTT Services, Software for
+                Digital Asset Management, CMS Development
               </p>
             </div>
 
@@ -63,7 +60,7 @@ const MediaEntertainment = () => {
           </div>
         </div>
       </section>
-           
+
       {/* OUR MediaEntertainment SOLUTIONS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -75,54 +72,37 @@ const MediaEntertainment = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "OTT software",
-                desc: "We design and develop OTT app solutions that offer seamless video streaming experience for users.",
-                icon: <FaTruck className="text-5xl" />,
-              },
-              {
-                title: "Digital Asset Management",
-                desc: "Manage, organize, and secure digital assets with a centralized management solution.",
-                icon: <FaWarehouse className="text-5xl" />,
-              },
-              {
-                title: "CMS Development",
-                desc: "Build flexible content management systems for efficient publishing and content updates.",
-                icon: <FaMapMarkerAlt className="text-5xl" />,
-              },
-              {
-                title: "Content Management",
-                desc: "Organize and publish digital content efficiently across multiple channels.",
-                icon: <FaHome className="text-5xl" />,
-              },
-              {
-                title: "Workflow Management",
-                desc: "Streamline media workflows to improve collaboration and operational efficiency.",
-                icon: <FaShip className="text-5xl" />,
-              },
-              {
-                title: "Media Analytics",
-                desc: "Gain insights into audience engagement and content performance through analytics.",
-                icon: <FaRoute className="text-5xl" />,
-              },
-            ].map((solution, i) => (
+            {mediaList.map((solution, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
+                whileHover={{ y: -8 }}
+                className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-8 flex flex-col h-full transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
                   {solution.icon}
                 </div>
+
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{solution.desc}</p>
+
+                <p className="text-white/70 leading-relaxed flex-grow">
+                  {solution.desc}
+                </p>
+
+                <button
+                  onClick={() =>
+                    navigate(`/industries/media-entertainment/${solution.slug}`)
+                  }
+                  className="mt-6 inline-flex items-center gap-2 text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
+                >
+                  Read More
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
+                </button>
               </motion.div>
             ))}
           </div>
@@ -133,7 +113,7 @@ const MediaEntertainment = () => {
       <section className="py-24 bg-black/40">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
-             MediaEntertainment 
+            MediaEntertainment
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -199,4 +179,3 @@ const MediaEntertainment = () => {
 };
 
 export default MediaEntertainment;
-

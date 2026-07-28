@@ -20,7 +20,22 @@ import {
   FaTruck,
   FaUserMd,
   FaUsers,
+  FaStore,
+  FaStoreAlt,
+  FaCarSide,
+  FaUserTie,
 } from "react-icons/fa";
+import {
+  FaUsersGear,
+  FaWarehouse,
+  FaTruckFast,
+  FaRoute,
+  FaTv,
+  FaFolderTree,
+  FaFileLines,
+  FaGlobe,
+  FaPlaneDeparture,
+} from "react-icons/fa6";
 import { GiRadarSweep } from "react-icons/gi";
 import { MdSensors } from "react-icons/md";
 
@@ -84,6 +99,108 @@ export const automotiveList = [
     title: "Security",
     icon: <FaShieldAlt className="text-5xl" />,
     desc: "Protect connected vehicles with cybersecurity, secure communication protocols, and threat detection systems.",
+  },
+];
+
+export const retailList = [
+  {
+    title: "Sales Force Automation for Retail Sector",
+    slug: "sales-force-automation",
+    desc: "Move your retail business to the next level with intelligent sales force automation.",
+    icon: <FaUsersGear className="text-5xl" />,
+  },
+  {
+    title: "Retail Lead Management System",
+    slug: "retail-lead-management",
+    desc: "Manage, track, and convert retail leads efficiently with an advanced lead management system.",
+    icon: <FaUserTie className="text-5xl" />,
+  },
+  {
+    title: "E-Commerce for B2B",
+    slug: "ecommerce-b2b",
+    desc: "Deliver seamless digital commerce experiences for your B2B customers.",
+    icon: <FaShoppingCart className="text-5xl" />,
+  },
+  {
+    title: "Digital B2B Commerce",
+    slug: "digital-b2b-commerce",
+    desc: "Digital sales and partner networks help B2B companies stay ahead of the competition.",
+    icon: <FaStore className="text-5xl" />,
+  },
+  {
+    title: "Unified B2C Retail Solution",
+    slug: "unified-b2c-retail",
+    desc: "Empower your retail business with a unified omnichannel solution for exceptional customer experiences.",
+    icon: <FaStoreAlt className="text-5xl" />,
+  },
+  {
+    title: "Dealer Management System",
+    slug: "dealer-management-system",
+    desc: "Simplify dealer operations, inventory, sales, and customer management through a centralized platform.",
+    icon: <FaCarSide className="text-5xl" />,
+  },
+  {
+    title: "PIM Software Solutions",
+    slug: "pim-software-solutions",
+    desc: "Centralize and manage product information efficiently across all digital sales channels.",
+    icon: <FaBoxes className="text-5xl" />,
+  },
+];
+
+export const manufacturingList = [
+  {
+    title: "Warehouse Management",
+    slug: "warehouse-management",
+    desc: "Optimize warehouse operations with real-time inventory tracking, automated storage, order fulfillment, and stock management.",
+    icon: <FaWarehouse className="text-5xl" />,
+  },
+  {
+    title: "Supply Chain Management Software",
+    slug: "supply-chain-management",
+    desc: "Streamline procurement, inventory, logistics, and supplier collaboration with an end-to-end supply chain management solution.",
+    icon: <FaTruckFast className="text-5xl" />,
+  },
+  {
+    title: "Solution For Transportation Management",
+    slug: "transportation-management",
+    desc: "Plan, monitor, and optimize transportation operations with route optimization, shipment tracking, and fleet management.",
+    icon: <FaRoute className="text-5xl" />,
+  },
+];
+
+export const mediaList = [
+  {
+    title: "OTT Software",
+    slug: "ott-software",
+    desc: "Build scalable OTT platforms with live streaming, video-on-demand, subscription management, and multi-device support.",
+    icon: <FaTv className="text-5xl" />,
+  },
+  {
+    title: "Software For Digital Asset Management",
+    slug: "digital-asset-management",
+    desc: "Organize, store, manage, and distribute digital assets securely through a centralized digital asset management platform.",
+    icon: <FaFolderTree className="text-5xl" />,
+  },
+  {
+    title: "CMS Development",
+    slug: "cms-development",
+    desc: "Develop powerful and customizable Content Management Systems to create, manage, and publish digital content effortlessly.",
+    icon: <FaFileLines className="text-5xl" />,
+  },
+];
+
+export const travelList = [
+  {
+    title: "GDS Integration Services",
+    slug: "gds-integration-services",
+    desc: "Integrate leading Global Distribution Systems (GDS) such as Amadeus, Sabre, and Travelport to enable real-time flight, hotel, and travel booking capabilities.",
+    icon: <FaGlobe className="text-5xl" />,
+  },
+  {
+    title: "Smart Solutions for Flight Booking",
+    slug: "smart-flight-booking",
+    desc: "Develop intelligent flight booking platforms with fare comparison, real-time availability, secure payments, and seamless reservation management.",
+    icon: <FaPlaneDeparture className="text-5xl" />,
   },
 ];
 
