@@ -29,6 +29,7 @@ import SolutionDetails from "./pages/industries/SolutionDetails";
 import SolutionDetails1 from "./pages/SolutionDetails1";
 import AutomotiveDetails from "./pages/industries/AutomotiveDetails";
 import RetailDetails from "./pages/industries/RetailDetails";
+import ManufacturingDetails from "./pages/industries/ManufacturingDetails";
 
 function App() {
   function ScrollToTop() {
@@ -99,6 +100,8 @@ function App() {
             element={<RetailDetails />}
           />
           <Route path="/industries/manufacturing" element={<Manufacturing />} />
+          <Route path="/industries/manufacturing/:slug" element={<ManufacturingDetails />} />
+
           <Route
             path="/industries/media-entertainment"
             element={<MediaEntertainment />}
