@@ -3,6 +3,7 @@ import {
   FaBoxes,
   FaBuilding,
   FaCar,
+  FaCarSide,
   FaChargingStation,
   FaChartLine,
   FaClinicMedical,
@@ -17,24 +18,22 @@ import {
   FaSchool,
   FaShieldAlt,
   FaShoppingCart,
+  FaStoreAlt,
   FaTruck,
   FaUserMd,
   FaUsers,
-  FaStore,
-  FaStoreAlt,
-  FaCarSide,
-  FaUserTie,
+  FaUserTie
 } from "react-icons/fa";
 import {
-  FaUsersGear,
-  FaWarehouse,
-  FaTruckFast,
-  FaRoute,
-  FaTv,
-  FaFolderTree,
   FaFileLines,
+  FaFolderTree,
   FaGlobe,
   FaPlaneDeparture,
+  FaRoute,
+  FaTruckFast,
+  FaTv,
+  FaUsersGear,
+  FaWarehouse,
 } from "react-icons/fa6";
 import { GiRadarSweep } from "react-icons/gi";
 import { MdSensors } from "react-icons/md";
@@ -120,12 +119,6 @@ export const retailList = [
     slug: "ecommerce-b2b",
     desc: "Deliver seamless digital commerce experiences for your B2B customers.",
     icon: <FaShoppingCart className="text-5xl" />,
-  },
-  {
-    title: "Digital B2B Commerce",
-    slug: "digital-b2b-commerce",
-    desc: "Digital sales and partner networks help B2B companies stay ahead of the competition.",
-    icon: <FaStore className="text-5xl" />,
   },
   {
     title: "Unified B2C Retail Solution",

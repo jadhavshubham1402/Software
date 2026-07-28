@@ -28,6 +28,7 @@ import SupportMaintenance from "./pages/SupportMaintaince";
 import SolutionDetails from "./pages/industries/SolutionDetails";
 import SolutionDetails1 from "./pages/SolutionDetails1";
 import AutomotiveDetails from "./pages/industries/AutomotiveDetails";
+import RetailDetails from "./pages/industries/RetailDetails";
 
 function App() {
   function ScrollToTop() {
@@ -45,11 +46,10 @@ function App() {
 
       <Routes>
         {/* Common Layout */}
-          <Route element={<Layout />}>
+        <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/solutions/:slug" element={<SolutionDetails1 />} />
-          <Route path="/healthtech/:solution" element={<SolutionDetails />}
-          />
+          <Route path="/healthtech/:solution" element={<SolutionDetails />} />
 
           <Route path="/about" element={<AboutPage />} />
           <Route
@@ -77,12 +77,27 @@ function App() {
           <Route path="/technologies/cloud" element={<Cloud />} />
           <Route path="/industries/health-tech" element={<HealthTech />} />
           <Route path="/industries/automotive" element={<Automotive />} />
-          <Route path="/industries/automotive/:slug" element={<AutomotiveDetails />} />
-
-          <Route path="/industries/retail-ecommerce" element={<RetailEcommerce />} />
+          <Route
+            path="/industries/automotive/:slug"
+            element={<AutomotiveDetails />}
+          />
+          <Route
+            path="/industries/retail-ecommerce"
+            element={<RetailEcommerce />}
+          />
+          <Route
+            path="/industries/retail-ecommerce/:slug"
+            element={<RetailDetails />}
+          />
           <Route path="/industries/manufacturing" element={<Manufacturing />} />
-          <Route path="/industries/media-entertainment" element={<MediaEntertainment />} />
-          <Route path="/industries/travel-hospitality" element={<TravelHospitality />} />
+          <Route
+            path="/industries/media-entertainment"
+            element={<MediaEntertainment />}
+          />
+          <Route
+            path="/industries/travel-hospitality"
+            element={<TravelHospitality />}
+          />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<ProjectDetail />} />
           <Route path="/blogs" element={<Blogs />} />
