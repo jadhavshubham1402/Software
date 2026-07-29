@@ -6,7 +6,7 @@ const CookiePolicy = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0A0F] text-white/80">
-      <div className="max-w-7xl mx-auto px-6 py-34">
+      <div className="max-w-7xl mx-auto px-6 py-24">
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-white tracking-tight">
             Cookie Policy
