@@ -880,6 +880,7 @@ export default function RetailDetails() {
           </div>
         </>
       )}
+      
     </>
   );
 }
