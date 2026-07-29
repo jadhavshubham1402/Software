@@ -137,24 +137,24 @@ const AboutPage = () => {
               {
                 title: "Proven",
                 items: [
-                  "Years of market research & development",
-                  "Presence across multiple countries",
-                  "Trusted by global healthcare leaders",
+                  "Years of market survey & development",
+                  "Presence in many countries with Global partners",
+                  "Global Healthcare leaders",
                 ],
               },
               {
                 title: "Proactive",
                 items: [
-                  "Opportunity-driven approach",
-                  "Deep digital expertise",
-                  "Forward-looking technology mindset",
+                  "Proactive opportunity management",
+                  "Tech citizens",
+                  "Digital world expertise",
                 ],
               },
               {
                 title: "Professional",
                 items: [
-                  "Committed leadership",
-                  "Strong presence across India & Asia",
+                  "Committed management",
+                  "Strong offices/ affiliates across India & Asia",
                   "Accountability, transparency & loyalty",
                 ],
               },
@@ -201,22 +201,22 @@ const AboutPage = () => {
               {
                 label: "Research & Development",
                 value: 60,
-                desc: "Products and services built on dedicated research and current market trends.",
+                desc: "Our Services & products are developed based and dedicated research & trends.",
               },
               {
                 label: "Innovation & Transformation",
                 value: 80,
-                desc: "We make products more affordable and accessible through continuous innovation.",
+                desc: "We belive innovation makes the products more affordable & accessible to much larger market.",
               },
               {
                 label: "Technology & Design",
                 value: 70,
-                desc: "User-centered design paired with modern technology for better experiences.",
+                desc: "Our designs are driven by user experience & top notch technology makes the difference.",
               },
               {
                 label: "Customer Service & Support",
                 value: 95,
-                desc: "We treat our users and partners as long-term relationships, not transactions.",
+                desc: "We know our user & partner have made us proud & we try our best offer assistance & support.",
               },
             ].map((item, i) => (
               <div
@@ -264,32 +264,32 @@ const AboutPage = () => {
               {
                 icon: <FaHeart />,
                 title: "User Centric",
-                desc: "Everything we design starts with real user needs and ends with genuine satisfaction.",
+                desc: "We believe in end user satisfaction & our services are targeted towards designing & delivering solutions based on customer needs.",
               },
               {
                 icon: <FaLightbulb />,
                 title: "Effectiveness",
-                desc: "We focus on high efficiency so our clients see strong returns on their investment.",
+                desc: "We provide high return on investments (ROY) as we work with high efficiency.",
               },
               {
                 icon: <FaRocket />,
                 title: "Excellence",
-                desc: "Quality is built into our culture — visible in every product and every interaction.",
+                desc: "Excellence is imbibed in our culture & is easily seen in what ever we design & develop.",
               },
               {
                 icon: <FaHandshake />,
                 title: "Partnership",
-                desc: "We work as true partners, not just vendors. Your growth is our shared goal.",
+                desc: "We work with customers as partners & not as just another vendor. As partner we help our customers grow.",
               },
               {
                 icon: <FaUsers />,
                 title: "Growth",
-                desc: "We believe company growth and individual growth go hand in hand.",
+                desc: "We look after all our employees with providing freedom with a proper work environment.",
               },
               {
                 icon: <FaShieldAlt />,
                 title: "Care",
-                desc: "We create a supportive environment that gives our people freedom and purpose.",
+                desc: "We believe that company’s growth in depend as the individual growth, hence we emphasis proper opportunities & growth together.",
               },
             ].map((item, i) => (
               <div
