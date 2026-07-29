@@ -31,11 +31,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-3">
               <img
                 src={paxykopLogo}
                 alt="Company Logo"
-                className="h-12 brightness-110"
+                className="h-20 brightness-110"
               />
             </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
               help businesses innovate and grow.
             </p>
 
-            <div className="flex gap-4 mt-10">
+            <div className="flex gap-4 mt-6">
               {[
                 { icon: <FaFacebookF />, link: socialLinks.facebook },
                 { icon: <FaInstagram />, link: socialLinks.instagram },
