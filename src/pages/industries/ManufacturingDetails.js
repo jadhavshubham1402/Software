@@ -18,7 +18,7 @@ export default function ManufacturingDetails() {
             className="object-contain"
             alt="warehouse-management"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl">
               <p className="text-gray-700 leading-relaxed">
@@ -41,7 +41,7 @@ export default function ManufacturingDetails() {
               {/* Managing warehouse Smartly */}
               <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
                 <div>
-                  <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     Managing warehouse Smartly
                   </h3>
                   <ul className="space-y-2 text-gray-700 list-disc pl-5">
@@ -75,7 +75,7 @@ export default function ManufacturingDetails() {
                   />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     Storage Area Monitoring
                   </h3>
                   <p className="text-gray-700 mb-3">
@@ -220,7 +220,7 @@ export default function ManufacturingDetails() {
             className="object-contain"
             alt="supply-chain-management-software"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -369,7 +369,7 @@ export default function ManufacturingDetails() {
             className="object-contain"
             alt="solutions-for-transportation-management"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>

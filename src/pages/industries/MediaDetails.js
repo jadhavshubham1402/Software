@@ -18,7 +18,7 @@ export default function MediaDetails() {
             className="object-contain"
             alt="ott-services"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* WE PROVIDE OTT SOFTWARE SOLUTIONS */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -29,7 +29,7 @@ export default function MediaDetails() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   We provide OTT software solutions
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
@@ -414,7 +414,7 @@ export default function MediaDetails() {
             className="object-contain"
             alt="software-for-digital-asset-management"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
               <p>
@@ -650,7 +650,7 @@ export default function MediaDetails() {
             className="object-contain"
             alt="cms-development"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl">
               <h2 className="text-2xl font-semibold text-cyan-600 mb-4">

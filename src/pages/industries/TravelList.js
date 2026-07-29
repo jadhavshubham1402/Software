@@ -18,7 +18,7 @@ export default function TravelDetails() {
             className="object-contain"
             alt="gds-integrations"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -29,7 +29,7 @@ export default function TravelDetails() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   We are experienced GDS Integration Service Providers
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
@@ -82,27 +82,27 @@ export default function TravelDetails() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Tour Management
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Car and Cab Bookings
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Airport Transfers
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Airline & Hotel Reservation
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Railway Ticketing
                   </h3>
                 </div>
@@ -117,22 +117,22 @@ export default function TravelDetails() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     GDS API Integration
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Amadeus GDS Integration
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     White-label GDS
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     XML/API Integration
                   </h3>
                 </div>
@@ -148,7 +148,7 @@ export default function TravelDetails() {
             className="object-contain"
             alt="smart-solutions-for-flight-booking"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -159,7 +159,7 @@ export default function TravelDetails() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Feature-Rich Flight Booking Software solution
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-3">
@@ -209,22 +209,22 @@ export default function TravelDetails() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Traveler -friendly interface
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Fully Personalized approach
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Ease of cancellation
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Real time update
                   </h3>
                 </div>
@@ -239,40 +239,40 @@ export default function TravelDetails() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Online Ticket booking system
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Visual appealing Calendar module for planning
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Various payment options
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     More Language and Currencies compatibility
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">LIVE Booking</h3>
+                  <h3 className="font-semibold text-gray-800">LIVE Booking</h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Email integration and Auto mailing service
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Round the clock support
                   </h3>
                 </div>
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Online Support
                   </h3>
                 </div>

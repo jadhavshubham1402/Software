@@ -19,10 +19,10 @@ export default function RetailDetails() {
             className="object-contain"
             alt="sales-force-automation-for-retail"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Move retail business to the next level .
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -37,7 +37,7 @@ export default function RetailDetails() {
             {/* WHY + FLEET MANAGEMENT */}
             <div className="grid lg:grid-cols-2 gap-12 mb-20">
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   Why Salesforce Automation?
                 </h3>
                 <ul className="space-y-2 text-gray-700 list-disc pl-5">
@@ -56,7 +56,7 @@ export default function RetailDetails() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   Efficient fleet management
                 </h3>
                 <ul className="space-y-2 text-gray-700 list-disc pl-5">
@@ -76,7 +76,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Unified commerce
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -87,7 +87,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Omni channel services
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -100,7 +100,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Customized customer shopping experience
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -120,7 +120,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Quick Order Management
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -131,7 +131,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Inventory on your finger tips
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -141,7 +141,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Straight Feed Back from Market
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -160,7 +160,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-4">
+                  <div className="text-4xl font-bold text-gray-800 mb-4">
                     01
                   </div>
                   <p className="text-gray-700 text-sm">
@@ -170,7 +170,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-4">
+                  <div className="text-4xl font-bold text-gray-800 mb-4">
                     02
                   </div>
                   <p className="text-gray-700 text-sm">
@@ -181,7 +181,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-4">
+                  <div className="text-4xl font-bold text-gray-800 mb-4">
                     03
                   </div>
                   <p className="text-gray-700 text-sm">
@@ -215,7 +215,7 @@ export default function RetailDetails() {
             {/* EFFECTIVE LMS + BRIEF */}
             <div className="grid lg:grid-cols-2 gap-12 mb-20">
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   Effective Lead Management System to enhance sales growth
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -228,7 +228,7 @@ export default function RetailDetails() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-4">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   Retail Lead Management System in brief and its use !
                 </h3>
                 <ul className="space-y-3 text-gray-700 list-disc pl-5">
@@ -254,7 +254,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Lead Capture
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -265,7 +265,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Lead Distribution
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -285,7 +285,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Sales Tracking
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -295,7 +295,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Email Integration
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -306,7 +306,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Pipeline Management
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -316,7 +316,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Territory Management
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -326,7 +326,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Accurate Forecasting
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -336,7 +336,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Reports and Dashboards
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -350,7 +350,7 @@ export default function RetailDetails() {
 
             {/* WHAT MAKES OUR LMS TICK */}
             <div className="mb-10">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-6">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-6">
                 What makes our Retail Lead Management System tick ?
               </h2>
               <ul className="space-y-2 text-gray-700 list-disc pl-5 max-w-3xl">
@@ -376,7 +376,7 @@ export default function RetailDetails() {
           <div className="container mx-auto py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Seamless experiences For your B2B customers
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -391,7 +391,7 @@ export default function RetailDetails() {
             {/* FOUR FEATURE CARDS */}
             <div className="grid md:grid-cols-2 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Customer-centric Services
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -402,7 +402,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Facilitate orders
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -413,7 +413,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Automating sales
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -425,7 +425,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Sales Analytics
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -445,40 +445,40 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">1</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">1</div>
                   <p className="text-gray-700 font-medium">
                     Customized product suggestions
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">2</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">2</div>
                   <p className="text-gray-700 font-medium">B2B ecosystem</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">3</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">3</div>
                   <p className="text-gray-700 font-medium">
                     Cross-platform compatibility
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">4</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">4</div>
                   <p className="text-gray-700 font-medium">
                     Customer / market segmentation
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">5</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">5</div>
                   <p className="text-gray-700 font-medium">
                     Customer Loyalty programs
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">6</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">6</div>
                   <p className="text-gray-700 font-medium">
                     Role-based custom dashboards
                   </p>
@@ -510,7 +510,7 @@ export default function RetailDetails() {
             {/* FOUR FEATURE CARDS */}
             <div className="grid md:grid-cols-2 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Marketplace solutions
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -523,7 +523,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Mobile based E-commerce Development
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -535,7 +535,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Omni channel experience
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -546,7 +546,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Solution to manage stores
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -592,7 +592,7 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">1</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">1</div>
                   <p className="text-gray-700">
                     Website with Innovative design that can enhance your
                     customers online browsing or buying experience.
@@ -600,7 +600,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">2</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">2</div>
                   <p className="text-gray-700">
                     Exceed on customer expectations with personalized shopping
                     experiences and much more.
@@ -608,14 +608,14 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">3</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">3</div>
                   <p className="text-gray-700">
                     Fully integrated B2C solution.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">4</div>
+                  <div className="text-4xl font-bold text-gray-800 mb-3">4</div>
                   <p className="text-gray-700">
                     Ensure your online store is growing and always on the top.
                   </p>
@@ -647,7 +647,7 @@ export default function RetailDetails() {
             {/* FOUR FEATURE CARDS */}
             <div className="grid md:grid-cols-2 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Solutions for Dealership Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -658,7 +658,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   CRM Services
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -670,7 +670,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Showroom Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -681,7 +681,7 @@ export default function RetailDetails() {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Showroom Inventory Management Software
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -700,31 +700,31 @@ export default function RetailDetails() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Logistics planning system
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Dealer locator
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Sub dealer voice
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Ticket management system
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">Easy feedback</h3>
+                  <h3 className="font-semibold text-gray-800">Easy feedback</h3>
                 </div>
               </div>
             </div>
@@ -772,7 +772,7 @@ export default function RetailDetails() {
           <div className="container mx-auto py-10">
             {/* PAIN POINTS */}
             <div className="mb-16 max-w-3xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Are these pain points challenging your organization?
               </h2>
               <ul className="space-y-2 text-gray-700 list-disc pl-5">
@@ -793,13 +793,13 @@ export default function RetailDetails() {
 
             {/* WHY PIM SOFTWARE SOLUTION */}
             <div className="mb-20">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-8">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-8">
                 Why PIM Software Solution?
               </h2>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Quick Turnaround time
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -809,7 +809,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Enhanced product experience
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -821,7 +821,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Successful omni channel commerce
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -831,7 +831,7 @@ export default function RetailDetails() {
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6">
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Cost effective
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -843,37 +843,37 @@ export default function RetailDetails() {
 
             {/* OUR PIM SOFTWARE FEATURES */}
             <div className="mb-10">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-8">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-8">
                 Our PIM Software Features
               </h2>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Personalized solution
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Intuitive and user friendly
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Automation and Agility
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">
+                  <h3 className="font-semibold text-gray-800">
                     Data Analytics
                   </h3>
                 </div>
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <h3 className="font-semibold text-cyan-600">Localization</h3>
+                  <h3 className="font-semibold text-gray-800">Localization</h3>
                 </div>
               </div>
             </div>

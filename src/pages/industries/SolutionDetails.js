@@ -44,10 +44,10 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="hospital-management-system"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-8 lg:px-12 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 By now you might have already experienced the highs and lows of
                 running hospitals despite the size of the facility
               </h2>
@@ -107,7 +107,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   IPD
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -120,7 +120,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaCogs className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Asset Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -133,7 +133,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBoxes className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Inventory Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -148,7 +148,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaFileMedical className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Health Record
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -161,7 +161,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaMoneyBillWave className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Finance & Accounts
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -197,7 +197,7 @@ const SolutionDetails = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBrain className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Why our HMS ?
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -209,7 +209,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Automate
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -222,7 +222,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaCogs className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Q & A
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -235,7 +235,7 @@ const SolutionDetails = () => {
 
             {/* IMPROVING CLINICAL DECISIONS */}
             <div className="mb-12 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Improving clinical decisions
               </h2>
               <p className="text-gray-700 leading-relaxed mb-3">
@@ -255,7 +255,7 @@ const SolutionDetails = () => {
 
             {/* MODERN CARE CENTRES */}
             <div className="mb-12 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Modern Care centres
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -267,7 +267,7 @@ const SolutionDetails = () => {
 
             {/* DATA SECURITY */}
             <div className="mb-10 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Data Security at its best
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -287,10 +287,10 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="mobile-health-care"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Enabling Healthcare Mobility
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -311,7 +311,7 @@ const SolutionDetails = () => {
             {/* TWO SIDE SECTIONS */}
             <div className="grid lg:grid-cols-2 gap-12 mb-20">
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Mobile based health care
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -323,7 +323,7 @@ const SolutionDetails = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Clinical Productivity
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -340,7 +340,7 @@ const SolutionDetails = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBrain className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Apps to schedule appointments
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -353,7 +353,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Virtual consultation (VC)
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -366,7 +366,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaCogs className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Auto Reminder Feature
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -379,7 +379,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaHeartbeat className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   App to track fitness
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -392,7 +392,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaNotesMedical className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Clinical Assist
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -405,7 +405,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBoxes className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   App to Manage Medical Inventory
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -418,7 +418,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaComments className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Apps facilitate collaboration
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -432,7 +432,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaDatabase className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Data Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -445,7 +445,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaProjectDiagram className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Efficient work flow
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -459,7 +459,7 @@ const SolutionDetails = () => {
 
             {/* HEALTHCARE TECHNOLOGY */}
             <div className="mb-10 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Healthcare Technology at its best
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -481,11 +481,11 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="smart-hospital"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Smart hospitals safe hospitals
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
@@ -515,7 +515,7 @@ const SolutionDetails = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Smartness with Security & Safety
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -528,7 +528,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaUserCheck className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Employee Monitor or tracking
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -543,7 +543,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaShieldAlt className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Staff Safety
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -557,7 +557,7 @@ const SolutionDetails = () => {
 
             {/* SAFETY OF HIGH VALUED ASSETS */}
             <div className="mb-16 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Safety of High valued Assets
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -570,7 +570,7 @@ const SolutionDetails = () => {
 
             {/* A SOLUTION FOR EVERY ROOM */}
             <div className="mb-16 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 A solution for every room
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -583,7 +583,7 @@ const SolutionDetails = () => {
 
             {/* WHY PAXYKOP */}
             <div className="mb-10 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Why paxykop ?
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -607,11 +607,11 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="mobile-health-care"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="mb-12 max-w-4xl">
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Challenges of patient engagement
                 </h2>
 
@@ -628,6 +628,7 @@ const SolutionDetails = () => {
                 </p>
               </div>
 
+
               {/* IMAGE SPACE */}
               <div className="flex items-center justify-center">
                 <img
@@ -639,7 +640,7 @@ const SolutionDetails = () => {
             </div>
             {/* CARDS */}
             <div className="bg-white p-6 text-center">
-              <h3 className="font-semibold text-2xl text-cyan-600 mb-1">
+              <h3 className="font-semibold text-2xl text-gray-800 mb-1">
                 Patient engagement apps and solutions
               </h3>
               <p className="text-gray-600 text-sm">
@@ -649,7 +650,7 @@ const SolutionDetails = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Patient portal
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -662,7 +663,7 @@ const SolutionDetails = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Solutions for Digital engagement
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -673,7 +674,7 @@ const SolutionDetails = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Wearable technology and Solutions
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -684,7 +685,7 @@ const SolutionDetails = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Cohort Management
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -695,7 +696,7 @@ const SolutionDetails = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Mobilebased engagement solutions
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -705,7 +706,7 @@ const SolutionDetails = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Support tools
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -717,7 +718,7 @@ const SolutionDetails = () => {
 
             {/* BOTTOM CONTENT */}
             <div className="mt-16 max-w-4xl">
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Enhanced Patient Care And Satisfaction
               </h2>
 
@@ -727,7 +728,7 @@ const SolutionDetails = () => {
                 Overall Patients Treatment Experience.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Seamless Communication
               </h2>
 
@@ -736,7 +737,8 @@ const SolutionDetails = () => {
                 automating scheduling of appointments and conducting surveys.
               </p>
 
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Growth
               </h2>
 
@@ -756,11 +758,11 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="wearables"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Wearable health tech and Redefined care
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
@@ -780,32 +782,42 @@ const SolutionDetails = () => {
               </div>
             </div>
 
-            {/* WEARABLES AND IMPROVED HEALTH OUTCOMES */}
-            <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
-                Wearables And Improved Health Outcomes
-              </h2>
-              <p className="text-center text-gray-700 mb-10 max-w-3xl mx-auto">
-                Vital Information Provided By Wearable Devices Can Help
-                Providers With Great Hold On Treatment And Its Outcomes.
-              </p>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <FaBrain className="text-4xl text-cyan-600 mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
-                    Monitoring fitness
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Find your way towards holistic fitness by using our wearable
-                    devices which helps you monitor your fitness metrics and
-                    enhance your health goals.
-                  </p>
-                </div>
+    {/* IMAGE SPACE */}
+    <div className="w-full h-72 mb-12"></div>
+
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Wearables And Improved Health Outcomes
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Vital Information Provided By Wearable Devices Can Help Providers
+          With Great Hold On Treatment And Its Outcomes.
+        </p>
+      </div>
+
+
+      <div className="bg-white rounded-xl shadow border p-6 text-center">
+        <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+          Monitoring fitness
+        </h3>
+
+        <p className="text-gray-600 text-sm">
+          Find your way towards holistic fitness by using our wearable devices
+          which helps you monitor your fitness metrics and enhance your health goals.
+        </p>
+      </div>
+
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
                   <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Track your health
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -817,7 +829,7 @@ const SolutionDetails = () => {
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
                   <FaHeartbeat className="text-4xl text-cyan-600 mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Better Connectivity
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -828,7 +840,7 @@ const SolutionDetails = () => {
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
                   <FaUsers className="text-4xl text-cyan-600 mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Community
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -840,7 +852,7 @@ const SolutionDetails = () => {
 
                 <div className="bg-white rounded-xl shadow border p-6 text-center">
                   <FaUserInjured className="text-4xl text-cyan-600 mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                  <h3 className="font-semibold text-lg text-gray-800 mb-3">
                     Patients
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -856,7 +868,7 @@ const SolutionDetails = () => {
             {/* BOTTOM SECTIONS */}
             <div className="grid md:grid-cols-2 gap-10 mb-10">
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Clinicians
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -870,7 +882,7 @@ const SolutionDetails = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Insurance
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -883,7 +895,7 @@ const SolutionDetails = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Benefits to Hospitals
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -897,7 +909,7 @@ const SolutionDetails = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-cyan-600 mb-3">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Why paxykop ?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -910,7 +922,7 @@ const SolutionDetails = () => {
                 </p>
               </div>
             </div>
-          </div>
+          
         </>
       )}
       {service.slug === "healthcare-dashboard" && (
@@ -920,10 +932,10 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="healthcare-dashboard"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div>
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Healthcare Dashboards
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -940,7 +952,7 @@ const SolutionDetails = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-20">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBrain className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Statistics
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -953,7 +965,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Quality patient care
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -966,7 +978,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaChartLine className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   ROI
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -978,7 +990,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaChartBar className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Analytics
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -992,7 +1004,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaUserMd className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Dash board for private practice
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1005,7 +1017,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaHeartbeat className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Health Dashboard
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1018,7 +1030,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaTasks className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Productivity Tracker
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1034,7 +1046,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaPills className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Dashboards for Pharma sales
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1047,7 +1059,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaUserClock className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Physician Allocation
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1062,7 +1074,7 @@ const SolutionDetails = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Reports and charts made simple
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -1084,11 +1096,11 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="internet-of-things"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-6 lg:px-10 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Internet of things
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
@@ -1113,7 +1125,7 @@ const SolutionDetails = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaBrain className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Patient Care
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1126,7 +1138,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaEye className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Monitoring health remotely
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1139,7 +1151,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaHospital className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Healthcare infrastructure
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1152,7 +1164,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaDatabase className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Data collection and metrics
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1164,7 +1176,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaUserCheck className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Staff monitoring
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1176,7 +1188,7 @@ const SolutionDetails = () => {
 
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <FaAmbulance className="text-4xl text-cyan-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-lg text-cyan-600 mb-3">
+                <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Emergency response
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1190,7 +1202,7 @@ const SolutionDetails = () => {
             {/* MAIN HIGHLIGHTS */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
               <div>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Main highlights of Our Internet Solutions
                 </h2>
                 <ul className="space-y-2 text-gray-700 list-disc pl-5">
