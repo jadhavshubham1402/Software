@@ -32,6 +32,10 @@ import RetailDetails from "./pages/industries/RetailDetails";
 import ManufacturingDetails from "./pages/industries/ManufacturingDetails";
 import MediaDetails from "./pages/industries/MediaDetails";
 import TravelDetails from "./pages/industries/TravelList";
+import TermsOfService from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import RefundPolicy from "./pages/RefundPolicy";
 
 function App() {
   function ScrollToTop() {
@@ -62,6 +66,10 @@ function App() {
             path="/services/mobile-development"
             element={<MobileAppDevelopment />}
           />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="/refund" element={<RefundPolicy />} />
           <Route
             path="/services/cloud-solutions"
             element={<CloudSolutions />}

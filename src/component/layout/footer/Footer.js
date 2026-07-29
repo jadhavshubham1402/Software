@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaTwitter
+  FaTwitter,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import paxykopLogo from "../../../assets/paxykop-logo.png";
@@ -143,6 +143,36 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* Bottom Bar - Copyright + Legal Links */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+          <p>© {new Date().getFullYear()} Paxykop. All rights reserved.</p>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            <Link to="/terms" className="hover:text-cyan-400 transition-colors">
+              Terms of Service
+            </Link>
+            <Link
+              to="/privacy"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/cookies"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              Cookie Policy
+            </Link>
+            <Link
+              to="/refund"
+              className="hover:text-cyan-400 transition-colors"
+            >
+              Refund Policy
+            </Link>
           </div>
         </div>
       </div>
