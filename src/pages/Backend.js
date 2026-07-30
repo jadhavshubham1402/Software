@@ -40,14 +40,14 @@ const Backend = () => {
                 <FaServer /> Backend Development
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] mb-8">
                 Powerful Backend Systems That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Scale Effortlessly
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-lg text-white/80 max-w-xl mb-10">
                 Robust, secure, and high-performance server-side solutions that
                 power modern applications — from startups to enterprise scale.
               </p>
@@ -97,7 +97,7 @@ const Backend = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Backend Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-16">Our Backend Services</h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
               End-to-end backend solutions built for reliability, speed, and
               scalability
@@ -162,7 +162,7 @@ const Backend = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/60">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Our Backend Technology Stack
           </h2>
           <p className="text-white/60 mb-12">
@@ -246,7 +246,7 @@ const Backend = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                 <div className="absolute bottom-0 p-8">
-                  <h3 className="text-3xl font-bold mb-3">{item.name}</h3>
+                  <h3 className="text-xl font-bold mb-3">{item.name}</h3>
                   <p className="text-white/80">{item.desc}</p>
                 </div>
               </motion.div>
@@ -290,7 +290,7 @@ const Backend = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -301,10 +301,10 @@ const Backend = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Build a Rock-Solid Backend?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s create a secure, scalable, and high-performance foundation for
             your application.
           </p>
