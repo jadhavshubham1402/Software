@@ -22,7 +22,7 @@ import {
   FaTruck,
   FaUserMd,
   FaUsers,
-  FaUserTie
+  FaUserTie,
 } from "react-icons/fa";
 import {
   FaFileLines,
@@ -578,27 +578,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Manufacturing",
-          icon: "/images/icons/manufacturing.png",
+          icon: "FaIndustry",
         },
         {
           name: "Retail",
-          icon: "/images/icons/retail.png",
+          icon: "FaShoppingCart",
         },
         {
           name: "Healthcare",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaHospital",
         },
         {
           name: "Education",
-          icon: "/images/icons/education.png",
+          icon: "FaGraduationCap",
         },
         {
           name: "Construction",
-          icon: "/images/icons/construction.png",
+          icon: "FaHardHat",
         },
         {
           name: "Logistics",
-          icon: "/images/icons/logistics.png",
+          icon: "FaTruck",
         },
       ],
     },
@@ -772,27 +772,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Multi-Specialty Hospitals",
-          icon: "/images/icons/hospital.png",
+          icon: "FaHospital",
         },
         {
           name: "Clinics",
-          icon: "/images/icons/clinic.png",
+          icon: "FaClinicMedical",
         },
         {
           name: "Diagnostic Centers",
-          icon: "/images/icons/laboratory.png",
+          icon: "FaFlask",
         },
         {
           name: "Medical Colleges",
-          icon: "/images/icons/medical-college.png",
+          icon: "FaUserGraduate",
         },
         {
           name: "Pharmacies",
-          icon: "/images/icons/pharmacy.png",
+          icon: "FaPills",
         },
         {
           name: "Healthcare Chains",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaHeartbeat",
         },
       ],
     },
@@ -970,27 +970,27 @@ export const solutionDetails = [
       items: [
         {
           name: "General Clinics",
-          icon: "/images/icons/clinic.png",
+          icon: "FaClinicMedical",
         },
         {
           name: "Dental Clinics",
-          icon: "/images/icons/dental.png",
+          icon: "FaTooth",
         },
         {
           name: "Eye Clinics",
-          icon: "/images/icons/eye.png",
+          icon: "FaEye",
         },
         {
           name: "Skin Clinics",
-          icon: "/images/icons/skin.png",
+          icon: "FaHandSparkles",
         },
         {
           name: "Physiotherapy Centers",
-          icon: "/images/icons/physio.png",
+          icon: "FaWalking",
         },
         {
           name: "Diagnostic Clinics",
-          icon: "/images/icons/laboratory.png",
+          icon: "FaFlask",
         },
       ],
     },
@@ -1168,27 +1168,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Hospitals",
-          icon: "/images/icons/hospital.png",
+          icon: "FaHospital",
         },
         {
           name: "Clinics",
-          icon: "/images/icons/clinic.png",
+          icon: "FaClinicMedical",
         },
         {
           name: "Diagnostic Centers",
-          icon: "/images/icons/laboratory.png",
+          icon: "FaFlask",
         },
         {
           name: "Healthcare Startups",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaRocket",
         },
         {
           name: "Telemedicine Platforms",
-          icon: "/images/icons/telemedicine.png",
+          icon: "FaLaptopMedical",
         },
         {
           name: "Private Doctors",
-          icon: "/images/icons/doctor.png",
+          icon: "FaUserMd",
         },
       ],
     },
@@ -1366,27 +1366,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Retail Stores",
-          icon: "/images/icons/retail.png",
+          icon: "FaStore",
         },
         {
           name: "Warehouses",
-          icon: "/images/icons/warehouse.png",
+          icon: "FaWarehouse",
         },
         {
           name: "Manufacturing",
-          icon: "/images/icons/manufacturing.png",
+          icon: "FaIndustry",
         },
         {
           name: "Pharmaceutical",
-          icon: "/images/icons/pharmacy.png",
+          icon: "FaPills",
         },
         {
           name: "E-Commerce",
-          icon: "/images/icons/ecommerce.png",
+          icon: "FaShoppingCart",
         },
         {
           name: "Wholesale Distribution",
-          icon: "/images/icons/distribution.png",
+          icon: "FaBoxes",
         },
       ],
     },
@@ -1564,27 +1564,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Schools",
-          icon: "/images/icons/school.png",
+          icon: "FaSchool",
         },
         {
           name: "Colleges",
-          icon: "/images/icons/college.png",
+          icon: "FaUniversity",
         },
         {
           name: "Universities",
-          icon: "/images/icons/university.png",
+          icon: "FaGraduationCap",
         },
         {
           name: "Coaching Institutes",
-          icon: "/images/icons/coaching.png",
+          icon: "FaChalkboardTeacher",
         },
         {
           name: "Training Centers",
-          icon: "/images/icons/training.png",
+          icon: "FaBookOpen",
         },
         {
           name: "Online Academies",
-          icon: "/images/icons/online-learning.png",
+          icon: "FaLaptop",
         },
       ],
     },
@@ -1762,27 +1762,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Retail Stores",
-          icon: "/images/icons/retail.png",
+          icon: "FaStore",
         },
         {
           name: "Fashion & Apparel",
-          icon: "/images/icons/fashion.png",
+          icon: "FaTshirt",
         },
         {
           name: "Healthcare",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaHospital",
         },
         {
           name: "Electronics",
-          icon: "/images/icons/electronics.png",
+          icon: "FaMicrochip",
         },
         {
           name: "Grocery & FMCG",
-          icon: "/images/icons/grocery.png",
+          icon: "FaShoppingBasket",
         },
         {
           name: "Wholesale Business",
-          icon: "/images/icons/wholesale.png",
+          icon: "FaBoxes",
         },
       ],
     },
@@ -1956,12 +1956,30 @@ export const solutionDetails = [
     industries: {
       title: "Industries We Serve",
       items: [
-        { name: "Healthcare", icon: "/images/icons/healthcare.png" },
-        { name: "Retail", icon: "/images/icons/retail.png" },
-        { name: "Finance", icon: "/images/icons/finance.png" },
-        { name: "Manufacturing", icon: "/images/icons/manufacturing.png" },
-        { name: "Education", icon: "/images/icons/education.png" },
-        { name: "Logistics", icon: "/images/icons/logistics.png" },
+        {
+          name: "Healthcare",
+          icon: "FaHospital",
+        },
+        {
+          name: "Retail",
+          icon: "FaShoppingCart",
+        },
+        {
+          name: "Finance",
+          icon: "FaChartLine",
+        },
+        {
+          name: "Manufacturing",
+          icon: "FaIndustry",
+        },
+        {
+          name: "Education",
+          icon: "FaGraduationCap",
+        },
+        {
+          name: "Logistics",
+          icon: "FaTruck",
+        },
       ],
     },
 
@@ -2133,27 +2151,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Healthcare",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaHospital",
         },
         {
           name: "E-Commerce",
-          icon: "/images/icons/ecommerce.png",
+          icon: "FaShoppingCart",
         },
         {
           name: "Education",
-          icon: "/images/icons/education.png",
+          icon: "FaGraduationCap",
         },
         {
           name: "Finance",
-          icon: "/images/icons/finance.png",
+          icon: "FaChartLine",
         },
         {
           name: "Logistics",
-          icon: "/images/icons/logistics.png",
+          icon: "FaTruck",
         },
         {
           name: "Travel & Tourism",
-          icon: "/images/icons/travel.png",
+          icon: "FaPlane",
         },
       ],
     },
@@ -2331,27 +2349,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Healthcare",
-          icon: "/images/icons/healthcare.png",
+          icon: "FaHospital",
         },
         {
           name: "Education",
-          icon: "/images/icons/education.png",
+          icon: "FaGraduationCap",
         },
         {
           name: "Retail",
-          icon: "/images/icons/retail.png",
+          icon: "FaShoppingCart",
         },
         {
           name: "Finance",
-          icon: "/images/icons/finance.png",
+          icon: "FaChartLine",
         },
         {
           name: "Manufacturing",
-          icon: "/images/icons/manufacturing.png",
+          icon: "FaIndustry",
         },
         {
           name: "Logistics",
-          icon: "/images/icons/logistics.png",
+          icon: "FaTruck",
         },
       ],
     },
@@ -2527,15 +2545,32 @@ export const solutionDetails = [
     industries: {
       title: "Industries We Serve",
       items: [
-        { name: "Transport Companies", icon: "/images/icons/truck.png" },
-        { name: "Courier Services", icon: "/images/icons/courier.png" },
-        { name: "Warehouses", icon: "/images/icons/warehouse.png" },
-        { name: "E-Commerce", icon: "/images/icons/ecommerce.png" },
-        { name: "Manufacturing", icon: "/images/icons/manufacturing.png" },
-        { name: "Distribution", icon: "/images/icons/distribution.png" },
+        {
+          name: "Transport Companies",
+          icon: "FaTruck",
+        },
+        {
+          name: "Courier Services",
+          icon: "FaShippingFast",
+        },
+        {
+          name: "Warehouses",
+          icon: "FaWarehouse",
+        },
+        {
+          name: "E-Commerce",
+          icon: "FaShoppingCart",
+        },
+        {
+          name: "Manufacturing",
+          icon: "FaIndustry",
+        },
+        {
+          name: "Distribution",
+          icon: "FaBoxes",
+        },
       ],
     },
-
     process: {
       title: "Our Development Process",
       steps: [
@@ -2704,27 +2739,27 @@ export const solutionDetails = [
       items: [
         {
           name: "Retail Stores",
-          icon: "/images/icons/retail.png",
+          icon: "FaStore",
         },
         {
           name: "Wholesale Business",
-          icon: "/images/icons/wholesale.png",
+          icon: "FaBoxes",
         },
         {
           name: "Medical Stores",
-          icon: "/images/icons/pharmacy.png",
+          icon: "FaPills",
         },
         {
           name: "Restaurants",
-          icon: "/images/icons/restaurant.png",
+          icon: "FaUtensils",
         },
         {
           name: "Supermarkets",
-          icon: "/images/icons/supermarket.png",
+          icon: "FaShoppingBasket",
         },
         {
           name: "Service Providers",
-          icon: "/images/icons/service.png",
+          icon: "FaTools",
         },
       ],
     },

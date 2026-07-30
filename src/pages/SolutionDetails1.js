@@ -30,24 +30,24 @@ const SolutionDetails1 = () => {
       <section className="bg-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-xl lg:text-3xl font-bold leading-tight mb-6">
               {solution.hero.title}
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <p className="text-base text-slate-300 leading-relaxed">
               {solution.hero.description}
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <button
                 onClick={() => navigate("/contact")}
-                className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-2xl font-semibold text-lg transition"
+                className="bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-2xl font-semibold text-base transition"
               >
                 {solution.hero.primaryButton}
               </button>
 
               <button
                 onClick={() => navigate("/contact")}
-                className="border-2 border-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-2xl font-semibold text-lg transition"
+                className="border-2 border-white hover:bg-white hover:text-slate-900 px-3 py-2 rounded-2xl font-semibold text-base transition"
               >
                 {solution.hero.secondaryButton}
               </button>
@@ -58,7 +58,7 @@ const SolutionDetails1 = () => {
             <img
               src={solution.hero.image}
               alt={solution.hero.title}
-              className="w-full rounded-3xl shadow-2xl"
+              className="w-[90%] mt-10 rounded-3xl shadow-2xl"
             />
           </div>
         </div>
