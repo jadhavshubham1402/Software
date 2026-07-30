@@ -143,10 +143,10 @@ const PrivacyPolicy = () => {
             <p className="mt-4">
               To exercise these rights, contact us at{" "}
               <a
-                href="mailto:info@paxykop.in"
+                href="mailto:support@paxykop.in"
                 className="text-cyan-400 hover:underline"
               >
-                info@paxykop.in
+                support@paxykop.in
               </a>
               .
             </p>
@@ -220,10 +220,10 @@ const PrivacyPolicy = () => {
               <li>
                 <strong className="text-white">Email:</strong>{" "}
                 <a
-                  href="mailto:info@paxykop.in"
+                  href="mailto:support@paxykop.in"
                   className="text-cyan-400 hover:underline"
                 >
-                  info@paxykop.in
+                  support@paxykop.in
                 </a>
               </li>
               <li>

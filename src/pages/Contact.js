@@ -274,7 +274,7 @@ const Contact = () => {
                       href="mailto:hello@lifeonplus.com"
                       className="text-xl hover:text-cyan-400 transition"
                     >
-                      info@paxykop.com
+                      support@paxykop.in
                     </a>
                   </div>
                 </div>
