@@ -33,23 +33,26 @@ const UIUXDesign = () => {
             opacity: 0.65,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
-                🎨 UI/UX Design
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur-sm text-cyan-400 text-sm">
+                <span className="uppercase tracking-widest font-medium">
+                  {" "}
+                  🎨 UI/UX Design
+                </span>
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Designs That{" "}
-                <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-400 bg-clip-text text-transparent">
                   Convert & Delight
                 </span>
               </h1>
 
-              <p className="text-lg lg:text-xl text-white/70 max-w-2xl mb-8 leading-relaxed">
+              <p className="text-xl text-white/80 max-w-lg">
                 Beautiful, intuitive, and user-centered digital experiences that
                 drive engagement, loyalty, and business growth.
               </p>
@@ -93,7 +96,9 @@ const UIUXDesign = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Design Philosophy</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Our Design Philosophy
+            </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
               We craft experiences that go beyond aesthetics — they solve
               problems and create emotional connections.
@@ -148,7 +153,9 @@ const UIUXDesign = () => {
                 <h3 className="text-xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-sm lg:text-base text-white/70 leading-relaxed">{item.desc}</p>
+                <p className="text-sm lg:text-base text-white/70 leading-relaxed">
+                  {item.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -207,7 +214,9 @@ const UIUXDesign = () => {
       {/* TOOLS & TECHNOLOGIES */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Tools We Master</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Tools We Master
+          </h2>
           <p className="text-white/60 mb-12">
             Industry-standard design and prototyping tools
           </p>
@@ -283,9 +292,9 @@ const UIUXDesign = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-5">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Elevate Your User Experience?
           </h2>
           <p className="text-lg lg:text-xl text-white/90 mb-10">
@@ -296,7 +305,7 @@ const UIUXDesign = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white/90 hover:bg-white text-black px-12 py-6 rounded-3xl font-semibold text-xl flex items-center gap-3 mx-auto transition"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Schedule a Free Consultation
             <FaArrowRight />

@@ -43,7 +43,7 @@ const CloudSolutions = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tighter">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Cloud Solutions That
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-300 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ const CloudSolutions = () => {
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-lg">
+              <p className="text-xl text-white/80 max-w-lg">
                 Secure, scalable, and cost-efficient cloud infrastructure,
                 migration, and optimization services.
               </p>
@@ -225,12 +225,12 @@ const CloudSolutions = () => {
       </section>
 
       {/* FINAL CTA - ONLY ONE */}
-      <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Move to the Cloud?
           </h2>
-          <p className="text-xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s design a secure, scalable cloud strategy tailored to your
             business.
           </p>
@@ -239,7 +239,7 @@ const CloudSolutions = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-xl hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Cloud Journey
             <span className="text-2xl">→</span>

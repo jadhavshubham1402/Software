@@ -81,7 +81,7 @@ const WebDevelopment = () => {
       <section id="services" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4">
               Our Web Development Expertise
             </h2>
             <p className="text-white/70 text-xl max-w-2xl mx-auto">
@@ -230,12 +230,12 @@ const WebDevelopment = () => {
       </section>
 
       {/* FINAL CTA - ONLY ONE */}
-      <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Elevate Your Digital Presence?
           </h2>
-          <p className="text-xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s build a website that not only looks great — but performs
             exceptionally.
           </p>
@@ -244,7 +244,7 @@ const WebDevelopment = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-base hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Web Project Now
             <span className="text-2xl">→</span>

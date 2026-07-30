@@ -33,23 +33,27 @@ const AIML = () => {
             opacity: 0.65,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
-                <FaBrain className="text-xl" /> Artificial Intelligence & ML
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur-sm text-cyan-400 text-sm">
+                <FaBrain className="text-xl" />
+                <span className="uppercase tracking-widest font-medium">
+                  {" "}
+                  Artificial Intelligence & ML{" "}
+                </span>
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Intelligence That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-400 bg-clip-text text-transparent">
                   Delivers Results
                 </span>
               </h1>
 
-              <p className="text-lg lg:text-xl text-white/70 max-w-2xl mb-8 leading-relaxed">
+              <p className="text-xl text-white/80 max-w-lg">
                 We build enterprise-grade AI and Machine Learning solutions that
                 learn, predict, automate, and drive measurable business growth.
               </p>
@@ -161,7 +165,9 @@ const AIML = () => {
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm lg:text-base text-white/70 leading-relaxed">{service.desc}</p>
+                <p className="text-sm lg:text-base text-white/70 leading-relaxed">
+                  {service.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -307,12 +313,12 @@ const AIML = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700 text-center">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-5">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Add Intelligence to Your Business?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s discuss how AI can create a real competitive advantage for
             you.
           </p>
@@ -321,7 +327,7 @@ const AIML = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white/90 hover:bg-white text-black px-12 py-6 rounded-3xl font-semibold text-xl flex items-center gap-3 mx-auto transition"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Schedule a Consultation
             <FaArrowRight />

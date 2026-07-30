@@ -32,12 +32,13 @@ const SupportMaintenance = () => {
             opacity: 0.75,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur-sm text-cyan-400 text-sm">
+                {" "}
                 <FaShieldAlt /> Support & Maintenance
               </div>
 
@@ -199,12 +200,12 @@ const SupportMaintenance = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6">
             Keep Your Software Running at Peak Performance
           </h2>
-          <p className="text-xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let our expert team handle maintenance so you can focus on growing
             your business.
           </p>
@@ -213,7 +214,7 @@ const SupportMaintenance = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Get Support Plan
             <FaArrowRight />
