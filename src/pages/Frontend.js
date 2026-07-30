@@ -40,14 +40,14 @@ const Frontend = () => {
                 <FaReact /> Frontend Development
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] mb-8">
                 Frontend Development That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Feels Alive
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-lg text-white/80 max-w-xl mb-10">
                 We craft fast, visually stunning, and highly interactive user
                 interfaces that deliver exceptional user experiences and
                 business results.
@@ -103,7 +103,7 @@ const Frontend = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">What We Build</h2>
+            <h2 className="text-3xl font-bold mb-4">What We Build</h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
               High-performance digital experiences tailored to your business
               needs
@@ -168,7 +168,7 @@ const Frontend = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/60">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Modern Frontend Stack</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Modern Frontend Stack</h2>
           <p className="text-white/60 mb-12">
             Built with the latest technologies for performance and scalability
           </p>
@@ -236,7 +236,7 @@ const Frontend = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -247,10 +247,10 @@ const Frontend = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Bring Your Vision to Life?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s build beautiful, high-performing interfaces that users love
             and your business thrives on.
           </p>

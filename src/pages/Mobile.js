@@ -37,14 +37,14 @@ const Mobile = () => {
                 <FaMobileAlt /> Mobile Development
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] mb-8">
                 Mobile Apps That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Users Love
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-lg text-white/80 max-w-xl mb-10">
                 We build exceptional native and cross-platform mobile
                 experiences that deliver outstanding performance, beautiful
                 design, and real business value.
@@ -98,7 +98,7 @@ const Mobile = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4">
               Mobile Development Platforms
             </h2>
             <p className="text-xl text-white/70">
@@ -115,7 +115,7 @@ const Mobile = () => {
               <div className="flex items-center gap-4 mb-8">
                 <div className="text-6xl text-cyan-400"></div>
                 <div>
-                  <h3 className="text-3xl font-semibold">iOS Development</h3>
+                  <h3 className="text-xl font-semibold">iOS Development</h3>
                   <p className="text-white/60">Native iOS Applications</p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Mobile = () => {
               <div className="flex items-center gap-4 mb-8">
                 <div className="text-6xl text-cyan-400">🤖</div>
                 <div>
-                  <h3 className="text-3xl font-semibold">
+                  <h3 className="text-xl font-semibold">
                     Android Development
                   </h3>
                   <p className="text-white/60">Native Android Applications</p>
@@ -184,7 +184,7 @@ const Mobile = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/60">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Mobile Tech Stack</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Mobile Tech Stack</h2>
           <p className="text-white/60 mb-12">
             Modern tools for exceptional mobile experiences
           </p>
@@ -221,7 +221,7 @@ const Mobile = () => {
       {/* WHY CHOOSE US */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Why Businesses Trust Our Mobile Solutions
           </h2>
 
@@ -253,7 +253,7 @@ const Mobile = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -264,10 +264,10 @@ const Mobile = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Build Your Next Great App?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s choose the perfect technology stack and create a mobile
             experience your users will love.
           </p>

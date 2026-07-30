@@ -47,7 +47,7 @@ const Cloud = () => {
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-lg text-white/80 max-w-xl mb-10">
                 Secure, scalable, and cost-efficient cloud infrastructure and
                 solutions designed for modern, high-growth businesses.
               </p>
@@ -97,7 +97,7 @@ const Cloud = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4">
               Cloud Platforms We Master
             </h2>
             <p className="text-xl text-white/70">
@@ -149,7 +149,7 @@ const Cloud = () => {
       <section className="py-24 bg-black/40">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Cloud Services</h2>
+            <h2 className="text-3xl font-bold mb-4">Our Cloud Services</h2>
             <p className="text-xl text-white/70">End-to-end cloud expertise</p>
           </div>
 
@@ -211,7 +211,7 @@ const Cloud = () => {
       {/* WHY CHOOSE US */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Why Businesses Choose Our Cloud Solutions
           </h2>
 
@@ -254,10 +254,10 @@ const Cloud = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Transform Your Infrastructure?
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-lg text-white/90 mb-12">
             Let’s build a secure, scalable, and cost-efficient cloud strategy
             tailored to your business.
           </p>
