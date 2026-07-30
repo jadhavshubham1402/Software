@@ -84,7 +84,7 @@ const WebDevelopment = () => {
             <h2 className="text-3xl font-bold mb-4">
               Our Web Development Expertise
             </h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto">
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">
               From stunning marketing websites to complex enterprise platforms —
               we build digital experiences that perform
             </p>
@@ -95,32 +95,32 @@ const WebDevelopment = () => {
               {
                 title: "Custom Web Applications",
                 desc: "Tailored solutions designed specifically for your business processes and growth objectives.",
-                icon: <FaGlobe className="text-5xl" />,
+                icon: <FaGlobe className="text-3xl" />,
               },
               {
                 title: "E-Commerce Solutions",
                 desc: "High-converting online stores with seamless checkout, inventory, and customer journey optimization.",
-                icon: <FaShoppingCart className="text-5xl" />,
+                icon: <FaShoppingCart className="text-3xl" />,
               },
               {
                 title: "SaaS Platforms",
                 desc: "Powerful subscription-based products with advanced dashboards, billing, and user management.",
-                icon: <FaCloud className="text-5xl" />,
+                icon: <FaCloud className="text-3xl" />,
               },
               {
                 title: "Progressive Web Apps",
                 desc: "Fast, reliable applications that work offline and feel native on any device.",
-                icon: <FaMobileAlt className="text-5xl" />,
+                icon: <FaMobileAlt className="text-3xl" />,
               },
               {
                 title: "Enterprise Web Systems",
                 desc: "Robust internal tools, CRMs, and complex business applications at enterprise scale.",
-                icon: <FaBuilding className="text-5xl" />,
+                icon: <FaBuilding className="text-3xl" />,
               },
               {
                 title: "Website Redesign",
                 desc: "Complete transformation of outdated websites into modern, high-performing digital assets.",
-                icon: <FaSync className="text-5xl" />,
+                icon: <FaSync className="text-3xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -132,13 +132,18 @@ const WebDevelopment = () => {
                 whileHover={{ y: -12 }}
                 className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-8 transition-transform group-hover:scale-110">
-                  {service.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 leading-relaxed">{service.desc}</p>
+
+                <p className="text-white/70 text-sm leading-relaxed">
+                  {service.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -148,7 +153,7 @@ const WebDevelopment = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Our Modern Tech Stack</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Modern Tech Stack</h2>
           <p className="text-white/70 mb-12">
             We build with the best tools in the industry
           </p>
@@ -166,12 +171,12 @@ const WebDevelopment = () => {
               "GraphQL",
               "Vercel",
             ].map((tech) => (
-              <span
+              <div
                 key={tech}
-                className="px-8 py-4 bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-lg font-medium transition-all hover:scale-105"
+                className="w-48 h-16 flex items-center justify-center text-center bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-lg font-medium transition-all duration-300 hover:scale-105"
               >
                 {tech}
-              </span>
+              </div>
             ))}
           </div>
         </div>
@@ -181,7 +186,7 @@ const WebDevelopment = () => {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Companies Choose Us</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Companies Choose Us</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -220,8 +225,14 @@ const WebDevelopment = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all hover:-translate-y-2"
               >
-                <div className="text-5xl mb-6 text-cyan-400">{item.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                </div>
+
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}

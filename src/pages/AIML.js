@@ -108,10 +108,10 @@ const AIML = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4">
               AI & ML Solutions We Deliver
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
               From strategy to deployment — end-to-end intelligent systems
               tailored to your business
             </p>
@@ -122,32 +122,32 @@ const AIML = () => {
               {
                 title: "Predictive Analytics",
                 desc: "Forecast trends, customer behavior, demand, and business outcomes with high accuracy.",
-                icon: <FaChartLine className="text-5xl" />,
+                icon: <FaChartLine className="text-3xl" />,
               },
               {
                 title: "Computer Vision",
                 desc: "Image recognition, object detection, quality inspection, and visual intelligence.",
-                icon: <FaEye className="text-5xl" />,
+                icon: <FaEye className="text-3xl" />,
               },
               {
                 title: "Natural Language Processing",
                 desc: "Chatbots, sentiment analysis, document intelligence, and voice systems.",
-                icon: <FaComments className="text-5xl" />,
+                icon: <FaComments className="text-3xl" />,
               },
               {
                 title: "Recommendation Engines",
                 desc: "Personalized experiences that dramatically boost engagement and revenue.",
-                icon: <FaTrophy className="text-5xl" />,
+                icon: <FaTrophy className="text-3xl" />,
               },
               {
                 title: "Intelligent Automation",
                 desc: "AI-powered RPA, workflow optimization, and autonomous decision systems.",
-                icon: <FaRobot className="text-5xl" />,
+                icon: <FaRobot className="text-3xl" />,
               },
               {
                 title: "Custom AI Models",
                 desc: "Bespoke models trained on your proprietary data and domain knowledge.",
-                icon: <FaBrain className="text-5xl" />,
+                icon: <FaBrain className="text-3xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -159,13 +159,15 @@ const AIML = () => {
                 whileHover={{ y: -10 }}
                 className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-sm lg:text-base text-white/70 leading-relaxed">
+                <p className="text-sm lg:text-sm text-white/70 leading-relaxed">
                   {service.desc}
                 </p>
               </motion.div>
@@ -177,7 +179,7 @@ const AIML = () => {
       {/* TECH STACK */}
       <section id="tech-stack" className="py-20 bg-black/60">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-3xl font-bold mb-4">
             Our AI/ML Technology Stack
           </h2>
           <p className="text-white/60 mb-12">
@@ -202,15 +204,12 @@ const AIML = () => {
               "Snowflake",
               "Databricks",
             ].map((tech, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.03 }}
-                className="bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 px-8 py-4 rounded-2xl text-lg font-medium transition-all hover:-translate-y-1"
+              <div
+                key={tech}
+                className="w-48 h-16 flex items-center justify-center text-center bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-lg font-medium transition-all duration-300 hover:scale-105"
               >
                 {tech}
-              </motion.span>
+              </div>
             ))}
           </div>
         </div>
@@ -219,7 +218,7 @@ const AIML = () => {
       {/* INDUSTRIES */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Industries We Transform
           </h2>
 
@@ -260,8 +259,8 @@ const AIML = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                 <div className="absolute bottom-0 p-8">
-                  <h3 className="text-3xl font-bold mb-3">{industry.name}</h3>
-                  <p className="text-white/80">{industry.desc}</p>
+                  <h3 className="text-xl font-bold mb-3">{industry.name}</h3>
+                  <p className="text-white/80 text-sm">{industry.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -272,24 +271,24 @@ const AIML = () => {
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-black/40">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Why Businesses Trust Us
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <FaLightbulb className="text-5xl" />,
+                icon: <FaLightbulb className="text-3xl" />,
                 title: "Business-First AI",
                 desc: "Every solution is designed to solve real business problems and deliver measurable ROI.",
               },
               {
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
                 title: "Ethical & Secure",
                 desc: "Transparent, explainable, and compliant AI with enterprise-grade security.",
               },
               {
-                icon: <FaUsers className="text-5xl" />,
+                icon: <FaUsers className="text-3xl" />,
                 title: "End-to-End Expertise",
                 desc: "From data strategy and model development to deployment and continuous optimization.",
               },
@@ -301,11 +300,14 @@ const AIML = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
+                <p className="text-white/70 text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>

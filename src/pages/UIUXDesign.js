@@ -96,7 +96,7 @@ const UIUXDesign = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h2 className="text-3xl lg:text-3xl font-bold mb-4">
               Our Design Philosophy
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
@@ -110,32 +110,32 @@ const UIUXDesign = () => {
               {
                 title: "User-First Approach",
                 desc: "Every pixel is designed with real user needs and behaviors in mind.",
-                icon: <FaUser className="text-5xl" />,
+                icon: <FaUser className="text-3xl" />,
               },
               {
                 title: "Emotional Design",
                 desc: "Creating delightful experiences that users remember and love.",
-                icon: <FaHeart className="text-5xl" />,
+                icon: <FaHeart className="text-3xl" />,
               },
               {
                 title: "Data-Driven Design",
                 desc: "A/B testing and user research guide every design decision.",
-                icon: <FaChartBar className="text-5xl" />,
+                icon: <FaChartBar className="text-3xl" />,
               },
               {
                 title: "Consistent Systems",
                 desc: "Scalable design systems for long-term maintainability.",
-                icon: <FaSync className="text-5xl" />,
+                icon: <FaSync className="text-3xl" />,
               },
               {
                 title: "Accessibility First",
                 desc: "Inclusive design that works beautifully for everyone.",
-                icon: <FaUniversalAccess className="text-5xl" />,
+                icon: <FaUniversalAccess className="text-3xl" />,
               },
               {
                 title: "Fast Iteration",
                 desc: "Rapid prototyping and quick feedback loops.",
-                icon: <FaBolt className="text-5xl" />,
+                icon: <FaBolt className="text-3xl" />,
               },
             ].map((item, i) => (
               <motion.div
@@ -147,13 +147,15 @@ const UIUXDesign = () => {
                 whileHover={{ y: -10 }}
                 className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {item.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {item.title}
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-sm lg:text-base text-white/70 leading-relaxed">
+                <p className="text-sm lg:text-sm text-white/70 leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -165,7 +167,7 @@ const UIUXDesign = () => {
       {/* DESIGN PROCESS */}
       <section id="process" className="py-24 bg-black/40">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Our Proven Design Process
           </h2>
 
@@ -200,11 +202,11 @@ const UIUXDesign = () => {
                 transition={{ delay: i * 0.1 }}
                 className="text-center group"
               >
-                <div className="text-7xl font-bold text-cyan-400/80 group-hover:text-cyan-400 transition-colors mb-6">
+                <div className="text-4xl font-bold text-cyan-400/80 group-hover:text-cyan-400 transition-colors mb-6">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
+                <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+                <p className="text-white/70 text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -214,7 +216,7 @@ const UIUXDesign = () => {
       {/* TOOLS & TECHNOLOGIES */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-3xl font-bold mb-4">
             Tools We Master
           </h2>
           <p className="text-white/60 mb-12">
@@ -234,15 +236,12 @@ const UIUXDesign = () => {
               "InVision",
               "Lottie",
             ].map((tool, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.03 }}
-                className="bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 px-8 py-4 rounded-2xl text-lg font-medium transition-all hover:-translate-y-1"
+              <div
+                key={tool}
+                className="w-48 h-16 flex items-center justify-center text-center bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-lg font-medium transition-all duration-300 hover:scale-105"
               >
                 {tool}
-              </motion.span>
+              </div>
             ))}
           </div>
         </div>
@@ -251,24 +250,24 @@ const UIUXDesign = () => {
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-black/40">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Why Businesses Choose Us
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <FaLightbulb className="text-5xl" />,
+                icon: <FaLightbulb className="text-3xl" />,
                 title: "Strategy-First Design",
                 desc: "We design with business goals and user needs in perfect harmony.",
               },
               {
-                icon: <FaPalette className="text-5xl" />,
+                icon: <FaPalette className="text-3xl" />,
                 title: "Pixel-Perfect Execution",
                 desc: "Beautiful interfaces that are both aesthetically stunning and highly functional.",
               },
               {
-                icon: <FaUsers className="text-5xl" />,
+                icon: <FaUsers className="text-3xl" />,
                 title: "End-to-End Ownership",
                 desc: "From research to handover — we manage the full design lifecycle.",
               },
@@ -280,10 +279,13 @@ const UIUXDesign = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}

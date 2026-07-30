@@ -80,8 +80,8 @@ const CloudSolutions = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Our Cloud Solutions</h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Our Cloud Solutions</h2>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">
               Comprehensive cloud services tailored for modern businesses
             </p>
           </div>
@@ -91,32 +91,32 @@ const CloudSolutions = () => {
               {
                 title: "Cloud Migration",
                 desc: "Seamless and secure transition from on-premise to cloud with minimal downtime.",
-                icon: <FaRocket className="text-5xl" />,
+                icon: <FaRocket className="text-3xl" />,
               },
               {
                 title: "Multi-Cloud Architecture",
                 desc: "Expert solutions across AWS, Azure, Google Cloud, and hybrid environments.",
-                icon: <FaCloud className="text-5xl" />,
+                icon: <FaCloud className="text-3xl" />,
               },
               {
                 title: "Serverless Solutions",
                 desc: "Cost-efficient, scalable applications using Lambda, Cloud Functions, and more.",
-                icon: <FaServer className="text-5xl" />,
+                icon: <FaServer className="text-3xl" />,
               },
               {
                 title: "Kubernetes & Containers",
                 desc: "Orchestration and management of containerized workloads at scale.",
-                icon: <FaSync className="text-5xl" />,
+                icon: <FaSync className="text-3xl" />,
               },
               {
                 title: "Cloud Security & Compliance",
                 desc: "Enterprise-grade security, SOC2, ISO27001, and GDPR compliance.",
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
               },
               {
                 title: "Disaster Recovery & Backup",
                 desc: "Robust backup strategies and business continuity planning.",
-                icon: <FaChartBar className="text-5xl" />,
+                icon: <FaChartBar className="text-3xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -128,13 +128,15 @@ const CloudSolutions = () => {
                 whileHover={{ y: -12 }}
                 className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/60 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-8 transition-transform group-hover:scale-110">
-                  {service.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 leading-relaxed">{service.desc}</p>
+                <p className="text-white/70 text-sm leading-relaxed">{service.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -144,7 +146,7 @@ const CloudSolutions = () => {
       {/* CLOUD PLATFORMS */}
       <section className="py-20 bg-black/50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold mb-4">Cloud Platforms We Master</h2>
+          <h2 className="text-3xl font-bold mb-4">Cloud Platforms We Master</h2>
           <p className="text-white/70 mb-12">
             Expertise across all major cloud providers
           </p>
@@ -158,13 +160,12 @@ const CloudSolutions = () => {
               "Vercel",
               "Heroku",
             ].map((platform) => (
-              <motion.div
+              <div
                 key={platform}
-                whileHover={{ scale: 1.1 }}
-                className="bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 px-10 py-5 rounded-2xl text-2xl font-semibold transition"
+                className="w-48 h-16 flex items-center justify-center text-center bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-sm font-medium transition-all duration-300 hover:scale-105"
               >
                 {platform}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -174,7 +175,7 @@ const CloudSolutions = () => {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4">
               Why Choose Our Cloud Services?
             </h2>
           </div>
@@ -215,8 +216,13 @@ const CloudSolutions = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all hover:-translate-y-2"
               >
-                <div className="text-5xl mb-6 text-cyan-400">{item.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                </div>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}

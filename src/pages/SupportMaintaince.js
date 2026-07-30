@@ -94,8 +94,8 @@ const SupportMaintenance = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Support Services</h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Our Support Services</h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
               Comprehensive maintenance and support designed to keep your
               systems performing at their best
             </p>
@@ -106,32 +106,32 @@ const SupportMaintenance = () => {
               {
                 title: "Proactive Monitoring",
                 desc: "24/7 system monitoring with instant alerts and performance optimization.",
-                icon: <FaChartLine className="text-5xl" />,
+                icon: <FaChartLine className="text-3xl" />,
               },
               {
                 title: "Security Updates",
                 desc: "Regular security patches, vulnerability assessments, and compliance maintenance.",
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
               },
               {
                 title: "Bug Fixes & Maintenance",
                 desc: "Rapid bug resolution, code improvements, and system health maintenance.",
-                icon: <FaTools className="text-5xl" />,
+                icon: <FaTools className="text-3xl" />,
               },
               {
                 title: "Performance Optimization",
                 desc: "Continuous tuning for speed, scalability, and cost efficiency.",
-                icon: <FaRocket className="text-5xl" />,
+                icon: <FaRocket className="text-3xl" />,
               },
               {
                 title: "Backup & Disaster Recovery",
                 desc: "Automated backups with reliable disaster recovery plans.",
-                icon: <FaSync className="text-5xl" />,
+                icon: <FaSync className="text-3xl" />,
               },
               {
                 title: "Dedicated Support Team",
                 desc: "Access to expert developers and technical support whenever you need.",
-                icon: <FaUsers className="text-5xl" />,
+                icon: <FaUsers className="text-3xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -143,13 +143,15 @@ const SupportMaintenance = () => {
                 whileHover={{ y: -10 }}
                 className="group bg-white/5 hover:bg-gradient-to-br hover:from-white/10 hover:to-cyan-400/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 leading-relaxed">{service.desc}</p>
+                <p className="text-white/70 leading-relaxed text-sm">{service.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -159,24 +161,24 @@ const SupportMaintenance = () => {
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-black/40">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Why Choose Our Support Plans
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <FaClock className="text-5xl" />,
+                icon: <FaClock className="text-3xl" />,
                 title: "Rapid Response",
                 desc: "Average response time under 2 hours with guaranteed SLAs.",
               },
               {
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
                 title: "Proactive Approach",
                 desc: "We fix issues before they impact your business.",
               },
               {
-                icon: <FaUserShield className="text-5xl" />,
+                icon: <FaUserShield className="text-3xl" />,
                 title: "Peace of Mind",
                 desc: "Focus on your core business while we handle technical operations.",
               },
@@ -188,11 +190,14 @@ const SupportMaintenance = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
+                <p className="text-white/70 text-sm text-left">{item.desc}</p>
               </motion.div>
             ))}
           </div>
