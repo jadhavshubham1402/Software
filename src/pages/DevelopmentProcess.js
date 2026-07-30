@@ -85,20 +85,20 @@ const DevelopmentProcess = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-2xl p-6 transition-all duration-500 hover:bg-white/15 flex flex-col items-center text-center h-full"
+              className="group bg-white/10 backdrop-blur-xl border border-white/10 hover:border-blue-400 rounded-2xl p-4 transition-all duration-500 hover:bg-white/15 flex flex-col items-center text-center h-full"
             >
               {/* Icon */}
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-3xl mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-xl mb-3 group-hover:scale-110 transition-transform duration-300">
                 {step.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-white min-h-[56px] flex items-center justify-center mb-4">
+              <h3 className="text-base font-semibold text-white min-h-[56px] flex items-center justify-center mb-3">
                 {step.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-300 text-sm leading-6 flex-1">
+              <p className="text-gray-300 text-xs leading-6 flex-1">
                 {step.description}
               </p>
             </motion.div>

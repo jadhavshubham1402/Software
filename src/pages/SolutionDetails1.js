@@ -40,14 +40,14 @@ const SolutionDetails1 = () => {
             <div className="mt-10 flex flex-wrap gap-4">
               <button
                 onClick={() => navigate("/contact")}
-                className="bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-2xl font-semibold text-base transition"
+                className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-2xl font-semibold text-sm transition"
               >
                 {solution.hero.primaryButton}
               </button>
 
               <button
                 onClick={() => navigate("/contact")}
-                className="border-2 border-white hover:bg-white hover:text-slate-900 px-3 py-2 rounded-2xl font-semibold text-base transition"
+                className="border-2 border-white hover:bg-white hover:text-slate-900 px-4 py-2 rounded-2xl font-semibold text-sm transition"
               >
                 {solution.hero.secondaryButton}
               </button>
@@ -66,9 +66,9 @@ const SolutionDetails1 = () => {
 
       {/* About Section */}
       <section className="py-20 border-b">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-6">{solution.about.title}</h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-6">{solution.about.title}</h2>
+          <p className="text-base text-gray-600 leading-relaxed">
             {solution.about.description}
           </p>
         </div>
@@ -77,7 +77,7 @@ const SolutionDetails1 = () => {
       {/* Features */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-14">
+          <h2 className="text-2xl font-bold text-center mb-14">
             {solution.features.title}
           </h2>
 
@@ -98,7 +98,7 @@ const SolutionDetails1 = () => {
       {/* Industries */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-14">
+          <h2 className="text-2xl font-bold text-center mb-14">
             {solution.industries.title}
           </h2>
 
@@ -113,11 +113,13 @@ const SolutionDetails1 = () => {
                 >
                   {Icon && (
                     <Icon
-                      className="w-16 h-16 mx-auto mb-4 text-blue-600"
-                      size={32}
+                      className="w-12 h-12 mx-auto mb-4 text-blue-600"
+                      size={30}
                     />
                   )}
-                  <p className="font-medium text-base text-gray-800">{industry.name}</p>
+                  <p className="font-medium text-sm text-gray-800">
+                    {industry.name}
+                  </p>
                 </div>
               );
             })}
@@ -128,7 +130,7 @@ const SolutionDetails1 = () => {
       {/* Process */}
       <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-14">
+          <h2 className="text-2xl font-bold text-center mb-14">
             {solution.process.title}
           </h2>
 
@@ -136,13 +138,17 @@ const SolutionDetails1 = () => {
             {solution.process.steps.map((step) => (
               <div
                 key={step.step}
-                className="bg-slate-800 rounded-2xl p-8 text-center hover:bg-slate-700 transition"
+                className="bg-slate-800 rounded-2xl p-6 text-center hover:bg-slate-700 transition flex flex-col h-full"
               >
                 <div className="text-4xl font-bold text-blue-400 mb-4">
                   {step.step}
                 </div>
-                <h4 className="font-semibold mb-3 text-lg">{step.title}</h4>
-                <p className="text-slate-400 text-sm leading-relaxed">
+
+                <h4 className="font-semibold text-base flex items-center justify-center min-h-[50px]">
+                  {step.title}
+                </h4>
+
+                <p className="text-slate-400 text-xs leading-relaxed flex-1 flex items-center justify-center mt-3">
                   {step.description}
                 </p>
               </div>
@@ -153,14 +159,14 @@ const SolutionDetails1 = () => {
 
       {/* CTA */}
       {solution.cta && (
-        <section className="bg-blue-600 text-white py-20 text-center">
+        <section className="bg-blue-600 text-white py-14 text-center">
           <div className="max-w-3xl mx-auto px-6">
-            <h2 className="text-4xl font-bold mb-6">{solution.cta.title}</h2>
-            <p className="text-xl mb-10">{solution.cta.description}</p>
+            <h2 className="text-3xl font-bold mb-6">{solution.cta.title}</h2>
+            <p className="text-lg mb-10">{solution.cta.description}</p>
 
             <button
               onClick={() => navigate("/contact")}
-              className="bg-white text-blue-600 font-semibold px-10 py-5 rounded-2xl text-lg hover:bg-gray-100 transition"
+              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-2xl text-base hover:bg-gray-100 transition"
             >
               {solution.cta.button}
             </button>
