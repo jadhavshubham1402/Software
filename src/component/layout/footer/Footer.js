@@ -131,7 +131,7 @@ const Footer = () => {
 
               <div className="flex gap-4">
                 <FaEnvelope className="mt-1 text-cyan-400" />
-                <a href="mailto:info@softtech.com">info@softtech.com</a>
+                <a href="mailto:info@paxykop.com">info@paxykop.com</a>
               </div>
 
               <div className="flex gap-4">

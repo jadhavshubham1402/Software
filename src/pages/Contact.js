@@ -79,7 +79,7 @@ const Contact = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+            className="text-2xl md:text-4xl font-bold mb-6 leading-tight"
           >
             Let's Build a{" "}
             <span className="text-cyan-400">Healthier Future</span> Together
@@ -94,8 +94,8 @@ const Contact = () => {
         <div className="grid lg:grid-cols-12 gap-16">
           {/* Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-3xl p-10 md:p-14 shadow-2xl">
-              <h2 className="text-3xl font-semibold mb-10 text-white">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-2xl">
+              <h2 className="text-2xl font-semibold mb-6 text-white">
                 Send Us a Message
               </h2>
 
@@ -105,8 +105,8 @@ const Contact = () => {
                 onSubmit={handleSubmit}
               >
                 {({ isSubmitting }) => (
-                  <Form className="space-y-8">
-                    <div className="grid md:grid-cols-2 gap-6">
+                  <Form className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-3">
                       <div>
                         <label className="block text-sm text-white/70 mb-2">
                           Full Name
@@ -114,7 +114,7 @@ const Contact = () => {
                         <Field
                           type="text"
                           name="name"
-                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
                           placeholder="Enter your full name"
                         />
                         <ErrorMessage
@@ -131,7 +131,7 @@ const Contact = () => {
                         <Field
                           type="email"
                           name="email"
-                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
                           placeholder="your@email.com"
                         />
                         <ErrorMessage
@@ -142,7 +142,7 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="grid md:grid-cols-2 gap-3">
                       <div className="md:col-span-1">
                         <label className="block text-sm text-white/70 mb-2">
                           Phone
@@ -150,7 +150,7 @@ const Contact = () => {
                         <Field
                           type="tel"
                           name="phone"
-                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
                           placeholder="99868 00000"
                         />
                         <ErrorMessage
@@ -166,7 +166,7 @@ const Contact = () => {
                         <Field
                           type="text"
                           name="state"
-                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
                           placeholder="Maharashtra"
                         />
                         <ErrorMessage
@@ -175,6 +175,8 @@ const Contact = () => {
                           className="text-red-400 text-sm mt-1"
                         />
                       </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-3">
                       <div>
                         <label className="block text-sm text-white/70 mb-2">
                           City
@@ -182,7 +184,7 @@ const Contact = () => {
                         <Field
                           type="text"
                           name="city"
-                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
                           placeholder="Mumbai"
                         />
                         <ErrorMessage
@@ -191,25 +193,23 @@ const Contact = () => {
                           className="text-red-400 text-sm mt-1"
                         />
                       </div>
+                      <div>
+                        <label className="block text-sm text-white/70 mb-2">
+                          District
+                        </label>
+                        <Field
+                          type="text"
+                          name="district"
+                          className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-2 outline-none transition"
+                          placeholder="Enter your district"
+                        />
+                        <ErrorMessage
+                          name="district"
+                          component="div"
+                          className="text-red-400 text-sm mt-1"
+                        />
+                      </div>
                     </div>
-
-                    <div>
-                      <label className="block text-sm text-white/70 mb-2">
-                        District
-                      </label>
-                      <Field
-                        type="text"
-                        name="district"
-                        className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-2xl px-6 py-4 outline-none transition"
-                        placeholder="Enter your district"
-                      />
-                      <ErrorMessage
-                        name="district"
-                        component="div"
-                        className="text-red-400 text-sm mt-1"
-                      />
-                    </div>
-
                     <div>
                       <label className="block text-sm text-white/70 mb-2">
                         Message / Interest
@@ -217,7 +217,7 @@ const Contact = () => {
                       <Field
                         as="textarea"
                         name="message"
-                        rows={4}
+                        rows={3}
                         className="w-full bg-white/10 border border-white/20 focus:border-cyan-400 rounded-3xl px-6 py-5 outline-none resize-y transition"
                         placeholder="Tell us about your project, inquiry, or how we can help..."
                       />
@@ -233,7 +233,7 @@ const Contact = () => {
                       disabled={isSubmitting}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:brightness-110 py-6 rounded-2xl font-semibold text-lg transition-all disabled:opacity-70"
+                      className="w-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:brightness-110 py-3 rounded-2xl font-semibold text-lg transition-all disabled:opacity-70"
                     >
                       {isSubmitting ? "Submitting..." : "Send Message"}
                     </motion.button>
@@ -259,7 +259,7 @@ const Contact = () => {
                       href="https://wa.me/919988680000"
                       className="text-xl hover:text-cyan-400 transition"
                     >
-                      +91 99868 00000
+                      +65 89182836
                     </a>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ const Contact = () => {
                       href="mailto:hello@lifeonplus.com"
                       className="text-xl hover:text-cyan-400 transition"
                     >
-                      hello@lifeonplus.com
+                      info@paxykop.com
                     </a>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ const Contact = () => {
                       href="tel:+919988680000"
                       className="text-xl hover:text-cyan-400 transition"
                     >
-                      +91 99868 00000
+                      +65 89182836
                     </a>
                   </div>
                 </div>
@@ -298,23 +298,12 @@ const Contact = () => {
 
             {/* Office Locations */}
             <div>
-              <h3 className="text-3xl font-semibold mb-8">Our Offices</h3>
+              <h3 className="text-3xl font-semibold mb-8">Our Office</h3>
               <div className="space-y-10">
                 {[
                   {
-                    city: "Mumbai (Head Office)",
-                    address:
-                      "#301, 3rd Floor, MasterMind 1,\nRoyal Palms, Goregaon East, Mumbai",
-                  },
-                  {
-                    city: "Chennai",
-                    address:
-                      "No. 15, Devraja Mudali Street,\nPark Town, Chennai",
-                  },
-                  {
-                    city: "Bangalore",
-                    address:
-                      "WeWork Cinnabar Hills,\nEmbassy Golf Links, Bangalore",
+                    city: "Singapore (Head Office)",
+                    address: "L-39, MBFC, 10 Marina Blvd, Singapore - 018 983",
                   },
                 ].map((office, idx) => (
                   <div key={idx} className="flex gap-5">
