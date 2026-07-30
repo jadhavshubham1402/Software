@@ -69,29 +69,6 @@ const UIUXDesign = () => {
         </div>
       </section>
 
-      {/* STATS BAR */}
-      <div className="border-b border-white/10 bg-black/40">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "120+", label: "Projects Delivered" },
-            { number: "35+", label: "Happy Clients" },
-            { number: "4.9/5", label: "Average Rating" },
-            { number: "85%", label: "Conversion Uplift" },
-          ].map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="border-r border-white/10 last:border-0"
-            >
-              <p className="text-4xl font-bold text-cyan-400">{stat.number}</p>
-              <p className="text-white/70 mt-1">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
       {/* DESIGN PHILOSOPHY */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
