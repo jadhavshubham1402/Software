@@ -50,7 +50,7 @@ const LatestBlogs = () => {
     <section className="pb-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center my-14">
           <div>
             <span className="uppercase tracking-widest text-blue-600 font-semibold text-sm">
               FROM OUR BLOG

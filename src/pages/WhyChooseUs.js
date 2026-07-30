@@ -102,20 +102,20 @@ const WhyChooseUs = () => {
               <span className="text-emerald-400">●</span> WHY COMPANIES TRUST US
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mt-6">
+            <h2 className="text-2xl lg:text-3xl font-bold leading-tight mt-6">
               Software that doesn't just work —{" "}
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 it accelerates growth
               </span>
             </h2>
 
-            <p className="mt-6 text-lg text-white/70">
+            <p className="mt-3 text-base text-white/70">
               We partner with ambitious companies to build digital products that
               are fast, secure, and built to scale.
             </p>
 
             {/* Trust Stats */}
-            <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-12">
+            <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-8">
               {[
                 { number: "500", label: "Projects" },
                 { number: "150", label: "Clients" },

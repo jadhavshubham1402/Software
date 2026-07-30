@@ -8,6 +8,7 @@ import LatestBlogs from "./LatestBlogs";
 import Services from "./Services";
 import SoftwareSolutions from "./SoftwareSolution";
 import TechnologyStack from "./TechnologyStack";
+import Testimonials from "./Testimonials";
 import WhyChooseUs from "./WhyChooseUs";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <FeaturedProjects />
       <SoftwareSolutions />
       <FAQ />
+      <Testimonials />
       <LatestBlogs />
       <CTA />
       {/* Hero Section */}
