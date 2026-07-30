@@ -41,14 +41,14 @@ const SupportMaintenance = () => {
                 <FaShieldAlt /> Support & Maintenance
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
                 Reliable Support That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Keeps You Running
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-xl text-white/80 max-w-xl mb-10">
                 Ongoing technical support, proactive maintenance, and continuous
                 optimization to ensure your software stays secure, fast, and
                 reliable.
@@ -190,7 +190,7 @@ const SupportMaintenance = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -201,10 +201,10 @@ const SupportMaintenance = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6">
             Keep Your Software Running at Peak Performance
           </h2>
-          <p className="text-2xl text-white/90 mb-12">
+          <p className="text-xl text-white/90 mb-12">
             Let our expert team handle maintenance so you can focus on growing
             your business.
           </p>

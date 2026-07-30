@@ -43,7 +43,7 @@ const CloudSolutions = () => {
                 </span>
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tighter">
+              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tighter">
                 Cloud Solutions That
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-300 bg-clip-text text-transparent">

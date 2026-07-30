@@ -42,14 +42,14 @@ const AIML = () => {
                 <FaBrain className="text-xl" /> Artificial Intelligence & ML
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Intelligence That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-400 bg-clip-text text-transparent">
                   Delivers Results
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-lg lg:text-xl text-white/70 max-w-2xl mb-8 leading-relaxed">
                 We build enterprise-grade AI and Machine Learning solutions that
                 learn, predict, automate, and drive measurable business growth.
               </p>
@@ -104,7 +104,7 @@ const AIML = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               AI & ML Solutions We Deliver
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ const AIML = () => {
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">{service.desc}</p>
+                <p className="text-sm lg:text-base text-white/70 leading-relaxed">{service.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -171,7 +171,7 @@ const AIML = () => {
       {/* TECH STACK */}
       <section id="tech-stack" className="py-20 bg-black/60">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Our AI/ML Technology Stack
           </h2>
           <p className="text-white/60 mb-12">
@@ -298,7 +298,7 @@ const AIML = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -309,7 +309,7 @@ const AIML = () => {
       {/* FINAL CTA */}
       <section className="py-28 bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-5">
             Ready to Add Intelligence to Your Business?
           </h2>
           <p className="text-2xl text-white/90 mb-12">
