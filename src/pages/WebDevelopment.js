@@ -45,7 +45,7 @@ const WebDevelopment = () => {
                 </span>
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tighter">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Web Experiences That
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-300 bg-clip-text text-transparent">
@@ -53,7 +53,7 @@ const WebDevelopment = () => {
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-lg">
+              <p className="text-xl text-white/80 max-w-lg">
                 We design and develop high-performance, conversion-focused
                 digital experiences that help ambitious brands stand out and
                 scale.
@@ -81,7 +81,7 @@ const WebDevelopment = () => {
       <section id="services" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Our Web Development Expertise
             </h2>
             <p className="text-white/70 text-xl max-w-2xl mx-auto">
@@ -148,7 +148,7 @@ const WebDevelopment = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold mb-4">Our Modern Tech Stack</h2>
+          <h2 className="text-4xl font-bold mb-4">Our Modern Tech Stack</h2>
           <p className="text-white/70 mb-12">
             We build with the best tools in the industry
           </p>
@@ -181,7 +181,7 @@ const WebDevelopment = () => {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Why Companies Choose Us</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Companies Choose Us</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -232,7 +232,7 @@ const WebDevelopment = () => {
       {/* FINAL CTA - ONLY ONE */}
       <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             Ready to Elevate Your Digital Presence?
           </h2>
           <p className="text-xl text-white/90 mb-12">
@@ -244,7 +244,7 @@ const WebDevelopment = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-xl hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
+            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-base hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
           >
             Start Your Web Project Now
             <span className="text-2xl">→</span>

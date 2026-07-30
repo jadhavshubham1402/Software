@@ -145,7 +145,7 @@ const UIUXDesign = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-white/70 leading-relaxed">{item.desc}</p>

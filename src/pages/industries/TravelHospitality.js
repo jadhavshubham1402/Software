@@ -38,7 +38,7 @@ const TravelHospitality = () => {
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-xl mb-10">
+              <p className="text-xl text-white/80 max-w-xl mb-10">
                 Advanced digital healthcare solutions that enhance patient care,
                 streamline operations, and empower medical professionals.
               </p>
@@ -82,7 +82,7 @@ const TravelHospitality = () => {
                   {solution.icon}
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
                   {solution.title}
                 </h3>
 
