@@ -40,7 +40,7 @@ const Cloud = () => {
                 <FaCloud /> Cloud Technologies
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
                 Cloud Solutions That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Scale With You
@@ -243,7 +243,7 @@ const Cloud = () => {
                 <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
                   {item.icon}
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}

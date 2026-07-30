@@ -42,7 +42,7 @@ const MobileAppDevelopment = () => {
                 </span>
               </div>
 
-              <h1 className="text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tighter">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Mobile Apps That
                 <br />
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-300 bg-clip-text text-transparent">
@@ -50,7 +50,7 @@ const MobileAppDevelopment = () => {
                 </span>
               </h1>
 
-              <p className="text-2xl text-white/80 max-w-lg">
+              <p className="text-xl text-white/80 max-w-lg">
                 We create beautiful, high-performance iOS and Android apps that
                 drive user engagement, retention, and measurable business
                 growth.
@@ -80,7 +80,7 @@ const MobileAppDevelopment = () => {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Our Mobile Development Services
             </h2>
             <p className="text-white/70 text-xl max-w-2xl mx-auto">
@@ -93,32 +93,32 @@ const MobileAppDevelopment = () => {
               {
                 title: "Native iOS & Android Apps",
                 desc: "High-performance apps built with Swift and Kotlin for the best possible user experience.",
-                icon: <FaMobileAlt className="text-5xl" />,
+                icon: <FaMobileAlt className="text-4xl" />,
               },
               {
                 title: "Cross-Platform Development",
                 desc: "Faster development using Flutter and React Native while maintaining native quality.",
-                icon: <FaSync className="text-5xl" />,
+                icon: <FaSync className="text-4xl" />,
               },
               {
                 title: "Enterprise Mobile Solutions",
                 desc: "Secure, scalable applications for large organizations with complex workflows.",
-                icon: <FaBuilding className="text-5xl" />,
+                icon: <FaBuilding className="text-4xl" />,
               },
               {
                 title: "Progressive Web Apps",
                 desc: "App-like experiences accessible from any browser with offline capabilities.",
-                icon: <FaGlobe className="text-5xl" />,
+                icon: <FaGlobe className="text-4xl" />,
               },
               {
                 title: "App Redesign & Modernization",
                 desc: "Complete visual and technical upgrade of existing mobile applications.",
-                icon: <FaRocket className="text-5xl" />,
+                icon: <FaRocket className="text-4xl" />,
               },
               {
                 title: "MVP Development",
                 desc: "Fast, cost-effective Minimum Viable Products to validate your idea quickly.",
-                icon: <FaChartLine className="text-5xl" />,
+                icon: <FaChartLine className="text-4xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -146,7 +146,7 @@ const MobileAppDevelopment = () => {
       {/* TECH STACK */}
       <section className="py-20 bg-black/50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-bold mb-4">Our Mobile Tech Stack</h2>
+          <h2 className="text-4xl font-bold mb-4">Our Mobile Tech Stack</h2>
           <p className="text-white/70 mb-12">
             Industry-leading tools for exceptional performance
           </p>
@@ -178,7 +178,7 @@ const MobileAppDevelopment = () => {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Why Choose Us for Mobile Apps?
             </h2>
           </div>
@@ -219,7 +219,7 @@ const MobileAppDevelopment = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all hover:-translate-y-2"
               >
-                <div className="text-5xl mb-6 text-cyan-400">{item.icon}</div>
+                <div className="text-4xl mb-6 text-cyan-400">{item.icon}</div>
                 <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
@@ -231,7 +231,7 @@ const MobileAppDevelopment = () => {
       {/* FINAL CTA - ONLY ONE */}
       <section className="py-28 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6">
             Ready to Launch Your Mobile App?
           </h2>
           <p className="text-xl text-white/90 mb-12">
@@ -243,7 +243,7 @@ const MobileAppDevelopment = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-xl hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
+            className="bg-white text-black px-14 py-6 rounded-2xl font-semibold text-base hover:bg-white/90 transition flex items-center gap-3 mx-auto shadow-2xl"
           >
             Discuss Your App Idea
             <span className="text-2xl">→</span>
