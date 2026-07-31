@@ -84,10 +84,10 @@ const Blogs = () => {
         <div className="absolute inset-0 bg-[#0A1428]/85" />
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-2xl md:text-4xl font-bold mb-6">
             LifeOnPlus <span className="text-cyan-400">Blog</span>
           </h1>
-          <p className="text-xl text-white/70 max-w-2xl mx-auto">
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
             Insights, stories, and expert knowledge from the world of health,
             wellness, technology, and human values.
           </p>
@@ -159,9 +159,9 @@ const Blogs = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="py-20 bg-black/60 border-t border-white/10">
-        <div className="max-w-xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-4">Stay Informed</h2>
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-6">Stay Informed</h2>
           <p className="text-white/70 mb-10">
             Subscribe to our newsletter and get the latest insights on health,
             wellness, and technology delivered to your inbox.

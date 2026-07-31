@@ -4,7 +4,7 @@ import {
   FaArrowRight,
   FaChartBar,
   FaMobileAlt,
-  FaReact
+  FaReact,
 } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -28,16 +28,20 @@ const Mobile = () => {
             opacity: 0.65,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
-                <FaMobileAlt /> Mobile Development
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur-sm text-cyan-400 text-sm">
+                <FaMobileAlt className="text-xl" />
+                <span className="uppercase tracking-widest font-medium">
+                  {" "}
+                  Mobile Development
+                </span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold leading-[1.1] mb-8">
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] tracking-tighter">
                 Mobile Apps That{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent">
                   Users Love
@@ -71,7 +75,6 @@ const Mobile = () => {
         </div>
       </section>
 
-
       {/* MOBILE PLATFORMS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -79,7 +82,7 @@ const Mobile = () => {
             <h2 className="text-3xl font-bold mb-4">
               Mobile Development Platforms
             </h2>
-            <p className="text-xl text-white/70">
+            <p className="text-lg text-white/70">
               We deliver excellence across all major technologies
             </p>
           </div>
@@ -91,13 +94,15 @@ const Mobile = () => {
               className="bg-white/5 border border-white/10 rounded-3xl p-12 group"
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="text-6xl text-cyan-400"></div>
+                <div className="text-5xl text-cyan-400"></div>
                 <div>
-                  <h3 className="text-xl font-semibold">iOS Development</h3>
-                  <p className="text-white/60">Native iOS Applications</p>
+                  <h3 className="text-lg font-semibold">iOS Development</h3>
+                  <p className="text-white/60 text-base">
+                    Native iOS Applications
+                  </p>
                 </div>
               </div>
-              <ul className="space-y-4 text-white/80">
+              <ul className="space-y-3 text-white/80">
                 <li className="flex items-start gap-3">→ Swift & SwiftUI</li>
                 <li className="flex items-start gap-3">→ UIKit & Combine</li>
                 <li className="flex items-start gap-3">
@@ -116,15 +121,15 @@ const Mobile = () => {
               className="bg-white/5 border border-white/10 rounded-3xl p-12 group"
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="text-6xl text-cyan-400">🤖</div>
+                <div className="text-5xl text-cyan-400">🤖</div>
                 <div>
-                  <h3 className="text-xl font-semibold">
-                    Android Development
-                  </h3>
-                  <p className="text-white/60">Native Android Applications</p>
+                  <h3 className="text-lg font-semibold">Android Development</h3>
+                  <p className="text-white/60 text-base">
+                    Native Android Applications
+                  </p>
                 </div>
               </div>
-              <ul className="space-y-4 text-white/80">
+              <ul className="space-y-3 text-white/80">
                 <li className="flex items-start gap-3">→ Kotlin</li>
                 <li className="flex items-start gap-3">→ Jetpack Compose</li>
                 <li className="flex items-start gap-3">→ Room & WorkManager</li>
@@ -182,15 +187,12 @@ const Mobile = () => {
               "TypeScript",
               "Fastlane",
             ].map((tech, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.03 }}
-                className="bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 px-8 py-4 rounded-2xl text-lg font-medium transition-all hover:-translate-y-1"
+              <div
+                key={tech}
+                className="w-48 h-16 flex items-center justify-center text-center bg-white/5 hover:bg-cyan-400/10 border border-white/10 hover:border-cyan-400 rounded-2xl text-lg font-medium transition-all duration-300 hover:scale-105"
               >
                 {tech}
-              </motion.span>
+              </div>
             ))}
           </div>
         </div>
@@ -206,17 +208,17 @@ const Mobile = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <FaMobileAlt className="text-5xl" />,
+                icon: <FaMobileAlt className="text-3xl" />,
                 title: "Native Performance",
                 desc: "Blazing fast apps with smooth animations and optimal battery usage.",
               },
               {
-                icon: <FaChartBar className="text-5xl" />,
+                icon: <FaChartBar className="text-3xl" />,
                 title: "Business Focused",
                 desc: "Apps designed to drive engagement, conversions, and revenue.",
               },
               {
-                icon: <FaApple className="text-5xl" />,
+                icon: <FaApple className="text-3xl" />,
                 title: "App Store Success",
                 desc: "Proven track record of high ratings and successful launches.",
               },
@@ -228,10 +230,15 @@ const Mobile = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl text-cyan-400 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-semibold text-center w-full">
+                    {item.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -240,9 +247,9 @@ const Mobile = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Build Your Next Great App?
           </h2>
           <p className="text-lg text-white/90 mb-12">
@@ -254,7 +261,7 @@ const Mobile = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Mobile Project
             <FaArrowRight />

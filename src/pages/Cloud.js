@@ -8,7 +8,7 @@ import {
   FaRocket,
   FaServer,
   FaShieldAlt,
-  FaTachometerAlt
+  FaTachometerAlt,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -31,13 +31,17 @@ const Cloud = () => {
             opacity: 0.65,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428]/90 via-[#0A1428]/80 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 text-sm mb-6">
-                <FaCloud /> Cloud Technologies
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-cyan-400/30 bg-white/5 backdrop-blur-sm text-cyan-400 text-sm">
+                <FaCloud className="text-xl" />
+                <span className="uppercase tracking-widest font-medium">
+                  {" "}
+                  Cloud Technologies
+                </span>
               </div>
 
               <h1 className="text-2xl lg:text-4xl font-bold leading-[1.1] mb-8">
@@ -70,7 +74,6 @@ const Cloud = () => {
         </div>
       </section>
 
-
       {/* CLOUD PLATFORMS */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -88,17 +91,17 @@ const Cloud = () => {
               {
                 name: "Amazon Web Services",
                 desc: "EC2, S3, Lambda, RDS, ECS, EKS, and full AWS ecosystem",
-                icon: <FaCloud className="text-6xl" />,
+                icon: <FaCloud className="text-3xl" />,
               },
               {
                 name: "Microsoft Azure",
                 desc: "App Services, AKS, Azure SQL, Synapse, and AI tools",
-                icon: <FaServer className="text-6xl" />,
+                icon: <FaServer className="text-3xl" />,
               },
               {
                 name: "Google Cloud Platform",
                 desc: "GKE, Cloud Run, BigQuery, Vertex AI, and modern data solutions",
-                icon: <FaCubes className="text-6xl" />,
+                icon: <FaCubes className="text-3xl" />,
               },
             ].map((platform, i) => (
               <motion.div
@@ -110,13 +113,15 @@ const Cloud = () => {
                 whileHover={{ y: -10 }}
                 className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                  {platform.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {platform.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {platform.name}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {platform.name}
-                </h3>
-                <p className="text-white/70">{platform.desc}</p>
+                <p className="text-white/70 text-sm">{platform.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -128,7 +133,7 @@ const Cloud = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Cloud Services</h2>
-            <p className="text-xl text-white/70">End-to-end cloud expertise</p>
+            <p className="text-lg text-white/70">End-to-end cloud expertise</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -136,32 +141,32 @@ const Cloud = () => {
               {
                 title: "Cloud Migration",
                 desc: "Seamless, low-risk migration from on-premise or legacy systems to the cloud.",
-                icon: <FaRocket className="text-5xl" />,
+                icon: <FaRocket className="text-3xl" />,
               },
               {
                 title: "Infrastructure as Code",
                 desc: "Automated, version-controlled infrastructure using Terraform, CloudFormation & Pulumi.",
-                icon: <FaCubes className="text-5xl" />,
+                icon: <FaCubes className="text-3xl" />,
               },
               {
                 title: "Serverless Architecture",
                 desc: "Highly scalable, cost-efficient serverless solutions with automatic scaling.",
-                icon: <FaCloud className="text-5xl" />,
+                icon: <FaCloud className="text-3xl" />,
               },
               {
                 title: "Kubernetes & Containers",
                 desc: "Orchestration, deployment, and management of containerized applications.",
-                icon: <FaServer className="text-5xl" />,
+                icon: <FaServer className="text-3xl" />,
               },
               {
                 title: "Cloud Security & Compliance",
                 desc: "Zero-trust architecture, encryption, and full regulatory compliance.",
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
               },
               {
                 title: "Monitoring & Observability",
                 desc: "Advanced logging, real-time monitoring, and intelligent alerting systems.",
-                icon: <FaChartBar className="text-5xl" />,
+                icon: <FaChartBar className="text-3xl" />,
               },
             ].map((service, i) => (
               <motion.div
@@ -173,13 +178,17 @@ const Cloud = () => {
                 whileHover={{ y: -10 }}
                 className="group bg-white/5 border border-white/10 hover:border-cyan-400/50 rounded-3xl p-10 transition-all duration-500"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 group-hover:text-cyan-400 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 leading-relaxed">{service.desc}</p>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  {service.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -196,17 +205,17 @@ const Cloud = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <FaTachometerAlt className="text-5xl" />,
+                icon: <FaTachometerAlt className="text-3xl" />,
                 title: "Performance & Reliability",
                 desc: "High availability, auto-scaling, and industry-leading uptime guarantees.",
               },
               {
-                icon: <FaShieldAlt className="text-5xl" />,
+                icon: <FaShieldAlt className="text-3xl" />,
                 title: "Security First Approach",
                 desc: "Enterprise-grade security, compliance, and data protection by design.",
               },
               {
-                icon: <FaLightbulb className="text-5xl" />,
+                icon: <FaLightbulb className="text-3xl" />,
                 title: "Cost Optimization",
                 desc: "Smart architecture that significantly reduces infrastructure costs.",
               },
@@ -218,10 +227,14 @@ const Cloud = () => {
                 viewport={{ once: true }}
                 className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400/50 transition group text-center"
               >
-                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition">
-                  {item.icon}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-cyan-400 flex-shrink-0 transition-transform group-hover:scale-110">
+                    {item.icon}
+                  </div>
+                  <span className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {item.title}
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -230,9 +243,9 @@ const Cloud = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-28 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6">
             Ready to Transform Your Infrastructure?
           </h2>
           <p className="text-lg text-white/90 mb-12">
@@ -244,7 +257,7 @@ const Cloud = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleGetStarted}
-            className="bg-white text-black px-14 py-7 rounded-3xl font-semibold text-2xl hover:bg-white/95 transition flex items-center gap-4 mx-auto"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Cloud Journey
             <FaArrowRight />

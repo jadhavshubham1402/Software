@@ -96,8 +96,8 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-[#0A1428]/85" />
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Portfolio</h1>
-          <p className="text-xl text-white/70 max-w-2xl mx-auto">
+          <h1 className="text-2xl md:text-4xl font-bold mb-6">Our Portfolio</h1>
+          <p className="text-lg text-white/70 max-w-2xl mx-auto">
             Real results from real projects. Every solution tells a story of
             innovation and impact.
           </p>
@@ -169,9 +169,9 @@ const Portfolio = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-700 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-5">Have a Project in Mind?</h2>
+      <section className="py-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-center">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-6">Have a Project in Mind?</h2>
           <p className="text-lg text-white/90 mb-8">
             Let’s create something exceptional together.
           </p>
@@ -180,7 +180,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             onClick={handleStartProject}
-            className="bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg hover:bg-white/90 transition-all flex items-center gap-3 mx-auto"
+            className="bg-white text-black px-8 py-4 rounded-3xl font-semibold text-lg hover:bg-white/95 transition flex items-center gap-4 mx-auto"
           >
             Start Your Project <span className="text-2xl">→</span>
           </motion.button>
