@@ -25,10 +25,10 @@ const SolutionDetails1 = () => {
   }
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-slate-900 text-white py-28">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-xl lg:text-3xl font-bold leading-tight mb-6">
               {solution.hero.title}
@@ -58,14 +58,14 @@ const SolutionDetails1 = () => {
             <img
               src={solution.hero.image}
               alt={solution.hero.title}
-              className="w-[90%] mt-10 rounded-3xl shadow-2xl"
+              className="w-[90%] mt-16 rounded-3xl shadow-2xl"
             />
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 border-b">
+      <section className="py-24 border-b">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl font-bold mb-6">{solution.about.title}</h2>
           <p className="text-base text-gray-600 leading-relaxed">
@@ -75,7 +75,7 @@ const SolutionDetails1 = () => {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-center mb-14">
             {solution.features.title}
@@ -96,7 +96,7 @@ const SolutionDetails1 = () => {
       </section>
 
       {/* Industries */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-center mb-14">
             {solution.industries.title}

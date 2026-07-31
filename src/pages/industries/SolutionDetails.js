@@ -287,7 +287,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="mobile-health-care"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -481,7 +481,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="smart-hospital"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -607,7 +607,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="mobile-health-care"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="mb-12 max-w-4xl">
@@ -648,7 +648,7 @@ const SolutionDetails = () => {
                 admission to successful discharge post treatment.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               <div className="bg-white rounded-xl shadow border p-6 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Patient portal
@@ -758,7 +758,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="wearables"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
@@ -784,11 +784,11 @@ const SolutionDetails = () => {
 
 
     {/* IMAGE SPACE */}
-    <div className="w-full h-72 mb-12"></div>
+    <div className="w-full h-2 mb-12"></div>
 
 
     {/* CARDS */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
 
       <div className="bg-white rounded-xl shadow border p-6 text-center">
@@ -867,7 +867,7 @@ const SolutionDetails = () => {
 
             {/* BOTTOM SECTIONS */}
      {/* BOTTOM SECTIONS */}
-<div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-10">
+<div className="grid md:grid-cols-2 gap-6 md:gap-10 mt-10 mb-10">
   <div>
     <h3 className="text-base md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
       Clinicians
@@ -932,7 +932,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="healthcare-dashboard"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -1096,7 +1096,7 @@ const SolutionDetails = () => {
             className="object-contain"
             alt="internet-of-things"
           />
-          <div className="container mx-auto px-6 lg:px-10 py-10">
+          <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
