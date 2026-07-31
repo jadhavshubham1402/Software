@@ -80,7 +80,7 @@ const SolutionDetails = () => {
                 A Supreme Hospital Management Solution Is Something That You
                 Need To Boost Your Efficiency
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Looking For Entire Aspects Of Hospital Management And Healthcare
                 Operations Performing At Its Best? Then, Get Yourselves A
                 Supremely Efficient Hospital Management Solution That Not Only
@@ -244,7 +244,7 @@ const SolutionDetails = () => {
                 Following Regulatory Norms. The Other Modules Which Brings In
                 More Flexibility Are As Below.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Medical Facility Large Or Small Revenue Management Plays A Vital
                 Role In Managing Finances To Its Best. Our HMS Carries Excellent
                 Features To Manage Salaries, Taxes, Insurance And Brings In
@@ -258,7 +258,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Modern Care centres
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Our HMS Enhances The Task Of Fixing Appointments, Connecting
                 Patients To Doctors And Paramedics, Lab Reporting .Etc On One
                 Common Platform
@@ -270,7 +270,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Data Security at its best
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 We At paxykop Emphasize Heavily On Data Security. We Ensure All
                 Medical And Financial Information Is Stored On Cloud Sever With
                 Modern Security Standards In Place And Access To This
@@ -293,7 +293,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Enabling Healthcare Mobility
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Lately, Health Care Mobility Solution Is Playing A Vital Role In
                 Empowering Hospitals / Healthcare Units And Patients To
                 Successfully Indulge In So Called One Point Collaboration. Along
@@ -314,7 +314,7 @@ const SolutionDetails = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Mobile based health care
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Dissemination Of Information Real Time Offering Treatment
                   Options And Diagnoses And Engage The Patient With App Based
                   Appointment Booking Is Something Our Apps Excel On And We
@@ -326,7 +326,7 @@ const SolutionDetails = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
                   Clinical Productivity
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Equipping The Medical Team With Right Apps , Devices At The
                   Right Time To Execute The Task In Whatever Situation And
                   Ensure The Communication Is Streamlined As To Who Will Do
@@ -462,7 +462,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Healthcare Technology at its best
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Our Team Scores High In Understanding The Ins And Outs Of Health
                 Care Technologies Along With Industries Best Practises.
                 Compliance With Regulatory Bodies Like HITECH And HIPPA Is
@@ -488,7 +488,7 @@ const SolutionDetails = () => {
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Smart hospitals safe hospitals
                 </h2>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Effective Optimization Of Personnel, Materiel And Assets
                   Within The Hospital Or Medical Establishments To Enhance The
                   Operational Efficiency Has Always Been The Driving Force For
@@ -560,7 +560,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Safety of High valued Assets
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Protection Of Expensive Medical Equipments And Other Pricey Or
                 Rare Assets Is Of Vital Importance To Any Hospital. Our Remote
                 Asset Tracking Feature Or The App Helps To Have Regular Checks
@@ -573,7 +573,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 A solution for every room
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Every Room In The Hospital Or Medical Establishment Carries Its
                 Own Attributes Or Facilities. Our HMS Customises Solutions For
                 Each Room And Ensures The Medical Staff Carry Out Their Day To
@@ -586,7 +586,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Why paxykop ?
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Keeping Things Under Control Is The Most Vital In Any Hospital
                 And Our HMS Does Just That. Our Apps And Solutions Facilitate
                 Excellent Control On Overall Management Of The Hospital Our HMS
@@ -615,7 +615,7 @@ const SolutionDetails = () => {
                   Challenges of patient engagement
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Providing The Best Medical Care Experience To Patients Is
                   Something That Every Hospital Looks For, Despite The Ongoing
                   Challenges. Insufficient And Manual Process Often Hinders
@@ -742,7 +742,7 @@ const SolutionDetails = () => {
                 Growth
               </h2>
 
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Connecting with target group of patients by strengthening your
                 brand online yields great results and we facilitate and moderate
                 your online existence.
@@ -765,7 +765,7 @@ const SolutionDetails = () => {
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Wearable health tech and Redefined care
                 </h2>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Innovation In The Medical World Is At Its Peak And Wearable
                   Health Devices Have Created A Major Difference In Empowering
                   Medical Establishments To Offer Highly Effective Care To Their
@@ -866,63 +866,63 @@ const SolutionDetails = () => {
             </div>
 
             {/* BOTTOM SECTIONS */}
-            <div className="grid md:grid-cols-2 gap-10 mb-10">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Clinicians
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Our Wearables Are So Well Equipped That One Can Easily Keep A
-                  Track Of Patient’s Health Without Being Ushered In To ICU
-                  Especially The Vulnerable Ones. Overall Human Error Is Fully
-                  Eliminated Thus Makes Way For Improved Care Fostering Great
-                  Health. Further, Access To Health Information Of Patients
-                  Helps Providers To Make Quick Decisions Accurately
-                </p>
-              </div>
+     {/* BOTTOM SECTIONS */}
+<div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-10">
+  <div>
+    <h3 className="text-base md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
+      Clinicians
+    </h3>
+    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+      Our Wearables Are So Well Equipped That One Can Easily Keep A
+      Track Of Patient’s Health Without Being Ushered In To ICU
+      Especially The Vulnerable Ones. Overall Human Error Is Fully
+      Eliminated Thus Makes Way For Improved Care Fostering Great
+      Health. Further, Access To Health Information Of Patients
+      Helps Providers To Make Quick Decisions Accurately
+    </p>
+  </div>
 
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Insurance
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Wearables Can Help The Patients To Reduce Costs If Getting
-                  Admitted Is Mandatory In Some Cases And Can Actually Reduce
-                  The Number Of Visits. Further, Access To Patients’ Data
-                  Through Wearables Also Helps Insurance Companies With Better
-                  Metrics And Insights To Manage Claims.
-                </p>
-              </div>
+  <div>
+    <h3 className="text-base md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
+      Insurance
+    </h3>
+    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+      Wearables Can Help The Patients To Reduce Costs If Getting
+      Admitted Is Mandatory In Some Cases And Can Actually Reduce
+      The Number Of Visits. Further, Access To Patients’ Data
+      Through Wearables Also Helps Insurance Companies With Better
+      Metrics And Insights To Manage Claims.
+    </p>
+  </div>
 
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Benefits to Hospitals
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Equipped With Wearables, Helps Nurses And Other Medical
-                  Attendants Free From The Job Of Logging Vitals At Regular
-                  Intervals And They Can Divert All Their Attention On Better
-                  Patient Care. It Also Help The Management Track Individual
-                  Employee Or Staffs Performance, There By Improved Level Of
-                  Overall Service To Patients
-                </p>
-              </div>
+  <div>
+    <h3 className="text-base md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
+      Benefits to Hospitals
+    </h3>
+    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+      Equipped With Wearables, Helps Nurses And Other Medical
+      Attendants Free From The Job Of Logging Vitals At Regular
+      Intervals And They Can Divert All Their Attention On Better
+      Patient Care. It Also Help The Management Track Individual
+      Employee Or Staffs Performance, There By Improved Level Of
+      Overall Service To Patients
+    </p>
+  </div>
 
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  Why paxykop ?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Our Experts Carry More Than 25 Years Of Experience In Health
-                  Care Tech And This Huge Knowledge Base And Experience Has Lead
-                  Us To Be The Best In The Industry. Enhancing The Patients Care
-                  Is Of Prime Importance To Us And Hence Our Collaborative
-                  Efforts Are Driven By Holistic Approach That Emphasizes
-                  Effective Collaboration.
-                </p>
-              </div>
-            </div>
-          
+  <div>
+    <h3 className="text-base md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
+      Why paxykop ?
+    </h3>
+    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+      Our Experts Carry More Than 25 Years Of Experience In Health
+      Care Tech And This Huge Knowledge Base And Experience Has Lead
+      Us To Be The Best In The Industry. Enhancing The Patients Care
+      Is Of Prime Importance To Us And Hence Our Collaborative
+      Efforts Are Driven By Holistic Approach That Emphasizes
+      Effective Collaboration.
+    </p>
+  </div>
+</div>
         </>
       )}
       {service.slug === "healthcare-dashboard" && (
@@ -938,7 +938,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Healthcare Dashboards
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 Our Efficient Dashboards Helps Providers To Stay On Top Of The
                 Game By Deriving Great Insights From The Accumulated Healthcare
                 Data And Provide Improved Health Care Services To Patients,
@@ -1077,7 +1077,7 @@ const SolutionDetails = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Reports and charts made simple
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 paxykop’s Intuitive And Visually Great Healthcare Dashboards
                 Ensure Every Aspect Of Your Hospital Data Is Updated With All
                 Key Insight In Place. Dashboard Is Equipped With All
@@ -1103,7 +1103,7 @@ const SolutionDetails = () => {
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Internet of things
                 </h2>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Internet Plays A Vital Role In Enhancing Operations And
                   Quality Patient Service In Health Care Industry. Software
                   Connects Healthcare And Medical Equipments Delivering Service
