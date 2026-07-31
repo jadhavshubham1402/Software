@@ -8,6 +8,7 @@ import {
   FaSearch,
   FaBlog,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ADDONS = [
   {
@@ -44,7 +45,7 @@ const ADDONS = [
 
 const PriceCalculator = ({ plan, priceData, setPriceData }) => {
   const [pages, setPages] = useState(0);
-
+  const navigate = useNavigate();
   const [selectedAddons, setSelectedAddons] = useState([]);
 
   const toggleAddon = (addon) => {
@@ -79,6 +80,38 @@ const PriceCalculator = ({ plan, priceData, setPriceData }) => {
       total,
     });
   }, [pages, selectedAddons, plan, setPriceData]);
+
+  if (plan?.custom) {
+    return (
+      <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-8 text-center">
+        <div className="text-5xl mb-4">🚀</div>
+
+        <h3 className="text-2xl font-bold text-white">
+          Custom Software Solution
+        </h3>
+
+        <p className="text-white/70 mt-4 leading-7">
+          This project requires requirement analysis and estimation. Our team
+          will understand your business needs and provide a customized proposal
+          with timeline and pricing.
+        </p>
+
+        <div className="mt-8 space-y-3 text-left max-w-sm mx-auto">
+          <p className="text-white/80">✅ Free Requirement Discussion</p>
+          <p className="text-white/80">✅ Custom Quotation</p>
+          <p className="text-white/80">✅ Dedicated Project Manager</p>
+          <p className="text-white/80">✅ Flexible Development Timeline</p>
+        </div>
+
+        <button
+          onClick={() => navigate("/contact")}
+          className="mt-8 w-full bg-cyan-500 hover:bg-cyan-400 text-white font-semibold py-3 rounded-xl transition"
+        >
+          Request Proposal
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">

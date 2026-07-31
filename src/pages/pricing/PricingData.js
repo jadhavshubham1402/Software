@@ -1,168 +1,490 @@
-export const pricingPlans = [
-  {
-    id: 1,
-    slug: "starter",
-    title: "Starter",
-    tagline: "Perfect for individuals & startups",
-
-    originalPrice: 14999,
-    offerPrice: 8999,
-    discount: "40% OFF",
-
-    pages: "3 Pages",
-    delivery: "5-7 Days",
-    support: "30 Days",
-    popular: false,
-
+export const pricingData = {
+  website: {
+    title: "Business Website",
     description:
-      "A modern business website to establish your online presence quickly.",
+      "Professional website solutions for startups, small businesses, and enterprises.",
 
-    features: [
-      "3 Premium Pages",
-      "Responsive Design",
-      "Contact Form",
-      "WhatsApp Chat",
-      "Google Map",
-      "Basic SEO",
-      "Free SSL Setup",
-      "Social Media Links",
-    ],
+    packages: [
+      {
+        id: 1,
+        slug: "starter",
+        title: "Starter Website",
+        tagline: "Perfect for startups and personal brands",
 
-    bonus: [
-      "Free Logo Design",
-      "Free Business Email Setup",
-      "Free Website Deployment",
-    ],
+        originalPrice: 19999,
+        offerPrice: 12999,
 
-    addons: [
-      { name: "Extra Page", price: 500 },
-      { name: "Logo Design", price: 999 },
-      { name: "Business Email", price: 499 },
-      { name: "Payment Gateway", price: 2999 },
-      { name: "Blog Module", price: 2499 },
+        offer: {
+          enabled: true,
+          title: "🚀 Launch Offer",
+          badge: "35% OFF",
+          save: 7000,
+        },
+
+        pages: "Up to 5 Pages",
+        delivery: "5 - 7 Days",
+        support: "1 Month",
+
+        popular: false,
+
+        features: [
+          "Responsive Website Design",
+          "Premium UI Design",
+          "Up to 5 Pages",
+          "Contact Form",
+          "WhatsApp Integration",
+          "Google Map Integration",
+          "Basic SEO Setup",
+          "Social Media Integration",
+          "SSL Configuration",
+        ],
+
+        bonus: [
+          "Free Logo Design",
+          "Free Deployment",
+          "Free Business Email Setup",
+        ],
+      },
+
+      {
+        id: 2,
+        slug: "business",
+        title: "Business Website",
+        tagline: "Best choice for growing businesses",
+
+        originalPrice: 49999,
+        offerPrice: 29999,
+
+        offer: {
+          enabled: true,
+          title: "🔥 Most Popular",
+          badge: "Save ₹20,000",
+          save: 20000,
+        },
+
+        pages: "Up to 15 Pages",
+        delivery: "10 - 15 Days",
+        support: "3 Months",
+
+        popular: true,
+
+        features: [
+          "Everything in Starter",
+          "Custom Website Design",
+          "Dynamic Content Management",
+          "Admin Dashboard",
+          "Blog Management",
+          "Advanced SEO",
+          "Google Analytics Setup",
+          "Performance Optimization",
+          "Lead Management",
+        ],
+
+        bonus: ["Free Domain Setup", "Free Hosting Setup", "Website Training"],
+      },
+
+      {
+        id: 3,
+        slug: "premium",
+        title: "Premium Website",
+        tagline: "For established companies",
+
+        originalPrice: 99999,
+        offerPrice: 69999,
+
+        offer: {
+          enabled: true,
+          title: "⭐ Premium Deal",
+          badge: "Save ₹30,000",
+          save: 30000,
+        },
+
+        pages: "25+ Pages",
+        delivery: "20 - 30 Days",
+        support: "6 Months",
+
+        popular: false,
+
+        features: [
+          "Unlimited Dynamic Pages",
+          "Advanced Admin Panel",
+          "User Authentication",
+          "Payment Gateway",
+          "API Integration",
+          "Advanced SEO",
+          "Analytics Dashboard",
+          "Security Optimization",
+          "Priority Support",
+        ],
+
+        bonus: ["Free SSL", "Free Email Setup", "Developer Support"],
+      },
+
+      {
+        id: 4,
+        slug: "enterprise",
+        title: "Enterprise Solution",
+        tagline: "Complete custom business solution",
+
+        originalPrice: 249999,
+        offerPrice: 149999,
+
+        offer: {
+          enabled: true,
+          title: "📞 Custom Consultation",
+          badge: "Starting From",
+          save: 100000,
+        },
+
+        custom: true,
+
+        pages: "Unlimited",
+        delivery: "Based on Requirement",
+        support: "12 Months",
+
+        popular: false,
+
+        features: [
+          "Custom Web Application",
+          "ERP Integration",
+          "CRM Integration",
+          "AI Features",
+          "Cloud Deployment",
+          "Dedicated Development Team",
+          "Custom API Development",
+          "Enterprise Security",
+        ],
+
+        bonus: [
+          "Dedicated Project Manager",
+          "Architecture Planning",
+          "Free Consultation",
+        ],
+      },
     ],
   },
 
-  {
-    id: 2,
-    slug: "business",
-    title: "Business",
-    tagline: "Best for growing businesses",
-
-    originalPrice: 34999,
-    offerPrice: 19999,
-    discount: "43% OFF",
-
-    pages: "8 Pages",
-    delivery: "10-12 Days",
-    support: "3 Months",
-    popular: true,
-
+  ecommerce: {
+    title: "E-Commerce Development",
     description:
-      "A complete business website with admin management and advanced features.",
+      "Build powerful online stores with secure payments, inventory management, and scalable features.",
 
-    features: [
-      "8 Responsive Pages",
-      "Admin Dashboard",
-      "Blog Module",
-      "Dynamic Website",
-      "Inquiry Management",
-      "Google Analytics",
-      "Basic SEO",
-      "Speed Optimization",
-    ],
+    packages: [
+      {
+        id: 1,
+        slug: "starter-store",
+        title: "Starter Store",
+        tagline: "For small businesses starting online",
 
-    bonus: [
-      "Free Logo Design",
-      "Free Business Email",
-      "Free Domain Setup",
-      "Free Deployment",
-    ],
+        originalPrice: 39999,
+        offerPrice: 24999,
 
-    addons: [
-      { name: "Payment Gateway", price: 2999 },
-      { name: "Premium SEO", price: 4999 },
-      { name: "Live Chat", price: 999 },
-      { name: "CRM Module", price: 8999 },
+        offer: {
+          enabled: true,
+          title: "🛒 Store Launch Offer",
+          badge: "Save ₹15,000",
+          save: 15000,
+        },
+
+        delivery: "10 - 15 Days",
+        support: "2 Months",
+
+        features: [
+          "Product Management",
+          "Category Management",
+          "Shopping Cart",
+          "Payment Gateway",
+          "Order Management",
+          "Responsive Design",
+        ],
+
+        bonus: ["Free Deployment", "Free SSL Setup"],
+      },
+
+      {
+        id: 2,
+        slug: "growth-store",
+        title: "Growth Store",
+        tagline: "For growing online businesses",
+
+        originalPrice: 79999,
+        offerPrice: 49999,
+
+        popular: true,
+
+        offer: {
+          enabled: true,
+          title: "🔥 Best Seller",
+          badge: "Save ₹30,000",
+          save: 30000,
+        },
+
+        delivery: "20 - 30 Days",
+        support: "6 Months",
+
+        features: [
+          "Everything in Starter",
+          "Admin Dashboard",
+          "Coupon System",
+          "Inventory Management",
+          "Customer Accounts",
+          "Analytics Dashboard",
+          "SEO Optimization",
+        ],
+
+        bonus: ["Free Marketing Consultation", "Free Training"],
+      },
+
+      {
+        id: 3,
+        slug: "enterprise-commerce",
+        title: "Enterprise Commerce",
+
+        tagline: "Large scale ecommerce platform",
+
+        originalPrice: 199999,
+        offerPrice: 149999,
+
+        custom: true,
+
+        delivery: "Based on Scope",
+        support: "12 Months",
+
+        features: [
+          "Multi Vendor Marketplace",
+          "ERP Integration",
+          "Warehouse Management",
+          "Advanced Analytics",
+          "Mobile App Integration",
+          "Custom APIs",
+        ],
+
+        bonus: ["Dedicated Team", "Business Strategy Support"],
+      },
     ],
   },
 
-  {
-    id: 3,
-    slug: "professional",
-    title: "Professional",
-    tagline: "Ideal for established companies",
-
-    originalPrice: 74999,
-    offerPrice: 49999,
-    discount: "33% OFF",
-
-    pages: "20 Pages",
-    delivery: "15-20 Days",
-    support: "6 Months",
-    popular: false,
-
+  saas: {
+    title: "SaaS Application Development",
     description:
-      "Premium website solution with advanced integrations and user management.",
+      "Build scalable SaaS products with subscription, automation, and cloud infrastructure.",
 
-    features: [
-      "20+ Pages",
-      "Premium UI/UX",
-      "Admin Dashboard",
-      "Payment Gateway",
-      "User Login System",
-      "Advanced SEO",
-      "Google Analytics",
-      "WhatsApp Integration",
-    ],
+    packages: [
+      {
+        id: 1,
+        slug: "mvp",
+        title: "MVP SaaS",
+        tagline: "Validate your product idea",
 
-    bonus: [
-      "Free Logo",
-      "Free SSL",
-      "Free Business Email",
-      "Free Deployment",
-      "Free Website Training",
-    ],
+        offerPrice: 99999,
 
-    addons: [
-      { name: "Mobile App", price: 29999 },
-      { name: "CRM", price: 9999 },
-      { name: "ERP", price: 49999 },
+        delivery: "30 - 45 Days",
+        support: "3 Months",
+
+        features: [
+          "User Management",
+          "Admin Dashboard",
+          "Subscription Module",
+          "Cloud Deployment",
+          "Basic Analytics",
+        ],
+
+        bonus: ["Product Consultation", "Technical Planning"],
+      },
+
+      {
+        id: 2,
+        slug: "startup-saas",
+        title: "Startup SaaS",
+        tagline: "For growing SaaS businesses",
+
+        offerPrice: 249999,
+
+        popular: true,
+
+        features: [
+          "Advanced Dashboard",
+          "Payment Subscription",
+          "Role Management",
+          "API Integration",
+          "Database Architecture",
+          "Cloud Scaling",
+        ],
+
+        bonus: ["Free Deployment", "3 Months Support"],
+      },
+
+      {
+        id: 3,
+        slug: "enterprise-saas",
+        title: "Enterprise SaaS",
+
+        custom: true,
+
+        offerPrice: 999999,
+
+        features: [
+          "Complete SaaS Platform",
+          "AI Integration",
+          "Microservice Architecture",
+          "Enterprise Security",
+          "Dedicated Team",
+        ],
+
+        bonus: ["Project Manager", "Architecture Planning"],
+      },
     ],
   },
 
-  {
-    id: 4,
-    slug: "enterprise",
-    title: "Enterprise",
-    tagline: "Custom software for enterprises",
-
-    originalPrice: null,
-    offerPrice: null,
-    discount: null,
-
-    pages: "Unlimited",
-    delivery: "Custom",
-    support: "1 Year",
-
-    popular: false,
-
+  crm: {
+    title: "CRM Development",
     description:
-      "Enterprise-grade software tailored to your business requirements.",
+      "Custom CRM solutions to manage customers, sales pipeline, and business automation.",
 
-    features: [
-      "Unlimited Pages",
-      "ERP",
-      "CRM",
-      "AI Integration",
-      "Cloud Deployment",
-      "Dedicated Team",
-      "Priority Support",
-      "Custom Integrations",
+    packages: [
+      {
+        id: 1,
+        title: "Basic CRM",
+        offerPrice: 149999,
+
+        features: [
+          "Customer Management",
+          "Lead Management",
+          "Task Management",
+          "Reports",
+        ],
+      },
+
+      {
+        id: 2,
+        title: "Professional CRM",
+        offerPrice: 299999,
+        popular: true,
+
+        features: [
+          "Sales Automation",
+          "Role Management",
+          "Analytics Dashboard",
+          "API Integration",
+          "Email Automation",
+        ],
+      },
+
+      {
+        id: 3,
+        title: "Enterprise CRM",
+        custom: true,
+        offerPrice: 599999,
+
+        features: [
+          "Custom CRM Workflow",
+          "AI Automation",
+          "ERP Integration",
+          "Mobile Application",
+        ],
+      },
     ],
-
-    bonus: ["Free Consultation", "Dedicated Project Manager"],
-
-    addons: [],
   },
-];
+
+  erp: {
+    title: "ERP Development",
+    description:
+      "Complete ERP software solutions to automate business operations.",
+
+    packages: [
+      {
+        id: 1,
+        title: "ERP Lite",
+        offerPrice: 249999,
+
+        features: [
+          "Inventory Module",
+          "Employee Management",
+          "Reports",
+          "Basic Dashboard",
+        ],
+      },
+
+      {
+        id: 2,
+        title: "ERP Standard",
+        offerPrice: 499999,
+
+        popular: true,
+
+        features: [
+          "Finance Module",
+          "HR Management",
+          "Inventory",
+          "Sales Management",
+          "Analytics",
+        ],
+      },
+
+      {
+        id: 3,
+        title: "ERP Enterprise",
+        custom: true,
+        offerPrice: 999999,
+
+        features: [
+          "Complete ERP Suite",
+          "AI Integration",
+          "Cloud Deployment",
+          "Custom Modules",
+        ],
+      },
+    ],
+  },
+
+  mobile: {
+    title: "Mobile App Development",
+    description:
+      "Native and cross-platform mobile applications for Android and iOS.",
+
+    packages: [
+      {
+        id: 1,
+        title: "Basic App",
+        offerPrice: 49999,
+
+        features: [
+          "UI Design",
+          "Android App",
+          "Basic Features",
+          "Play Store Deployment",
+        ],
+      },
+
+      {
+        id: 2,
+        title: "Business App",
+        offerPrice: 199999,
+
+        popular: true,
+
+        features: [
+          "Android + iOS",
+          "API Integration",
+          "User Login",
+          "Push Notifications",
+          "Admin Panel",
+        ],
+      },
+
+      {
+        id: 3,
+        title: "Enterprise App",
+        custom: true,
+        offerPrice: 499999,
+
+        features: [
+          "Advanced Mobile Solution",
+          "Custom Features",
+          "Backend Development",
+          "Cloud Integration",
+        ],
+      },
+    ],
+  },
+};

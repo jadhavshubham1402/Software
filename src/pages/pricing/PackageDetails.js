@@ -9,7 +9,7 @@ import {
 import PriceCalculator from "./PriceCalculator";
 
 const PackageDetails = ({ plan, priceData, setPriceData, onContinue }) => {
-  const [showCalculator, setShowCalculator] = useState(false);
+  const [showCalculator, setShowCalculator] = useState(true);
 
   return (
     <div className="space-y-8">

@@ -1,29 +1,31 @@
 import React, { useState } from "react";
+
+import PricingHero from "./PricingHero";
+import ServiceSection from "./ServiceSection";
 import CheckoutDrawer from "./CheckoutDrawer";
-import PricingCards from "./PricingCards";
+import DevelopmentProcess from "./DevelopmentProcess";
+import FAQ from "../FAQ";
+import CTA from "../CTA";
 
 const Pricing = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
-
-  const handleBuyNow = (plan) => {
-    setSelectedPlan(plan);
-    setDrawerOpen(true);
-  };
-
-  const handleCloseDrawer = () => {
-    setDrawerOpen(false);
-    setSelectedPlan(null);
-  };
 
   return (
     <>
-      <PricingCards onBuyNow={handleBuyNow} />
+      <PricingHero />
+
+      <ServiceSection onBuyNow={setSelectedPlan} />
+
+      <DevelopmentProcess />
+
+      <FAQ />
+
+      <CTA />
 
       <CheckoutDrawer
-        open={drawerOpen}
+        open={!!selectedPlan}
         plan={selectedPlan}
-        onClose={handleCloseDrawer}
+        onClose={() => setSelectedPlan(null)}
       />
     </>
   );
