@@ -84,7 +84,7 @@ const CTA = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <button
                   onClick={handleGetConsultation}
-                  className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl py-5 px-8 flex items-center justify-center gap-3 font-semibold text-base transition-all"
+                  className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl py-4 px-8 flex items-center justify-center gap-3 font-semibold text-base transition-all"
                 >
                   Get Free Consultation
                   <FaArrowRight />
@@ -92,7 +92,7 @@ const CTA = () => {
 
                 <button
                   onClick={handleViewPortfolio}
-                  className="border border-gray-800 hover:border-blue-600 text-gray-800 hover:text-blue-600 rounded-2xl py-5 px-8 flex items-center justify-center gap-3 font-semibold text-base transition-all"
+                  className="border border-gray-800 hover:border-blue-600 text-gray-800 hover:text-blue-600 rounded-2xl py-4 px-8 flex items-center justify-center gap-3 font-semibold text-base transition-all"
                 >
                   Explore Portfolio
                 </button>
