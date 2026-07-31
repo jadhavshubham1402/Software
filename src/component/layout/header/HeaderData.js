@@ -93,8 +93,8 @@ export const navLinks = [
         path: "/industries/media-entertainment",
       },
       {
-       title: "Travel & Hospitality",
-       path: "/industries/travel-hospitality",
+        title: "Travel & Hospitality",
+        path: "/industries/travel-hospitality",
       },
     ],
   },
@@ -105,11 +105,16 @@ export const navLinks = [
   },
   {
     id: 7,
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    id: 8,
     title: "Blogs",
     path: "/blogs",
   },
   {
-    id: 8,
+    id: 9,
     title: "Contact",
     path: "/contact",
   },

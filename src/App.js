@@ -36,6 +36,7 @@ import TermsOfService from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import RefundPolicy from "./pages/RefundPolicy";
+import Pricing from "./pages/pricing/Pricing";
 
 function App() {
   function ScrollToTop() {
@@ -70,6 +71,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/refund" element={<RefundPolicy />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route
             path="/services/cloud-solutions"
             element={<CloudSolutions />}

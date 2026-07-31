@@ -23,7 +23,7 @@ const CloudSolutions = () => {
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative min-h-[75vh] flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-[90vh] md:min-h-[100vh] flex items-center pt-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -57,7 +57,7 @@ const CloudSolutions = () => {
               </p>
             </div>
 
-            <div className="relative hidden lg:flex justify-center">
+            <div className="relative lg:flex justify-center">
               <div className="relative">
                 <img
                   src="/images/cloudSection2.jpg"
