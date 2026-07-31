@@ -18,7 +18,7 @@ const CTA = () => {
   };
 
   const handleCall = () => {
-    window.location.href = "tel:+919876543210";
+    window.location.href = "tel:+6589182836";
   };
 
   return (
@@ -108,7 +108,7 @@ const CTA = () => {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">Call us directly</p>
-                  <p className="font-semibold text-gray-900">+91 98765 43210</p>
+                  <p className="font-semibold text-gray-900">+65 89182836</p>
                 </div>
               </button>
             </div>
