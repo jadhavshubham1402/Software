@@ -131,8 +131,8 @@ const Hero = () => {
                 <div className="flex items-center gap-4">
                   <div className="text-4xl">🚀</div>
                   <div>
-                    <p className="font-semibold text-gray-900">15+ Projects</p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-xl md:text-2xl font-semibold text-gray-900">15+ Projects</p>
+                    <p className="text-base md:text-lg text-gray-500">
                       Delivered this month
                     </p>
                   </div>
@@ -145,7 +145,7 @@ const Hero = () => {
                 className="absolute -bottom-8 -left-8 bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-3xl px-7 py-5 shadow-2xl"
               >
                 <p className="text-4xl font-bold">98%</p>
-                <p className="text-sm opacity-90">Client Retention Rate</p>
+                <p className="text-base md:text-lg opacity-90">Client Retention Rate</p>
               </motion.div>
             </div>
           </motion.div>

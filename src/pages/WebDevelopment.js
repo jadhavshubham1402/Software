@@ -25,7 +25,7 @@ const WebDevelopment = () => {
   return (
     <div className="bg-[#0A1428] text-white overflow-hidden">
       {/* HERO SECTION */}
-      <section className="relative min-h-[100vh] flex items-center pt-20 overflow-hidden">
+      <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center pt-20 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
