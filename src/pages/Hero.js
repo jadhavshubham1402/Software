@@ -68,13 +68,13 @@ const Hero = () => {
               growth.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-nowrap md:flex-wrap gap-3 pt-4">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleGetStarted}
                 disabled={isLoading}
-                className="bg-blue-600 hover:bg-blue-700 px-6 py-4 rounded-2xl font-semibold flex items-center gap-3 text-base transition-all disabled:opacity-75"
+                className="bg-blue-600 hover:bg-blue-700 px-4 md:px-6 py-3 md:py-4 rounded-2xl font-semibold flex items-center gap-2 text-sm md:text-base transition-all disabled:opacity-75"
               >
                 {isLoading ? "Connecting..." : "Start Your Project"}
                 <FaArrowRight />
@@ -84,7 +84,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleViewWork}
-                className="border border-white/30 hover:bg-white/10 px-6 py-4 rounded-2xl font-medium flex items-center gap-3 text-base transition-all"
+                className="border border-white/30 hover:bg-white/10 px-4 md:px-6 py-3 md:py-4 rounded-2xl font-medium flex items-center gap-2 text-sm md:text-base transition-all"
               >
                 View Our Work
               </motion.button>
