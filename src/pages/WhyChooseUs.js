@@ -69,13 +69,13 @@ const WhyChooseUs = () => {
               />
 
               {/* Floating Stats */}
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ repeat: Infinity, duration: 4 }}
                 className="absolute -top-6 -left-6 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl px-6 py-5 shadow-2xl"
               >
                 <div className="text-emerald-400 text-4xl font-bold font-mono">
-                  15+
+                  5+
                 </div>
                 <div className="text-white/80 text-sm">Years Experience</div>
               </motion.div>
@@ -85,9 +85,9 @@ const WhyChooseUs = () => {
                 transition={{ repeat: Infinity, duration: 4.5, delay: 0.6 }}
                 className="absolute bottom-8 -right-6 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl px-6 py-5 shadow-2xl text-center"
               >
-                <div className="text-4xl font-bold text-white">500+</div>
+                <div className="text-4xl font-bold text-white">5+</div>
                 <div className="text-white/70 text-sm">Projects Delivered</div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
 
@@ -115,7 +115,7 @@ const WhyChooseUs = () => {
             </p>
 
             {/* Trust Stats */}
-            <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-8">
+            {/* <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-8">
               {[
                 { number: "500", label: "Projects" },
                 { number: "150", label: "Clients" },
@@ -137,7 +137,7 @@ const WhyChooseUs = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
 
             {/* CTA */}
             <motion.button
