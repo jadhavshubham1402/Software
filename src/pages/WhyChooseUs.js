@@ -1,5 +1,5 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+// import { useRef } from "react";
 import {
   FaArrowRight,
   FaLaptopCode,
@@ -42,8 +42,8 @@ const features = [
 
 const WhyChooseUs = () => {
   const navigate = useNavigate();
-  const statsRef = useRef(null);
-  const isInView = useInView(statsRef, { once: true });
+  // const statsRef = useRef(null);
+  // const isInView = useInView(statsRef, { once: true });
 
   const handleStartProject = () => {
     navigate("/contact");
