@@ -19,7 +19,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="sales-force-automation-for-retail"
           />
-          <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
+          <div className="container mx-auto px-8 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -203,7 +203,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="retail-lead-management-system"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
               <p>
@@ -373,7 +373,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="e-commerce-for-b2b"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -495,7 +495,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="unified-b2c-retail-solution"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
               <p>
@@ -632,7 +632,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="dealer-management-system"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
               <p>
@@ -769,7 +769,7 @@ export default function RetailDetails() {
             className="object-contain"
             alt="pim-software-solutions"
           />
-          <div className="container mx-auto py-10">
+          <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* PAIN POINTS */}
             <div className="mb-16 max-w-3xl">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
