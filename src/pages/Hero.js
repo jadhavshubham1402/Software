@@ -129,10 +129,10 @@ const Hero = () => {
                 className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-xl rounded-3xl px-6 py-4 shadow-2xl border border-white/30"
               >
                 <div className="flex items-center gap-4">
-                  <div className="text-4xl">🚀</div>
+                  <div className="text-2xl md:text-4xl">🚀</div>
                   <div>
-                    <p className="text-xl md:text-2xl font-semibold text-gray-900">15+ Projects</p>
-                    <p className="text-base md:text-lg text-gray-500">
+                    <p className="text-base md:text-2xl font-semibold text-gray-900">15+ Projects</p>
+                    <p className="text-sm md:text-lg text-gray-500">
                       Delivered this month
                     </p>
                   </div>
@@ -144,8 +144,8 @@ const Hero = () => {
                 transition={{ duration: 5, repeat: Infinity }}
                 className="absolute -bottom-8 -left-8 bg-gradient-to-br from-blue-600 to-cyan-500 text-white rounded-3xl px-7 py-5 shadow-2xl"
               >
-                <p className="text-4xl font-bold">98%</p>
-                <p className="text-base md:text-lg opacity-90">Client Retention Rate</p>
+                <p className="text-2xl font-bold md:text-4xl">98%</p>
+                <p className="text-sm md:text-lg opacity-90">Client Retention Rate</p>
               </motion.div>
             </div>
           </motion.div>
