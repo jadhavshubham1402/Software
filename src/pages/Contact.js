@@ -256,7 +256,7 @@ const Contact = () => {
                   <div>
                     <p className="text-white/60 text-sm">WhatsApp / Call</p>
                     <a
-                      href="https://wa.me/919988680000"
+                      href="https://wa.me/6589182836"
                       className="text-xl hover:text-cyan-400 transition"
                     >
                       +65 89182836
