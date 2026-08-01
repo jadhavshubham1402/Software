@@ -39,11 +39,13 @@ const SolutionDetails = () => {
     <>
       {service.slug === "hospital-management-system" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/hms-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="hospital-management-system"
           />
+          </div>
           <div className="container mx-auto px-8 lg:px-12 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl">
@@ -282,11 +284,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "mobile-healthcare" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/mobile-healthcare-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="mobile-health-care"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
@@ -476,11 +480,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "smart-hospitals" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/smart-hospitals-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="smart-hospital"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
@@ -602,11 +608,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "patient-engagement" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/patient-engagement-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="mobile-health-care"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -753,11 +761,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "wearables" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/wearables-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="wearables"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
@@ -927,11 +937,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "healthcare-dashboard" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/healthcare-dashboard-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain"
             alt="healthcare-dashboard"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div>
@@ -1091,11 +1103,13 @@ const SolutionDetails = () => {
       )}
       {service.slug === "internet-of-things" && (
         <>
+        <div className="pt-20 md:pt-0 bg-slate-900">
           <img
             src={"/images/internet-of-things-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="internet-of-things"
           />
+          </div>
           <div className="container mx-auto px-6 lg:px-10 pt-16 pb-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
