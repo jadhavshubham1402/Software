@@ -1,48 +1,8 @@
 import React, { useState } from "react";
-import {
-  FaGlobe,
-  FaShoppingCart,
-  FaCloud,
-  FaUsers,
-  FaBuilding,
-  FaMobileAlt,
-  FaArrowRight,
-  FaFire,
-} from "react-icons/fa";
 import { pricingData } from "./PricingData";
-
-const services = [
-  {
-    id: "website",
-    title: "Website",
-    icon: <FaGlobe />,
-  },
-  {
-    id: "ecommerce",
-    title: "E-Commerce",
-    icon: <FaShoppingCart />,
-  },
-  {
-    id: "saas",
-    title: "SaaS",
-    icon: <FaCloud />,
-  },
-  {
-    id: "crm",
-    title: "CRM",
-    icon: <FaUsers />,
-  },
-  {
-    id: "erp",
-    title: "ERP",
-    icon: <FaBuilding />,
-  },
-  {
-    id: "mobile",
-    title: "Mobile",
-    icon: <FaMobileAlt />,
-  },
-];
+import ServiceTabs from "./ServiceTab";
+import PricingCard from "./PricingCard";
+import { FaArrowRight } from "react-icons/fa";
 
 const ServiceSection = ({ onBuyNow }) => {
   const [selectedService, setSelectedService] = useState("website");
@@ -50,119 +10,81 @@ const ServiceSection = ({ onBuyNow }) => {
   const currentService = pricingData[selectedService];
 
   return (
-    <section id="pricing-packages" className="py-20 bg-slate-950">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="pricing"
+      className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden"
+    >
+      {/* Background Blur */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 blur-[120px]" />
+
+      <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 blur-[120px]" />
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
 
-        <div className="text-center">
-          <h2 className="text-4xl font-bold text-white">Choose Your Service</h2>
+        <div className="text-center max-w-3xl mx-auto">
+          <span className="inline-flex px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold">
+            Pricing Plans
+          </span>
 
-          <p className="text-gray-400 mt-3">
-            Select your preferred solution and explore our pricing plans.
+          <h2 className="mt-6 text-5xl font-bold text-white leading-tight">
+            Choose the Perfect Solution
+            <span className="text-cyan-400"> for Your Business</span>
+          </h2>
+
+          <p className="mt-6 text-gray-400 text-lg">
+            Transparent pricing with no hidden costs. Choose the package that
+            best fits your business goals.
           </p>
         </div>
 
         {/* Tabs */}
 
-        <div className="flex flex-wrap justify-center gap-4 mt-12">
-          {services.map((service) => (
-            <button
-              key={service.id}
-              onClick={() => setSelectedService(service.id)}
-              className={`flex items-center gap-2 px-5 py-3 rounded-xl transition ${
-                selectedService === service.id
-                  ? "bg-cyan-500 text-white"
-                  : "bg-white/5 text-gray-300 hover:bg-white/10"
-              }`}
-            >
-              {service.icon}
-
-              {service.title}
-            </button>
-          ))}
+        <div className="mt-16">
+          <ServiceTabs
+            selectedService={selectedService}
+            setSelectedService={setSelectedService}
+          />
         </div>
 
-        {/* Service Title */}
+        {/* Current Service */}
 
-        <div className="text-center mt-14">
-          <h3 className="text-3xl text-white font-bold">
+        <div className="text-center mt-20">
+          <h3 className="text-4xl font-bold text-white">
             {currentService.title}
           </h3>
 
-          <p className="text-gray-400 mt-3">{currentService.description}</p>
+          <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
+            {currentService.description}
+          </p>
         </div>
 
         {/* Pricing Cards */}
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mt-16">
+        <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-8 mt-16">
           {currentService.packages.map((plan) => (
-            <div
-              key={plan.id}
-              className={`relative rounded-3xl border transition hover:-translate-y-2 duration-300 ${
-                plan.popular
-                  ? "border-cyan-400 bg-cyan-500/10"
-                  : "border-white/10 bg-white/5"
-              }`}
-            >
-              {/* Popular */}
-
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="bg-cyan-500 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
-                    <FaFire />
-                    Most Popular
-                  </div>
-                </div>
-              )}
-
-              <div className="p-7">
-                {/* Offer */}
-
-                {plan.offer?.enabled && (
-                  <span className="inline-block bg-red-500/10 text-red-400 text-xs px-3 py-1 rounded-full mb-5">
-                    {plan.offer.badge}
-                  </span>
-                )}
-
-                <h3 className="text-2xl font-bold text-white">{plan.title}</h3>
-
-                <p className="text-gray-400 mt-2 text-sm">{plan.tagline}</p>
-
-                <div className="mt-6">
-                  {plan.originalPrice && (
-                    <p className="text-gray-500 line-through">
-                      ₹{plan.originalPrice.toLocaleString()}
-                    </p>
-                  )}
-
-                  <h2 className="text-4xl font-bold text-cyan-400">
-                    {plan.custom
-                      ? "Custom"
-                      : `₹${plan.offerPrice.toLocaleString()}`}
-                  </h2>
-                </div>
-
-                {/* Features */}
-
-                <div className="space-y-3 mt-8">
-                  {plan.features?.slice(0, 6).map((feature, index) => (
-                    <div key={index} className="text-gray-300 text-sm">
-                      ✓ {feature}
-                    </div>
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => onBuyNow(plan)}
-                  className="w-full mt-8 bg-cyan-500 hover:bg-cyan-400 rounded-xl py-3 text-white font-semibold flex justify-center items-center gap-2 transition"
-                >
-                  {plan.buttonText || "Buy Now"}
-
-                  <FaArrowRight />
-                </button>
-              </div>
-            </div>
+            <PricingCard key={plan.id} plan={plan} onBuyNow={onBuyNow} />
           ))}
+        </div>
+
+        {/* CTA */}
+
+        <div className="mt-24">
+          <div className="rounded-3xl border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-10 text-center">
+            <h3 className="text-3xl font-bold text-white">
+              Need a Custom Software Solution?
+            </h3>
+
+            <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+              Every business is unique. Our experts can build a completely
+              customized solution tailored to your workflow and business goals.
+            </p>
+
+            <button className="mt-8 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 transition text-white font-semibold inline-flex items-center gap-3">
+              Schedule Free Consultation
+              <FaArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>

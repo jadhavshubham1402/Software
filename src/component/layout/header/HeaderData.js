@@ -103,18 +103,18 @@ export const navLinks = [
     title: "Portfolio",
     path: "/portfolio",
   },
+  // {
+  //   id: 7,
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
     id: 7,
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    id: 8,
     title: "Blogs",
     path: "/blogs",
   },
   {
-    id: 9,
+    id: 8,
     title: "Contact",
     path: "/contact",
   },
