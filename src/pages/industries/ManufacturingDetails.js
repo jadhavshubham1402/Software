@@ -13,11 +13,13 @@ export default function ManufacturingDetails() {
     <>
       {service.slug === "warehouse-management" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/warehouse-management-bg.png"} // update path if needed
             className="object-contain"
             alt="warehouse-management"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl">
@@ -37,7 +39,6 @@ export default function ManufacturingDetails() {
               <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
                 What we can do ?
               </h2>
-
               {/* Managing warehouse Smartly */}
               <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
                 <div>
@@ -215,20 +216,24 @@ export default function ManufacturingDetails() {
       )}
       {service.slug === "supply-chain-management" && (
         <>
+        <div className="bg-[#111827] pt-24 md:pt-0 p-24">
           <img
             src={"/images/supply-chain-management-bg.png"} // update path if needed
             className="object-contain"
             alt="supply-chain-management-software"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
+              <div className="bg-[#111827] p-24">
                 <img
                   src={"/images/supply-chain-illustration.jpg"} // update path
                   alt="Smart Solutions For Supply Chain Management"
-                  className="w-full max-w-md mx-auto"
+                  className= "object-contain"
                 />
+                </div> 
               </div>
               <div>
                 <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
@@ -364,20 +369,24 @@ export default function ManufacturingDetails() {
       )}
       {service.slug === "transportation-management" && (
         <>
+        <div className="bg-[#111827] pt-24 md:pt-0 p-24">
           <img
             src={"/images/transportation-management-bg.png"} // update path if needed
             className="object-contain"
             alt="solutions-for-transportation-management"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
               <div>
+              <div className="bg-[#111827] pt-24 md:pt-0 p-24">
                 <img
                   src={"/images/transportation-illustration.jpg"} // update path
                   alt="Smart Transportation Management System"
-                  className="w-full max-w-md mx-auto"
+                  className="w-full object-contain"
                 />
+                </div>
               </div>
               <div>
                 <h2 className="text-2xl font-semibold text-cyan-600 mb-4">

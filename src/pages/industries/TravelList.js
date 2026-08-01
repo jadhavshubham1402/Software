@@ -13,11 +13,13 @@ export default function TravelDetails() {
     <>
       {service.slug === "gds-integration-services" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/gds-integrations-bg.png"} // update path if needed
             className="object-contain"
             alt="gds-integrations"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
@@ -143,11 +145,13 @@ export default function TravelDetails() {
       )}
       {service.slug === "smart-flight-booking" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/smart-flight-booking-bg.png"} // update path if needed
             className="object-contain"
             alt="smart-solutions-for-flight-booking"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">

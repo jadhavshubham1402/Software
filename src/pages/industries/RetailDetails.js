@@ -14,11 +14,13 @@ export default function RetailDetails() {
     <>
       {service.slug === "sales-force-automation" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/sales-force-automation-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="sales-force-automation-for-retail"
           />
+          </div>
           <div className="container mx-auto px-8 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
@@ -198,11 +200,13 @@ export default function RetailDetails() {
       )}
       {service.slug === "retail-lead-management" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/retail-lead-management-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="retail-lead-management-system"
           />
+          </div>
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
@@ -368,11 +372,13 @@ export default function RetailDetails() {
       )}
       {service.slug === "ecommerce-b2b" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/ecommerce-b2b-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="e-commerce-for-b2b"
           />
+          </div>
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl">
@@ -490,11 +496,13 @@ export default function RetailDetails() {
       )}
       {service.slug === "unified-b2c-retail" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/unified-b2c-retail-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="unified-b2c-retail-solution"
           />
+          </div>
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
@@ -627,11 +635,13 @@ export default function RetailDetails() {
       )}
       {service.slug === "dealer-management-system" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/dealer-management-system-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="dealer-management-system"
           />
+          </div>
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-12 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
@@ -764,11 +774,13 @@ export default function RetailDetails() {
       )}
       {service.slug === "pim-software-solutions" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/pim-software-solutions-bg.png"} // update path if needed
-            className="object-contain"
+            className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
             alt="pim-software-solutions"
           />
+          </div>
           <div className="container mx-auto px-4 md:px-10 lg:px-20 py-10">
             {/* PAIN POINTS */}
             <div className="mb-16 max-w-3xl">

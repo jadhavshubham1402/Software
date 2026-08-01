@@ -58,29 +58,31 @@ export default function AutomotiveDetails() {
     <div>
       {service.slug === "connected-internet-cars" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/cic-bg.png"}
             className="object-contain"
             alt="connected-internet-cars"
           />
-          <div className="container mx-auto py-10">
+          </div>
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* OUR SERVICES */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Our Services
               </h2>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <FaUsers className="text-5xl text-gray-800 mx-auto mb-4" />
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaUsers className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-2">Consulting</h3>
                   <p className="text-gray-600 text-sm">
                     Strategic consulting for connected automotive ecosystems.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <FaCar className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCar className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-2">
                     Fleet Management
                   </h3>
@@ -89,8 +91,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <FaCloud className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCloud className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-2">
                     Connected Car Cloud
                   </h3>
@@ -99,8 +101,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-6 text-center">
-                  <FaChartLine className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaChartLine className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-2">
                     Data Analytics & Telematics
                   </h3>
@@ -113,7 +115,7 @@ export default function AutomotiveDetails() {
 
             {/* ADVANCED ELECTRONICS */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Advanced Electronics in Automobiles
               </h2>
 
@@ -123,7 +125,7 @@ export default function AutomotiveDetails() {
                     Connected Motorcycles
                   </h3>
 
-                  <ul className="space-y-3 text-gray-700 list-disc pl-5">
+                  <ul className="space-y-3 text-gray-600 list-disc pl-5">
                     <li>Smart turn-by-turn navigation.</li>
                     <li>Ride behaviour analytics.</li>
                     <li>Bike health reports.</li>
@@ -137,7 +139,7 @@ export default function AutomotiveDetails() {
                     Connected Cars
                   </h3>
 
-                  <ul className="space-y-3 text-gray-700 list-disc pl-5">
+                  <ul className="space-y-3 text-gray-600 list-disc pl-5">
                     <li>Geo-fencing and live vehicle tracking.</li>
                     <li>AI-powered driver behaviour monitoring.</li>
                     <li>Fleet dashboards and analytics.</li>
@@ -151,7 +153,7 @@ export default function AutomotiveDetails() {
                     Connected Individual Vehicles
                   </h3>
 
-                  <ul className="space-y-3 text-gray-700 list-disc pl-5">
+                  <ul className="space-y-3 text-gray-600 list-disc pl-5">
                     <li>Remote vehicle control.</li>
                     <li>Driver behaviour reports.</li>
                     <li>SOS emergency management.</li>
@@ -165,7 +167,7 @@ export default function AutomotiveDetails() {
                     Empowering Auto Ecosystem
                   </h3>
 
-                  <ul className="space-y-3 text-gray-700 list-disc pl-5">
+                  <ul className="space-y-3 text-gray-600 list-disc pl-5">
                     <li>Navigation recording.</li>
                     <li>Vehicle location management.</li>
                     <li>Speed alerts.</li>
@@ -178,40 +180,40 @@ export default function AutomotiveDetails() {
 
             {/* TECHNOLOGY */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Our Technology Expertise
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                 {[
                   {
                     title: "IoT",
-                    icon: <GiCircuitry className="text-5xl text-gray-800" />,
+                    icon: <GiCircuitry className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Cloud",
-                    icon: <FaCloud className="text-5xl text-gray-800" />,
+                    icon: <FaCloud className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "AI",
-                    icon: <FaRobot className="text-5xl text-gray-800" />,
+                    icon: <FaRobot className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Machine Learning",
-                    icon: <FaRobot className="text-5xl text-gray-800" />,
+                    icon: <FaRobot className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "GPS",
-                    icon: <FaMapMarkedAlt className="text-5xl text-gray-800" />,
+                    icon: <FaMapMarkedAlt className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Telematics",
-                    icon: <MdSensors className="text-5xl text-gray-800" />,
+                    icon: <MdSensors className="text-5xl text-cyan-600" />,
                   },
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-xl shadow border p-8 text-center hover:shadow-lg transition-all duration-300"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all duration-300"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -225,50 +227,50 @@ export default function AutomotiveDetails() {
 
             {/* HIGHLIGHTS */}
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Highlights of Our Connected Car Applications
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     Connected Car Applications
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Deliver seamless user experiences with cloud-connected
                     vehicles, mobile applications, and real-time monitoring.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     Automotive Cloud Engineering
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Hybrid cloud infrastructure for scalable and secure
                     connected vehicle solutions.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     Cloud Connectivity
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Reliable 3G/4G/5G and Wi-Fi connectivity for connected
                     automotive platforms.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     Location-Based Services
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     GPS tracking, route optimisation, map services, and
                     intelligent navigation for connected vehicles.
                   </p>
@@ -280,28 +282,30 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "ev-charging-software" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src="/images/ev.png"
             className="w-full object-cover"
             alt="ev-charging-software"
           />
+          </div>
 
-          <div className="container mx-auto py-10">
+          <div className="max-w-7xl mx-auto px-6 py-16">
             <div className="text-center max-w-5xl mx-auto mb-20">
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-600">
                 We offer EV charging software applications and charge point
                 operator solutions for automotive companies along with roaming
                 infrastructure.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-800 mt-6">
+              <h2 className="text-4xl font-bold text-gray-800 mt-6">
                 Want to move your business up 1 level? Then call us!
               </h2>
             </div>
             <div className="mb-20">
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaChargingStation className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaChargingStation className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Charge Point Operators
                   </h3>
@@ -311,8 +315,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaCarBattery className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCarBattery className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Service for Electrical Vehicles
                   </h3>
@@ -322,8 +326,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaBolt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaBolt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Service in Electric Mobility
                   </h3>
@@ -336,11 +340,11 @@ export default function AutomotiveDetails() {
               </div>
             </div>
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Features and Benefits of EV Charging Software Applications
               </h2>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   "Web-based Control Panel",
                   "Exceptional Mobile Version",
@@ -353,7 +357,7 @@ export default function AutomotiveDetails() {
                 ].map((item) => (
                   <div
                     key={item}
-                    className="bg-white rounded-xl shadow border h-44 flex items-center justify-center text-center p-6"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 h-44 flex items-center justify-center text-center p-8"
                   >
                     <h3 className="font-semibold text-gray-800">{item}</h3>
                   </div>
@@ -361,13 +365,13 @@ export default function AutomotiveDetails() {
               </div>
             </div>
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 What Differs Us From The Rest?
               </h2>
 
               <div className="grid lg:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaUsers className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaUsers className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Customer Centric
                   </h3>
@@ -377,8 +381,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaClipboardCheck className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaClipboardCheck className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Complete Control
                   </h3>
@@ -388,8 +392,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaCogs className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCogs className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Versatility</h3>
                   <p className="text-gray-600">
                     Flexible platform supporting a wide variety of EV chargers
@@ -403,20 +407,22 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "smart-bikes" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src="/images/smart-bikes.png"
             className="w-full object-cover"
             alt="Smart Bikes"
           />
+          </div>
 
-          <div className="container mx-auto py-10">
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl font-bold text-gray-800 mb-4">
                 Integrated Connectivity Cluster - Empowering Brands
               </h2>
 
-              <p className="text-gray-700 leading-8">
+              <p className="text-gray-600 leading-8">
                 The integrated connectivity cluster has proven to be one of the
                 major breakthroughs for the automotive sector, making
                 motorcycles smarter. The single platform information system
@@ -425,8 +431,8 @@ export default function AutomotiveDetails() {
               </p>
 
               <div className="grid md:grid-cols-3 gap-8 mt-10">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaInfoCircle className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaInfoCircle className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Highly Informative
                   </h3>
@@ -437,8 +443,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaBroadcastTower className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaBroadcastTower className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Stay Connected</h3>
                   <p className="text-gray-600">
                     Smart mobile applications keep riders connected to their
@@ -446,8 +452,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMobileAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMobileAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Clear Display</h3>
                   <p className="text-gray-600">
                     Clear digital display provides easy visibility during both
@@ -460,13 +466,13 @@ export default function AutomotiveDetails() {
             {/* MORE SERVICES */}
 
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 More Services
               </h2>
 
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMobileAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMobileAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Mobile Based Applications
                   </h3>
@@ -476,8 +482,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaPhoneAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaPhoneAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Data</h3>
                   <p className="text-gray-600">
                     Collect valuable rider behaviour and motorcycle usage data
@@ -485,8 +491,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMapMarkedAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMapMarkedAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Safety & Maintenance
                   </h3>
@@ -501,13 +507,13 @@ export default function AutomotiveDetails() {
             {/* LEVERAGING CONNECTIVITY */}
 
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Leveraging Connectivity
               </h2>
 
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaSearch className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaSearch className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Analysis with Telematics
                   </h3>
@@ -517,8 +523,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaPhoneVolume className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaPhoneVolume className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Facilitate Emergency Calls
                   </h3>
@@ -528,8 +534,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMapMarkerAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMapMarkerAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Track Bike Theft
                   </h3>
@@ -544,13 +550,13 @@ export default function AutomotiveDetails() {
             {/* MORE SMART SOLUTIONS */}
 
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 More Smart Solutions
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaTags className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaTags className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Brands & Labels for Tech-Savvy Audience
                   </h3>
@@ -560,8 +566,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMotorcycle className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMotorcycle className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Share & Rent</h3>
                   <p className="text-gray-600">
                     Fleet management solutions supporting bike sharing, rentals
@@ -581,14 +587,14 @@ export default function AutomotiveDetails() {
             alt="Telematics"
           />
 
-          <div className="container mx-auto py-10">
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-4xl font-bold text-gray-800 mb-6">
                 A New Business Model
               </h2>
 
-              <p className="text-gray-700 leading-8">
+              <p className="text-gray-600 leading-8">
                 Telematics connects vehicles and enhances driver and owner
                 experiences. Our solutions improve mobility, safety, security
                 and navigation by collecting, analysing and transferring
@@ -600,31 +606,31 @@ export default function AutomotiveDetails() {
             {/* APPLICATIONS */}
 
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Telematics Applications We Deliver
               </h2>
 
               <div className="grid lg:grid-cols-2 gap-10">
-                <div className="bg-white rounded-xl shadow border p-8">
-                  <FaCar className="text-5xl text-gray-800 mb-5" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
+                  <FaCar className="text-5xl text-cyan-600 mb-5" />
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Connected Cars
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Monitor vehicle health, maintenance schedules, driving
                     behaviour and route information to improve safety, reduce
                     fuel consumption and optimise operational costs.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
-                  <FaTruckMoving className="text-5xl text-gray-800 mb-5" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
+                  <FaTruckMoving className="text-5xl text-cyan-600 mb-5" />
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Efficient Fleet Management
                   </h3>
 
-                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
                     <li>Real-time vehicle visibility</li>
                     <li>Live operational data</li>
                     <li>Vehicle maintenance monitoring</li>
@@ -632,26 +638,26 @@ export default function AutomotiveDetails() {
                   </ul>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
-                  <FaTools className="text-5xl text-gray-800 mb-5" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
+                  <FaTools className="text-5xl text-cyan-600 mb-5" />
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Diagnose Remote Vehicles
                   </h3>
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Remote diagnostics allow fleet operators to identify
                     critical vehicle issues early, minimise downtime and reduce
                     maintenance costs.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
-                  <FaClipboardCheck className="text-5xl text-gray-800 mb-5" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
+                  <FaClipboardCheck className="text-5xl text-cyan-600 mb-5" />
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Merits of Telematics
                   </h3>
 
-                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
                     <li>Improve traffic management</li>
                     <li>Driver behaviour tracking</li>
                     <li>Enhanced road safety</li>
@@ -665,36 +671,36 @@ export default function AutomotiveDetails() {
             {/* CORE FEATURES */}
 
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
                 Core Features of Our Telematics Solutions
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {[
                   {
                     title: "Data Analytics",
-                    icon: <FaChartBar className="text-5xl text-gray-800" />,
+                    icon: <FaChartBar className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Connectivity",
                     icon: (
-                      <FaBroadcastTower className="text-5xl text-gray-800" />
+                      <FaBroadcastTower className="text-5xl text-cyan-600" />
                     ),
                   },
                   {
                     title: "Real-Time Speed Tracking",
                     icon: (
-                      <FaTachometerAlt className="text-5xl text-gray-800" />
+                      <FaTachometerAlt className="text-5xl text-cyan-600" />
                     ),
                   },
                   {
                     title: "GPRS Vehicle Tracking",
-                    icon: <FaMapMarkedAlt className="text-5xl text-gray-800" />,
+                    icon: <FaMapMarkedAlt className="text-5xl text-cyan-600" />,
                   },
                 ].map((feature) => (
                   <div
                     key={feature.title}
-                    className="bg-white rounded-xl shadow border p-8 text-center hover:shadow-lg transition"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition"
                   >
                     <div className="flex justify-center mb-4">
                       {feature.icon}
@@ -712,12 +718,14 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "autonomous-adas" && (
         <>
+        <div className="bg-[#111827] p-24">
           {/* HERO */}
           <img
             src="/images/adas-bg.png"
             alt="Autonomous Driving & ADAS"
             className="w-full object-cover"
           />
+          </div>
 
           <div className="container mx-auto py-12">
             {/* INTRO */}
@@ -735,13 +743,13 @@ export default function AutomotiveDetails() {
             {/* OUR SERVICES */}
 
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Our Services
               </h2>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaCarSide className="text-5xl text-gray-800 mx-auto mb-4" />
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCarSide className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-3">
                     V2X Connectivity
                   </h3>
@@ -752,8 +760,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <MdSettingsApplications className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <MdSettingsApplications className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-3">
                     ADAS Control Panels
                   </h3>
@@ -764,8 +772,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaNetworkWired className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaNetworkWired className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-3">
                     Car-as-a-Service
                   </h3>
@@ -776,8 +784,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaDatabase className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaDatabase className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-3">
                     Data Layer Components
                   </h3>
@@ -793,27 +801,27 @@ export default function AutomotiveDetails() {
             {/* WHY US */}
 
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Why Us?
               </h2>
 
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaClock className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaClock className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg">
                     Real-time Road Prediction
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaCar className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCar className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg">
                     Enhanced ADAS Deployment
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMicrochip className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMicrochip className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="font-semibold text-lg">
                     Efficient OTA Data Management
                   </h3>
@@ -824,32 +832,32 @@ export default function AutomotiveDetails() {
             {/* TECHNOLOGY */}
 
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Technologies We Work On
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {[
                   {
                     title: "Computer Vision",
-                    icon: <FaEye className="text-5xl text-gray-800" />,
+                    icon: <FaEye className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Artificial Intelligence",
-                    icon: <FaRobot className="text-5xl text-gray-800" />,
+                    icon: <FaRobot className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "IoT & Sensors",
-                    icon: <MdSensors className="text-5xl text-gray-800" />,
+                    icon: <MdSensors className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Cloud Analytics",
-                    icon: <FaCloud className="text-5xl text-gray-800" />,
+                    icon: <FaCloud className="text-5xl text-cyan-600" />,
                   },
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white rounded-xl shadow border p-8 text-center hover:shadow-lg transition"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition"
                   >
                     <div className="flex justify-center mb-4">{item.icon}</div>
 
@@ -862,17 +870,17 @@ export default function AutomotiveDetails() {
             {/* BUSINESS BENEFITS */}
 
             <section>
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 How ADAS Differentiates Your Automotive Business
               </h2>
 
               <div className="grid lg:grid-cols-2 gap-12">
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Safety Matters
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     ADAS technologies significantly reduce accidents by
                     assisting drivers with lane departure warnings, collision
                     detection, emergency braking, adaptive cruise control and
@@ -882,12 +890,12 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     ADAS Promotes Road Safety
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     Automotive manufacturers increasingly rely on ADAS to create
                     smarter and safer vehicles. Our solutions integrate AI,
                     connectivity and real-time analytics to deliver enhanced
@@ -924,13 +932,13 @@ export default function AutomotiveDetails() {
 
             {/* OUR SERVICES */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Our Services
               </h2>
 
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaBrain className="text-5xl text-gray-800 mx-auto mb-4" />
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaBrain className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     In-Vehicle Intelligence
                   </h3>
@@ -941,8 +949,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaChartLine className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaChartLine className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Predictive Decisions
                   </h3>
@@ -952,8 +960,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaTools className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaTools className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Predictive Maintenance
                   </h3>
@@ -967,13 +975,13 @@ export default function AutomotiveDetails() {
 
             {/* WHY US */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Why Us As Your Technology Partner
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMapMarkedAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMapMarkedAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Location Data Platforms
                   </h3>
@@ -984,8 +992,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaRoute className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaRoute className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Intelligent Route Decisions
                   </h3>
@@ -1000,32 +1008,32 @@ export default function AutomotiveDetails() {
 
             {/* TECHNOLOGIES */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Technologies We Leverage
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {[
                   {
                     title: "Artificial Intelligence",
-                    icon: <FaRobot className="text-5xl text-gray-800" />,
+                    icon: <FaRobot className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Machine Learning",
-                    icon: <FaBrain className="text-5xl text-gray-800" />,
+                    icon: <FaBrain className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Big Data",
-                    icon: <FaDatabase className="text-5xl text-gray-800" />,
+                    icon: <FaDatabase className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Cloud Analytics",
-                    icon: <FaCloud className="text-5xl text-gray-800" />,
+                    icon: <FaCloud className="text-5xl text-cyan-600" />,
                   },
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-xl shadow border p-8 text-center hover:shadow-lg transition-all"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -1037,17 +1045,17 @@ export default function AutomotiveDetails() {
 
             {/* BENEFITS */}
             <section>
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 AI & Machine Learning Based Vehicles Are Smarter Than Ever
               </h2>
 
               <div className="grid lg:grid-cols-2 gap-12">
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Hands-Free Intelligence
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     Deep learning and neural networks enable intelligent driving
                     assistance by recognising road conditions, traffic signs,
                     pedestrians, and surrounding vehicles. These capabilities
@@ -1056,12 +1064,12 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Ever Improving Safety Levels
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     AI continuously learns from real-world driving data, helping
                     vehicles detect obstacles, predict hazards, avoid
                     collisions, and support autonomous driving features that
@@ -1075,12 +1083,14 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "navigation-mapping" && (
         <>
+        <div className="bg-[#111827] p-24">
           {/* HERO */}
           <img
             src="/images/navigation-mapping-bg.png"
             alt="Navigation & Mapping"
             className="w-full object-cover"
           />
+          </div>
 
           <div className="container mx-auto py-12">
             {/* INTRO */}
@@ -1097,13 +1107,13 @@ export default function AutomotiveDetails() {
 
             {/* OUR SERVICES */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Our Services
               </h2>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMapMarkerAlt className="text-5xl text-gray-800 mx-auto mb-4" />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMapMarkerAlt className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">GPS Locations</h3>
 
                   <p className="text-gray-600">
@@ -1112,8 +1122,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaTrafficLight className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaTrafficLight className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Live Traffic Information
                   </h3>
@@ -1124,8 +1134,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMicrophone className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMicrophone className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Voice Guidance</h3>
 
                   <p className="text-gray-600">
@@ -1134,8 +1144,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaCube className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaCube className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     2D & 3D Rendering
                   </h3>
@@ -1146,8 +1156,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaLayerGroup className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaLayerGroup className="text-5xl text-cyan-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">
                     Map Compilation
                   </h3>
@@ -1162,13 +1172,13 @@ export default function AutomotiveDetails() {
 
             {/* WHY US */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 What Makes Us Stay Ahead in the Market?
               </h2>
 
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaHandshake className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaHandshake className="text-5xl text-cyan-600 mx-auto mb-4" />
 
                   <h3 className="text-xl font-semibold mb-3">
                     Leading Automotive Partnerships
@@ -1180,8 +1190,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaRoute className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaRoute className="text-5xl text-cyan-600 mx-auto mb-4" />
 
                   <h3 className="text-xl font-semibold mb-3">
                     Navigation Expertise
@@ -1193,8 +1203,8 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
-                  <FaMapSigns className="text-5xl text-gray-800 mx-auto mb-4" />
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
+                  <FaMapSigns className="text-5xl text-cyan-600 mx-auto mb-4" />
 
                   <h3 className="text-xl font-semibold mb-3">
                     Optimized User Experience
@@ -1210,34 +1220,34 @@ export default function AutomotiveDetails() {
 
             {/* TECHNOLOGIES */}
             <section className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Technologies We Leverage
               </h2>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {[
                   {
                     title: "GPS",
                     icon: (
-                      <FaSatelliteDish className="text-5xl text-gray-800" />
+                      <FaSatelliteDish className="text-5xl text-cyan-600" />
                     ),
                   },
                   {
                     title: "GIS Mapping",
-                    icon: <FaMap className="text-5xl text-gray-800" />,
+                    icon: <FaMap className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Cloud Navigation",
-                    icon: <FaCloud className="text-5xl text-gray-800" />,
+                    icon: <FaCloud className="text-5xl text-cyan-600" />,
                   },
                   {
                     title: "Location Analytics",
-                    icon: <FaChartLine className="text-5xl text-gray-800" />,
+                    icon: <FaChartLine className="text-5xl text-cyan-600" />,
                   },
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-xl shadow border p-8 text-center hover:shadow-lg transition-all"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -1249,17 +1259,17 @@ export default function AutomotiveDetails() {
 
             {/* BENEFITS */}
             <section>
-              <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                 Transforming the Automotive Industry with Connected Navigation
               </h2>
 
               <div className="grid lg:grid-cols-2 gap-12 mb-12">
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Driving Experiences at Its Best
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     Our advanced mapping solutions deliver precise navigation,
                     intelligent routing, immersive 2D/3D visualization and
                     real-time traffic insights that significantly improve the
@@ -1267,12 +1277,12 @@ export default function AutomotiveDetails() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 rounded-xl p-8">
+                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Better Map Accuracy
                   </h3>
 
-                  <p className="text-gray-700 leading-8">
+                  <p className="text-gray-600 leading-8">
                     Continuously updated maps provide accurate road information,
                     traffic conditions and navigation guidance, enabling
                     autonomous and connected vehicles to make reliable driving
@@ -1281,12 +1291,12 @@ export default function AutomotiveDetails() {
                 </div>
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-8 max-w-2xl">
+              <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8 max-w-2xl">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                   Compliance with Regulatory Bodies
                 </h3>
 
-                <p className="text-gray-700 leading-8">
+                <p className="text-gray-600 leading-8">
                   Our navigation platforms comply with national and
                   international map standards, ensuring dependable and
                   regulation-compliant mapping solutions for modern connected
@@ -1299,14 +1309,16 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "iot-embedded-solutions" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/iot-embedded-bg.png"} // update path if needed
             className="object-contain"
             alt="iot-embedded-solutions"
           />
-          <div className="container mx-auto py-10">
+          </div>
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
-            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-600 leading-relaxed">
               <p className="mb-4">
                 Ever growing demand for connected vehicles has led to new era of
                 IoT in the auto sector. Hence all top auto players are depending
@@ -1323,8 +1335,8 @@ export default function AutomotiveDetails() {
             </div>
 
             {/* THREE SERVICE CARDS */}
-            <div className="grid md:grid-cols-3 gap-6 mb-20">
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+            <div className="grid md:grid-cols-3 gap-8 mb-20">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Internet of Everything (IoE)
                 </h3>
@@ -1334,7 +1346,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Embedded Software
                 </h3>
@@ -1344,7 +1356,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   In-cloud Software
                 </h3>
@@ -1357,16 +1369,16 @@ export default function AutomotiveDetails() {
 
             {/* WHAT MAKES US STAY AHEAD */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-10">
                 What makes us stay ahead of competition
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     Integration of diverse data points
                   </h3>
-                  <p className="text-gray-700 mb-4">
+                  <p className="text-gray-600 mb-4">
                     Our years of experience in cloud development has equipped us
                     with necessary skills to connect the all the needed data
                     touch points within all sorts of high-performance
@@ -1375,11 +1387,11 @@ export default function AutomotiveDetails() {
                   {/* Note: screenshot has duplicate text – kept one clean version */}
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8">
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     Save energy to lower costs
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-600">
                     Our experience in OTA updates, makes us capable of quick
                     collection and analyzing data with minimal time and cost.
                   </p>
@@ -1389,7 +1401,7 @@ export default function AutomotiveDetails() {
 
             {/* DESIGNING SMARTER VEHICLES */}
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-12">
                 Designing Smarter Vehicles For Automotive Brands
               </h2>
 
@@ -1398,7 +1410,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Enhanced level of Driving Safety With IoT
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     The concept of safety for autonomous vehicles has been
                     reinvented by Automotive IoT, by offering robust solutions
                     that can reduce risks on the road to a great extent. It
@@ -1413,7 +1425,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Empower Your Brand with IoT Value
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     There has always been consumers great demand for increased
                     network and connectivity, this has led the automotive
                     industry to raise its bar and keep up with IoT revolution.
@@ -1428,14 +1440,16 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "hmi" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/hmi-bg.png"} // update path if needed
             className="object-contain"
             alt="human-machine-interface"
           />
-          <div className="container mx-auto py-10">
+          </div>
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
-            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-600 leading-relaxed">
               <p>
                 Vehicles need to work with varied software products to take full
                 advantage of Smartphone-centric infotainment systems which are
@@ -1450,8 +1464,8 @@ export default function AutomotiveDetails() {
             </div>
 
             {/* SERVICE CARDS */}
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Instrument clusterUI
                 </h3>
@@ -1461,7 +1475,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Integration of web and mobile navigation
                 </h3>
@@ -1471,7 +1485,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   (HUDs)Head-up displays
                 </h3>
@@ -1482,8 +1496,8 @@ export default function AutomotiveDetails() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-20 max-w-3xl mx-auto">
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+            <div className="grid md:grid-cols-2 gap-8 mb-20 max-w-3xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Voice recognition
                 </h3>
@@ -1493,7 +1507,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   3D rendering
                 </h3>
@@ -1506,31 +1520,31 @@ export default function AutomotiveDetails() {
 
             {/* WHAT MAKES US STAY AHEAD */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-10">
                 What makes us stay ahead of competition?
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Great in automotive design
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Prioritize safety in navigation and every other aspect of
                     solutions
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Provide real-time traffic updates
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Developing high end HMI applications
                   </h3>
@@ -1540,7 +1554,7 @@ export default function AutomotiveDetails() {
 
             {/* DELIVERING BETTER DRIVING EXPERIENCES */}
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-12">
                 Delivering Better Driving Experiences
               </h2>
 
@@ -1549,7 +1563,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Enhanced In-Vehicle Experience
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Automotive HMI solutions have always proven to enhance the
                     driving experiences by providing seamless interactions with
                     multi-touch dashboards, control panels and more. All the
@@ -1562,7 +1576,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Autonomous Vehicles is now Real
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Auto companies who include autonomous vehicles as one of
                     their offerings need to exploit the true potential of HMI
                     solutions. Our futuristic HMI designs aim enables drivers to
@@ -1577,14 +1591,16 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "security" && (
         <>
+        <div className="bg-[#111827] p-24">
           <img
             src={"/images/security-bg.png"} // update path if needed
             className="object-contain"
             alt="automotive-security"
           />
-          <div className="container mx-auto py-10">
+          </div>
+          <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
-            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+            <div className="mb-20 max-w-4xl mx-auto text-center text-gray-600 leading-relaxed">
               <p>
                 Though vehicle connectivity and automation in driving throw new
                 opportunities for companies in automotive industry, they also
@@ -1599,8 +1615,8 @@ export default function AutomotiveDetails() {
             </div>
 
             {/* SERVICE CARDS */}
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   In-car data
                 </h3>
@@ -1610,7 +1626,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   TCP/IP and Ethernet
                 </h3>
@@ -1620,7 +1636,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   TCP over USB
                 </h3>
@@ -1631,8 +1647,8 @@ export default function AutomotiveDetails() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-20 max-w-3xl mx-auto">
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+            <div className="grid md:grid-cols-2 gap-8 mb-20 max-w-3xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Infotainment systems
                 </h3>
@@ -1642,7 +1658,7 @@ export default function AutomotiveDetails() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow border p-6 text-center">
+              <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                 <h3 className="font-semibold text-lg text-gray-800 mb-3">
                   Third-party services
                 </h3>
@@ -1655,30 +1671,30 @@ export default function AutomotiveDetails() {
 
             {/* HOW ARE WE DIFFERENT */}
             <div className="mb-20">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-10">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-10">
                 How are we different ?
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Substantial testing experience
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Focus on secure SDLC
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     Stringent penetration testing
                   </h3>
                 </div>
 
-                <div className="bg-white rounded-xl shadow border p-8 text-center">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     A holistic approach
                   </h3>
@@ -1688,7 +1704,7 @@ export default function AutomotiveDetails() {
 
             {/* EMPOWERING THE NEX-GEN VEHICLES */}
             <div className="mb-10">
-              <h2 className="text-3xl font-bold text-center text-gray-800  mb-12">
+              <h2 className="text-4xl font-bold text-center text-gray-800  mb-12">
                 Empowering The Nex-Gen Vehicles With Security & Privacy
               </h2>
 
@@ -1697,7 +1713,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Car Hacking Prevention
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Locking the vehicle is no more a security measure anymore
                     especially in this era of self-driven cars. The system and
                     architecture of vehicles is always in some sort of risk
@@ -1711,7 +1727,7 @@ export default function AutomotiveDetails() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                     Infotainment Systems Protection
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     Due to high demand for better service there is expansion of
                     connected services and that gives more room for cyber
                     attacks. Auto companies need to formulate enough cyber
