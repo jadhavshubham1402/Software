@@ -13,7 +13,7 @@ export default function TravelDetails() {
     <>
       {service.slug === "gds-integration-services" && (
         <>
-        <div className="bg-[#111827] p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/gds-integrations-bg.png"} // update path if needed
             className="object-contain"
@@ -145,7 +145,7 @@ export default function TravelDetails() {
       )}
       {service.slug === "smart-flight-booking" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/smart-flight-booking-bg.png"} // update path if needed
             className="object-contain"

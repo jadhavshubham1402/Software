@@ -13,7 +13,7 @@ export default function ManufacturingDetails() {
     <>
       {service.slug === "warehouse-management" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/warehouse-management-bg.png"} // update path if needed
             className="object-contain"
@@ -216,7 +216,7 @@ export default function ManufacturingDetails() {
       )}
       {service.slug === "supply-chain-management" && (
         <>
-        <div className="bg-[#111827] pt-24 md:pt-0 p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/supply-chain-management-bg.png"} // update path if needed
             className="object-contain"
@@ -369,7 +369,7 @@ export default function ManufacturingDetails() {
       )}
       {service.slug === "transportation-management" && (
         <>
-        <div className="bg-[#111827] pt-24 md:pt-0 p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/transportation-management-bg.png"} // update path if needed
             className="object-contain"

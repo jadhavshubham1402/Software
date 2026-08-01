@@ -58,12 +58,12 @@ export default function AutomotiveDetails() {
     <div>
       {service.slug === "connected-internet-cars" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src={"/images/cic-bg.png"}
-            className="object-contain"
-            alt="connected-internet-cars"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src={"/images/cic-bg.png"}
+              className="object-contain"
+              alt="connected-internet-cars"
+            />
           </div>
           <div className="max-w-7xl mx-auto px-6 py-16">
             {/* OUR SERVICES */}
@@ -213,7 +213,7 @@ export default function AutomotiveDetails() {
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all duration-300"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -282,12 +282,12 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "ev-charging-software" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src="/images/ev.png"
-            className="w-full object-cover"
-            alt="ev-charging-software"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src="/images/ev.png"
+              className="w-full object-cover"
+              alt="ev-charging-software"
+            />
           </div>
 
           <div className="max-w-7xl mx-auto px-6 py-16">
@@ -407,12 +407,12 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "smart-bikes" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src="/images/smart-bikes.png"
-            className="w-full object-cover"
-            alt="Smart Bikes"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src="/images/smart-bikes.png"
+              className="w-full object-cover"
+              alt="Smart Bikes"
+            />
           </div>
 
           <div className="max-w-7xl mx-auto px-6 py-16">
@@ -581,11 +581,13 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "telematics" && (
         <>
-          <img
-            src="/images/telematics.png"
-            className="w-full object-cover"
-            alt="Telematics"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src="/images/telematics.png"
+              className="w-full object-cover"
+              alt="Telematics"
+            />
+          </div>
 
           <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
@@ -700,7 +702,7 @@ export default function AutomotiveDetails() {
                 ].map((feature) => (
                   <div
                     key={feature.title}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center"
                   >
                     <div className="flex justify-center mb-4">
                       {feature.icon}
@@ -718,13 +720,13 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "autonomous-adas" && (
         <>
-        <div className="bg-[#111827] p-24">
-          {/* HERO */}
-          <img
-            src="/images/adas-bg.png"
-            alt="Autonomous Driving & ADAS"
-            className="w-full object-cover"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            {/* HERO */}
+            <img
+              src="/images/adas-bg.png"
+              alt="Autonomous Driving & ADAS"
+              className="w-full object-cover"
+            />
           </div>
 
           <div className="container mx-auto py-12">
@@ -857,7 +859,7 @@ export default function AutomotiveDetails() {
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center"
                   >
                     <div className="flex justify-center mb-4">{item.icon}</div>
 
@@ -911,12 +913,13 @@ export default function AutomotiveDetails() {
       {service.slug === "ai-machine-learning" && (
         <>
           {/* HERO */}
-          <img
-            src="/images/ai-ml-bg.png"
-            alt="Artificial Intelligence & Machine Learning"
-            className="w-full object-cover"
-          />
-
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src="/images/ai-ml-bg.png"
+              alt="Artificial Intelligence & Machine Learning"
+              className="w-full object-cover"
+            />
+          </div>
           <div className="container mx-auto py-12">
             {/* INTRO */}
             <div className="text-center max-w-5xl mx-auto mb-20">
@@ -1033,7 +1036,7 @@ export default function AutomotiveDetails() {
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center-all"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -1083,13 +1086,13 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "navigation-mapping" && (
         <>
-        <div className="bg-[#111827] p-24">
-          {/* HERO */}
-          <img
-            src="/images/navigation-mapping-bg.png"
-            alt="Navigation & Mapping"
-            className="w-full object-cover"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            {/* HERO */}
+            <img
+              src="/images/navigation-mapping-bg.png"
+              alt="Navigation & Mapping"
+              className="w-full object-cover"
+            />
           </div>
 
           <div className="container mx-auto py-12">
@@ -1247,7 +1250,7 @@ export default function AutomotiveDetails() {
                 ].map((tech) => (
                   <div
                     key={tech.title}
-                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center hover:shadow-lg transition-all"
+                    className="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 p-8 text-center-all"
                   >
                     <div className="flex justify-center mb-4">{tech.icon}</div>
 
@@ -1309,12 +1312,12 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "iot-embedded-solutions" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src={"/images/iot-embedded-bg.png"} // update path if needed
-            className="object-contain"
-            alt="iot-embedded-solutions"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src={"/images/iot-embedded-bg.png"} // update path if needed
+              className="object-contain"
+              alt="iot-embedded-solutions"
+            />
           </div>
           <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
@@ -1440,12 +1443,12 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "hmi" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src={"/images/hmi-bg.png"} // update path if needed
-            className="object-contain"
-            alt="human-machine-interface"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src={"/images/hmi-bg.png"} // update path if needed
+              className="object-contain"
+              alt="human-machine-interface"
+            />
           </div>
           <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}
@@ -1591,12 +1594,12 @@ export default function AutomotiveDetails() {
       )}
       {service.slug === "security" && (
         <>
-        <div className="bg-[#111827] p-24">
-          <img
-            src={"/images/security-bg.png"} // update path if needed
-            className="object-contain"
-            alt="automotive-security"
-          />
+          <div className="pt-24 md:pt-0 bg-slate-900">
+            <img
+              src={"/images/security-bg.png"} // update path if needed
+              className="object-contain"
+              alt="automotive-security"
+            />
           </div>
           <div className="max-w-7xl mx-auto px-6 py-16">
             {/* INTRO */}

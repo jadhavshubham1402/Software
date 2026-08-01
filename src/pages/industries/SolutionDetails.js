@@ -39,7 +39,7 @@ const SolutionDetails = () => {
     <>
       {service.slug === "hospital-management-system" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/hms-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -284,7 +284,7 @@ const SolutionDetails = () => {
       )}
       {service.slug === "mobile-healthcare" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/mobile-healthcare-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -480,7 +480,7 @@ const SolutionDetails = () => {
       )}
       {service.slug === "smart-hospitals" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/smart-hospitals-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -608,7 +608,7 @@ const SolutionDetails = () => {
       )}
       {service.slug === "patient-engagement" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/patient-engagement-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -761,7 +761,7 @@ const SolutionDetails = () => {
       )}
       {service.slug === "wearables" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/wearables-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -937,7 +937,7 @@ const SolutionDetails = () => {
       )}
       {service.slug === "healthcare-dashboard" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/healthcare-dashboard-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -1103,10 +1103,10 @@ const SolutionDetails = () => {
       )}
       {service.slug === "internet-of-things" && (
         <>
-        <div className="p-24 md:pt-0 bg-slate-900">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/internet-of-things-bg.png"} // update path if needed
-            className="w-full object-contain p-24 md:pt-0 bg-slate-900"
+            className="w-full object-contai"
             alt="internet-of-things"
           />
           </div>

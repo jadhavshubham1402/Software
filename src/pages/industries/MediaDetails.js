@@ -13,7 +13,7 @@ export default function MediaDetails() {
     <>
       {service.slug === "ott-software" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/ott-services-bg.png"} // update path if needed
             className="w-full object-contain"
@@ -411,12 +411,13 @@ export default function MediaDetails() {
       )}
       {service.slug === "digital-asset-management" && (
         <>
-        <div className="bg-[#111827] p-24"></div>
+       <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/digital-asset-management-bg.png"} // update path if needed
             className="w-full object-contain"
             alt="software-for-digital-asset-management"
           />
+          </div>
           <div className="container mx-auto px-6 md:px-10 lg:px-20 py-10">
             {/* INTRO */}
             <div className="mb-16 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
@@ -648,7 +649,7 @@ export default function MediaDetails() {
       )}
       {service.slug === "cms-development" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/cms-development-bg.png"} // update path if needed
             className="w-full object-contain"

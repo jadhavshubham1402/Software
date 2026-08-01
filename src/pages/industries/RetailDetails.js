@@ -14,7 +14,7 @@ export default function RetailDetails() {
     <>
       {service.slug === "sales-force-automation" && (
         <>
-        <div className="bg-[#111827] p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/sales-force-automation-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
@@ -200,7 +200,7 @@ export default function RetailDetails() {
       )}
       {service.slug === "retail-lead-management" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/retail-lead-management-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
@@ -372,7 +372,7 @@ export default function RetailDetails() {
       )}
       {service.slug === "ecommerce-b2b" && (
         <>
-        <div className="bg-[#111827] p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/ecommerce-b2b-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
@@ -496,7 +496,7 @@ export default function RetailDetails() {
       )}
       {service.slug === "unified-b2c-retail" && (
         <>
-        <div className="bg-[#111827] p-24">
+        <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/unified-b2c-retail-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
@@ -635,7 +635,7 @@ export default function RetailDetails() {
       )}
       {service.slug === "dealer-management-system" && (
         <>
-        <div className="bg-[#111827] p-24">
+       <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/dealer-management-system-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
@@ -774,7 +774,7 @@ export default function RetailDetails() {
       )}
       {service.slug === "pim-software-solutions" && (
         <>
-        <div className="bg-[#111827] p-24">
+         <div className="pt-24 md:pt-0 bg-slate-900">
           <img
             src={"/images/pim-software-solutions-bg.png"} // update path if needed
             className="w-full object-contain pt-20 md:pt-0 bg-slate-900"
