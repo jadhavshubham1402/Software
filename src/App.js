@@ -36,7 +36,7 @@ import TermsOfService from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import RefundPolicy from "./pages/RefundPolicy";
-import Pricing from "./pages/pricing/Pricing";
+// import Pricing from "./pages/pricing/Pricing";
 
 function App() {
   function ScrollToTop() {
