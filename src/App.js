@@ -22,6 +22,8 @@ import Portfolio from "./pages/portfolio";
 import Blogs from "./pages/Blogs";
 import { useEffect } from "react";
 import Contact from "./pages/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ProjectDetail from "./pages/ProjectDetails";
 import BlogDetail from "./pages/BlogDetails";
 import SupportMaintenance from "./pages/SupportMaintaince";
@@ -134,6 +136,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 }
