@@ -12,16 +12,24 @@ const Pricing = () => {
 
   return (
     <>
+      {/* Pricing Hero Section */}
       <PricingHero />
 
-      <ServiceSection onBuyNow={setSelectedPlan} />
+      {/* Pricing Packages */}
+      <ServiceSection
+        onBuyNow={setSelectedPlan}
+      />
 
+      {/* Development Process */}
       <DevelopmentProcess />
 
+      {/* FAQ */}
       <FAQ />
 
+      {/* Call To Action */}
       <CTA />
 
+      {/* Checkout Drawer */}
       <CheckoutDrawer
         open={!!selectedPlan}
         plan={selectedPlan}

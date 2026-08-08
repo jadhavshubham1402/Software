@@ -50,6 +50,7 @@ function App() {
 
     return null;
   }
+
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -61,53 +62,83 @@ function App() {
           <Route path="/solutions/:slug" element={<SolutionDetails1 />} />
 
           <Route path="/about" element={<AboutPage />} />
+
           <Route
             path="/services/web-development"
             element={<WebDevelopment />}
           />
+
           <Route
             path="/services/mobile-development"
             element={<MobileAppDevelopment />}
           />
+
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/refund" element={<RefundPolicy />} />
-          {/* <Route path="/pricing" element={<Pricing />} /> */}
+
+          {/* Pricing */}
+          <Route path="/pricing" element={<Pricing />} />
+
           <Route
             path="/services/cloud-solutions"
             element={<CloudSolutions />}
           />
+
           <Route path="/services/ai-ml" element={<AIML />} />
-          <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+
+          <Route
+            path="/services/ui-ux-design"
+            element={<UIUXDesign />}
+          />
+
           <Route
             path="/services/support-maintenance"
             element={<SupportMaintenance />}
           />
+
           <Route path="/technologies/frontend" element={<Frontend />} />
           <Route path="/technologies/backend" element={<Backend />} />
           <Route path="/technologies/mobile" element={<Mobile />} />
           <Route path="/technologies/database" element={<Database />} />
           <Route path="/technologies/cloud" element={<Cloud />} />
-          <Route path="/industries/health-tech" element={<HealthTech />} />
+
+          <Route
+            path="/industries/health-tech"
+            element={<HealthTech />}
+          />
+
           <Route
             path="/industries/health-tech/:slug"
             element={<SolutionDetails />}
           />
-          <Route path="/industries/automotive" element={<Automotive />} />
+
+          <Route
+            path="/industries/automotive"
+            element={<Automotive />}
+          />
+
           <Route
             path="/industries/automotive/:slug"
             element={<AutomotiveDetails />}
           />
+
           <Route
             path="/industries/retail-ecommerce"
             element={<RetailEcommerce />}
           />
+
           <Route
             path="/industries/retail-ecommerce/:slug"
             element={<RetailDetails />}
           />
-          <Route path="/industries/manufacturing" element={<Manufacturing />} />
+
+          <Route
+            path="/industries/manufacturing"
+            element={<Manufacturing />}
+          />
+
           <Route
             path="/industries/manufacturing/:slug"
             element={<ManufacturingDetails />}
@@ -117,25 +148,32 @@ function App() {
             path="/industries/media-entertainment"
             element={<MediaEntertainment />}
           />
+
           <Route
             path="/industries/media-entertainment/:slug"
             element={<MediaDetails />}
           />
+
           <Route
             path="/industries/travel-hospitality"
             element={<TravelHospitality />}
           />
+
           <Route
             path="/industries/travel-hospitality/:slug"
             element={<TravelDetails />}
           />
+
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<ProjectDetail />} />
+
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogDetail />} />
+
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
+
       <ToastContainer />
     </BrowserRouter>
   );

@@ -10,7 +10,7 @@ const Hero = () => {
   const handleGetStarted = () => {
     setIsLoading(true);
     setTimeout(() => {
-      navigate("/contact");
+      navigate("/pricing");
       setIsLoading(false);
     }, 400);
   };

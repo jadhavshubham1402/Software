@@ -10,18 +10,12 @@ const ServiceSection = ({ onBuyNow }) => {
   const currentService = pricingData[selectedService];
 
   return (
-    <section
-      id="pricing"
-      className="relative py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden"
-    >
+    <section id="pricing-packages" className="relative py-24">
       {/* Background Blur */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 blur-[120px]" />
-
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
-
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-semibold">
             Pricing Plans
@@ -39,7 +33,6 @@ const ServiceSection = ({ onBuyNow }) => {
         </div>
 
         {/* Tabs */}
-
         <div className="mt-16">
           <ServiceTabs
             selectedService={selectedService}
@@ -48,7 +41,6 @@ const ServiceSection = ({ onBuyNow }) => {
         </div>
 
         {/* Current Service */}
-
         <div className="text-center mt-20">
           <h3 className="text-4xl font-bold text-white">
             {currentService.title}
@@ -60,15 +52,17 @@ const ServiceSection = ({ onBuyNow }) => {
         </div>
 
         {/* Pricing Cards */}
-
         <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-8 mt-16">
           {currentService.packages.map((plan) => (
-            <PricingCard key={plan.id} plan={plan} onBuyNow={onBuyNow} />
+            <PricingCard
+              key={plan.id}
+              plan={plan}
+              onBuyNow={onBuyNow}
+            />
           ))}
         </div>
 
         {/* CTA */}
-
         <div className="mt-24">
           <div className="rounded-3xl border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-10 text-center">
             <h3 className="text-3xl font-bold text-white">
